@@ -1,0 +1,658 @@
+{
+  "genres": [
+    "Action",
+    "Adventure",
+    "Animation",
+    "Biography",
+    "Comedy",
+    "Crime",
+    "Documentary",
+    "Drama",
+    "Family",
+    "Fantasy",
+    "Film-Noir",
+    "History",
+    "Horror",
+    "Music",
+    "Musical",
+    "Mystery",
+    "Romance",
+    "Sci-Fi",
+    "Sport",
+    "Thriller",
+    "War",
+    "Western",
+    "Superhero",
+    "Martial Arts",
+    "Disaster",
+    "Experimental",
+    "Short",
+    "Reality-TV"
+  ],
+  "sub_genres": [
+    {
+      "sub_genre": "Martial Arts Action",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Heroic Bloodshed",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Gun Fu",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Girls with Guns",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Stunt Showcase",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Spy Fi",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Vigilante Film",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Vehicle Combat",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Swashbuckler",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Military Action",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Extreme Sport Action",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Urban Survival",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Treasure Hunt",
+      "parent_genre": "Adventure"
+    },
+    {
+      "sub_genre": "Jungle Adventure",
+      "parent_genre": "Adventure"
+    },
+    {
+      "sub_genre": "Survival Adventure",
+      "parent_genre": "Adventure"
+    },
+    {
+      "sub_genre": "Sea Adventure",
+      "parent_genre": "Adventure"
+    },
+    {
+      "sub_genre": "Epic Journey",
+      "parent_genre": "Adventure"
+    },
+    {
+      "sub_genre": "Anime",
+      "parent_genre": "Animation"
+    },
+    {
+      "sub_genre": "Stop-Motion",
+      "parent_genre": "Animation"
+    },
+    {
+      "sub_genre": "CGI Animation",
+      "parent_genre": "Animation"
+    },
+    {
+      "sub_genre": "Traditional 2D",
+      "parent_genre": "Animation"
+    },
+    {
+      "sub_genre": "Adult Animation",
+      "parent_genre": "Animation"
+    },
+    {
+      "sub_genre": "Literary Biopic",
+      "parent_genre": "Biography"
+    },
+    {
+      "sub_genre": "Political Biopic",
+      "parent_genre": "Biography"
+    },
+    {
+      "sub_genre": "Hagiography",
+      "parent_genre": "Biography"
+    },
+    {
+      "sub_genre": "Whistleblower Story",
+      "parent_genre": "Biography"
+    },
+    {
+      "sub_genre": "Slapstick",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Screwball Comedy",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Satire",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Black Comedy",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Parody",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Romantic Comedy",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Gross-out Comedy",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Mumblecore",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Stoner Comedy",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Mockumentary",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Comedy of Manners",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Heist Film",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Gangster Film",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Legal Thriller",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Police Procedural",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "True Crime Drama",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Prison Film",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Caper Story",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Yakuza Film",
+      "parent_genre": "Crime"
+    },
+    {
+      "sub_genre": "Nature Documentary",
+      "parent_genre": "Documentary"
+    },
+    {
+      "sub_genre": "Investigative Doc",
+      "parent_genre": "Documentary"
+    },
+    {
+      "sub_genre": "Social Issue Doc",
+      "parent_genre": "Documentary"
+    },
+    {
+      "sub_genre": "Travelogue",
+      "parent_genre": "Documentary"
+    },
+    {
+      "sub_genre": "Concert Film",
+      "parent_genre": "Documentary"
+    },
+    {
+      "sub_genre": "Melodrama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Coming-of-Age",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Medical Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Political Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Period Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Social Realism",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Courtroom Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Kitchen Sink Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Domestic Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Psychological Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Tragedy",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Showbiz Drama",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Kids and Family",
+      "parent_genre": "Family"
+    },
+    {
+      "sub_genre": "Animal Tale",
+      "parent_genre": "Family"
+    },
+    {
+      "sub_genre": "Holiday Film",
+      "parent_genre": "Family"
+    },
+    {
+      "sub_genre": "High Fantasy",
+      "parent_genre": "Fantasy"
+    },
+    {
+      "sub_genre": "Urban Fantasy",
+      "parent_genre": "Fantasy"
+    },
+    {
+      "sub_genre": "Dark Fantasy",
+      "parent_genre": "Fantasy"
+    },
+    {
+      "sub_genre": "Fairy Tale",
+      "parent_genre": "Fantasy"
+    },
+    {
+      "sub_genre": "Sword and Sorcery",
+      "parent_genre": "Fantasy"
+    },
+    {
+      "sub_genre": "Magical Realism",
+      "parent_genre": "Fantasy"
+    },
+    {
+      "sub_genre": "Tech Noir",
+      "parent_genre": "Film-Noir"
+    },
+    {
+      "sub_genre": "Neo-Noir",
+      "parent_genre": "Film-Noir"
+    },
+    {
+      "sub_genre": "Sunshine Noir",
+      "parent_genre": "Film-Noir"
+    },
+    {
+      "sub_genre": "Sword and Sandal",
+      "parent_genre": "History"
+    },
+    {
+      "sub_genre": "Historical Epic",
+      "parent_genre": "History"
+    },
+    {
+      "sub_genre": "Alt-History",
+      "parent_genre": "History"
+    },
+    {
+      "sub_genre": "Slasher",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Found Footage",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Body Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Psychological Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Supernatural Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Gothic Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Folk Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Splatter Film",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Creature Feature",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Zombie Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Home Invasion",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Giallo",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Music Video",
+      "parent_genre": "Music"
+    },
+    {
+      "sub_genre": "Rockumentary",
+      "parent_genre": "Music"
+    },
+    {
+      "sub_genre": "Opera Film",
+      "parent_genre": "Musical"
+    },
+    {
+      "sub_genre": "Stage-to-Screen",
+      "parent_genre": "Musical"
+    },
+    {
+      "sub_genre": "Jukebox Musical",
+      "parent_genre": "Musical"
+    },
+    {
+      "sub_genre": "Whodunnit",
+      "parent_genre": "Mystery"
+    },
+    {
+      "sub_genre": "Hardboiled",
+      "parent_genre": "Mystery"
+    },
+    {
+      "sub_genre": "Locked Room Mystery",
+      "parent_genre": "Mystery"
+    },
+    {
+      "sub_genre": "Surrealist Mystery",
+      "parent_genre": "Mystery"
+    },
+    {
+      "sub_genre": "Gothic Romance",
+      "parent_genre": "Romance"
+    },
+    {
+      "sub_genre": "Erotic Romance",
+      "parent_genre": "Romance"
+    },
+    {
+      "sub_genre": "Historical Romance",
+      "parent_genre": "Romance"
+    },
+    {
+      "sub_genre": "Space Opera",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Cyberpunk",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Steampunk",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Hard Science Fiction",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Dystopian",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Time Travel",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Alien Invasion",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Post-Apocalyptic",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Bio-Punk",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Mecha",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Sports Drama",
+      "parent_genre": "Sport"
+    },
+    {
+      "sub_genre": "Underdog Story",
+      "parent_genre": "Sport"
+    },
+    {
+      "sub_genre": "Sports Comedy",
+      "parent_genre": "Sport"
+    },
+    {
+      "sub_genre": "Conspiracy Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Espionage Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Techno-Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Psychological Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Erotic Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Supernatural Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Political Thriller",
+      "parent_genre": "Thriller"
+    },
+    {
+      "sub_genre": "Submarine Movie",
+      "parent_genre": "War"
+    },
+    {
+      "sub_genre": "Combat Film",
+      "parent_genre": "War"
+    },
+    {
+      "sub_genre": "Anti-War Film",
+      "parent_genre": "War"
+    },
+    {
+      "sub_genre": "Resistance Movie",
+      "parent_genre": "War"
+    },
+    {
+      "sub_genre": "Spaghetti Western",
+      "parent_genre": "Western"
+    },
+    {
+      "sub_genre": "Revisionist Western",
+      "parent_genre": "Western"
+    },
+    {
+      "sub_genre": "Acid Western",
+      "parent_genre": "Western"
+    },
+    {
+      "sub_genre": "Contemporary Western",
+      "parent_genre": "Western"
+    },
+    {
+      "sub_genre": "Origin Story",
+      "parent_genre": "Superhero"
+    },
+    {
+      "sub_genre": "Cape and Cowl",
+      "parent_genre": "Superhero"
+    },
+    {
+      "sub_genre": "Anti-Hero Story",
+      "parent_genre": "Superhero"
+    },
+    {
+      "sub_genre": "Wuxia",
+      "parent_genre": "Martial Arts"
+    },
+    {
+      "sub_genre": "Kung Fu",
+      "parent_genre": "Martial Arts"
+    },
+    {
+      "sub_genre": "Chambara",
+      "parent_genre": "Martial Arts"
+    },
+    {
+      "sub_genre": "Natural Disaster",
+      "parent_genre": "Disaster"
+    },
+    {
+      "sub_genre": "Extinction Event",
+      "parent_genre": "Disaster"
+    },
+    {
+      "sub_genre": "Aviation Disaster",
+      "parent_genre": "Disaster"
+    },
+    {
+      "sub_genre": "Avant-Garde",
+      "parent_genre": "Experimental"
+    },
+    {
+      "sub_genre": "Video Art",
+      "parent_genre": "Experimental"
+    },
+    {
+      "sub_genre": "Abstract Film",
+      "parent_genre": "Experimental"
+    },
+    {
+      "sub_genre": "Structural Film",
+      "parent_genre": "Experimental"
+    },
+    {
+      "sub_genre": "Live Action Short",
+      "parent_genre": "Short"
+    },
+    {
+      "sub_genre": "Animated Short",
+      "parent_genre": "Short"
+    },
+    {
+      "sub_genre": "Competition Show",
+      "parent_genre": "Reality-TV"
+    },
+    {
+      "sub_genre": "Docu-soap",
+      "parent_genre": "Reality-TV"
+    },
+    {
+      "sub_genre": "Survival Reality",
+      "parent_genre": "Reality-TV"
+    },
+    {
+      "sub_genre": "Gorehound Special",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Campus Comedy",
+      "parent_genre": "Comedy"
+    },
+    {
+      "sub_genre": "Buddy Cop",
+      "parent_genre": "Action"
+    },
+    {
+      "sub_genre": "Kaiju",
+      "parent_genre": "Sci-Fi"
+    },
+    {
+      "sub_genre": "Gendai-geki",
+      "parent_genre": "Drama"
+    },
+    {
+      "sub_genre": "Jidai-geki",
+      "parent_genre": "History"
+    },
+    {
+      "sub_genre": "Cyber-Horror",
+      "parent_genre": "Horror"
+    },
+    {
+      "sub_genre": "Cozy Mystery",
+      "parent_genre": "Mystery"
+    },
+    {
+      "sub_genre": "Euro-Spy",
+      "parent_genre": "Action"
+    }
+  ]
+}
