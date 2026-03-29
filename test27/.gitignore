@@ -1,0 +1,50 @@
+# Generated outputs
+*.arrow
+*.csv
+*.parquet
+*.log
+
+# Run state
+.pipeline_checkpoint.json
+
+# Generated planning artifacts
+world_policy.json
+year_slate_plan.json
+keyword_motif_bank.json
+concept_packs.json
+franchise_bibles.json
+critic_report.json
+
+# Runtime directories
+_runner_logs/
+checkpoints/
+critic/
+decision_logs/
+graph/
+imdb_schema/
+__pycache__/
+
+# Dev / scratch
+_dev/
+.cache/
+
+# Generated entity materialization
+entities/persons.json
+entities/companies.json
+entities/keywords.json
+entities/persons_latent.json
+entities/companies_latent.json
+entities/person.csv
+entities/person_roles.csv
+entities/company.csv
+entities/keyword.csv
+entities/company_financial_profile.csv
+entities/character_bank.csv
+entities/title_bank.csv
+entities/latent_batch*_raw.txt
+entities/person_enrich*_raw.txt
+
+# Local ollama runtime files
+local_ollama_qwen35/runtime_env.ps1
+local_ollama_qwen35/runtime_env.sh
+local_ollama_qwen35/logs/
