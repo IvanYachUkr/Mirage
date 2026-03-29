@@ -34,6 +34,17 @@ def _smoke_counts(n_movies: int) -> dict[str, int]:
     }
 
 
+def _standard_counts(n_movies: int) -> dict[str, int]:
+    movies = max(1, int(n_movies))
+    return {
+        "n_titles": movies,
+        "n_persons": max(1200, int(round(movies * 2.25))),
+        "n_companies": max(120, int(round(movies * 0.15))),
+        "n_keywords": max(350, int(round(movies * 0.19))),
+        "n_characters": max(1500, int(round(movies * 3.93))),
+    }
+
+
 def _resolved_counts(args: argparse.Namespace, profile: str) -> dict[str, int | None]:
     counts: dict[str, int | None] = {
         "n_titles": args.n_titles,
@@ -44,9 +55,11 @@ def _resolved_counts(args: argparse.Namespace, profile: str) -> dict[str, int | 
     }
     if profile == "smoke":
         defaults = _smoke_counts(args.n_movies)
-        for key, value in defaults.items():
-            if counts[key] is None:
-                counts[key] = int(value)
+    else:
+        defaults = _standard_counts(args.n_movies)
+    for key, value in defaults.items():
+        if counts[key] is None:
+            counts[key] = int(value)
     return counts
 
 

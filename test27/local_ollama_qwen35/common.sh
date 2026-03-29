@@ -632,6 +632,6 @@ run_pipeline_200k() {
     --n-characters 786000 \
     --model "${MODEL_NAME}" \
     --enable-llm-evolution \
-    --until-step 100 \
+    --until-step 130 \
     "$@"
 }

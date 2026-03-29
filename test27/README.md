@@ -70,6 +70,11 @@ Prepared wrapper scripts:
 Those wrappers call `run_full_api_pipeline.py`.
 By default they run:
 - `200000` movies
+- `200000` titles
+- `450000` persons
+- `30000` companies
+- `38000` keywords
+- `786000` characters
 - through step `130`
 - with model `gemini-3.1-flash-lite-preview`
 
@@ -106,6 +111,15 @@ test27/local_ollama_qwen35/
 ```
 
 They support profile-based selection, including larger multi-GPU Qwen profiles.
+
+The prepared local `200k` scripts also default to a full end-to-end run:
+- `200000` movies
+- `200000` titles
+- `450000` persons
+- `30000` companies
+- `38000` keywords
+- `786000` characters
+- through step `130`
 
 Useful command on Windows to inspect what a machine would choose before downloading anything:
 
