@@ -1,6 +1,3 @@
-$ErrorActionPreference = "Stop"
-Set-StrictMode -Version Latest
-
 param(
   [int]$Movies = 100,
   [int]$UntilStep = 130,
@@ -9,7 +6,22 @@ param(
   [switch]$RunCalibration
 )
 
-$python = 'C:\Users\vanya\AppData\Local\Programs\Python\Python312\python.exe'
+$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+
+function Resolve-Python {
+  $py = Get-Command py -ErrorAction SilentlyContinue
+  if ($py) {
+    return @($py.Source, '-3')
+  }
+  $python = Get-Command python -ErrorAction SilentlyContinue
+  if ($python) {
+    return @($python.Source)
+  }
+  throw "Could not find Python 3. Install Python and make sure 'py' or 'python' is on PATH."
+}
+
+$python = Resolve-Python
 $script = Join-Path $PSScriptRoot 'run_full_api_pipeline.py'
 
 $cmd = @(
@@ -26,4 +38,8 @@ if ($RunCalibration) {
   $cmd += '--run-calibration'
 }
 
-& $python -u @cmd
+if ($python.Length -gt 1) {
+  & $python[0] $python[1..($python.Length - 1)] -u @cmd
+} else {
+  & $python[0] -u @cmd
+}
