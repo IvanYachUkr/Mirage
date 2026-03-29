@@ -1,5 +1,5 @@
 param(
-  [int]$Movies = 100,
+  [int]$Movies = 200000,
   [int]$UntilStep = 130,
   [string]$Model = "gemini-3.1-flash-lite-preview",
   [switch]$SkipCompare,

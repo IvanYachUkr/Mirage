@@ -157,7 +157,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="High-level launcher for a fresh test27 API pipeline run.")
     parser.add_argument("--base-dir", default=str(Path(__file__).resolve().parent))
     parser.add_argument("--baseline-dir", default=str(Path(__file__).resolve().parent.parent / "test25"))
-    parser.add_argument("--n-movies", type=int, default=100)
+    parser.add_argument("--n-movies", type=int, default=200000)
     parser.add_argument("--until-step", type=int, default=130)
     parser.add_argument("--profile", choices=["auto", "smoke", "standard"], default="auto")
     parser.add_argument("--model", default=DEFAULT_MODEL)

@@ -47,17 +47,17 @@ Example API smoke run from the repo root:
 python test27/run_pipeline.py --fresh --n-movies 100
 ```
 
-Example full helper run from the repo root:
+Default full helper run from the repo root:
 
 ```bash
-python test27/run_full_api_pipeline.py --n-movies 100 --until-step 130
+python test27/run_full_api_pipeline.py
 ```
 
 Equivalent commands from inside `test27/`:
 
 ```bash
 python run_pipeline.py --fresh --n-movies 100
-python run_full_api_pipeline.py --n-movies 100 --until-step 130
+python run_full_api_pipeline.py
 ```
 
 Prepared wrapper scripts:
@@ -69,9 +69,15 @@ Prepared wrapper scripts:
 
 Those wrappers call `run_full_api_pipeline.py`.
 By default they run:
-- `100` movies
+- `200000` movies
 - through step `130`
 - with model `gemini-3.1-flash-lite-preview`
+
+Smoke-size override:
+
+```powershell
+.\test27\run_full_api_pipeline.ps1 -Movies 100 -UntilStep 130 -Model gemini-3.1-flash-lite-preview
+```
 
 Example custom full run:
 
