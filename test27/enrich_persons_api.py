@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import time
 from pathlib import Path
 
@@ -65,15 +66,23 @@ def _retry_sleep(attempt_index: int) -> float:
 
 def _parse_json_response(text: str) -> list[dict]:
     raw = str(text or "").strip()
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL | re.IGNORECASE).strip()
     if raw.startswith("```"):
         lines = raw.splitlines()
         raw = "\n".join(lines[1:])
         if raw.rstrip().endswith("```"):
             raw = raw.rstrip()[:-3]
     parsed = json.loads(raw)
-    if not isinstance(parsed, list):
-        raise ValueError(f"Expected JSON list, got {type(parsed)}")
-    return parsed
+    if isinstance(parsed, list):
+        return [item for item in parsed if isinstance(item, dict)]
+    if isinstance(parsed, dict):
+        for key in ("people", "persons", "items", "rows", "results", "data"):
+            value = parsed.get(key)
+            if isinstance(value, list):
+                return [item for item in value if isinstance(item, dict)]
+        if parsed.get("person_id") is not None:
+            return [parsed]
+    raise ValueError(f"Expected JSON list-compatible payload, got {type(parsed)}")
 
 
 def _normalize_string_list(value: object) -> list[str]:
