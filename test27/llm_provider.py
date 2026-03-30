@@ -425,6 +425,65 @@ class OpenAICompatibleProvider(LLMProvider):
     def default_model(self) -> str:
         return self._default_model
 
+    def _ollama_native_base(self) -> str:
+        base = self._base_url
+        if base.endswith("/v1"):
+            return base[:-3]
+        return base
+
+    def _looks_like_ollama(self) -> bool:
+        url = self._base_url.lower()
+        return "11434" in url or "ollama" in url
+
+    def _parse_ollama_native_response(self, data: Dict[str, Any], *, model: str) -> LLMResponse:
+        message = data.get("message", {}) if isinstance(data, dict) else {}
+        text = ""
+        if isinstance(message, dict):
+            text = str(message.get("content") or "")
+        if not text and isinstance(data, dict):
+            text = str(data.get("response") or "")
+        inp_tokens = 0
+        out_tokens = 0
+        if isinstance(data, dict):
+            inp_tokens = int(data.get("prompt_eval_count") or 0)
+            out_tokens = int(data.get("eval_count") or 0)
+        return LLMResponse(
+            text=text,
+            input_tokens=inp_tokens,
+            output_tokens=out_tokens,
+            model=model,
+            raw=data,
+        )
+
+    def _raw_generate_ollama_native(
+        self,
+        prompt: str,
+        *,
+        model: str,
+        json_mode: bool,
+        temperature: float,
+        max_tokens: int,
+    ) -> LLMResponse:
+        import requests
+
+        url = f"{self._ollama_native_base().rstrip('/')}/api/chat"
+        body: Dict[str, Any] = {
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "stream": False,
+            "options": {
+                "temperature": temperature,
+                "num_predict": max_tokens,
+            },
+        }
+        if json_mode:
+            body["format"] = "json"
+
+        resp = requests.post(url, json=body, timeout=120)
+        resp.raise_for_status()
+        data = resp.json()
+        return self._parse_ollama_native_response(data, model=model)
+
     def _raw_generate(
         self,
         prompt: str,
@@ -453,6 +512,14 @@ class OpenAICompatibleProvider(LLMProvider):
             body["response_format"] = {"type": "json_object"}
 
         resp = requests.post(url, json=body, headers=headers, timeout=120)
+        if resp.status_code == 404 and self._looks_like_ollama():
+            return self._raw_generate_ollama_native(
+                prompt,
+                model=model,
+                json_mode=json_mode,
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
         resp.raise_for_status()
         data = resp.json()
 
