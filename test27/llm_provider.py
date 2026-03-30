@@ -480,6 +480,43 @@ class OpenAICompatibleProvider(LLMProvider):
             body["format"] = "json"
 
         resp = requests.post(url, json=body, timeout=120)
+        if resp.status_code == 404:
+            return self._raw_generate_ollama_generate(
+                prompt,
+                model=model,
+                json_mode=json_mode,
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+        resp.raise_for_status()
+        data = resp.json()
+        return self._parse_ollama_native_response(data, model=model)
+
+    def _raw_generate_ollama_generate(
+        self,
+        prompt: str,
+        *,
+        model: str,
+        json_mode: bool,
+        temperature: float,
+        max_tokens: int,
+    ) -> LLMResponse:
+        import requests
+
+        url = f"{self._ollama_native_base().rstrip('/')}/api/generate"
+        body: Dict[str, Any] = {
+            "model": model,
+            "prompt": prompt,
+            "stream": False,
+            "options": {
+                "temperature": temperature,
+                "num_predict": max_tokens,
+            },
+        }
+        if json_mode:
+            body["format"] = "json"
+
+        resp = requests.post(url, json=body, timeout=120)
         resp.raise_for_status()
         data = resp.json()
         return self._parse_ollama_native_response(data, model=model)
