@@ -6,10 +6,14 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/common.sh"
 
 require_linux
+ensure_apt_packages
+ensure_python_venv
+ensure_ollama_installed
 detect_accelerator
 export_runtime_env
 write_runtime_env
 print_accelerator_summary
+warn_if_cpu_only_memory_is_tight
 
 ensure_ollama_server
 ensure_model_file

@@ -121,6 +121,29 @@ The prepared local `200k` scripts also default to a full end-to-end run:
 - `786000` characters
 - through step `130`
 
+One-command local bootstrap runners:
+
+Windows:
+
+```powershell
+.\test27\local_ollama_qwen35\run_pipeline_200k_local_windows.ps1
+```
+
+Linux:
+
+```bash
+./test27/local_ollama_qwen35/run_pipeline_200k_local.sh
+```
+
+Those scripts are intended to:
+- detect hardware and select a model profile automatically
+- create a local Python environment from the system Python
+- install local pipeline requirements
+- install Ollama if missing
+- download/import the selected GGUF model if missing
+- export the local LLM environment variables
+- and run the full local pipeline
+
 Useful command on Windows to inspect what a machine would choose before downloading anything:
 
 ```powershell

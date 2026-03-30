@@ -15,6 +15,32 @@ This folder contains the local-model launch scripts for `test27`.
 - `common_windows.ps1`
 - `model_profiles.json`
 
+## Recommended One-Command Entrypoints
+
+If you want the launcher to do the whole bootstrap itself, use these:
+
+Windows:
+
+```powershell
+.\test27\local_ollama_qwen35\run_pipeline_200k_local_windows.ps1
+```
+
+Linux:
+
+```bash
+./test27/local_ollama_qwen35/run_pipeline_200k_local.sh
+```
+
+These are the intended full automatic runners. They are designed to:
+- detect available hardware
+- choose a model profile automatically unless overridden
+- create a local Python virtual environment from the system Python
+- install local requirements
+- install Ollama if needed
+- download/import the selected GGUF if needed
+- set the local provider environment
+- and launch the pipeline
+
 ## What They Do
 
 - install/start Ollama
