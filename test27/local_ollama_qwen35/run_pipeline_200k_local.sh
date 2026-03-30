@@ -17,8 +17,12 @@ warn_if_cpu_only_memory_is_tight
 
 ensure_ollama_server
 ensure_model_file
+msg "About to import/register the Ollama model alias if needed..."
 ensure_ollama_model
+msg "Finished model import/register step."
+msg "About to warm the Ollama model..."
 warm_model
+msg "Finished warmup step."
 show_runtime_status
 
 msg "Starting test27 200k pipeline with local Ollama model..."

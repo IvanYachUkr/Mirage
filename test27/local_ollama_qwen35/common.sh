@@ -549,7 +549,7 @@ get_gguf_split_cmd() {
 }
 
 ensure_merged_model_file() {
-  [[ -n "${MODEL_MERGE_OUTPUT_FILE}" ]] || return
+  [[ -n "${MODEL_MERGE_OUTPUT_FILE}" ]] || return 0
 
   local merged_target="${MODEL_DIR}/${MODEL_MERGE_OUTPUT_FILE}"
   if [[ -f "${merged_target}" ]]; then
@@ -585,12 +585,14 @@ ollama_model_exists() {
 ensure_ollama_model() {
   ensure_merged_model_file
   write_modelfile
+  msg "Checking whether Ollama model alias already exists: ${MODEL_NAME}"
   if ollama_model_exists; then
     msg "Ollama model already imported: ${MODEL_NAME}"
     return
   fi
   msg "Importing GGUF into Ollama as ${MODEL_NAME}..."
   ollama create "${MODEL_NAME}" -f "${MODEL_DIR}/Modelfile"
+  msg "Ollama create finished for ${MODEL_NAME}"
 }
 
 warm_model() {
