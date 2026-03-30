@@ -618,6 +618,26 @@ warn_if_cpu_only_memory_is_tight() {
   fi
 }
 
+run_pipeline_20k() {
+  local python_bin="${VENV_DIR}/bin/python"
+  [[ -x "${python_bin}" ]] || die "Python venv not found at ${python_bin}. Run install_all.sh first."
+
+  "${python_bin}" "${PROJECT_DIR}/run_pipeline.py" \
+    --fresh \
+    --n-movies 20000 \
+    --start-year 1950 \
+    --end-year 2025 \
+    --n-titles 20000 \
+    --n-persons 45000 \
+    --n-companies 1000 \
+    --n-keywords 15000 \
+    --n-characters 100000 \
+    --model "${MODEL_NAME}" \
+    --enable-llm-evolution \
+    --until-step 130 \
+    "$@"
+}
+
 run_pipeline_200k() {
   local python_bin="${VENV_DIR}/bin/python"
   [[ -x "${python_bin}" ]] || die "Python venv not found at ${python_bin}. Run install_all.sh first."
