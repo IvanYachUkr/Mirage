@@ -1,25 +1,48 @@
 # Mirage Lab Handoff
 
-This branch is a source-only lab handoff for running the Mirage IMDb/JOB-style generator with a local LLM. It intentionally excludes generated datasets, Arrow/CSV exports, DuckDB files, API keys, logs, and resume checkpoints.
+This branch is a source-only lab handoff for running Mirage with a local LLM. It excludes generated datasets, Arrow/CSV exports, DuckDB files, API keys, logs, and resume checkpoints.
 
-## 1. Install Python Dependencies
+## One-Command Lab Path
+
+From the repository root:
 
 ```bash
 cd test40
-./setup_linux_env.sh
-source .venv-linux/bin/activate
 ```
 
-## 2. Start A Local LLM
-
-Preferred lab path with an OpenAI-compatible vLLM server:
+Run a fresh 100-movie smoke test:
 
 ```bash
-export LOCAL_LLM_MODEL="<lab-model-name-or-path>"
-python -m vllm.entrypoints.openai.api_server --model "$LOCAL_LLM_MODEL" --host 0.0.0.0 --port 8000
+./lab_smoke_100.sh start
 ```
 
-Pipeline environment for that server:
+Continue or resume that smoke test:
+
+```bash
+./lab_smoke_100.sh continue
+```
+
+Start real fresh lab candidates:
+
+```bash
+./lab_20k.sh start
+./lab_50k.sh start
+./lab_100k.sh start
+./lab_200k.sh start
+```
+
+Continue/resume real lab candidates:
+
+```bash
+./lab_20k.sh continue
+./lab_200k.sh continue
+```
+
+Each wrapper has exactly one optional argument: `start` or `continue`. With no argument, it defaults to `start`.
+
+## Local LLM
+
+If the lab uses vLLM or another OpenAI-compatible server, start it first and export:
 
 ```bash
 export LLM_PROVIDER=local
@@ -28,58 +51,27 @@ export LOCAL_LLM_MODEL="<lab-model-name-or-path>"
 export LOCAL_LLM_API_KEY="not-needed"
 ```
 
-Ollama fallback/profile installer:
+If the lab uses Ollama, the wrappers try to detect it automatically. To allow automatic Ollama model installation, run:
 
 ```bash
-LOCAL_OLLAMA_PROFILE_ID=qwen36_35b_a3b_mxfp4_moe ./local_ollama_qwen35/install_all.sh
-./detect_ollama_endpoint.sh
-source reports/ollama_detected.env
+LAB_AUTO_INSTALL_OLLAMA=1 ./lab_smoke_100.sh start
 ```
 
-Check provider wiring:
+The default Ollama install profile is `qwen36_35b_a3b_mxfp4_moe`; override it with `LOCAL_OLLAMA_PROFILE_ID=...`.
 
-```bash
-./run_lab_local_llm.sh check-provider
-```
+## Scale Profiles
 
-## 3. Run Smoke And Candidate Jobs
+Fresh-run entity counts live in `test40/local_run_profiles/`:
 
-Small local smoke:
+- `small100_2y.env`: 100 movies, 800 persons, 80 companies, 320 keywords, 1,800 characters.
+- `candidate20k.env`: 20,000 movies, 64,000 persons, 1,400 companies, 3,200 keywords, 340,000 characters.
+- `candidate50k.env`: 50,000 movies, 120,000 persons, 3,500 companies, 7,000 keywords, 850,000 characters.
+- `candidate100k.env`: 100,000 movies, 240,000 persons, 7,000 companies, 12,000 keywords, 1,700,000 characters.
+- `candidate200k.env`: 200,000 movies, 480,000 persons, 14,000 companies, 22,000 keywords, 3,400,000 characters.
 
-```bash
-./run_lab_100_fresh.sh ../lab_smoke_100
-```
+These candidate profiles are fresh-from-scratch profiles, not legacy entity reuse profiles.
 
-First useful candidate:
-
-```bash
-./run_lab_20k_fresh.sh ../lab_candidate_20k
-```
-
-Larger candidates, once the smoke and 20k path are stable:
-
-```bash
-./run_lab_50k_fresh.sh ../lab_candidate_50k
-./run_lab_100k_fresh.sh ../lab_candidate_100k
-./run_lab_200k_fresh.sh ../lab_candidate_200k
-```
-
-Resume a year-boundary step-100 run:
-
-```bash
-cd ../lab_candidate_20k
-./run_lab_local_llm.sh resume20k-step100
-./run_lab_local_llm.sh resume-progress
-```
-
-Validate/export after a run:
-
-```bash
-./run_lab_local_llm.sh sanity
-./run_lab_local_llm.sh export-only
-```
-
-## 4. Benchmark Tooling
+## Benchmark Tooling
 
 - Exact JOB adapter/runner: `benchmark/job_exact_v1/`
 - JOB-Complex adapter/runner: `benchmark/job_complex_v1/`
