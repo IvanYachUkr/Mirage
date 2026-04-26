@@ -674,6 +674,90 @@ def _render_title(rng: np.random.RandomState, grammar: dict, genre: str, *, mode
     return sanitize_title(_clean_rendered_text(template.format(**substitutions)))
 
 
+def _estimate_title_capacity_for_genre(grammar: dict, genre: str) -> int:
+    templates = grammar.get("genre_templates", {}).get(genre) or grammar.get("genre_templates", {}).get("default") or []
+    vocab = grammar.get("_render_vocab") or {
+        key: tuple(_clean_text_list(grammar.get(source_key, [])))
+        for key, source_key in _TITLE_RENDER_VOCAB_FIELDS.items()
+    }
+    capacity = 0
+    for template in templates:
+        combos = 1
+        fields = _template_fields(grammar, str(template))
+        if not fields:
+            capacity += 1
+            continue
+        for field_name in dict.fromkeys(fields):
+            vocab_key = _RENDER_ALIAS_MAP.get(field_name, field_name)
+            combos *= max(1, len(tuple(v for v in vocab.get(vocab_key, ()) if str(v).strip())))
+        capacity += int(combos)
+    return int(capacity)
+
+
+def _validate_title_capacity_for_target(
+    grammar: dict,
+    *,
+    target_count: int,
+    base_genre_weights: dict[str, float],
+    temporal: dict | None,
+    title_priors: dict,
+    start_year: int | None,
+    end_year: int | None,
+) -> None:
+    """Fail early if a title grammar cannot support the requested scale.
+
+    Without this guard a 200k lab run could spend time on earlier steps and then
+    fail deep inside title generation once low-capacity genres exhaust their
+    unique combinations.
+    """
+    target_count = int(target_count)
+    if target_count <= 0:
+        return
+    year_lo = int(start_year if start_year is not None else 1950)
+    year_hi = int(end_year if end_year is not None else 2025)
+    years = list(range(year_lo, year_hi + 1))
+    if not years:
+        return
+    if temporal:
+        year_weights = year_weight_map(temporal, start_year=year_lo, end_year=year_hi)
+    else:
+        year_weights = {year: 1.0 for year in years}
+    desired_by_year = _desired_year_counts_from_weights(target_count, year_weights)
+    expected_by_genre = {str(genre): 0.0 for genre in GENRES}
+    for year, year_count in desired_by_year.items():
+        probs = _genre_probability_vector(
+            base_genre_weights,
+            temporal=temporal,
+            title_priors=title_priors,
+            year=int(year),
+        )
+        for genre, prob in zip(GENRES, probs, strict=False):
+            expected_by_genre[str(genre)] += float(year_count) * float(prob)
+
+    capacity_by_genre = {str(genre): _estimate_title_capacity_for_genre(grammar, str(genre)) for genre in GENRES}
+    bad = []
+    for genre in GENRES:
+        expected = float(expected_by_genre.get(str(genre), 0.0))
+        required = max(64, int(np.ceil(expected * 1.25)) + 8)
+        capacity = int(capacity_by_genre.get(str(genre), 0))
+        if capacity < required:
+            bad.append((str(genre), capacity, required, int(round(expected))))
+    total_capacity = int(sum(capacity_by_genre.values()))
+    total_required = int(np.ceil(target_count * 1.25))
+    if total_capacity < total_required:
+        bad.append(("TOTAL", total_capacity, total_required, target_count))
+    if bad:
+        preview = "; ".join(
+            f"{genre}: capacity={capacity}, required~{required}, expected={expected}"
+            for genre, capacity, required, expected in bad[:10]
+        )
+        raise RuntimeError(
+            "title_grammar_bank.json does not have enough unique title capacity "
+            f"for target_count={target_count}. Regenerate the title grammar with "
+            f"larger vocabulary/template pools. Problem genres: {preview}"
+        )
+
+
 def _tagline_action_candidates(template: str, values: list[str]) -> list[str]:
     clean = [clean_display_text(value).strip().lower() for value in values if clean_display_text(value).strip()]
     if not clean:
@@ -957,6 +1041,15 @@ def topup(base_dir: Path, target_count: int, seed: int, start_year: int | None =
         temporal = load_temporal_regime_plan(base_dir, mode=mode)
         audit_artifact_usage("temporal_regime_plan.json", temporal_regime_plan_path(base_dir), sections=["year_weights", "phases"])
         base_genre_weights, title_priors = _base_title_genre_weights(base_dir, mode)
+        _validate_title_capacity_for_target(
+            grammar,
+            target_count=int(target_count),
+            base_genre_weights=base_genre_weights,
+            temporal=temporal,
+            title_priors=title_priors,
+            start_year=start_year,
+            end_year=end_year,
+        )
     else:
         grammar = _default_grammar()
         temporal = None

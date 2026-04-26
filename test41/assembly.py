@@ -1,6 +1,6 @@
 """
-V19 Pipeline -- assembly.py
-===========================
+Mirage movie assembly -- assembly.py
+===================================
 Movie component selection: director, cast, companies, crew, title, keywords.
 
 This rewrite keeps the public API stable while cleaning up three chronic problems

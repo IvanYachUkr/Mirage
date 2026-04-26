@@ -1,7 +1,7 @@
 """
-V13 Pipeline -- generate_edges_hybrid.py
-=========================================
-Step 2 of the Hybrid Graph Architecture:
+Mirage graph builder -- generate_edges_hybrid.py
+===============================================
+Hybrid graph architecture:
 Consumes latent variables (from generate_latent_vars_api.py) and
 builds edges PROCEDURALLY using cosine similarity, genre overlap,
 and feature-based rules.
@@ -15,7 +15,7 @@ ALL edges are:
 Also runs Louvain community detection on the friendship subgraph.
 
 Usage:
-    python test9/generate_edges_hybrid.py
+    python generate_edges_hybrid.py --base-dir test41
 """
 import json
 import math
@@ -2979,5 +2979,4 @@ if __name__ == "__main__":
         use_world_policy=bool(args.use_world_policy),
         skip_diagnostic_cold_edges=bool(args.skip_diagnostic_cold_edges),
     )
-
 

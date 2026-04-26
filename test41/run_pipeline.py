@@ -28,7 +28,7 @@ from bootstrap_artifacts import (
     initialize_research_audit,
     record_pipeline_step,
 )
-from contracts import ENTITY_COUNTS, GENRES, MODEL_TIERS
+from contracts import ENTITY_COUNTS, GENRES, GENRE_WEIGHTS, MODEL_TIERS
 from feather_sink import read_table
 from policy_runtime import (
     character_identity_bank_path,
@@ -372,19 +372,33 @@ def _check_movies(base_dir: Path) -> bool:
             return False
         if str(payload.get("status", "")) != "complete":
             return False
+    # Step 100 has two valid output shapes: the archival/full shape and the
+    # benchmark-candidate shape. Benchmark mode intentionally skips derivative
+    # flat/analysis/edge exports, so completion should be judged by the
+    # canonical relational tables consumed by export/signoff.
     required_paths = [
         base_dir / "movie.arrow",
-        base_dir / "movies_flat.arrow",
+        base_dir / "cast_info.arrow",
+        base_dir / "movie_directors.arrow",
+        base_dir / "movie_companies.arrow",
+        base_dir / "movie_keyword.arrow",
+        base_dir / "release_dates.arrow",
+        base_dir / "awards.arrow",
+        base_dir / "alternate_titles.arrow",
+        base_dir / "ratings_breakdown.arrow",
+        base_dir / "movie_links.arrow",
         base_dir / "persons_enriched.arrow",
         base_dir / "companies_enriched.arrow",
-        base_dir / "edges_temporal.arrow",
-        base_dir / "edges_final.arrow",
     ]
     if not all(path.exists() for path in required_paths):
         return False
-    movies = read_table(str(base_dir / "movie"), "movie")
-    flat = read_table(str(base_dir / "movies_flat"))
-    return not movies.empty and not flat.empty
+    try:
+        movies = read_table(str(base_dir / "movie"), "movie")
+        cast = read_table(str(base_dir / "cast_info"), "cast_info")
+        movie_keyword = read_table(str(base_dir / "movie_keyword"), "movie_keyword")
+    except Exception:
+        return False
+    return not movies.empty and not cast.empty and not movie_keyword.empty
 
 
 def _check_keyword_genres(base_dir: Path) -> bool:
@@ -537,6 +551,14 @@ def _check_json_artifact(path: Path, required_keys: tuple[str, ...] = ()) -> boo
     return all(key in payload for key in required_keys)
 
 
+def _load_json_object(path: Path) -> dict:
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
 def _check_identity_bank(base_dir: Path) -> bool:
     return _check_json_artifact(identity_bank_path(base_dir), ("families", "defaults"))
 
@@ -553,8 +575,47 @@ def _check_keyword_seed_bank(base_dir: Path) -> bool:
     return _check_json_artifact(keyword_seed_bank_path(base_dir), ("genres", "universal_qualifiers"))
 
 
-def _check_title_grammar_bank(base_dir: Path) -> bool:
-    return _check_json_artifact(title_grammar_bank_path(base_dir), ("genre_templates", "tagline_templates"))
+def _check_title_grammar_bank(
+    base_dir: Path,
+    *,
+    target_count: int | None = None,
+    start_year: int | None = None,
+    end_year: int | None = None,
+) -> bool:
+    path = title_grammar_bank_path(base_dir)
+    if not _check_json_artifact(path, ("genre_templates", "tagline_templates")):
+        return False
+    if target_count is None:
+        return True
+    try:
+        from topup_title_bank import _prepare_render_grammar, _validate_title_capacity_for_target
+
+        grammar = _prepare_render_grammar(_load_json_object(path))
+        temporal = _load_json_object(temporal_regime_plan_path(base_dir))
+        priors = _load_json_object(modeling_priors_path(base_dir))
+        title_priors = priors.get("title_generation", {})
+        title_priors = title_priors if isinstance(title_priors, dict) else {}
+        base_weights = {
+            str(genre): float(GENRE_WEIGHTS.get(str(genre), 0.001) or 0.001)
+            for genre in GENRES
+        }
+        for key in ("genre_base_weights", "genre_weights", "genre_prevalence"):
+            raw = title_priors.get(key)
+            if isinstance(raw, dict) and raw:
+                base_weights.update({str(k): float(v) for k, v in raw.items() if str(k) in GENRES})
+                break
+        _validate_title_capacity_for_target(
+            grammar,
+            target_count=int(target_count),
+            base_genre_weights=base_weights,
+            temporal=temporal,
+            title_priors=title_priors,
+            start_year=start_year,
+            end_year=end_year,
+        )
+    except Exception:
+        return False
+    return True
 
 
 def _check_temporal_regime_plan(base_dir: Path) -> bool:
@@ -962,7 +1023,12 @@ def _build_steps(args: argparse.Namespace) -> list[dict]:
                 "--start-year", str(args.start_year),
                 "--end-year", str(args.end_year),
             ] + _step_model_args(args, step_id=58, script="generate_bootstrap_artifacts_api.py"),
-            "check": _check_title_grammar_bank,
+            "check": lambda bd: _check_title_grammar_bank(
+                bd,
+                target_count=int(args.n_titles),
+                start_year=args.start_year,
+                end_year=args.end_year,
+            ),
             "requires_api": bool(args.mode == "research"),
             "enabled": bool(args.mode == "research"),
             "description": "Generate the reusable title grammar and tagline bank.",

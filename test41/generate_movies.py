@@ -2460,14 +2460,21 @@ def main(base_dir: str = None, n_movies: int = None,
     checkpoint_dir = os.path.join(base_dir, "checkpoints")
     os.makedirs(checkpoint_dir, exist_ok=True)
 
-    with _speed_scope(speed_audit, "main.assemble_movies", category="main", units=int(n_movies or 0)):
-        result = assemble_movies(world, n_movies,
-                                 enable_llm_evolution=enable_llm_evolution,
-                                 llm_model=llm_model,
-                                 evolution_log_dir=evolution_log_dir,
-                                 checkpoint_dir=checkpoint_dir,
-                                 speed_audit=speed_audit,
-                                 resume_manager=resume_manager)
+    try:
+        with _speed_scope(speed_audit, "main.assemble_movies", category="main", units=int(n_movies or 0)):
+            result = assemble_movies(world, n_movies,
+                                     enable_llm_evolution=enable_llm_evolution,
+                                     llm_model=llm_model,
+                                     evolution_log_dir=evolution_log_dir,
+                                     checkpoint_dir=checkpoint_dir,
+                                     speed_audit=speed_audit,
+                                     resume_manager=resume_manager)
+    except BaseException as exc:
+        try:
+            resume_manager.mark_interrupted(str(exc))
+        except Exception:
+            pass
+        raise
 
     # V19-FIX: Re-save enriched data AFTER assembly.  Temporal evolution
     # (procedural_year_step, llm_year_step) mutates world.persons pop_weight,

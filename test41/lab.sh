@@ -178,14 +178,21 @@ ensure_run_dir_ready_for_continue() {
     ./setup_linux_env.sh
   fi
 
-  detect_or_install_local_llm "$run_dir_abs"
   export RUN_PROFILE="${RUN_PROFILE:-$LAB_PROFILE}"
   export LLM_PROVIDER="${LLM_PROVIDER:-local}"
   export LOCAL_LLM_API_KEY="${LOCAL_LLM_API_KEY:-not-needed}"
   export LAB_ENABLE_SPEED_AUDIT LAB_ENABLE_MEMORY_AUDIT
+}
 
-  ./run_lab_local_llm.sh show-config
-  ./run_lab_local_llm.sh check-provider
+continue_target_needs_provider() {
+  case "$1" in
+    sanity|runtime-report|resume-progress|export-only)
+      return 1
+      ;;
+    *)
+      return 0
+      ;;
+  esac
 }
 
 resume_manifest_incomplete() {
@@ -197,10 +204,10 @@ resume_manifest_incomplete() {
 continue_target_auto() {
   if resume_manifest_incomplete; then
     printf '%s\n' resume-profile-step100
-  elif [[ -f .pipeline_checkpoint.json ]]; then
-    printf '%s\n' profile-continue
   elif [[ -f movie.arrow || -f movie.csv ]]; then
     printf '%s\n' sanity
+  elif [[ -f .pipeline_checkpoint.json ]]; then
+    printf '%s\n' profile-continue
   else
     echo "No checkpoint, step-100 resume workspace, or movie output found in $run_dir_abs." >&2
     echo "Nothing obvious to continue. Use start for a fresh run." >&2
@@ -242,6 +249,13 @@ continue_run() {
   local target
   target="${LAB_CONTINUE_TARGET:-$(continue_target_auto)}"
   echo "Continue target: $target"
+  if continue_target_needs_provider "$target"; then
+    detect_or_install_local_llm "$run_dir_abs"
+    ./run_lab_local_llm.sh show-config
+    ./run_lab_local_llm.sh check-provider
+  else
+    ./run_lab_local_llm.sh show-config
+  fi
   ./run_lab_local_llm.sh "$target"
 
   if [[ "$target" != "sanity" && "$LAB_SANITY_AFTER_CONTINUE" == "1" ]]; then

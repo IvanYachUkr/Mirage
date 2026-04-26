@@ -460,6 +460,9 @@ _TITLE_GRAMMAR_VOCAB_KEYS: tuple[str, ...] = (
     "franchise_affixes",
 )
 
+_MIN_TITLE_GRAMMAR_VOCAB_ITEMS = 48
+_MIN_TITLE_TEMPLATES_PER_GENRE = 18
+
 
 _TITLE_GRAMMAR_BASE_PLACEHOLDER_ALIASES: dict[str, str] = {
     "adjective": "adjective",
@@ -645,7 +648,7 @@ Requirements:
 - Output one JSON object only.
 - Include exactly these top-level keys:
 {keys}
-- Each key must map to a list of at least 15 short, cinematic tokens.
+- Each key must map to a list of at least {_MIN_TITLE_GRAMMAR_VOCAB_ITEMS} short, cinematic tokens.
 - Keep tokens reusable across historical and future ranges.
 - Avoid near-duplicate variants, obvious junk, or explanatory text.
 """
@@ -662,7 +665,8 @@ Requirements:
 - Output one JSON object only.
 - Include a top-level key `genre_templates`.
 - `genre_templates` must be a JSON object keyed exactly by these genres: {genre_list}.
-- Each genre must have at least 8 distinct title templates.
+- Each genre must have at least {_MIN_TITLE_TEMPLATES_PER_GENRE} distinct title templates.
+- Most templates should use at least two controlled placeholders so the bank scales to 100k-200k titles without duplicate exhaustion.
 - Templates should use placeholders like {{adjective}}, {{noun}}, {{location}}, {{franchise_affix}}.
 - Templates must feel cinematic and grammatical, not like placeholder collisions.
 """
@@ -2600,6 +2604,17 @@ def _validate_title_grammar_bank(payload: dict[str, Any]) -> None:
     for key in ("min_words", "max_words", "max_placeholder_count", "forbid_square_brackets", "allow_unresolved_placeholders"):
         if key not in render_constraints:
             raise ValueError(f"title_grammar_bank tagline_render_constraints missing {key}")
+    genre_templates = payload.get("genre_templates")
+    if not isinstance(genre_templates, dict) or not genre_templates:
+        raise ValueError("title_grammar_bank missing genre_templates")
+    for genre in GENRES:
+        title_values = genre_templates.get(str(genre))
+        if not _is_string_list(title_values, minimum=_MIN_TITLE_TEMPLATES_PER_GENRE):
+            count = len(title_values) if isinstance(title_values, list) else 0
+            raise ValueError(
+                f"title_grammar_bank {genre} must provide at least "
+                f"{_MIN_TITLE_TEMPLATES_PER_GENRE} title templates (got {count})"
+            )
     tagline_templates = payload.get("tagline_templates")
     if not isinstance(tagline_templates, dict) or not tagline_templates:
         raise ValueError("title_grammar_bank missing tagline_templates")
@@ -2687,8 +2702,12 @@ def _coerce_title_grammar_vocab_payload(parsed: Any) -> dict[str, Any] | None:
 
 def _validate_title_grammar_vocab_payload(payload: dict[str, Any]) -> None:
     for key in _TITLE_GRAMMAR_VOCAB_KEYS:
-        if not _is_string_list(payload.get(key), minimum=12):
-            raise ValueError(f"title_grammar_bank vocab missing {key}")
+        if not _is_string_list(payload.get(key), minimum=_MIN_TITLE_GRAMMAR_VOCAB_ITEMS):
+            count = len(payload.get(key)) if isinstance(payload.get(key), list) else 0
+            raise ValueError(
+                f"title_grammar_bank vocab {key} must provide at least "
+                f"{_MIN_TITLE_GRAMMAR_VOCAB_ITEMS} tokens (got {count})"
+            )
 
 
 def _coerce_title_grammar_genre_templates_payload(parsed: Any, genres: Sequence[str]) -> dict[str, Any] | None:
@@ -2729,9 +2748,12 @@ def _validate_title_grammar_genre_templates_payload(payload: dict[str, Any], gen
         raise ValueError("title_grammar_bank missing genre_templates")
     for genre in genres:
         values = templates.get(str(genre))
-        if not _is_string_list(values, minimum=8):
+        if not _is_string_list(values, minimum=_MIN_TITLE_TEMPLATES_PER_GENRE):
             count = len(values) if isinstance(values, list) else 0
-            raise ValueError(f"title_grammar_bank {genre} missing genre templates (got {count})")
+            raise ValueError(
+                f"title_grammar_bank {genre} must provide at least "
+                f"{_MIN_TITLE_TEMPLATES_PER_GENRE} title templates (got {count})"
+            )
         for raw in values:
             if _title_template_has_square_brackets(raw):
                 raise ValueError(f"title_grammar_bank {genre} title template uses square-bracket placeholder: {raw}")

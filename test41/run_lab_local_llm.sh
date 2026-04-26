@@ -553,8 +553,9 @@ case "$target" in
     ;;
 
   export-only)
-    require_llm_model
-    write_active_local_provider_env
+    if [[ -n "${LOCAL_LLM_MODEL:-}" ]]; then
+      write_active_local_provider_env
+    fi
     mapfile -t args < <(pipeline_common_args)
     "$PYTHON_BIN" "$BASE_DIR/run_pipeline.py" "${args[@]}" --only 130 --force
     ;;
