@@ -1,6 +1,8 @@
 {
   "default_profile_id": "qwen36_35b_a3b_mxfp4_moe",
   "fallback_profile_id": "qwen35_9b_ud_q4_k_xl",
+  "cpu_large_ram_fallback_profile_id": "qwen36_35b_a3b_ud_q4_k_m",
+  "cpu_large_ram_min_ram_gb": 96,
   "profiles": [
     {
       "id": "qwen36_35b_a3b_q8_0",

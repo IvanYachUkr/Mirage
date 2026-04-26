@@ -83,6 +83,11 @@ For Ollama, the scripts try to detect the endpoint automatically. To let the scr
 To disable automatic Ollama installation and require an already-running local
 endpoint, set `LAB_AUTO_INSTALL_OLLAMA=0`.
 
+Model auto-selection prefers the strongest fitting GPU profile. On a CPU-only
+machine with at least 96 GB RAM, the bundled Ollama setup falls back to the
+Qwen3.6 35B 4-bit profile `qwen36_35b_a3b_ud_q4_k_m`; smaller CPU-only machines
+fall back to the 9B smoke profile.
+
 ## Emergency Resume
 
 The wrappers reload the correct profile counts automatically. If a server dies and you need an explicit restart point:

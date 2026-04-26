@@ -66,6 +66,10 @@ Older Qwen3.5 profiles remain available as fallbacks, including the small
 - `LOCAL_OLLAMA_PROFILE_ID` wins next and forces a built-in profile.
 - Otherwise the launcher auto-selects the highest-priority profile that fits the
   detected GPU inventory.
+- If no GPU profile fits but the machine has at least 96 GB RAM, the CPU
+  fallback is `qwen36_35b_a3b_ud_q4_k_m` instead of the small smoke model.
+- If no GPU profile fits and RAM is below that threshold, the fallback is
+  `qwen35_9b_ud_q4_k_xl`.
 - If auto-selection is disabled, the default profile is
   `qwen36_35b_a3b_mxfp4_moe`.
 
@@ -88,6 +92,15 @@ To force the high-quality Q8 profile:
 LOCAL_OLLAMA_PROFILE_ID=qwen36_35b_a3b_q8_0 \
 ./local_ollama_qwen35/run_pipeline_20k_local.sh
 ```
+
+On a CPU-only 128 GB RAM lab machine, the expected auto choice is:
+
+```bash
+qwen36_35b_a3b_ud_q4_k_m
+```
+
+For dry-run/admin testing of CPU fallback selection, set
+`LOCAL_OLLAMA_CPU_RAM_GB_OVERRIDE=128` before the inspect command.
 
 ## Inspect Before Download
 

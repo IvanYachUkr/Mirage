@@ -158,6 +158,22 @@ def profile_by_id(profile_id_value):
             return profile
     return None
 
+def system_ram_gb():
+    override = (os.environ.get("LOCAL_OLLAMA_CPU_RAM_GB_OVERRIDE") or "").strip()
+    if override:
+        try:
+            return int(float(override))
+        except Exception:
+            pass
+    try:
+        with open("/proc/meminfo", "r", encoding="utf-8") as fh:
+            for line in fh:
+                if line.startswith("MemTotal:"):
+                    return int(int(line.split()[1]) / 1024 / 1024)
+    except Exception:
+        return 0
+    return 0
+
 def fits(profile, summary):
     if not summary:
         return False
@@ -208,8 +224,16 @@ else:
         _, _, _, selected, selected_vendor = candidates[0]
         selection_reason = f"auto_profile_fit:{selected['id']}:{selected_vendor}"
     else:
-        selected = profile_by_id(profiles_doc["fallback_profile_id"])
-        selection_reason = f"auto_profile_fallback:{profiles_doc['fallback_profile_id']}"
+        fallback_id = profiles_doc["fallback_profile_id"]
+        ram_gb = system_ram_gb()
+        large_cpu_id = profiles_doc.get("cpu_large_ram_fallback_profile_id", "")
+        large_cpu_min_gb = int(profiles_doc.get("cpu_large_ram_min_ram_gb", 10**9))
+        if large_cpu_id and ram_gb >= large_cpu_min_gb:
+            fallback_id = large_cpu_id
+            selection_reason = f"auto_profile_cpu_large_ram_fallback:{fallback_id}:{ram_gb}GB"
+        else:
+            selection_reason = f"auto_profile_fallback:{fallback_id}:{ram_gb}GB"
+        selected = profile_by_id(fallback_id)
 
 if selected is None:
     raise SystemExit("no_profile_selected")
