@@ -27,8 +27,8 @@ Advanced environment:
 Provider setup:
   If LOCAL_LLM_URL and LOCAL_LLM_MODEL are set, they are used directly.
   Otherwise the script tries to detect a reachable Ollama endpoint.
-  Set LAB_AUTO_INSTALL_OLLAMA=1 to let the script run the bundled Ollama
-  installer when no local endpoint is reachable.
+  By default, if no endpoint is reachable, the script runs the bundled Ollama
+  installer/model setup. Set LAB_AUTO_INSTALL_OLLAMA=0 to disable auto-install.
 EOF
 }
 
@@ -110,7 +110,7 @@ LAB_RUN_DIR="${LAB_RUN_DIR:-$(default_run_dir_for_profile "$LAB_PROFILE")}"
 LAB_START_TARGET="${LAB_START_TARGET:-$(default_start_target_for_profile "$LAB_PROFILE")}"
 LAB_EXPORT_AFTER_CONTINUE="${LAB_EXPORT_AFTER_CONTINUE:-$(default_export_after_continue_for_profile "$LAB_PROFILE")}"
 LAB_SANITY_AFTER_CONTINUE="${LAB_SANITY_AFTER_CONTINUE:-1}"
-LAB_AUTO_INSTALL_OLLAMA="${LAB_AUTO_INSTALL_OLLAMA:-0}"
+LAB_AUTO_INSTALL_OLLAMA="${LAB_AUTO_INSTALL_OLLAMA:-1}"
 LAB_ENABLE_SPEED_AUDIT="${LAB_ENABLE_SPEED_AUDIT:-1}"
 LAB_ENABLE_MEMORY_AUDIT="${LAB_ENABLE_MEMORY_AUDIT:-0}"
 LOCAL_OLLAMA_PROFILE_ID="${LOCAL_OLLAMA_PROFILE_ID:-qwen36_35b_a3b_mxfp4_moe}"

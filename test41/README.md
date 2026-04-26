@@ -42,7 +42,28 @@ run the strict export by default:
 ./lab_200k.sh continue
 ```
 
-## Local LLM
+## One-Command Lab Run
+
+The candidate wrappers are intended to be copy-pasteable by the lab. If no
+OpenAI-compatible endpoint is already configured, they automatically install
+Ollama, select/download the bundled model profile, start Ollama, run generation,
+write sanity/runtime reports, and export the strict IMDb/JOB bundle:
+
+```bash
+cd test41
+./lab_20k.sh start
+```
+
+To resume the same run after a stop/reboot:
+
+```bash
+cd test41
+./lab_20k.sh continue
+```
+
+The same pattern works for `lab_50k.sh`, `lab_100k.sh`, and `lab_200k.sh`.
+
+## Local LLM Overrides
 
 For vLLM or any OpenAI-compatible local server:
 
@@ -56,8 +77,11 @@ export LOCAL_LLM_API_KEY="not-needed"
 For Ollama, the scripts try to detect the endpoint automatically. To let the script install the bundled Ollama model profile:
 
 ```bash
-LAB_AUTO_INSTALL_OLLAMA=1 ./lab_smoke_100.sh start
+./lab_smoke_100.sh start
 ```
+
+To disable automatic Ollama installation and require an already-running local
+endpoint, set `LAB_AUTO_INSTALL_OLLAMA=0`.
 
 ## Emergency Resume
 
