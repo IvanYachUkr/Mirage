@@ -14,10 +14,10 @@ This is the one-command lab entrypoint.
 Common wrappers:
   ./lab_smoke_100.sh start       # fresh 100-movie smoke, exports strict IMDb
   ./lab_smoke_100.sh continue    # continue/resume that smoke run
-  ./lab_20k.sh start             # fresh 20k candidate from scratch
-  ./lab_20k.sh continue          # continue/resume the 20k candidate
-  ./lab_200k.sh start            # fresh 200k lab-scale run from scratch
-  ./lab_200k.sh continue         # continue/resume the 200k run
+  ./lab_20k.sh start             # fresh 20k candidate + sanity + strict export
+  ./lab_20k.sh continue          # continue/resume 20k; export after completion
+  ./lab_200k.sh start            # fresh 200k lab-scale run + strict export
+  ./lab_200k.sh continue         # continue/resume 200k; export after completion
 
 Advanced environment:
   LAB_PROFILE=candidate50k ./lab.sh start

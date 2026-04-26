@@ -22,7 +22,8 @@ Continue or resume the smoke:
 ./lab_smoke_100.sh continue
 ```
 
-Run fresh lab candidates:
+Run fresh lab candidates. These wrapper commands run generation, sanity/runtime
+reporting, and the strict IMDb/JOB export by default:
 
 ```bash
 ./lab_20k.sh start
@@ -31,7 +32,8 @@ Run fresh lab candidates:
 ./lab_200k.sh start
 ```
 
-Resume lab candidates:
+Resume lab candidates. If a resumed run reaches completion, these wrappers also
+run the strict export by default:
 
 ```bash
 ./lab_20k.sh continue
@@ -69,6 +71,13 @@ LAB_CONTINUE_TARGET=resume-profile-step100 ./lab_20k.sh continue
 
 Replace `lab_20k.sh` with `lab_50k.sh`, `lab_100k.sh`, or `lab_200k.sh` for larger runs. Replace `FROM_STEP=70` with another completed step if the run stopped earlier.
 
+If export needs to be rerun manually after a completed candidate:
+
+```bash
+cd ../lab_candidate_20k
+./run_lab_local_llm.sh export-only
+```
+
 ## Fresh Candidate Profiles
 
 - `candidate20k`: 20,000 movies, 64,000 persons, 1,400 companies, 3,200 keywords, 340,000 characters.
@@ -77,4 +86,3 @@ Replace `lab_20k.sh` with `lab_50k.sh`, `lab_100k.sh`, or `lab_200k.sh` for larg
 - `candidate200k`: 200,000 movies, 480,000 persons, 14,000 companies, 22,000 keywords, 3,400,000 characters.
 
 These are fresh-from-scratch profiles, not legacy entity-reuse profiles.
-
