@@ -1,0 +1,125 @@
+{
+  "artifact_source_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/test40",
+  "entity_source_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/test23",
+  "extra_title_source_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/test35",
+  "dest_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/test40",
+  "selected_person_pool": 38961,
+  "root_artifacts_copied": [
+    "modeling_priors.json",
+    "identity_bank.json",
+    "company_lexicon.json",
+    "keyword_seed_bank.json",
+    "character_identity_bank.json",
+    "temporal_regime_plan.json",
+    "title_grammar_bank.json",
+    "world_policy.json",
+    "year_slate_plan.json",
+    "concept_packs.json",
+    "keyword_motif_bank.json",
+    "franchise_bibles.json"
+  ],
+  "entity_counts": {
+    "persons": 38961,
+    "persons_latent": 38961,
+    "person_rows": 38961,
+    "person_roles": 41940,
+    "companies.json": 2860,
+    "companies_latent.json": 2860,
+    "company.csv": 2860,
+    "company_financial_profile.csv": 2860,
+    "keywords.json": 3631,
+    "keyword.csv": 3631,
+    "title_bank.csv": 29161,
+    "character_bank.csv": 75348,
+    "primary_title_bank_rows": 19161,
+    "extra_title_bank_rows": 29161,
+    "merged_title_bank_rows": 29161,
+    "extra_title_bank_added": 10000
+  },
+  "selection_summary": {
+    "target_persons": 38961,
+    "selected_persons": 38961,
+    "available_by_role": {
+      "actor": 25578,
+      "cinematographer": 2266,
+      "composer": 1794,
+      "director": 4735,
+      "editor": 1820,
+      "producer": 2912,
+      "writer": 2835
+    },
+    "target_by_role": {
+      "actor": 25578,
+      "cinematographer": 1948,
+      "composer": 1558,
+      "director": 4735,
+      "editor": 1820,
+      "producer": 2338,
+      "production_designer": 0,
+      "writer": 2835
+    },
+    "selected_by_role": {
+      "actor": 25578,
+      "cinematographer": 2266,
+      "composer": 1794,
+      "director": 4735,
+      "editor": 1820,
+      "producer": 2912,
+      "writer": 2835
+    },
+    "target_by_stage": {
+      "legend": 3934,
+      "prime": 13172,
+      "retired": 1941,
+      "rising": 12181,
+      "veteran": 7732,
+      "veterant": 1
+    },
+    "selected_by_stage": {
+      "legend": 3934,
+      "prime": 13172,
+      "retired": 1941,
+      "rising": 12181,
+      "veteran": 7732,
+      "veterant": 1
+    }
+  },
+  "award_priors": {
+    "prestige_by_tier": {
+      "Epic": 0.42,
+      "A": 0.26,
+      "A-List": 0.26,
+      "Mid": 0.13,
+      "Mid-Budget": 0.13,
+      "Indie": 0.08,
+      "Micro": 0.03,
+      "Micro-Budget": 0.03
+    },
+    "history_bonus_scale": 0.04,
+    "history_bonus_cap": 0.1,
+    "entry_probability": {
+      "base": 0.0,
+      "scale": 0.18,
+      "min": 0.0,
+      "max": 0.28
+    },
+    "lambda_scale": 0.55,
+    "lambda_cap": 1.6,
+    "max_nominations": 3,
+    "ceremonies": [
+      "Oscars",
+      "Golden Globes",
+      "BAFTA",
+      "Cannes",
+      "Berlin",
+      "Venice",
+      "Sundance"
+    ],
+    "won_probability": {
+      "base": 0.0,
+      "scale": 0.06,
+      "min": 0.0,
+      "max": 0.16
+    }
+  }
+}

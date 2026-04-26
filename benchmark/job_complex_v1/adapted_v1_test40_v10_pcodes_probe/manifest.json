@@ -1,0 +1,200 @@
+{
+  "benchmark_id": "job_complex_adapted_v1",
+  "generated_at_utc": "2026-04-26T10:16:53Z",
+  "source_query_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries",
+  "db_name": "job_test40_structural_probe_v10_pcodes",
+  "adapted_query_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v1_test40_v10_pcodes_probe/adapted_queries/job_test40_structural_probe_v10_pcodes",
+  "summary": {
+    "query_count": 2,
+    "structure_guard_passed": 2,
+    "nonzero_queries": 2,
+    "zero_or_unknown_queries": 0,
+    "errors": 0,
+    "changed_slots_median": 2.5,
+    "changed_slots_mean": 2.5
+  },
+  "queries": [
+    {
+      "query_id": "22",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/22.sql",
+      "structure_checksum": "fc09ca8483d206700cf727d6f8b47cb2c9a7287458447b85f8a9609257395ddf",
+      "structure_guard_passed": true,
+      "slot_count": 3,
+      "changed_slots": 3,
+      "actual_count": 60,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "sequel",
+            "second-part",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'sequel'",
+            "'second-part'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Downey%Robert%"
+          ],
+          "sql_values": [
+            "'%Downey%Robert%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "digital-rebirth-protocol",
+            "sequel",
+            "second-part",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence"
+          ],
+          "sql_values": [
+            "'digital-rebirth-protocol'",
+            "'sequel'",
+            "'second-part'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Tae-hoon 'The Thump' Ha%"
+          ],
+          "sql_values": [
+            "'%Tae-hoon ''The Thump'' Ha%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1996"
+          ],
+          "sql_values": [
+            "1996"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v1_test40_v10_pcodes_probe/adapted_queries/job_test40_structural_probe_v10_pcodes/22.sql"
+    },
+    {
+      "query_id": "24",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/24.sql",
+      "structure_checksum": "f7e02a0ca3740f2dce05e639c37cccc69d257e4987095d74bc146bf74a392a11",
+      "structure_guard_passed": true,
+      "slot_count": 2,
+      "changed_slots": 2,
+      "actual_count": 68,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "character-name-in-title"
+          ],
+          "sql_values": [
+            "'character-name-in-title'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Bert%"
+          ],
+          "sql_values": [
+            "'%Bert%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "winter-reckoning-protocol"
+          ],
+          "sql_values": [
+            "'winter-reckoning-protocol'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Wai-Man Ho%"
+          ],
+          "sql_values": [
+            "'%Wai-Man Ho%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v1_test40_v10_pcodes_probe/adapted_queries/job_test40_structural_probe_v10_pcodes/24.sql"
+    }
+  ]
+}

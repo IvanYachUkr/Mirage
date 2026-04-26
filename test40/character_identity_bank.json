@@ -1,0 +1,131 @@
+{
+  "archetype_weights": {
+    "Hero": 0.15,
+    "Villain": 0.12,
+    "Mentor": 0.08,
+    "Sidekick": 0.1,
+    "Comic Relief": 0.05,
+    "Mysterious Stranger": 0.05,
+    "Love Interest": 0.1,
+    "Henchman": 0.08,
+    "Boss": 0.07,
+    "Civilian": 0.2
+  },
+  "title_prefixes_m": [
+    "Dr.",
+    "Prof.",
+    "Capt.",
+    "Det.",
+    "Agent",
+    "Judge",
+    "Chief",
+    "King",
+    "Lord"
+  ],
+  "title_prefixes_f": [
+    "Dr.",
+    "Prof.",
+    "Capt.",
+    "Det.",
+    "Agent",
+    "Judge",
+    "Chief",
+    "Queen",
+    "Lady"
+  ],
+  "title_prefixes_nb": [
+    "Dr.",
+    "Prof.",
+    "Capt.",
+    "Det.",
+    "Agent",
+    "Judge",
+    "Chief"
+  ],
+  "quote_nicknames": [
+    "The Ghost",
+    "The Fox",
+    "The Blade",
+    "The Raven",
+    "The Oracle",
+    "The Sentinel"
+  ],
+  "solo_monikers": [
+    "The Collector",
+    "The Architect",
+    "The Warden",
+    "The Harbinger",
+    "The Regent",
+    "The Oracle"
+  ],
+  "codename_adjectives": [
+    "Silent",
+    "Iron",
+    "Crimson",
+    "Midnight",
+    "Broken",
+    "Golden",
+    "Neon"
+  ],
+  "codename_nouns": [
+    "Viper",
+    "Falcon",
+    "Cipher",
+    "Ghost",
+    "Torch",
+    "Wraith",
+    "Atlas"
+  ],
+  "mythic_epithets": [
+    "Stormborn",
+    "Wayfarer",
+    "Ashen",
+    "Radiant",
+    "Veilwalker"
+  ],
+  "role_epithets": [
+    "Fixer",
+    "Broker",
+    "Handler",
+    "Watcher",
+    "Operator",
+    "Judge"
+  ],
+  "alias_templates": [
+    "{title} {surname}",
+    "{first} '{nickname}' {surname}",
+    "The {moniker}",
+    "{codename_adj} {codename_noun}",
+    "{title} {first} {surname}"
+  ],
+  "nonliteral_share_by_archetype": {
+    "Hero": 0.1,
+    "Villain": 0.28,
+    "Mentor": 0.18,
+    "Sidekick": 0.15,
+    "Comic Relief": 0.12,
+    "Mysterious Stranger": 0.32,
+    "Love Interest": 0.05,
+    "Henchman": 0.25,
+    "Boss": 0.2,
+    "Civilian": 0.02
+  },
+  "human_name_mix_by_archetype": {
+    "Hero": 0.9,
+    "Villain": 0.65,
+    "Mentor": 0.8,
+    "Sidekick": 0.85,
+    "Comic Relief": 0.85,
+    "Mysterious Stranger": 0.55,
+    "Love Interest": 0.96,
+    "Henchman": 0.7,
+    "Boss": 0.75,
+    "Civilian": 0.98
+  },
+  "meta": {
+    "schema_version": 1,
+    "artifact": "character_identity_bank",
+    "generator_mode": "llm",
+    "model": "gemini-3.1-pro-preview"
+  }
+}

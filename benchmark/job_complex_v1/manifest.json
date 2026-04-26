@@ -1,0 +1,24 @@
+{
+  "created": "2026-04-25",
+  "name": "JOB-Complex V1",
+  "query_count": 30,
+  "source": {
+    "github": "https://github.com/DataManagementLab/JOB-Complex",
+    "raw_sql": "https://raw.githubusercontent.com/DataManagementLab/JOB-Complex/master/JOB-Complex.sql",
+    "zenodo": "https://zenodo.org/records/19205561"
+  },
+  "files": {
+    "combined_sql": "original/JOB-Complex.sql",
+    "split_query_dir": "original_queries",
+    "postgres_runner": "run_job_complex_postgres.py",
+    "postgres_explain_analyze_runner": "run_job_complex_explain_analyze.py",
+    "original_imdb_postgres_loader": "load_original_imdb_postgres.py"
+  },
+  "sha256": {
+    "original/JOB-Complex.sql": "a7e56fc636418585fe5437daf32f1f74284400192dad0b18913d2c7b700d3a32"
+  },
+  "notes": [
+    "The 30 queries are split one SQL statement per file as 01.sql through 30.sql.",
+    "JOB-Complex is a second-stage benchmark after canonical JOB because it stresses non-key joins, string joins, and complex predicates."
+  ]
+}

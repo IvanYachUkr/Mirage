@@ -1,0 +1,34 @@
+.env
+.venv/
+.venv-linux/
+__pycache__/
+*.pyc
+
+# Generated data and database artifacts
+*.arrow
+*.feather
+*.parquet
+*.duckdb
+*.db
+*.sqlite
+*.csv
+*.jsonl
+*.tgz
+*.zip
+
+# Pipeline/runtime outputs
+reports/
+decision_logs/
+checkpoints/
+_step100_resume/
+_runner_logs/
+.cache/
+.pipeline_checkpoint.json
+
+# Synthetic generated subtrees
+test*/entities/
+test*/graph/
+test*/imdb_schema*/
+benchmark/**/runs/
+benchmark/cardinality_methods/archives/
+

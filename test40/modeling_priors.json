@@ -1,0 +1,3548 @@
+{
+  "person_generation": {
+    "gender_ratio": {
+      "male": 0.52,
+      "female": 0.45,
+      "non_binary": 0.03
+    },
+    "age_distribution_mean": 42.5,
+    "age_distribution_std": 14.2,
+    "career_stage_weights": {
+      "rising": 0.25,
+      "prime": 0.4,
+      "veteran": 0.25,
+      "legend": 0.08,
+      "retired": 0.02
+    },
+    "base_popularity_mean": 45.0,
+    "base_popularity_std": 18.5
+  },
+  "company_generation": {
+    "type_distribution": {
+      "production": 0.6,
+      "distribution": 0.2,
+      "special_effects": 0.1,
+      "financing": 0.1
+    },
+    "longevity_mean": 25.0,
+    "longevity_std": 15.0,
+    "country_mix": {
+      "US": 0.4,
+      "UK": 0.1,
+      "FR": 0.1,
+      "JP": 0.1,
+      "IN": 0.1,
+      "Other": 0.2
+    },
+    "tier_weights": {
+      "Global": 0.05,
+      "Major": 0.15,
+      "Mid-Budget": 0.3,
+      "Indie": 0.35,
+      "Micro": 0.15
+    }
+  },
+  "keyword_generation": {
+    "vocab_size": 1400,
+    "zipf_alpha": 1.2,
+    "max_keywords_per_entity": 15,
+    "genre_target_weights": {
+      "Action": 0.08,
+      "Adventure": 0.06,
+      "Animation": 0.04,
+      "Biography": 0.03,
+      "Comedy": 0.12,
+      "Crime": 0.06,
+      "Documentary": 0.05,
+      "Drama": 0.15,
+      "Family": 0.04,
+      "Fantasy": 0.04,
+      "Film-Noir": 0.01,
+      "History": 0.02,
+      "Horror": 0.06,
+      "Music": 0.02,
+      "Musical": 0.02,
+      "Mystery": 0.04,
+      "Romance": 0.06,
+      "Sci-Fi": 0.04,
+      "Sport": 0.01,
+      "Thriller": 0.08,
+      "War": 0.02,
+      "Western": 0.01,
+      "Superhero": 0.01,
+      "Martial Arts": 0.01,
+      "Disaster": 0.01,
+      "Experimental": 0.01,
+      "Short": 0.01,
+      "Reality-TV": 0.01
+    },
+    "generic_budget_ratio": 0.3,
+    "min_specific_story_share": 0.4,
+    "selection_bucket_targets": {
+      "exact_anchor": 0.2,
+      "related_support": 0.3,
+      "story_specific": 0.3,
+      "generic": 0.2
+    }
+  },
+  "character_generation": {
+    "name_diversity_index": 0.8,
+    "gender_match_probability": 0.95,
+    "age_match_tolerance": 5.0,
+    "nonliteral_name_share": 0.1,
+    "alias_frequency": 0.05,
+    "slot_archetype_candidates": {
+      "0": [
+        "Lead Hero",
+        "Lead Villain"
+      ],
+      "1": [
+        "Love Interest",
+        "Sidekick",
+        "Mentor",
+        "Lead Villain"
+      ],
+      "2": [
+        "Mentor",
+        "Comic Relief",
+        "Henchman"
+      ]
+    },
+    "general_archetypes": [
+      "Supporting",
+      "Authority Figure",
+      "Victim",
+      "Extra"
+    ],
+    "unique_archetypes": [
+      "Lead Hero",
+      "Lead Villain",
+      "Mentor",
+      "Mysterious Stranger"
+    ],
+    "genre_archetype_candidates": {
+      "Action": [
+        "Lead Hero",
+        "Lead Villain",
+        "Sidekick",
+        "Henchman"
+      ],
+      "Adventure": [
+        "Lead Hero",
+        "Mentor",
+        "Sidekick",
+        "Comic Relief"
+      ],
+      "Animation": [
+        "Lead Hero",
+        "Sidekick",
+        "Comic Relief",
+        "Lead Villain"
+      ],
+      "Biography": [
+        "Lead Hero",
+        "Supporting",
+        "Authority Figure",
+        "Love Interest"
+      ],
+      "Comedy": [
+        "Lead Hero",
+        "Comic Relief",
+        "Love Interest",
+        "Supporting"
+      ],
+      "Crime": [
+        "Lead Hero",
+        "Lead Villain",
+        "Authority Figure",
+        "Henchman"
+      ],
+      "Documentary": [
+        "Supporting",
+        "Authority Figure",
+        "Extra"
+      ],
+      "Drama": [
+        "Lead Hero",
+        "Supporting",
+        "Love Interest",
+        "Authority Figure"
+      ],
+      "Family": [
+        "Lead Hero",
+        "Mentor",
+        "Comic Relief",
+        "Supporting"
+      ],
+      "Fantasy": [
+        "Lead Hero",
+        "Mentor",
+        "Lead Villain",
+        "Sidekick"
+      ],
+      "Film-Noir": [
+        "Lead Hero",
+        "Love Interest",
+        "Lead Villain",
+        "Authority Figure"
+      ],
+      "History": [
+        "Lead Hero",
+        "Authority Figure",
+        "Supporting",
+        "Extra"
+      ],
+      "Horror": [
+        "Lead Hero",
+        "Victim",
+        "Lead Villain",
+        "Supporting"
+      ],
+      "Music": [
+        "Lead Hero",
+        "Mentor",
+        "Supporting",
+        "Love Interest"
+      ],
+      "Musical": [
+        "Lead Hero",
+        "Love Interest",
+        "Comic Relief",
+        "Supporting"
+      ],
+      "Mystery": [
+        "Lead Hero",
+        "Supporting",
+        "Authority Figure",
+        "Victim"
+      ],
+      "Romance": [
+        "Lead Hero",
+        "Love Interest",
+        "Supporting",
+        "Comic Relief"
+      ],
+      "Sci-Fi": [
+        "Lead Hero",
+        "Mentor",
+        "Lead Villain",
+        "Sidekick"
+      ],
+      "Sport": [
+        "Lead Hero",
+        "Mentor",
+        "Supporting",
+        "Authority Figure"
+      ],
+      "Thriller": [
+        "Lead Hero",
+        "Lead Villain",
+        "Victim",
+        "Authority Figure"
+      ],
+      "War": [
+        "Lead Hero",
+        "Authority Figure",
+        "Supporting",
+        "Victim"
+      ],
+      "Western": [
+        "Lead Hero",
+        "Lead Villain",
+        "Sidekick",
+        "Authority Figure"
+      ],
+      "Superhero": [
+        "Lead Hero",
+        "Lead Villain",
+        "Sidekick",
+        "Mentor"
+      ],
+      "Martial Arts": [
+        "Lead Hero",
+        "Mentor",
+        "Lead Villain",
+        "Henchman"
+      ],
+      "Disaster": [
+        "Lead Hero",
+        "Authority Figure",
+        "Victim",
+        "Supporting"
+      ],
+      "Experimental": [
+        "Lead Hero",
+        "Mysterious Stranger",
+        "Supporting",
+        "Extra"
+      ],
+      "Short": [
+        "Lead Hero",
+        "Supporting",
+        "Extra"
+      ],
+      "Reality-TV": [
+        "Lead Hero",
+        "Supporting",
+        "Extra"
+      ]
+    },
+    "archetype_target_vectors": {
+      "Lead Hero": [
+        0.8,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "Lead Villain": [
+        0.1,
+        0.8,
+        0.1,
+        0.0
+      ],
+      "Love Interest": [
+        0.2,
+        0.2,
+        0.6,
+        0.0
+      ],
+      "Mentor": [
+        0.1,
+        0.1,
+        0.8,
+        0.0
+      ],
+      "Sidekick": [
+        0.3,
+        0.1,
+        0.6,
+        0.0
+      ],
+      "Comic Relief": [
+        0.2,
+        0.1,
+        0.7,
+        0.0
+      ],
+      "Supporting": [
+        0.1,
+        0.1,
+        0.8,
+        0.0
+      ],
+      "Authority Figure": [
+        0.1,
+        0.2,
+        0.7,
+        0.0
+      ],
+      "Henchman": [
+        0.0,
+        0.6,
+        0.4,
+        0.0
+      ],
+      "Victim": [
+        0.1,
+        0.1,
+        0.8,
+        0.0
+      ],
+      "Mysterious Stranger": [
+        0.4,
+        0.4,
+        0.2,
+        0.0
+      ],
+      "Extra": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "career_stage_archetype_bias": {
+      "rising": {
+        "Lead Hero": 1.2,
+        "Sidekick": 1.5,
+        "Love Interest": 1.3
+      },
+      "prime": {
+        "Lead Hero": 1.5,
+        "Lead Villain": 1.2,
+        "Love Interest": 1.1
+      },
+      "veteran": {
+        "Mentor": 1.8,
+        "Authority Figure": 1.5,
+        "Lead Villain": 1.3
+      },
+      "legend": {
+        "Mentor": 2.0,
+        "Authority Figure": 1.8,
+        "Mysterious Stranger": 1.5
+      },
+      "retired": {
+        "Extra": 1.5,
+        "Supporting": 1.2
+      }
+    },
+    "genre_archetype_bias": {
+      "Action": {
+        "Lead Hero": 1.5,
+        "Lead Villain": 1.5,
+        "Henchman": 1.8
+      },
+      "Adventure": {
+        "Lead Hero": 1.4,
+        "Sidekick": 1.5,
+        "Mentor": 1.3
+      },
+      "Animation": {
+        "Comic Relief": 1.8,
+        "Sidekick": 1.5
+      },
+      "Biography": {
+        "Lead Hero": 1.2,
+        "Supporting": 1.3
+      },
+      "Comedy": {
+        "Comic Relief": 2.0,
+        "Love Interest": 1.2
+      },
+      "Crime": {
+        "Lead Villain": 1.5,
+        "Authority Figure": 1.4
+      },
+      "Documentary": {
+        "Supporting": 1.5,
+        "Authority Figure": 1.5
+      },
+      "Drama": {
+        "Lead Hero": 1.2,
+        "Supporting": 1.4
+      },
+      "Family": {
+        "Mentor": 1.3,
+        "Comic Relief": 1.4
+      },
+      "Fantasy": {
+        "Mentor": 1.6,
+        "Lead Villain": 1.4
+      },
+      "Film-Noir": {
+        "Love Interest": 1.5,
+        "Lead Villain": 1.3
+      },
+      "History": {
+        "Authority Figure": 1.6,
+        "Supporting": 1.3
+      },
+      "Horror": {
+        "Victim": 2.0,
+        "Lead Villain": 1.5
+      },
+      "Music": {
+        "Lead Hero": 1.2,
+        "Mentor": 1.3
+      },
+      "Musical": {
+        "Love Interest": 1.4,
+        "Comic Relief": 1.2
+      },
+      "Mystery": {
+        "Authority Figure": 1.4,
+        "Victim": 1.5
+      },
+      "Romance": {
+        "Love Interest": 2.0,
+        "Lead Hero": 1.2
+      },
+      "Sci-Fi": {
+        "Lead Hero": 1.2,
+        "Lead Villain": 1.3
+      },
+      "Sport": {
+        "Mentor": 1.8,
+        "Lead Hero": 1.3
+      },
+      "Thriller": {
+        "Victim": 1.5,
+        "Lead Villain": 1.4
+      },
+      "War": {
+        "Authority Figure": 1.5,
+        "Victim": 1.4
+      },
+      "Western": {
+        "Lead Hero": 1.4,
+        "Lead Villain": 1.4
+      },
+      "Superhero": {
+        "Lead Hero": 1.8,
+        "Lead Villain": 1.8
+      },
+      "Martial Arts": {
+        "Mentor": 1.8,
+        "Henchman": 1.5
+      },
+      "Disaster": {
+        "Victim": 1.8,
+        "Authority Figure": 1.4
+      },
+      "Experimental": {
+        "Mysterious Stranger": 2.0
+      },
+      "Short": {
+        "Lead Hero": 1.2
+      },
+      "Reality-TV": {
+        "Lead Hero": 1.2
+      }
+    },
+    "collaboration_style_archetype_bias": {
+      "solo": {
+        "Lead Hero": 1.5,
+        "Mysterious Stranger": 1.4
+      },
+      "ensemble": {
+        "Supporting": 1.5,
+        "Comic Relief": 1.3
+      },
+      "mentorship": {
+        "Mentor": 2.0,
+        "Sidekick": 1.5
+      }
+    }
+  },
+  "title_generation": {
+    "genre_base_weights": {
+      "Action": 0.08,
+      "Adventure": 0.05,
+      "Animation": 0.02,
+      "Biography": 0.02,
+      "Comedy": 0.12,
+      "Crime": 0.05,
+      "Documentary": 0.06,
+      "Drama": 0.15,
+      "Family": 0.04,
+      "Fantasy": 0.03,
+      "Film-Noir": 0.002,
+      "History": 0.02,
+      "Horror": 0.06,
+      "Music": 0.01,
+      "Musical": 0.01,
+      "Mystery": 0.03,
+      "Romance": 0.07,
+      "Sci-Fi": 0.04,
+      "Sport": 0.01,
+      "Thriller": 0.08,
+      "War": 0.01,
+      "Western": 0.005,
+      "Superhero": 0.01,
+      "Martial Arts": 0.005,
+      "Disaster": 0.005,
+      "Experimental": 0.005,
+      "Short": 0.005,
+      "Reality-TV": 0.003
+    },
+    "prestige_genres": [
+      "Drama",
+      "Biography",
+      "History",
+      "War"
+    ],
+    "franchise_genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Fantasy",
+      "Superhero",
+      "Animation"
+    ],
+    "experimental_genres": [
+      "Experimental",
+      "Short",
+      "Film-Noir"
+    ],
+    "low_cost_genres": [
+      "Horror",
+      "Comedy",
+      "Documentary",
+      "Reality-TV"
+    ],
+    "allowed_tagline_placeholders": [
+      "adjective",
+      "noun",
+      "abstract",
+      "location",
+      "celestial",
+      "technology",
+      "mythic",
+      "action",
+      "franchise_affix"
+    ],
+    "tagline_render_constraints": {
+      "min_words": 3,
+      "max_words": 12,
+      "max_placeholder_count": 2,
+      "forbid_square_brackets": true,
+      "allow_unresolved_placeholders": false
+    },
+    "title_length_bias": {
+      "short": 0.35,
+      "medium": 0.5,
+      "long": 0.15
+    }
+  },
+  "company_finance_tiers": {
+    "Epic": {
+      "min_budget": 150000000,
+      "max_budget": 400000000,
+      "marketing_multiplier": 1.5
+    },
+    "A": {
+      "min_budget": 50000000,
+      "max_budget": 149999999,
+      "marketing_multiplier": 1.0
+    },
+    "Mid": {
+      "min_budget": 15000000,
+      "max_budget": 49999999,
+      "marketing_multiplier": 0.6
+    },
+    "Indie": {
+      "min_budget": 1000000,
+      "max_budget": 14999999,
+      "marketing_multiplier": 0.25
+    },
+    "Micro": {
+      "min_budget": 10000,
+      "max_budget": 999999,
+      "marketing_multiplier": 0.05
+    }
+  },
+  "rerank_priors": {
+    "rerank_budget": 150,
+    "keyword_rerank_budget": 50,
+    "critic_weight": 0.65,
+    "repair_threshold": 0.85,
+    "rerank_temperature": 0.7
+  },
+  "selection_weights": {
+    "cast_focus_exploration": 0.55,
+    "cast_base_focus_exploration": 0.6,
+    "cast_slot_exploration_empty": 0.55,
+    "cast_slot_exploration_filled": 0.5,
+    "cast_style_multiplier": 2.0,
+    "cast_community_match_multiplier": 1.5,
+    "director_exploration_share": 0.3,
+    "company_primary_exploration_share": 0.35,
+    "company_secondary_exploration_share": 0.4,
+    "crew_exploration_share": 0.35,
+    "concept_genre_bias_base": 0.8,
+    "concept_genre_bias_scale": 2.2,
+    "concept_country_bias_base": 0.9,
+    "concept_country_bias_scale": 1.9,
+    "concept_market_bias_base": 0.9,
+    "concept_market_bias_scale": 1.6,
+    "concept_exact_genre_hint_boost": 2.1,
+    "concept_genre_hint_miss_penalty": 0.12,
+    "concept_franchise_genre_match_boost": 1.2,
+    "concept_tier_match_boost": 1.15,
+    "concept_franchise_eligible_scale": 0.5,
+    "concept_strategy_bonus_scale": 0.4,
+    "concept_release_pressure_base": 0.92,
+    "concept_release_pressure_scale": 0.55,
+    "concept_novelty_base": 0.95,
+    "concept_novelty_scale": 0.45,
+    "concept_franchise_strategy_match_boost": 1.18,
+    "concept_franchise_season_match_boost": 1.1,
+    "concept_sequel_pressure_scale": 0.35,
+    "concept_pack_usage_capacity": 4.0,
+    "concept_bucket_country_capacity": 2.0,
+    "concept_bucket_genre_capacity": 1.35,
+    "concept_country_usage_capacity": 1.0,
+    "concept_minor_country_bonus": 1.06,
+    "concept_minor_market_bonus": 1.04,
+    "director_risk_weight": 0.4,
+    "director_ambition_weight": 0.35,
+    "director_prestige_weight": 0.25,
+    "director_alignment_base": 0.7,
+    "director_alignment_scale": 0.8,
+    "director_csv_base": 0.8,
+    "director_csv_scale": 0.5,
+    "company_tier_match_boost": 8.0,
+    "company_tier_mismatch_penalty": 0.2,
+    "company_genre_match_boost": 15.0,
+    "company_genre_mismatch_penalty": 0.25,
+    "company_risk_weight": 0.28,
+    "company_prestige_weight": 0.22,
+    "company_focus_weight": 0.3,
+    "company_genre_fit_weight": 0.2,
+    "company_alignment_base": 0.65,
+    "company_alignment_scale": 0.9,
+    "director_selection": {
+      "genre_match_boost": 2.5,
+      "geo_boost_scale": 1.2,
+      "geo_boost_floor": 0.8,
+      "film_count_decay_over_30": 0.95,
+      "film_count_decay_over_50": 0.85,
+      "film_count_decay_over_80": 0.6,
+      "company_multiplier_rescale": 0.5,
+      "event_franchise_pop_quantile": 0.9,
+      "event_franchise_pop_boost": 3.0,
+      "prestige_drama_alignment_threshold": 0.8,
+      "prestige_drama_alignment_boost": 2.0
+    },
+    "co_director_probability_by_tier": {
+      "Epic": 0.05,
+      "A": 0.02,
+      "Mid": 0.03,
+      "Indie": 0.08,
+      "Micro": 0.15
+    },
+    "company_selection": {
+      "strategy_match_boost": 1.5,
+      "market_bias_base": 0.8,
+      "market_bias_scale": 1.2,
+      "partner_affinity_scale": 2.0,
+      "partner_rivalry_penalty_floor": 0.1,
+      "family_boost": 1.3
+    },
+    "cast_selection": {
+      "blockbuster_bonus_major": 3.0,
+      "blockbuster_bonus_other": 1.5,
+      "franchise_bonus_major": 4.0,
+      "franchise_bonus_other": 2.0,
+      "epic_tail_prob_base": 0.1,
+      "epic_tail_prob_franchise_bonus": 0.05,
+      "epic_tail_prob_blockbuster_bonus": 0.05,
+      "epic_tail_prob_cap": 0.25,
+      "epic_tail_lognorm_mean": 2.0,
+      "epic_tail_lognorm_sigma": 0.5,
+      "epic_tail_min": 10,
+      "a_tail_prob": 0.05,
+      "a_tail_min": 5,
+      "a_tail_max": 20,
+      "unused_actor_boost": 2.1,
+      "award_recent_boost": 1.35,
+      "franchise_pool_base_boost": 2.2,
+      "star_vehicle_slot0_boost": 1.45,
+      "prestige_pairing_boost": 1.35,
+      "volatile_ensemble_boost": 1.2,
+      "balanced_ensemble_boost": 1.5,
+      "agency_match_boost": 1.4,
+      "gender_novelty_boost": 1.1,
+      "nationality_novelty_boost": 1.2,
+      "tag_similarity_penalty": 0.5
+    },
+    "geo_boost_by_tier": {
+      "Epic": 1.1,
+      "A": 1.2,
+      "Mid": 1.5,
+      "Indie": 2.0,
+      "Micro": 3.0
+    },
+    "dynamic_cast_base_by_tier": {
+      "Epic": {
+        "min": 15,
+        "max": 50
+      },
+      "A": {
+        "min": 10,
+        "max": 30
+      },
+      "Mid": {
+        "min": 5,
+        "max": 20
+      },
+      "Indie": {
+        "min": 3,
+        "max": 12
+      },
+      "Micro": {
+        "min": 2,
+        "max": 8
+      }
+    },
+    "keyword_selection": {
+      "franchise_min_count": 3.0,
+      "exact_genre_boost": 4.0,
+      "family_genre_boost": 2.0,
+      "family_genre_max_share": 0.4,
+      "off_genre_penalty": 0.2,
+      "lexical_match_scale": 1.5,
+      "lexical_match_cap": 5.0,
+      "specificity_tier1_penalty": 0.5,
+      "generic_motif_penalty": 0.8,
+      "specific_story_boost": 2.5,
+      "franchise_scope_boost_base": 1.5,
+      "franchise_scope_affinity_scale": 2.0,
+      "franchise_family_boost": 1.8,
+      "franchise_recurrence_base": 0.5,
+      "franchise_recurrence_scale": 1.5,
+      "nonfranchise_scope_penalty": 0.3,
+      "nonfranchise_family_penalty": 0.6,
+      "nonfranchise_affinity_penalty": 0.4,
+      "nonfranchise_affinity_threshold": 0.7,
+      "high_specificity_novelty_base": 0.8,
+      "high_specificity_novelty_scale": 1.2,
+      "movie_scope_novelty_base": 0.9,
+      "movie_scope_novelty_scale": 1.1,
+      "usage_penalty_scale": 0.95,
+      "company_exact_boost": 2.0,
+      "company_family_boost": 1.5,
+      "franchise_core_boost": 5.0,
+      "primary_genre_min_count_by_tier": {
+        "Epic": 5.0,
+        "A": 4.0,
+        "Mid": 3.0,
+        "Indie": 2.0,
+        "Micro": 1.0
+      },
+      "exact_topic_min_count_by_tier": {
+        "Epic": 3.0,
+        "A": 3.0,
+        "Mid": 2.0,
+        "Indie": 2.0,
+        "Micro": 1.0
+      },
+      "primary_plus_related_min_count_by_tier": {
+        "Epic": 8.0,
+        "A": 6.0,
+        "Mid": 4.0,
+        "Indie": 3.0,
+        "Micro": 2.0
+      },
+      "generic_keyword_cap_by_tier": {
+        "Epic": 1.0,
+        "A": 1.0,
+        "Mid": 1.0,
+        "Indie": 1.0,
+        "Micro": 1.0
+      },
+      "off_genre_cap_by_tier": {
+        "Epic": 1.0,
+        "A": 1.0,
+        "Mid": 1.0,
+        "Indie": 1.0,
+        "Micro": 1.0
+      },
+      "slot_mix_by_tier": {
+        "Epic": {
+          "exact_anchor": 0.48,
+          "related_support": 0.14,
+          "story_specific": 0.22,
+          "franchise": 0.1,
+          "generic": 0.06
+        },
+        "A": {
+          "exact_anchor": 0.48,
+          "related_support": 0.14,
+          "story_specific": 0.27,
+          "franchise": 0.05,
+          "generic": 0.06
+        },
+        "Mid": {
+          "exact_anchor": 0.42,
+          "related_support": 0.16,
+          "story_specific": 0.34,
+          "franchise": 0.0,
+          "generic": 0.08
+        },
+        "Indie": {
+          "exact_anchor": 0.4,
+          "related_support": 0.18,
+          "story_specific": 0.33999999999999997,
+          "franchise": 0.0,
+          "generic": 0.08
+        },
+        "Micro": {
+          "exact_anchor": 0.5,
+          "related_support": 0.2,
+          "story_specific": 0.19999999999999998,
+          "franchise": 0.0,
+          "generic": 0.1
+        }
+      },
+      "related_genres_by_genre": {
+        "Action": [
+          "Adventure",
+          "Thriller",
+          "Sci-Fi"
+        ],
+        "Adventure": [
+          "Action",
+          "Fantasy",
+          "Family"
+        ],
+        "Animation": [
+          "Family",
+          "Adventure",
+          "Comedy"
+        ],
+        "Biography": [
+          "Drama",
+          "History",
+          "Documentary"
+        ],
+        "Comedy": [
+          "Romance",
+          "Family",
+          "Drama"
+        ],
+        "Crime": [
+          "Thriller",
+          "Drama",
+          "Mystery"
+        ],
+        "Documentary": [
+          "History",
+          "Biography"
+        ],
+        "Drama": [
+          "Romance",
+          "Biography",
+          "Crime"
+        ],
+        "Family": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "Fantasy": [
+          "Adventure",
+          "Action",
+          "Romance"
+        ],
+        "Film-Noir": [
+          "Crime",
+          "Mystery",
+          "Thriller"
+        ],
+        "History": [
+          "Biography",
+          "Drama",
+          "War"
+        ],
+        "Horror": [
+          "Thriller",
+          "Mystery",
+          "Sci-Fi"
+        ],
+        "Music": [
+          "Musical",
+          "Drama",
+          "Documentary"
+        ],
+        "Musical": [
+          "Music",
+          "Romance",
+          "Comedy"
+        ],
+        "Mystery": [
+          "Thriller",
+          "Crime",
+          "Horror"
+        ],
+        "Romance": [
+          "Drama",
+          "Comedy",
+          "Musical"
+        ],
+        "Sci-Fi": [
+          "Action",
+          "Adventure",
+          "Thriller"
+        ],
+        "Sport": [
+          "Drama",
+          "Biography",
+          "Action"
+        ],
+        "Thriller": [
+          "Crime",
+          "Mystery",
+          "Action"
+        ],
+        "War": [
+          "History",
+          "Drama",
+          "Action"
+        ],
+        "Western": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "Superhero": [
+          "Action",
+          "Sci-Fi",
+          "Fantasy"
+        ],
+        "Martial Arts": [
+          "Action",
+          "Sport",
+          "Crime"
+        ],
+        "Disaster": [
+          "Action",
+          "Thriller",
+          "Sci-Fi"
+        ],
+        "Experimental": [
+          "Short",
+          "Documentary",
+          "Drama"
+        ],
+        "Short": [
+          "Experimental",
+          "Animation",
+          "Comedy"
+        ],
+        "Reality-TV": [
+          "Documentary",
+          "Music",
+          "Comedy"
+        ]
+      }
+    },
+    "keyword_count_by_tier": {
+      "Epic": {
+        "min": 15,
+        "max": 40
+      },
+      "A": {
+        "min": 10,
+        "max": 30
+      },
+      "Mid": {
+        "min": 8,
+        "max": 20
+      },
+      "Indie": {
+        "min": 5,
+        "max": 15
+      },
+      "Micro": {
+        "min": 3,
+        "max": 10
+      }
+    },
+    "keyword_year_slate_family_boosts": {
+      "relationship": {
+        "relationship": 1.5,
+        "tone": 1.2
+      },
+      "ensemble": {
+        "relationship": 1.3,
+        "profession": 1.4
+      },
+      "event": {
+        "event": 1.8,
+        "setting": 1.5,
+        "object": 1.2
+      },
+      "global": {
+        "place": 1.6,
+        "setting": 1.4
+      },
+      "analogue": {
+        "tone": 1.5
+      },
+      "platform": {
+        "franchise": 2.0,
+        "sequel_drift": 1.5
+      }
+    },
+    "writer_director_probability_by_tier": {
+      "Epic": 0.1,
+      "A": 0.2,
+      "Mid": 0.35,
+      "Indie": 0.6,
+      "Micro": 0.8
+    },
+    "concept_ambition_target_by_tier": {
+      "Epic": 0.9,
+      "A": 0.75,
+      "Mid": 0.5,
+      "Indie": 0.6,
+      "Micro": 0.3
+    },
+    "concept_prestige_target_by_tier": {
+      "Epic": 0.7,
+      "A": 0.6,
+      "Mid": 0.4,
+      "Indie": 0.7,
+      "Micro": 0.2
+    },
+    "concept_style_tier_shift_by_tier": {
+      "Epic": [
+        0.2,
+        0.1,
+        0.3,
+        -0.1,
+        0.2,
+        0.0,
+        0.1,
+        0.2
+      ],
+      "A": [
+        0.1,
+        0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.1
+      ],
+      "Mid": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Indie": [
+        -0.1,
+        0.2,
+        -0.2,
+        0.3,
+        -0.1,
+        0.2,
+        0.1,
+        -0.1
+      ],
+      "Micro": [
+        -0.2,
+        0.1,
+        -0.3,
+        0.2,
+        -0.2,
+        0.1,
+        0.0,
+        -0.2
+      ]
+    },
+    "concept_risk_target_by_genre": {
+      "Action": 0.4,
+      "Adventure": 0.3,
+      "Animation": 0.2,
+      "Biography": 0.3,
+      "Comedy": 0.3,
+      "Crime": 0.4,
+      "Documentary": 0.5,
+      "Drama": 0.4,
+      "Family": 0.1,
+      "Fantasy": 0.5,
+      "Film-Noir": 0.6,
+      "History": 0.4,
+      "Horror": 0.6,
+      "Music": 0.4,
+      "Musical": 0.5,
+      "Mystery": 0.4,
+      "Romance": 0.3,
+      "Sci-Fi": 0.6,
+      "Sport": 0.3,
+      "Thriller": 0.4,
+      "War": 0.5,
+      "Western": 0.5,
+      "Superhero": 0.3,
+      "Martial Arts": 0.4,
+      "Disaster": 0.4,
+      "Experimental": 0.9,
+      "Short": 0.7,
+      "Reality-TV": 0.2
+    },
+    "concept_style_vector_by_genre": {
+      "Action": [
+        0.8,
+        0.5,
+        0.4,
+        0.3,
+        0.4,
+        0.9,
+        0.3,
+        0.5
+      ],
+      "Adventure": [
+        0.7,
+        0.6,
+        0.3,
+        0.4,
+        0.5,
+        0.8,
+        0.4,
+        0.3
+      ],
+      "Animation": [
+        0.6,
+        0.8,
+        0.1,
+        0.3,
+        0.7,
+        0.6,
+        0.7,
+        0.1
+      ],
+      "Biography": [
+        0.4,
+        0.5,
+        0.9,
+        0.7,
+        0.8,
+        0.2,
+        0.2,
+        0.4
+      ],
+      "Comedy": [
+        0.7,
+        0.8,
+        0.5,
+        0.3,
+        0.5,
+        0.2,
+        0.9,
+        0.2
+      ],
+      "Crime": [
+        0.6,
+        0.3,
+        0.8,
+        0.7,
+        0.5,
+        0.4,
+        0.2,
+        0.8
+      ],
+      "Documentary": [
+        0.3,
+        0.5,
+        1.0,
+        0.8,
+        0.6,
+        0.1,
+        0.1,
+        0.4
+      ],
+      "Drama": [
+        0.4,
+        0.4,
+        0.8,
+        0.8,
+        0.9,
+        0.2,
+        0.2,
+        0.6
+      ],
+      "Family": [
+        0.6,
+        0.8,
+        0.3,
+        0.2,
+        0.8,
+        0.5,
+        0.7,
+        0.1
+      ],
+      "Fantasy": [
+        0.6,
+        0.6,
+        0.1,
+        0.6,
+        0.6,
+        0.8,
+        0.4,
+        0.4
+      ],
+      "Film-Noir": [
+        0.4,
+        0.2,
+        0.7,
+        0.8,
+        0.5,
+        0.2,
+        0.1,
+        0.9
+      ],
+      "History": [
+        0.4,
+        0.4,
+        0.9,
+        0.8,
+        0.7,
+        0.6,
+        0.1,
+        0.6
+      ],
+      "Horror": [
+        0.6,
+        0.2,
+        0.4,
+        0.5,
+        0.8,
+        0.4,
+        0.1,
+        0.9
+      ],
+      "Music": [
+        0.5,
+        0.7,
+        0.6,
+        0.4,
+        0.8,
+        0.5,
+        0.4,
+        0.2
+      ],
+      "Musical": [
+        0.6,
+        0.8,
+        0.2,
+        0.3,
+        0.8,
+        0.7,
+        0.5,
+        0.1
+      ],
+      "Mystery": [
+        0.4,
+        0.3,
+        0.7,
+        0.9,
+        0.5,
+        0.3,
+        0.2,
+        0.7
+      ],
+      "Romance": [
+        0.4,
+        0.7,
+        0.6,
+        0.5,
+        0.9,
+        0.2,
+        0.5,
+        0.2
+      ],
+      "Sci-Fi": [
+        0.6,
+        0.4,
+        0.3,
+        0.8,
+        0.5,
+        0.8,
+        0.2,
+        0.6
+      ],
+      "Sport": [
+        0.7,
+        0.6,
+        0.8,
+        0.4,
+        0.8,
+        0.4,
+        0.3,
+        0.3
+      ],
+      "Thriller": [
+        0.7,
+        0.3,
+        0.7,
+        0.8,
+        0.6,
+        0.5,
+        0.1,
+        0.8
+      ],
+      "War": [
+        0.6,
+        0.2,
+        0.8,
+        0.7,
+        0.8,
+        0.8,
+        0.1,
+        0.8
+      ],
+      "Western": [
+        0.5,
+        0.4,
+        0.7,
+        0.5,
+        0.5,
+        0.5,
+        0.2,
+        0.6
+      ],
+      "Superhero": [
+        0.8,
+        0.6,
+        0.2,
+        0.4,
+        0.5,
+        0.9,
+        0.5,
+        0.3
+      ],
+      "Martial Arts": [
+        0.8,
+        0.5,
+        0.5,
+        0.3,
+        0.4,
+        0.6,
+        0.3,
+        0.4
+      ],
+      "Disaster": [
+        0.8,
+        0.3,
+        0.4,
+        0.4,
+        0.6,
+        0.9,
+        0.1,
+        0.6
+      ],
+      "Experimental": [
+        0.3,
+        0.5,
+        0.2,
+        0.9,
+        0.5,
+        0.3,
+        0.2,
+        0.5
+      ],
+      "Short": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.2,
+        0.5,
+        0.4
+      ],
+      "Reality-TV": [
+        0.7,
+        0.7,
+        0.8,
+        0.2,
+        0.6,
+        0.2,
+        0.6,
+        0.1
+      ]
+    },
+    "genre_tier_distribution": {
+      "Action": [
+        0.15,
+        0.35,
+        0.3,
+        0.15,
+        0.05
+      ],
+      "Adventure": [
+        0.2,
+        0.35,
+        0.25,
+        0.15,
+        0.05
+      ],
+      "Animation": [
+        0.1,
+        0.4,
+        0.3,
+        0.15,
+        0.05
+      ],
+      "Biography": [
+        0.05,
+        0.2,
+        0.4,
+        0.25,
+        0.1
+      ],
+      "Comedy": [
+        0.02,
+        0.18,
+        0.4,
+        0.3,
+        0.1
+      ],
+      "Crime": [
+        0.02,
+        0.15,
+        0.4,
+        0.3,
+        0.13
+      ],
+      "Documentary": [
+        0.01,
+        0.04,
+        0.15,
+        0.4,
+        0.4
+      ],
+      "Drama": [
+        0.03,
+        0.15,
+        0.35,
+        0.35,
+        0.12
+      ],
+      "Family": [
+        0.1,
+        0.3,
+        0.35,
+        0.2,
+        0.05
+      ],
+      "Fantasy": [
+        0.15,
+        0.3,
+        0.3,
+        0.2,
+        0.05
+      ],
+      "Film-Noir": [
+        0.0,
+        0.05,
+        0.25,
+        0.5,
+        0.2
+      ],
+      "History": [
+        0.1,
+        0.25,
+        0.35,
+        0.2,
+        0.1
+      ],
+      "Horror": [
+        0.01,
+        0.1,
+        0.3,
+        0.4,
+        0.19
+      ],
+      "Music": [
+        0.02,
+        0.15,
+        0.35,
+        0.35,
+        0.13
+      ],
+      "Musical": [
+        0.1,
+        0.25,
+        0.35,
+        0.2,
+        0.1
+      ],
+      "Mystery": [
+        0.02,
+        0.15,
+        0.4,
+        0.3,
+        0.13
+      ],
+      "Romance": [
+        0.02,
+        0.15,
+        0.4,
+        0.3,
+        0.13
+      ],
+      "Sci-Fi": [
+        0.15,
+        0.3,
+        0.3,
+        0.2,
+        0.05
+      ],
+      "Sport": [
+        0.02,
+        0.15,
+        0.4,
+        0.3,
+        0.13
+      ],
+      "Thriller": [
+        0.05,
+        0.2,
+        0.4,
+        0.25,
+        0.1
+      ],
+      "War": [
+        0.15,
+        0.25,
+        0.35,
+        0.2,
+        0.05
+      ],
+      "Western": [
+        0.05,
+        0.15,
+        0.35,
+        0.35,
+        0.1
+      ],
+      "Superhero": [
+        0.4,
+        0.4,
+        0.15,
+        0.04,
+        0.01
+      ],
+      "Martial Arts": [
+        0.05,
+        0.15,
+        0.4,
+        0.3,
+        0.1
+      ],
+      "Disaster": [
+        0.2,
+        0.3,
+        0.3,
+        0.15,
+        0.05
+      ],
+      "Experimental": [
+        0.0,
+        0.02,
+        0.08,
+        0.4,
+        0.5
+      ],
+      "Short": [
+        0.0,
+        0.01,
+        0.04,
+        0.25,
+        0.7
+      ],
+      "Reality-TV": [
+        0.0,
+        0.1,
+        0.4,
+        0.3,
+        0.2
+      ]
+    },
+    "release_month_base_weights": [
+      0.06,
+      0.07,
+      0.08,
+      0.07,
+      0.09,
+      0.1,
+      0.11,
+      0.08,
+      0.07,
+      0.09,
+      0.1,
+      0.08
+    ],
+    "release_season_month_bumps": {
+      "summer": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.2,
+        1.5,
+        1.5,
+        1.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "holiday": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.3,
+        1.5
+      ],
+      "awards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.1,
+        1.3,
+        1.4,
+        1.5
+      ]
+    },
+    "genre_release_month_bumps": {
+      "Action": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.2,
+        1.5,
+        1.5,
+        1.2,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Horror": [
+        1.1,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.2,
+        2.0,
+        1.0,
+        1.0
+      ],
+      "Drama": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.2,
+        1.3,
+        1.4,
+        1.5
+      ],
+      "Family": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.3,
+        1.3,
+        1.0,
+        1.0,
+        1.0,
+        1.4,
+        1.5
+      ]
+    }
+  },
+  "edge_priors": {
+    "cross_genre_candidate_k": 50,
+    "cross_genre_candidate_multiplier": 1.5,
+    "cross_genre_threshold_bump": 0.1,
+    "person_person_style_weight": 0.35,
+    "person_person_genre_weight": 0.45,
+    "person_person_risk_weight": 0.15,
+    "person_person_stage_weight": 0.2,
+    "person_person_noise_weight": 0.1,
+    "person_person_policy_weight": 0.25,
+    "person_person_logistic_scale": 12.0,
+    "person_person_logistic_bias": 6.0,
+    "person_person_base_threshold": 0.65,
+    "person_person_degree_decay": 0.05,
+    "person_person_degree_power": 1.2,
+    "person_company_risk_weight": 0.3,
+    "person_company_budget_weight": 0.4,
+    "person_company_genre_weight": 0.25,
+    "person_company_noise_weight": 0.05,
+    "person_company_blacklist_threshold": 0.85,
+    "person_company_brand_fit_threshold": 0.6,
+    "person_person_degree_caps": {
+      "rising": {
+        "mean": 15.0,
+        "std": 5.0,
+        "min": 2.0,
+        "max": 35.0
+      },
+      "prime": {
+        "mean": 45.0,
+        "std": 15.0,
+        "min": 10.0,
+        "max": 120.0
+      },
+      "veteran": {
+        "mean": 65.0,
+        "std": 20.0,
+        "min": 15.0,
+        "max": 160.0
+      },
+      "legend": {
+        "mean": 85.0,
+        "std": 25.0,
+        "min": 20.0,
+        "max": 250.0
+      },
+      "retired": {
+        "mean": 30.0,
+        "std": 10.0,
+        "min": 5.0,
+        "max": 80.0
+      }
+    },
+    "person_person_classification": {
+      "friendship_ratio": 0.15,
+      "rivalry_ratio": 0.05,
+      "mentorship_ratio": 0.08,
+      "avoid_ratio": 0.02,
+      "former_ratio": 0.05,
+      "collaboration_ratio": 0.58,
+      "clique_ratio": 0.05,
+      "closure_scale": 1.2,
+      "bridge_anchor_ratio": 0.02,
+      "friendship_threshold": 0.7,
+      "rivalry_threshold": 0.8,
+      "mentorship_threshold": 0.75,
+      "avoid_threshold": 0.9,
+      "former_threshold": 0.6,
+      "collaboration_threshold": 0.5,
+      "clique_threshold": 0.85,
+      "controversy_high_threshold": 0.75,
+      "controversy_gap_avoid_threshold": 0.4,
+      "controversy_avoid_weight_floor": 0.2,
+      "controversy_friendship_weight_base": 0.3,
+      "controversy_friendship_score_weight": 0.5,
+      "controversy_friendship_jitter": 0.1,
+      "mentorship_style_threshold": 0.6,
+      "mentorship_stage_gap_threshold": 1.5,
+      "mentorship_weight_base": 0.4,
+      "mentorship_style_weight": 0.3,
+      "mentorship_jitter": 0.1,
+      "rivalry_style_max": 0.3,
+      "rivalry_genre_min": 0.5,
+      "rivalry_stage_gap_max": 1.0,
+      "rivalry_weight_base": 0.5,
+      "rivalry_genre_weight": 0.4,
+      "rivalry_style_distance_weight": 0.3,
+      "rivalry_jitter": 0.1,
+      "friendship_style_threshold": 0.7,
+      "friendship_probability_threshold": 0.6,
+      "friendship_style_soft_threshold": 0.5,
+      "friendship_weight_base": 0.4,
+      "friendship_score_weight": 0.5,
+      "friendship_jitter": 0.1,
+      "weight_min": 0.1,
+      "weight_max": 1.0
+    },
+    "person_company_generation": {
+      "company_genre_sample_ratio": 0.5,
+      "company_clique_sample_ratio": 0.3,
+      "company_random_sample_ratio": 0.2,
+      "brand_fit_threshold": 0.6,
+      "blacklist_threshold": 0.9,
+      "genre_supplement_size": 5.0,
+      "controversy_blacklist_person_threshold": 0.8,
+      "controversy_blacklist_company_threshold": 0.7,
+      "blacklist_weight_base": 0.5,
+      "blacklist_weight_controversy_scale": 0.4,
+      "event_franchise_micro_budget_penalty_boost": 0.3,
+      "market_fit_boost": 0.2
+    },
+    "company_company_generation": {
+      "cc_genre_sample_ratio": 0.4,
+      "cc_clique_sample_ratio": 0.3,
+      "cc_market_sample_ratio": 0.2,
+      "cc_random_sample_ratio": 0.1,
+      "cc_rival_pick_ratio": 0.05,
+      "cc_copro_pick_ratio": 0.8,
+      "cc_subsidiary_pick_ratio": 0.15,
+      "strategy_match_boost": 0.15,
+      "market_match_boost": 0.2,
+      "rival_overlap_threshold": 0.5,
+      "rival_tier_threshold": 1.0,
+      "rival_weight_scale": 0.5,
+      "rival_weight_policy_cap": 0.8,
+      "coproduction_overlap_threshold": 0.2,
+      "coproduction_tier_max": 2.0,
+      "coproduction_weight_scale": 0.6,
+      "coproduction_policy_cap": 0.9
+    },
+    "serendipitous_edges": {
+      "stage_probabilities": {
+        "rising": 0.12,
+        "prime": 0.08,
+        "veteran": 0.04,
+        "legend": 0.02,
+        "retired": 0.01
+      },
+      "stage_max_new_edges": {
+        "rising": 5,
+        "prime": 4,
+        "veteran": 2,
+        "legend": 1,
+        "retired": 0
+      },
+      "candidate_multiplier": 2.0,
+      "weight_min": 0.1,
+      "weight_max": 0.45
+    },
+    "triadic_closure": {
+      "stage_probabilities": {
+        "rising": 0.2,
+        "prime": 0.35,
+        "veteran": 0.25,
+        "legend": 0.15,
+        "retired": 0.05
+      },
+      "extra_cap": 10,
+      "weight_min": 0.25,
+      "weight_max": 0.85
+    },
+    "calibration": {
+      "relationship_targets": {
+        "best_friend_rate": 0.12,
+        "rival_rate": 0.04,
+        "bf_same_community_rate": 0.65,
+        "director_preferred_actors": 0.18,
+        "director_avoided_actors": 0.03
+      },
+      "candidate_sample_k": 100,
+      "director_actor_supplement": 5,
+      "upsert_weight_min": 0.1,
+      "upsert_weight_max": 1.0,
+      "friendship_score_weights": {
+        "style": 0.4,
+        "genre": 0.4,
+        "stage": 0.2
+      },
+      "rivalry_score_weights": {
+        "genre": 0.5,
+        "style_distance": 0.3,
+        "stage": 0.2
+      },
+      "preferential_attachment_log_weight": 0.5,
+      "best_friend_weight_base": 0.6,
+      "best_friend_weight_score_scale": 0.3,
+      "best_friend_weight_noise": 0.1,
+      "rival_weight_base": 0.5,
+      "rival_weight_score_scale": 0.4,
+      "rival_weight_noise": 0.1,
+      "director_stage_target_base": 0.8,
+      "director_stage_target_span": 0.4,
+      "director_preferred_score_weights": {
+        "style": 0.5,
+        "genre": 0.3,
+        "stage": 0.2
+      },
+      "director_preferred_weight_base": 0.7,
+      "director_preferred_weight_score_scale": 0.2,
+      "director_preferred_weight_noise": 0.1,
+      "director_avoid_score_weights": {
+        "style_distance": 0.4,
+        "genre_distance": 0.3,
+        "controversy": 0.3
+      },
+      "director_avoid_weight_base": 0.8,
+      "director_avoid_weight_score_scale": 0.1,
+      "director_avoid_weight_noise": 0.1,
+      "bf_same_community_weight_floor": 0.5,
+      "bf_same_community_weight_boost": 0.2
+    }
+  },
+  "scalable_edge_priors": {
+    "stage_priority": {
+      "legend": 0,
+      "veteran": 1,
+      "prime": 2,
+      "retired": 3,
+      "rising": 4
+    },
+    "collaboration_style_codes": {
+      "ensemble": 0,
+      "selective": 1,
+      "auteur": 2
+    },
+    "profile_overrides": {
+      "friendship_ratio_base": 0.15,
+      "friendship_ratio_creative_share_weight": 0.2,
+      "friendship_ratio_community_density_weight": 0.3,
+      "rivalry_ratio_base": 0.05,
+      "rivalry_ratio_competition_density_weight": 0.4,
+      "mentorship_ratio_base": 0.08,
+      "avoid_ratio_base": 0.02,
+      "former_ratio_base": 0.05,
+      "collaboration_ratio_base": 0.6,
+      "clique_ratio_base": 0.05,
+      "closure_scale_base": 1.2,
+      "bridge_anchor_ratio_base": 0.02,
+      "friendship_threshold_base": 0.7,
+      "rivalry_threshold_base": 0.8,
+      "mentorship_threshold_base": 0.75,
+      "avoid_threshold_base": 0.9,
+      "former_threshold_base": 0.6,
+      "collaboration_threshold_base": 0.5,
+      "clique_threshold_base": 0.85,
+      "company_genre_sample_ratio_base": 0.5,
+      "company_clique_sample_ratio_base": 0.3,
+      "company_random_sample_ratio_base": 0.2,
+      "brand_fit_threshold_base": 0.6,
+      "blacklist_threshold_base": 0.9,
+      "cc_genre_sample_ratio_base": 0.4,
+      "cc_clique_sample_ratio_base": 0.3,
+      "cc_market_sample_ratio_base": 0.2,
+      "cc_random_sample_ratio_base": 0.1,
+      "cc_rival_pick_ratio_base": 0.05,
+      "cc_copro_pick_ratio_base": 0.8,
+      "cc_subsidiary_pick_ratio_base": 0.15
+    },
+    "person_degree_caps": {
+      "rising": {
+        "mean": 15.0,
+        "std": 5.0,
+        "min": 2.0,
+        "max": 35.0
+      },
+      "prime": {
+        "mean": 45.0,
+        "std": 15.0,
+        "min": 10.0,
+        "max": 120.0
+      },
+      "veteran": {
+        "mean": 65.0,
+        "std": 20.0,
+        "min": 15.0,
+        "max": 160.0
+      },
+      "legend": {
+        "mean": 85.0,
+        "std": 25.0,
+        "min": 20.0,
+        "max": 250.0
+      },
+      "retired": {
+        "mean": 30.0,
+        "std": 10.0,
+        "min": 5.0,
+        "max": 80.0
+      }
+    },
+    "brand_fit_ratio_by_stage": {
+      "legend": 0.9,
+      "veteran": 0.8,
+      "prime": 0.7,
+      "rising": 0.5,
+      "retired": 0.6
+    },
+    "employment_ratio_by_stage": {
+      "legend": 0.1,
+      "veteran": 0.3,
+      "prime": 0.6,
+      "rising": 0.8,
+      "retired": 0.05
+    },
+    "sampled_union_defaults": {
+      "person_sample_ratio": 0.2,
+      "company_sample_ratio": 0.3,
+      "max_candidates_per_person": 50.0
+    },
+    "valid_year_span": {
+      "start_year": 1950.0,
+      "end_year": 2025.0
+    },
+    "year_validity_offsets": {
+      "person_edge_end_offset": 5.0,
+      "company_edge_end_offset": 10.0
+    }
+  },
+  "financial_priors": {
+    "country_budget_scale": {
+      "North America": 1.0,
+      "Europe": 0.65,
+      "Asia": 0.55,
+      "Oceania": 0.5,
+      "South America": 0.3,
+      "Middle East": 0.25,
+      "Africa": 0.15,
+      "Latin America": 0.25,
+      "Global": 1.2,
+      "Regional": 0.4,
+      "Local": 0.1
+    },
+    "genre_rating_offset": {
+      "Action": -0.2,
+      "Adventure": -0.1,
+      "Animation": 0.3,
+      "Biography": 0.5,
+      "Comedy": -0.2,
+      "Crime": 0.2,
+      "Documentary": 0.8,
+      "Drama": 0.4,
+      "Family": 0.1,
+      "Fantasy": 0.0,
+      "Film-Noir": 0.6,
+      "History": 0.5,
+      "Horror": -0.4,
+      "Music": 0.2,
+      "Musical": 0.1,
+      "Mystery": 0.1,
+      "Romance": 0.0,
+      "Sci-Fi": -0.1,
+      "Sport": 0.2,
+      "Thriller": 0.0,
+      "War": 0.4,
+      "Western": 0.2,
+      "Superhero": -0.1,
+      "Martial Arts": -0.2,
+      "Disaster": -0.5,
+      "Experimental": 0.3,
+      "Short": 0.5,
+      "Reality-TV": -1.5
+    },
+    "tier_rating_base": {
+      "Epic": 6.8,
+      "A": 6.5,
+      "Mid": 6.2,
+      "Indie": 6.4,
+      "Micro": 5.8
+    },
+    "tier_rating_std": {
+      "Epic": 0.8,
+      "A": 1.0,
+      "Mid": 1.2,
+      "Indie": 1.4,
+      "Micro": 1.8
+    },
+    "tier_log_center": {
+      "Epic": 12.5,
+      "A": 11.0,
+      "Mid": 9.5,
+      "Indie": 7.5,
+      "Micro": 5.0
+    },
+    "tier_min_votes": {
+      "Epic": 50000,
+      "A": 10000,
+      "Mid": 2000,
+      "Indie": 200,
+      "Micro": 10
+    },
+    "budget_ranges_by_tier": {
+      "Epic": {
+        "min_budget": 100000000.0,
+        "max_budget": 350000000.0
+      },
+      "A": {
+        "min_budget": 40000000.0,
+        "max_budget": 100000000.0
+      },
+      "Mid": {
+        "min_budget": 10000000.0,
+        "max_budget": 40000000.0
+      },
+      "Indie": {
+        "min_budget": 1000000.0,
+        "max_budget": 10000000.0
+      },
+      "Micro": {
+        "min_budget": 10000.0,
+        "max_budget": 1000000.0
+      }
+    },
+    "certification_distribution_by_genre": {
+      "Action": {
+        "PG": 0.1,
+        "PG-13": 0.6,
+        "R": 0.25,
+        "NR": 0.05
+      },
+      "Adventure": {
+        "G": 0.1,
+        "PG": 0.4,
+        "PG-13": 0.4,
+        "R": 0.05,
+        "NR": 0.05
+      },
+      "Animation": {
+        "G": 0.4,
+        "PG": 0.5,
+        "PG-13": 0.05,
+        "R": 0.01,
+        "NR": 0.04
+      },
+      "Biography": {
+        "PG": 0.1,
+        "PG-13": 0.4,
+        "R": 0.4,
+        "NR": 0.1
+      },
+      "Comedy": {
+        "G": 0.05,
+        "PG": 0.2,
+        "PG-13": 0.4,
+        "R": 0.3,
+        "NR": 0.05
+      },
+      "Crime": {
+        "PG-13": 0.15,
+        "R": 0.8,
+        "NR": 0.05
+      },
+      "Documentary": {
+        "G": 0.1,
+        "PG": 0.2,
+        "PG-13": 0.2,
+        "R": 0.1,
+        "NR": 0.4
+      },
+      "Drama": {
+        "PG": 0.1,
+        "PG-13": 0.45,
+        "R": 0.4,
+        "NR": 0.05
+      },
+      "Family": {
+        "G": 0.5,
+        "PG": 0.4,
+        "PG-13": 0.05,
+        "NR": 0.05
+      },
+      "Fantasy": {
+        "G": 0.05,
+        "PG": 0.3,
+        "PG-13": 0.5,
+        "R": 0.1,
+        "NR": 0.05
+      },
+      "Film-Noir": {
+        "PG-13": 0.1,
+        "R": 0.4,
+        "NR": 0.5
+      },
+      "History": {
+        "PG": 0.1,
+        "PG-13": 0.4,
+        "R": 0.4,
+        "NR": 0.1
+      },
+      "Horror": {
+        "PG-13": 0.2,
+        "R": 0.75,
+        "NR": 0.05
+      },
+      "Music": {
+        "G": 0.05,
+        "PG": 0.2,
+        "PG-13": 0.4,
+        "R": 0.2,
+        "NR": 0.15
+      },
+      "Musical": {
+        "G": 0.2,
+        "PG": 0.4,
+        "PG-13": 0.2,
+        "R": 0.05,
+        "NR": 0.15
+      },
+      "Mystery": {
+        "PG": 0.1,
+        "PG-13": 0.4,
+        "R": 0.4,
+        "NR": 0.1
+      },
+      "Romance": {
+        "PG": 0.2,
+        "PG-13": 0.5,
+        "R": 0.2,
+        "NR": 0.1
+      },
+      "Sci-Fi": {
+        "PG": 0.1,
+        "PG-13": 0.6,
+        "R": 0.2,
+        "NR": 0.1
+      },
+      "Sport": {
+        "G": 0.05,
+        "PG": 0.3,
+        "PG-13": 0.4,
+        "R": 0.15,
+        "NR": 0.1
+      },
+      "Thriller": {
+        "PG-13": 0.3,
+        "R": 0.6,
+        "NR": 0.1
+      },
+      "War": {
+        "PG-13": 0.2,
+        "R": 0.7,
+        "NR": 0.1
+      },
+      "Western": {
+        "PG": 0.1,
+        "PG-13": 0.3,
+        "R": 0.5,
+        "NR": 0.1
+      },
+      "Superhero": {
+        "PG": 0.1,
+        "PG-13": 0.8,
+        "R": 0.1
+      },
+      "Martial Arts": {
+        "PG": 0.05,
+        "PG-13": 0.4,
+        "R": 0.45,
+        "NR": 0.1
+      },
+      "Disaster": {
+        "PG": 0.1,
+        "PG-13": 0.7,
+        "R": 0.15,
+        "NR": 0.05
+      },
+      "Experimental": {
+        "PG-13": 0.05,
+        "R": 0.15,
+        "NR": 0.8
+      },
+      "Short": {
+        "G": 0.1,
+        "PG": 0.1,
+        "PG-13": 0.1,
+        "R": 0.1,
+        "NR": 0.6
+      },
+      "Reality-TV": {
+        "PG": 0.2,
+        "PG-13": 0.5,
+        "R": 0.1,
+        "NR": 0.2
+      }
+    },
+    "company_profile_tiers": {
+      "Global": {
+        "capital": 1000.0,
+        "margin": 0.15,
+        "debt": 0.4,
+        "slate": 20.0,
+        "buffer": 0.2,
+        "growth": 0.05,
+        "eff": 0.8
+      },
+      "Major": {
+        "capital": 500.0,
+        "margin": 0.12,
+        "debt": 0.5,
+        "slate": 12.0,
+        "buffer": 0.15,
+        "growth": 0.04,
+        "eff": 0.85
+      },
+      "Mid-Budget": {
+        "capital": 100.0,
+        "margin": 0.1,
+        "debt": 0.3,
+        "slate": 5.0,
+        "buffer": 0.1,
+        "growth": 0.08,
+        "eff": 0.9
+      },
+      "Indie": {
+        "capital": 20.0,
+        "margin": 0.08,
+        "debt": 0.2,
+        "slate": 3.0,
+        "buffer": 0.05,
+        "growth": 0.1,
+        "eff": 0.95
+      },
+      "Micro": {
+        "capital": 2.0,
+        "margin": 0.05,
+        "debt": 0.1,
+        "slate": 1.0,
+        "buffer": 0.02,
+        "growth": 0.15,
+        "eff": 1.0
+      }
+    },
+    "company_profile_coefficients": {
+      "budget_focus_weights": [
+        0.4,
+        0.3,
+        0.15,
+        0.1,
+        0.05
+      ],
+      "risk_tolerance": 0.25,
+      "marketing_multiplier": 1.5,
+      "franchise_propensity": 0.35,
+      "co_production_likelihood": 0.4
+    },
+    "market_regime": {
+      "studio_system": 0.8,
+      "new_hollywood": 1.1,
+      "blockbuster_era": 1.5,
+      "streaming_era": 1.2,
+      "prestige_bias_base": 0.56,
+      "prestige_cycle_weight": 0.24,
+      "prestige_bias_min": 0.08
+    },
+    "year_quality": {
+      "drift_variance": 0.02,
+      "mean_reversion": 0.1,
+      "base_quality": 6.0
+    },
+    "quality_latent_weights": {
+      "script": 0.35,
+      "direction": 0.3,
+      "acting": 0.2,
+      "production_value": 0.15
+    },
+    "market_latent_weights": {
+      "trend_alignment": 0.4,
+      "star_power": 0.3,
+      "marketing_spend": 0.2,
+      "competition_density": 0.1
+    },
+    "performance_model": {
+      "roi_base": 1.1,
+      "roi_variance": 0.4,
+      "quality_multiplier": 1.2,
+      "budget_diminishing_returns": 0.85
+    },
+    "vote_model": {
+      "base_votes": 1000,
+      "quality_exponent": 2.5,
+      "marketing_exponent": 1.2,
+      "recency_bias": 1.5
+    },
+    "runtime_model": {
+      "base_runtime": 100.0,
+      "epic_bonus": 45.0,
+      "indie_penalty": -10.0,
+      "variance": 15.0
+    },
+    "award_campaign_weights": {
+      "company_prestige": 0.28,
+      "director_ambition": 0.24,
+      "director_reputation": 0.16,
+      "cast_reputation": 0.15,
+      "company_focus": 0.1,
+      "q4_bonus": 0.22,
+      "prestige_genre_bonus": 0.2,
+      "regime_prestige_bias": 0.14,
+      "director_momentum": 0.05,
+      "company_momentum": 0.05,
+      "graph_synergy": 0.09,
+      "quality_signal": 0.2,
+      "slate_pressure_penalty": 0.08,
+      "controversy_penalty": 0.06
+    },
+    "writer_director_rating_bonus": 0.25
+  },
+  "secondary_table_priors": {
+    "demographics": {
+      "career_stage_age_ranges": {
+        "rising": [
+          18.0,
+          35.0
+        ],
+        "prime": [
+          28.0,
+          50.0
+        ],
+        "veteran": [
+          45.0,
+          70.0
+        ],
+        "legend": [
+          60.0,
+          90.0
+        ],
+        "retired": [
+          65.0,
+          100.0
+        ]
+      },
+      "legacy_death_probability": 0.15,
+      "height_by_gender": {
+        "F": {
+          "mean": 165.0,
+          "std": 7.0,
+          "min": 145.0,
+          "max": 190.0
+        },
+        "NB": {
+          "mean": 170.0,
+          "std": 8.0,
+          "min": 150.0,
+          "max": 195.0
+        },
+        "M": {
+          "mean": 178.0,
+          "std": 8.0,
+          "min": 155.0,
+          "max": 205.0
+        }
+      }
+    },
+    "release_dates": {
+      "genre_month_biases": {
+        "horror": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.2,
+          0.3,
+          0.05,
+          0.05
+        ],
+        "thriller": [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.1,
+          0.1,
+          0.1,
+          0.08
+        ],
+        "romance": [
+          0.05,
+          0.25,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "family": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.15,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.2
+        ],
+        "animation": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.15,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.2
+        ],
+        "action": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.1
+        ],
+        "adventure": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.1
+        ],
+        "sci-fi": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.15,
+          0.15,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "scifi": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.15,
+          0.15,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "fantasy": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.1,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.15,
+          0.2
+        ],
+        "comedy": [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.1,
+          0.1,
+          0.1,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ],
+        "drama": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.15
+        ]
+      },
+      "fallback_months": [
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.083,
+        0.087
+      ],
+      "major_markets": [
+        "North America",
+        "Europe",
+        "Asia",
+        "Latin America",
+        "Oceania"
+      ],
+      "tier_market_count_ranges": {
+        "Epic": [
+          8.0,
+          11.0
+        ],
+        "A": [
+          5.0,
+          10.0
+        ],
+        "A-List": [
+          5.0,
+          10.0
+        ],
+        "Mid": [
+          3.0,
+          7.0
+        ],
+        "Mid-Budget": [
+          3.0,
+          7.0
+        ],
+        "Indie": [
+          1.0,
+          4.0
+        ],
+        "Micro": [
+          1.0,
+          2.0
+        ],
+        "Micro-Budget": [
+          1.0,
+          2.0
+        ]
+      },
+      "initial_market_delay_days": [
+        0.0,
+        14.0
+      ],
+      "followup_market_delay_days": [
+        14.0,
+        90.0
+      ],
+      "stream_delay_ranges": {
+        "major": [
+          45.0,
+          120.0
+        ],
+        "small": [
+          14.0,
+          60.0
+        ]
+      }
+    },
+    "territory_box_office": {
+      "profiles": {
+        "USA": {
+          "North America": 0.9,
+          "Europe": 0.05,
+          "Asia Pacific": 0.02,
+          "Latin America": 0.02,
+          "Middle East": 0.005,
+          "Africa": 0.005,
+          "Other": 0.0
+        },
+        "UK": {
+          "North America": 0.1,
+          "Europe": 0.8,
+          "Asia Pacific": 0.05,
+          "Latin America": 0.02,
+          "Middle East": 0.02,
+          "Africa": 0.01,
+          "Other": 0.0
+        },
+        "India": {
+          "North America": 0.05,
+          "Europe": 0.05,
+          "Asia Pacific": 0.8,
+          "Latin America": 0.01,
+          "Middle East": 0.08,
+          "Africa": 0.01,
+          "Other": 0.0
+        },
+        "China": {
+          "North America": 0.02,
+          "Europe": 0.02,
+          "Asia Pacific": 0.95,
+          "Latin America": 0.005,
+          "Middle East": 0.005,
+          "Africa": 0.0,
+          "Other": 0.0
+        },
+        "Japan": {
+          "North America": 0.05,
+          "Europe": 0.05,
+          "Asia Pacific": 0.88,
+          "Latin America": 0.01,
+          "Middle East": 0.01,
+          "Africa": 0.0,
+          "Other": 0.0
+        },
+        "South Korea": {
+          "North America": 0.05,
+          "Europe": 0.05,
+          "Asia Pacific": 0.88,
+          "Latin America": 0.01,
+          "Middle East": 0.01,
+          "Africa": 0.0,
+          "Other": 0.0
+        },
+        "France": {
+          "North America": 0.05,
+          "Europe": 0.85,
+          "Asia Pacific": 0.02,
+          "Latin America": 0.02,
+          "Middle East": 0.02,
+          "Africa": 0.04,
+          "Other": 0.0
+        },
+        "_default": {
+          "North America": 0.3,
+          "Europe": 0.3,
+          "Asia Pacific": 0.2,
+          "Latin America": 0.1,
+          "Middle East": 0.05,
+          "Africa": 0.03,
+          "Other": 0.02
+        }
+      },
+      "dirichlet_concentration": 1.5,
+      "territory_counts_by_tier": {
+        "Micro": 1,
+        "Micro-Budget": 1,
+        "Indie": 3,
+        "Mid": 15,
+        "Mid-Budget": 15,
+        "A": 35,
+        "A-List": 35,
+        "Epic": 50
+      },
+      "opening_weekend_share": {
+        "mean": 0.3,
+        "std": 0.1,
+        "min": 0.1,
+        "max": 0.6
+      },
+      "first_30_fraction": {
+        "mean": 0.75,
+        "std": 0.1,
+        "min": 0.4,
+        "max": 0.95
+      },
+      "domestic_fraction": {
+        "mean": 0.4,
+        "std": 0.15,
+        "min": 0.1,
+        "max": 1.0
+      }
+    },
+    "reviews": {
+      "volume_by_tier": {
+        "Epic": {
+          "critic": 350,
+          "audience": 50000
+        },
+        "A": {
+          "critic": 250,
+          "audience": 25000
+        },
+        "A-List": {
+          "critic": 250,
+          "audience": 25000
+        },
+        "Mid": {
+          "critic": 100,
+          "audience": 5000
+        },
+        "Mid-Budget": {
+          "critic": 100,
+          "audience": 5000
+        },
+        "Indie": {
+          "critic": 40,
+          "audience": 500
+        },
+        "Micro": {
+          "critic": 10,
+          "audience": 50
+        },
+        "Micro-Budget": {
+          "critic": 10,
+          "audience": 50
+        }
+      },
+      "major_sources": [
+        "Variety",
+        "Hollywood Reporter",
+        "IGN",
+        "Empire",
+        "RogerEbert.com"
+      ],
+      "indie_sources": [
+        "IndieWire",
+        "Film Threat",
+        "Bloody Disgusting",
+        "Screen Anarchy"
+      ],
+      "source_mix_by_tier": {
+        "Epic": {
+          "major": 0.8,
+          "indie": 0.2
+        },
+        "A": {
+          "major": 0.7,
+          "indie": 0.3
+        },
+        "A-List": {
+          "major": 0.7,
+          "indie": 0.3
+        },
+        "Mid": {
+          "major": 0.5,
+          "indie": 0.5
+        },
+        "Mid-Budget": {
+          "major": 0.5,
+          "indie": 0.5
+        },
+        "Indie": {
+          "major": 0.2,
+          "indie": 0.8
+        },
+        "Micro": {
+          "major": 0.05,
+          "indie": 0.95
+        },
+        "Micro-Budget": {
+          "major": 0.05,
+          "indie": 0.95
+        }
+      },
+      "critic_score_std": 15.0,
+      "audience_score_std": 12.0,
+      "critic_sentiment_noise_std": 0.1,
+      "audience_sentiment_noise_std": 0.15,
+      "critic_review_delay_days": [
+        -14.0,
+        7.0
+      ],
+      "audience_review_delay_days": [
+        0.0,
+        30.0
+      ]
+    },
+    "awards": {
+      "prestige_by_tier": {
+        "Epic": 0.42,
+        "A": 0.26,
+        "A-List": 0.26,
+        "Mid": 0.13,
+        "Mid-Budget": 0.13,
+        "Indie": 0.08,
+        "Micro": 0.03,
+        "Micro-Budget": 0.03
+      },
+      "history_bonus_scale": 0.04,
+      "history_bonus_cap": 0.1,
+      "entry_probability": {
+        "base": 0.0,
+        "scale": 0.18,
+        "min": 0.0,
+        "max": 0.28
+      },
+      "lambda_scale": 0.55,
+      "lambda_cap": 1.6,
+      "max_nominations": 3,
+      "ceremonies": [
+        "Oscars",
+        "Golden Globes",
+        "BAFTA",
+        "Cannes",
+        "Berlin",
+        "Venice",
+        "Sundance"
+      ],
+      "won_probability": {
+        "base": 0.0,
+        "scale": 0.06,
+        "min": 0.0,
+        "max": 0.16
+      }
+    },
+    "tv_generation": {
+      "title_prefixes": [
+        "The ",
+        "A ",
+        "Project ",
+        "Operation ",
+        "Tales of "
+      ],
+      "title_nouns": [
+        "Shadows",
+        "Crown",
+        "City",
+        "Stars",
+        "Blood",
+        "Night",
+        "House"
+      ],
+      "title_suffixes": [
+        " Chronicles",
+        " Protocol",
+        " Diaries",
+        " Mysteries"
+      ],
+      "network_names": [
+        "HBO",
+        "Netflix",
+        "AMC",
+        "FX",
+        "BBC",
+        "Hulu",
+        "Amazon Prime"
+      ],
+      "episode_ranges_by_genre": {
+        "Drama": [
+          6.0,
+          22.0
+        ],
+        "Thriller": [
+          6.0,
+          13.0
+        ],
+        "Crime": [
+          8.0,
+          24.0
+        ],
+        "Mystery": [
+          6.0,
+          10.0
+        ],
+        "Comedy": [
+          10.0,
+          24.0
+        ],
+        "Sci-Fi": [
+          8.0,
+          15.0
+        ],
+        "Horror": [
+          6.0,
+          10.0
+        ],
+        "Fantasy": [
+          8.0,
+          12.0
+        ],
+        "Action": [
+          8.0,
+          22.0
+        ],
+        "Romance": [
+          10.0,
+          16.0
+        ],
+        "Documentary": [
+          3.0,
+          8.0
+        ],
+        "Animation": [
+          10.0,
+          26.0
+        ]
+      },
+      "recent_span_share": 0.6,
+      "recent_span_min_years": 2010,
+      "ongoing_cutoff_share": 0.2,
+      "ongoing_cutoff_min_years": 2020,
+      "genre_top_bias_probability": 0.3,
+      "genre_flatten_power": 0.8,
+      "network_company_probability": 0.7,
+      "season_count_values": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "season_count_probabilities": [
+        0.3,
+        0.2,
+        0.15,
+        0.1,
+        0.08,
+        0.05,
+        0.04,
+        0.03,
+        0.03,
+        0.02
+      ],
+      "status_probabilities_recent": {
+        "Ongoing": 0.4,
+        "Ended": 0.3,
+        "Cancelled": 0.3
+      },
+      "status_probabilities_older": {
+        "Ended": 0.7,
+        "Cancelled": 0.3
+      },
+      "overall_rating": {
+        "mean": 7.2,
+        "std": 1.2,
+        "min": 1.0,
+        "max": 10.0
+      },
+      "content_rating_by_genre": {
+        "Horror": [
+          "TV-MA",
+          "TV-14"
+        ],
+        "Crime": [
+          "TV-MA",
+          "TV-14"
+        ],
+        "Thriller": [
+          "TV-MA",
+          "TV-14"
+        ],
+        "Drama": [
+          "TV-MA",
+          "TV-14",
+          "TV-PG"
+        ],
+        "Comedy": [
+          "TV-14",
+          "TV-PG",
+          "TV-MA"
+        ],
+        "Romance": [
+          "TV-14",
+          "TV-PG"
+        ],
+        "Action": [
+          "TV-14",
+          "TV-MA"
+        ],
+        "Sci-Fi": [
+          "TV-14",
+          "TV-PG",
+          "TV-MA"
+        ],
+        "Fantasy": [
+          "TV-14",
+          "TV-PG",
+          "TV-MA"
+        ],
+        "Mystery": [
+          "TV-14",
+          "TV-MA"
+        ],
+        "Documentary": [
+          "TV-PG",
+          "TV-14",
+          "TV-MA"
+        ],
+        "Animation": [
+          "TV-Y7",
+          "TV-PG",
+          "TV-14",
+          "TV-MA"
+        ]
+      },
+      "season_drift_values": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "season_drift_probabilities": [
+        0.1,
+        0.2,
+        0.4,
+        0.2,
+        0.1
+      ],
+      "season_rating_drift_range": [
+        -1.5,
+        1.0
+      ],
+      "season_rating_noise_std": 0.4,
+      "season_avg_rating_noise_std": 0.2,
+      "pilot_rating_bonus": 0.3,
+      "finale_rating_bonus": 0.5,
+      "episode_title_probability": 0.8,
+      "episode_title_the_probability": 0.2,
+      "runtime_by_group": {
+        "Comedy": {
+          "mean": 22.0,
+          "std": 4.0,
+          "min": 18.0,
+          "max": 35.0
+        },
+        "Animation": {
+          "mean": 22.0,
+          "std": 4.0,
+          "min": 11.0,
+          "max": 30.0
+        },
+        "Documentary": {
+          "mean": 50.0,
+          "std": 10.0,
+          "min": 30.0,
+          "max": 90.0
+        },
+        "default": {
+          "mean": 45.0,
+          "std": 8.0,
+          "min": 30.0,
+          "max": 65.0
+        }
+      },
+      "viewership": {
+        "base_offset": 100000.0,
+        "rating_scale": 50000.0,
+        "noise_std": 20000.0,
+        "min": 10000.0,
+        "max": 20000000.0,
+        "pilot_multiplier": [
+          1.2,
+          2.0
+        ],
+        "finale_multiplier": [
+          1.5,
+          3.0
+        ],
+        "event_max": 50000000.0
+      }
+    },
+    "production_timeline": {
+      "phase_months_by_tier": {
+        "Epic": {
+          "announced": 12,
+          "pre_production": 8,
+          "filming": 6,
+          "post_production": 12
+        },
+        "A": {
+          "announced": 6,
+          "pre_production": 6,
+          "filming": 4,
+          "post_production": 8
+        },
+        "Mid": {
+          "announced": 4,
+          "pre_production": 4,
+          "filming": 2,
+          "post_production": 6
+        },
+        "Indie": {
+          "announced": 2,
+          "pre_production": 3,
+          "filming": 1,
+          "post_production": 4
+        },
+        "Micro": {
+          "announced": 1,
+          "pre_production": 1,
+          "filming": 1,
+          "post_production": 2
+        }
+      },
+      "announcement_fuzz_months": [
+        -2.0,
+        4.0
+      ]
+    },
+    "streaming_windows": {
+      "platforms": [
+        "Netflix",
+        "Amazon Prime",
+        "Hulu",
+        "Disney+",
+        "Max",
+        "Apple TV+",
+        "Peacock",
+        "Paramount+"
+      ],
+      "window_count_values": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "window_count_probabilities": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "small_tier_max_windows": 1,
+      "start_delay_months": [
+        3.0,
+        24.0
+      ],
+      "duration_months": [
+        6.0,
+        60.0
+      ],
+      "open_end_probability": 0.2,
+      "exclusive_probability": 0.7
+    },
+    "person_contracts": {
+      "contract_count_values": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "contract_count_probabilities": [
+        0.5,
+        0.25,
+        0.15,
+        0.07,
+        0.03
+      ],
+      "duration_values": [
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        7.0
+      ],
+      "duration_probabilities": [
+        0.4,
+        0.3,
+        0.15,
+        0.1,
+        0.05
+      ],
+      "gap_values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        5.0
+      ],
+      "gap_probabilities": [
+        0.3,
+        0.4,
+        0.15,
+        0.1,
+        0.05
+      ],
+      "salary_bands_by_stage": {
+        "rising": [
+          "$100k-$500k",
+          "$500k-$1M"
+        ],
+        "prime": [
+          "$1M-$5M",
+          "$5M-$10M"
+        ],
+        "veteran": [
+          "$500k-$1M",
+          "$1M-$5M"
+        ],
+        "legend": [
+          "$10M-$20M",
+          "$20M+"
+        ],
+        "retired": [
+          "$50k-$100k",
+          "$100k-$500k"
+        ]
+      },
+      "contract_types_by_stage": {
+        "rising": [
+          "Standard",
+          "Multi-Picture Option"
+        ],
+        "prime": [
+          "Standard",
+          "Pay-or-Play",
+          "Backend Points"
+        ],
+        "veteran": [
+          "Standard",
+          "Backend Points"
+        ],
+        "legend": [
+          "Pay-or-Play",
+          "First-Dollar Gross"
+        ],
+        "retired": [
+          "Standard",
+          "Cameo Rate"
+        ]
+      }
+    }
+  },
+  "history_event_priors": {
+    "event_specs": [
+      {
+        "event_type": "market_crash",
+        "description": "A financial shock contracts studio risk appetite. Big-budget slates thin out, weaker companies struggle, and prestige-indie production rises.",
+        "prob": 0.05,
+        "year_range": [
+          1970,
+          2035
+        ],
+        "default_duration": 2,
+        "suggested_actions": [
+          "dissolve_company for weak studios",
+          "adjust_genre_weight toward Drama or Thriller",
+          "career_pause for overexposed stars",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "streaming_revolution",
+        "description": "A distribution platform shift changes release economics and content shape. Firms that adapt gain reach while theatrical purists lose leverage.",
+        "prob": 0.06,
+        "year_range": [
+          2005,
+          2035
+        ],
+        "default_duration": 0,
+        "suggested_actions": [
+          "adjust_genre_weight for streaming-friendly genres",
+          "adjust_company_specialty",
+          "company_tier_transition",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "scandal",
+        "description": "A public scandal damages a prominent career and ripples through the surrounding professional network.",
+        "prob": 0.08,
+        "year_range": [
+          1970,
+          2035
+        ],
+        "default_duration": 3,
+        "suggested_actions": [
+          "career_pause or retire_person",
+          "cascade_edge_change",
+          "person_latent_delta",
+          "boost_person for replacements",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "genre_boom",
+        "description": "A genre surges in cultural and commercial relevance, pulling talent and capital toward it for several years.",
+        "prob": 0.1,
+        "year_range": [
+          1970,
+          2035
+        ],
+        "default_duration": 3,
+        "suggested_actions": [
+          "adjust_genre_weight",
+          "change_genre_affinity",
+          "change_style_tags",
+          "boost_person",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "country_emergence",
+        "description": "A country's film industry gains global momentum through breakout works, new export strength, and clustered talent visibility.",
+        "prob": 0.04,
+        "year_range": [
+          1985,
+          2035
+        ],
+        "default_duration": 5,
+        "suggested_actions": [
+          "adjust_country_weight",
+          "boost_person",
+          "change_director_specialty",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "award_controversy",
+        "description": "An awards-season controversy changes the prestige equilibrium around a major ceremony and affects the careers tied to it.",
+        "prob": 0.06,
+        "year_range": [
+          1975,
+          2035
+        ],
+        "default_duration": 2,
+        "suggested_actions": [
+          "award_prestige_shift",
+          "person_latent_delta",
+          "edge_add or edge_expire",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "studio_merger",
+        "description": "A merger consolidates catalogs, capital, and influence, altering the production network and company hierarchy.",
+        "prob": 0.05,
+        "year_range": [
+          1980,
+          2035
+        ],
+        "default_duration": 0,
+        "suggested_actions": [
+          "merge_companies",
+          "adjust_company_specialty",
+          "company_tier_transition",
+          "create_world_event"
+        ]
+      },
+      {
+        "event_type": "tech_disruption",
+        "description": "A technological shift changes production capability and genre economics, rewarding early adopters and exposing laggards.",
+        "prob": 0.04,
+        "year_range": [
+          1990,
+          2035
+        ],
+        "default_duration": 3,
+        "suggested_actions": [
+          "adjust_genre_weight",
+          "career_stage_transition",
+          "career_pause",
+          "company_tier_transition",
+          "create_world_event"
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "schema_version": 1,
+    "artifact": "modeling_priors",
+    "generator_mode": "llm",
+    "model": "gemini-3.1-pro-preview"
+  }
+}
