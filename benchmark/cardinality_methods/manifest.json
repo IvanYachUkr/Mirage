@@ -1,0 +1,41 @@
+{
+  "created": "2026-04-25",
+  "purpose": "Prepare lightweight learned cardinality/cost estimation baselines for later Mirage evaluation.",
+  "staged_sources": [
+    {
+      "name": "learnedcardinalities",
+      "method": "MSCN",
+      "url": "https://github.com/andreaskipf/learnedcardinalities",
+      "archive": "archives/learnedcardinalities-master.zip",
+      "extracted_to": "sources/learnedcardinalities-master",
+      "sha256": "f5ec76ccb3adfa7c55f7086c58aacb567b0f046bb0cd7bdfbb80608596cabe2f",
+      "notes": "Historical learned cardinality baseline; requires PyTorch-era environment and workload conversion."
+    },
+    {
+      "name": "zero-shot-cost-estimation",
+      "method": "Zero-shot cost model",
+      "url": "https://github.com/DataManagementLab/zero-shot-cost-estimation",
+      "archive": "archives/zero-shot-cost-estimation-main.zip",
+      "extracted_to": "sources/zero-shot-cost-estimation-main",
+      "sha256": "d17e84fbdcbe101eac8e6b2ea5e6507ec4ebf3684a2c09a8872df6fc592c387f",
+      "notes": "Useful for zero-shot learned cost/cardinality experiments after PostgreSQL JSON plan traces exist."
+    }
+  ],
+  "deferred_sources": [
+    {
+      "name": "CEB",
+      "url": "https://github.com/learnedsystems/CEB",
+      "reason": "Benchmark framework is useful, but associated workloads/artifacts can be large; fetch only when a specific integration task is planned."
+    },
+    {
+      "name": "lcm-eval",
+      "url": "https://github.com/DataManagementLab/lcm-eval",
+      "reason": "Modern learned-cost-model evaluation framework; likely useful after JOB/JOB-Complex traces are stable."
+    },
+    {
+      "name": "DeepDB",
+      "url": "https://github.com/DataManagementLab/deepdb-public",
+      "reason": "Potential data-driven cardinality baseline, but dependency stack is heavier than needed for the immediate paper path."
+    }
+  ]
+}

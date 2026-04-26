@@ -1,0 +1,24 @@
+{"step_id": 4, "step_name": "Generate Modeling Priors", "ok": true, "elapsed_sec": 85.8129, "timestamp": "2026-04-26T20:28:58.466554"}
+{"step_id": 8, "step_name": "Generate Identity Bank", "ok": true, "elapsed_sec": 72.3544, "timestamp": "2026-04-26T20:30:10.824316"}
+{"step_id": 10, "step_name": "Generate Persons (Procedural)", "ok": true, "elapsed_sec": 0.2182, "timestamp": "2026-04-26T20:30:11.045694"}
+{"step_id": 18, "step_name": "Generate Company Lexicon", "ok": true, "elapsed_sec": 4.9561, "timestamp": "2026-04-26T20:30:16.004085"}
+{"step_id": 20, "step_name": "Generate Companies (Procedural)", "ok": true, "elapsed_sec": 0.1333, "timestamp": "2026-04-26T20:30:16.139689"}
+{"step_id": 28, "step_name": "Generate Keyword Seed Bank", "ok": true, "elapsed_sec": 40.0286, "timestamp": "2026-04-26T20:30:56.171496"}
+{"step_id": 30, "step_name": "Generate Keywords (Procedural)", "ok": true, "elapsed_sec": 0.1803, "timestamp": "2026-04-26T20:30:56.354485"}
+{"step_id": 40, "step_name": "Enrich Persons (LLM)", "ok": true, "elapsed_sec": 835.8021, "timestamp": "2026-04-26T20:44:52.170001"}
+{"step_id": 48, "step_name": "Generate Character Identity Bank", "ok": true, "elapsed_sec": 5.4211, "timestamp": "2026-04-26T20:44:57.595780"}
+{"step_id": 50, "step_name": "Generate Character Bank", "ok": true, "elapsed_sec": 0.5313, "timestamp": "2026-04-26T20:44:58.129242"}
+{"step_id": 56, "step_name": "Generate Temporal Regime Plan", "ok": true, "elapsed_sec": 4.6393, "timestamp": "2026-04-26T20:45:02.771515"}
+{"step_id": 58, "step_name": "Generate Title Grammar Bank", "ok": true, "elapsed_sec": 87.5276, "timestamp": "2026-04-26T20:46:30.302395"}
+{"step_id": 60, "step_name": "Generate Title Bank", "ok": true, "elapsed_sec": 239.0905, "timestamp": "2026-04-26T20:50:29.399913"}
+{"step_id": 70, "step_name": "Generate Latent Variables", "ok": true, "elapsed_sec": 989.8634, "timestamp": "2026-04-26T21:06:59.268221"}
+{"step_id": 72, "step_name": "Generate World Policy", "ok": true, "elapsed_sec": 6.576, "timestamp": "2026-04-26T21:07:05.855953"}
+{"step_id": 74, "step_name": "Generate Year Slate Plan", "ok": true, "elapsed_sec": 19.5541, "timestamp": "2026-04-26T21:07:25.415873"}
+{"step_id": 80, "step_name": "Generate Edge Graph", "ok": true, "elapsed_sec": 4.5456, "timestamp": "2026-04-26T21:07:29.968072"}
+{"step_id": 90, "step_name": "Convert Entities to CSV", "ok": true, "elapsed_sec": 130.6718, "timestamp": "2026-04-26T21:09:40.644949"}
+{"step_id": 92, "step_name": "Generate Company Financial Profiles", "ok": true, "elapsed_sec": 0.8573, "timestamp": "2026-04-26T21:09:41.510048"}
+{"step_id": 96, "step_name": "Generate Keyword Motif Bank", "ok": true, "elapsed_sec": 234.3123, "timestamp": "2026-04-26T21:13:36.148186"}
+{"step_id": 97, "step_name": "Generate Concept Packs", "ok": true, "elapsed_sec": 99.3436, "timestamp": "2026-04-26T21:15:15.501014"}
+{"step_id": 98, "step_name": "Generate Franchise Bibles", "ok": true, "elapsed_sec": 6.3929, "timestamp": "2026-04-26T21:15:21.899861"}
+{"step_id": 100, "step_name": "Generate Movies", "ok": false, "elapsed_sec": 17.4326, "timestamp": "2026-04-26T21:15:39.337401"}
+{"step_id": 100, "step_name": "Generate Movies", "ok": true, "elapsed_sec": 91.9904, "timestamp": "2026-04-26T21:24:59.431131"}

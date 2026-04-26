@@ -1,0 +1,804 @@
+{
+  "prefixes": [
+    "New",
+    "First",
+    "Global",
+    "United",
+    "Independent",
+    "Grand",
+    "Royal",
+    "Silver",
+    "Golden",
+    "Red",
+    "Blue",
+    "Black",
+    "White",
+    "Dark",
+    "Light",
+    "Neo",
+    "Omni",
+    "Pan",
+    "Trans",
+    "Inter",
+    "Cine",
+    "Tele",
+    "Mega",
+    "Micro",
+    "Poly",
+    "Prime",
+    "Alpha",
+    "Omega",
+    "Infinite",
+    "Eternal",
+    "Absolute",
+    "Supreme",
+    "Ultimate",
+    "Optimum",
+    "Maximum",
+    "Primary",
+    "Central",
+    "Front",
+    "True",
+    "Hyper",
+    "Super",
+    "Ultra",
+    "Meta",
+    "Quantum",
+    "Cosmic",
+    "Stellar",
+    "Lunar",
+    "Solar",
+    "Astral",
+    "Celestial",
+    "Galactic"
+  ],
+  "suffixes": [
+    "Pictures",
+    "Studios",
+    "Films",
+    "Productions",
+    "Entertainment",
+    "Media",
+    "Group",
+    "Corporation",
+    "Inc.",
+    "LLC",
+    "Ltd.",
+    "Cinemas",
+    "Releasing",
+    "Features",
+    "Vision",
+    "Works",
+    "Arts",
+    "Network",
+    "Broadcasting",
+    "Television",
+    "Video",
+    "Digital",
+    "Interactive",
+    "Creative",
+    "Collective",
+    "Partners",
+    "Associates",
+    "Syndicate",
+    "Consortium",
+    "Alliance"
+  ],
+  "abstract_nouns": [
+    "Horizon",
+    "Apex",
+    "Zenith",
+    "Pinnacle",
+    "Summit",
+    "Nexus",
+    "Paradigm",
+    "Vanguard",
+    "Genesis",
+    "Infinity",
+    "Eternity",
+    "Legacy",
+    "Destiny",
+    "Harmony",
+    "Symphony",
+    "Illusion",
+    "Dream",
+    "Mirage",
+    "Echo",
+    "Shadow",
+    "Light",
+    "Spark",
+    "Pulse",
+    "Rhythm",
+    "Aura",
+    "Essence",
+    "Focus",
+    "Frame",
+    "Lens",
+    "Vision",
+    "Concept",
+    "Idea",
+    "Thought",
+    "Mind",
+    "Soul",
+    "Heart",
+    "Core",
+    "Hub",
+    "Node",
+    "Link",
+    "Web",
+    "Network",
+    "Grid",
+    "Matrix",
+    "Vector",
+    "Dimension",
+    "Reality",
+    "Fantasy",
+    "Fiction",
+    "Truth",
+    "Myth",
+    "Legend",
+    "Tale",
+    "Story",
+    "Narrative",
+    "Chronicle",
+    "Saga",
+    "Epic",
+    "Color",
+    "Hue",
+    "Shade",
+    "Tint",
+    "Texture",
+    "Pattern",
+    "Shape",
+    "Form",
+    "Structure",
+    "Design",
+    "Style",
+    "Art",
+    "Craft",
+    "Joy",
+    "Sorrow",
+    "Pain",
+    "Pleasure",
+    "Love",
+    "Hate",
+    "Courage",
+    "Bravery",
+    "Valor",
+    "Honor",
+    "Glory",
+    "Fame",
+    "Fortune",
+    "Wealth"
+  ],
+  "material_words": [
+    "Iron",
+    "Steel",
+    "Copper",
+    "Bronze",
+    "Gold",
+    "Silver",
+    "Platinum",
+    "Diamond",
+    "Ruby",
+    "Sapphire",
+    "Emerald",
+    "Crystal",
+    "Glass",
+    "Stone",
+    "Rock",
+    "Marble",
+    "Granite",
+    "Wood",
+    "Oak",
+    "Pine",
+    "Cedar",
+    "Paper",
+    "Silk",
+    "Velvet",
+    "Canvas",
+    "Clay",
+    "Sand",
+    "Water",
+    "Ice",
+    "Fire",
+    "Ash",
+    "Smoke",
+    "Brass",
+    "Lead",
+    "Zinc",
+    "Tin",
+    "Aluminum",
+    "Titanium",
+    "Opal",
+    "Pearl",
+    "Jade",
+    "Quartz",
+    "Maple",
+    "Birch",
+    "Elm",
+    "Willow",
+    "Cherry",
+    "Dust",
+    "Dirt",
+    "Soil",
+    "Mud",
+    "Chalk",
+    "Coal",
+    "Flame",
+    "Ember",
+    "Cinder",
+    "Soot",
+    "Tar",
+    "Pitch",
+    "Resin",
+    "Amber",
+    "Wax",
+    "Oil",
+    "Snow",
+    "Frost",
+    "Hail",
+    "Rain",
+    "Dew",
+    "Mist",
+    "Fog",
+    "Cloud"
+  ],
+  "geographic_words": [
+    "Pacific",
+    "Atlantic",
+    "Continental",
+    "Global",
+    "Northern",
+    "Southern",
+    "Eastern",
+    "Western",
+    "Alpine",
+    "Desert",
+    "Ocean",
+    "River",
+    "Mountain",
+    "Valley",
+    "Canyon",
+    "Island",
+    "Coast",
+    "Bay",
+    "Harbor",
+    "City",
+    "Metro",
+    "Urban",
+    "Prairie",
+    "Tundra",
+    "Equator",
+    "Meridian",
+    "Globe",
+    "World",
+    "Earth",
+    "Forest",
+    "Jungle",
+    "Swamp",
+    "Marsh",
+    "Bog",
+    "Fen",
+    "Moor",
+    "Heath",
+    "Meadow",
+    "Field",
+    "Pasture",
+    "Plain",
+    "Steppe",
+    "Dune",
+    "Sky",
+    "Air",
+    "Space",
+    "Universe",
+    "Cosmos",
+    "Galaxy",
+    "Nebula",
+    "Nova",
+    "Star",
+    "Sun",
+    "Moon",
+    "Planet",
+    "Territory",
+    "Province",
+    "State",
+    "Nation",
+    "Republic",
+    "Commonwealth",
+    "Empire",
+    "Kingdom",
+    "Realm",
+    "Domain"
+  ],
+  "motion_words": [
+    "Dynamic",
+    "Kinetic",
+    "Active",
+    "Swift",
+    "Rapid",
+    "Fast",
+    "Slow",
+    "Still",
+    "Flow",
+    "Stream",
+    "Current",
+    "Wave",
+    "Tide",
+    "Wind",
+    "Breeze",
+    "Storm",
+    "Flight",
+    "Soar",
+    "Glide",
+    "Drift",
+    "Run",
+    "Walk",
+    "Step",
+    "Leap",
+    "Jump",
+    "Bound",
+    "Spin",
+    "Turn",
+    "Roll",
+    "Slide",
+    "Rush",
+    "Dash",
+    "Sprint",
+    "Race",
+    "Chase",
+    "Hunt",
+    "Search",
+    "Seek",
+    "Rise",
+    "Fall",
+    "Drop",
+    "Lift",
+    "Push",
+    "Pull",
+    "Drag",
+    "Throw",
+    "Catch",
+    "Hold",
+    "Release",
+    "Grab",
+    "Snatch",
+    "Take",
+    "Give",
+    "Send",
+    "Receive",
+    "Bring",
+    "Carry",
+    "Bear",
+    "Support",
+    "Raise",
+    "Lower",
+    "Sink",
+    "Float",
+    "Swim",
+    "Dive",
+    "Plunge",
+    "Crash",
+    "Smash",
+    "Break",
+    "Shatter",
+    "Crack",
+    "Snap",
+    "Pop",
+    "Burst",
+    "Explode",
+    "Erupt"
+  ],
+  "mythic_words": [
+    "Apollo",
+    "Athena",
+    "Zeus",
+    "Hera",
+    "Ares",
+    "Hermes",
+    "Poseidon",
+    "Hades",
+    "Odin",
+    "Thor",
+    "Loki",
+    "Freya",
+    "Valhalla",
+    "Olympus",
+    "Titan",
+    "Atlas",
+    "Hercules",
+    "Achilles",
+    "Dragon",
+    "Phoenix",
+    "Griffin",
+    "Unicorn",
+    "Pegasus",
+    "Centaur",
+    "Minotaur",
+    "Siren",
+    "Mermaid",
+    "Kraken",
+    "Leviathan",
+    "Behemoth",
+    "Sphinx",
+    "Chimera",
+    "Hydra",
+    "Gorgon",
+    "Cyclops",
+    "Golem",
+    "Djinn",
+    "Ifrit",
+    "Valkyrie",
+    "Banshee",
+    "Excalibur",
+    "Avalon",
+    "Camelot",
+    "Grail",
+    "Rune",
+    "Talisman",
+    "Amulet",
+    "Relic",
+    "Artifact",
+    "Totem",
+    "Oracle",
+    "Seer",
+    "Mystic",
+    "Shaman",
+    "Druid",
+    "Mage",
+    "Sorcerer",
+    "Wizard",
+    "Witch",
+    "Demon",
+    "Angel",
+    "Spirit",
+    "Ghost",
+    "Phantom",
+    "Specter",
+    "Wraith",
+    "Ghoul",
+    "Zombie",
+    "Vampire",
+    "Werewolf",
+    "Lycan",
+    "Shapeshifter",
+    "Changeling",
+    "Fairy",
+    "Pixie",
+    "Sprite",
+    "Nymph",
+    "Dryad",
+    "Naiad",
+    "Oread",
+    "Sylph",
+    "Salamander",
+    "Undine",
+    "Gnome",
+    "Dwarf",
+    "Elf",
+    "Orc",
+    "Goblin",
+    "Troll",
+    "Ogre",
+    "Giant",
+    "Colossus",
+    "Wyrm",
+    "Drake",
+    "Wyvern",
+    "Basilisk",
+    "Cockatrice",
+    "Manticore",
+    "Hippogriff",
+    "Satyr",
+    "Faun",
+    "Harpy",
+    "Medusa"
+  ],
+  "templates": [
+    "{prefix} {abstract} {suffix}",
+    "{geo} {material} {suffix}",
+    "{mythic} {suffix}",
+    "{motion} {abstract} {suffix}",
+    "{prefix} {geo} {suffix}",
+    "{material} {motion} {suffix}",
+    "{abstract} {suffix}",
+    "{prefix} {mythic} {suffix}",
+    "{geo} {abstract} {suffix}",
+    "{material} {abstract} {suffix}",
+    "{motion} {geo} {suffix}",
+    "{mythic} {geo} {suffix}",
+    "{prefix} {material} {suffix}",
+    "{abstract} {motion} {suffix}",
+    "{geo} {mythic} {suffix}",
+    "{geo} {suffix}",
+    "{material} {suffix}"
+  ],
+  "tier_styles": {
+    "Epic": [
+      "{prefix} {mythic} {suffix}",
+      "{geo} {abstract} {suffix}",
+      "{prefix} {geo} {suffix}"
+    ],
+    "A": [
+      "{abstract} {suffix}",
+      "{mythic} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Mid": [
+      "{geo} {material} {suffix}",
+      "{material} {abstract} {suffix}"
+    ],
+    "Indie": [
+      "{material} {motion} {suffix}",
+      "{motion} {abstract} {suffix}"
+    ],
+    "Micro": [
+      "{abstract} {motion} {suffix}",
+      "{prefix} {material} {suffix}"
+    ]
+  },
+  "country_style_bias": {
+    "USA": [
+      "{prefix} {abstract} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "UK": [
+      "{prefix} {geo} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "France": [
+      "{abstract} {suffix}",
+      "{motion} {abstract} {suffix}"
+    ],
+    "India": [
+      "{mythic} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "South Korea": [
+      "{motion} {abstract} {suffix}",
+      "{geo} {abstract} {suffix}"
+    ],
+    "Japan": [
+      "{mythic} {geo} {suffix}",
+      "{abstract} {suffix}"
+    ],
+    "Germany": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {geo} {suffix}"
+    ],
+    "Brazil": [
+      "{geo} {material} {suffix}",
+      "{motion} {geo} {suffix}"
+    ],
+    "Canada": [
+      "{geo} {abstract} {suffix}",
+      "{prefix} {material} {suffix}"
+    ],
+    "China": [
+      "{prefix} {mythic} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "Italy": [
+      "{abstract} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Spain": [
+      "{motion} {geo} {suffix}",
+      "{abstract} {suffix}"
+    ],
+    "Australia": [
+      "{geo} {suffix}",
+      "{material} {motion} {suffix}"
+    ],
+    "Mexico": [
+      "{geo} {material} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Nigeria": [
+      "{geo} {abstract} {suffix}",
+      "{prefix} {mythic} {suffix}"
+    ],
+    "Sweden": [
+      "{material} {abstract} {suffix}",
+      "{abstract} {motion} {suffix}"
+    ],
+    "Argentina": [
+      "{motion} {geo} {suffix}",
+      "{geo} {material} {suffix}"
+    ],
+    "Thailand": [
+      "{mythic} {suffix}",
+      "{geo} {mythic} {suffix}"
+    ],
+    "Iran": [
+      "{mythic} {geo} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Poland": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {material} {suffix}"
+    ],
+    "Colombia": [
+      "{geo} {material} {suffix}",
+      "{motion} {geo} {suffix}"
+    ],
+    "Denmark": [
+      "{abstract} {motion} {suffix}",
+      "{material} {suffix}"
+    ],
+    "Cuba": [
+      "{geo} {suffix}",
+      "{motion} {geo} {suffix}"
+    ],
+    "Greece": [
+      "{mythic} {suffix}",
+      "{prefix} {mythic} {suffix}"
+    ],
+    "Philippines": [
+      "{geo} {abstract} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Ireland": [
+      "{mythic} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "New Zealand": [
+      "{geo} {mythic} {suffix}",
+      "{material} {motion} {suffix}"
+    ],
+    "Egypt": [
+      "{mythic} {geo} {suffix}",
+      "{prefix} {mythic} {suffix}"
+    ],
+    "Russia": [
+      "{prefix} {material} {suffix}",
+      "{material} {abstract} {suffix}"
+    ],
+    "Turkey": [
+      "{geo} {abstract} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Ghana": [
+      "{geo} {abstract} {suffix}",
+      "{prefix} {mythic} {suffix}"
+    ],
+    "Pakistan": [
+      "{mythic} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Vietnam": [
+      "{geo} {mythic} {suffix}",
+      "{motion} {abstract} {suffix}"
+    ],
+    "Indonesia": [
+      "{geo} {abstract} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Norway": [
+      "{material} {abstract} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "Finland": [
+      "{abstract} {motion} {suffix}",
+      "{material} {suffix}"
+    ],
+    "Netherlands": [
+      "{prefix} {geo} {suffix}",
+      "{abstract} {suffix}"
+    ],
+    "Belgium": [
+      "{abstract} {suffix}",
+      "{motion} {abstract} {suffix}"
+    ],
+    "Switzerland": [
+      "{geo} {material} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Austria": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {geo} {suffix}"
+    ],
+    "Portugal": [
+      "{motion} {geo} {suffix}",
+      "{abstract} {suffix}"
+    ],
+    "Czech Republic": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {material} {suffix}"
+    ],
+    "Hungary": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {material} {suffix}"
+    ],
+    "Romania": [
+      "{mythic} {suffix}",
+      "{material} {abstract} {suffix}"
+    ],
+    "Bulgaria": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {material} {suffix}"
+    ],
+    "Croatia": [
+      "{geo} {suffix}",
+      "{material} {abstract} {suffix}"
+    ],
+    "Serbia": [
+      "{material} {abstract} {suffix}",
+      "{prefix} {material} {suffix}"
+    ],
+    "Ukraine": [
+      "{prefix} {material} {suffix}",
+      "{material} {abstract} {suffix}"
+    ],
+    "Hong Kong": [
+      "{motion} {abstract} {suffix}",
+      "{prefix} {mythic} {suffix}"
+    ],
+    "Taiwan": [
+      "{motion} {abstract} {suffix}",
+      "{geo} {abstract} {suffix}"
+    ],
+    "Malaysia": [
+      "{geo} {abstract} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Singapore": [
+      "{prefix} {abstract} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "Bangladesh": [
+      "{mythic} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Sri Lanka": [
+      "{geo} {mythic} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Nepal": [
+      "{geo} {mythic} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Israel": [
+      "{abstract} {suffix}",
+      "{prefix} {abstract} {suffix}"
+    ],
+    "Lebanon": [
+      "{geo} {abstract} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Jordan": [
+      "{geo} {abstract} {suffix}",
+      "{mythic} {suffix}"
+    ],
+    "Iraq": [
+      "{mythic} {geo} {suffix}",
+      "{prefix} {mythic} {suffix}"
+    ],
+    "Saudi Arabia": [
+      "{prefix} {geo} {suffix}",
+      "{geo} {abstract} {suffix}"
+    ],
+    "UAE": [
+      "{prefix} {abstract} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "Kuwait": [
+      "{prefix} {geo} {suffix}",
+      "{geo} {abstract} {suffix}"
+    ],
+    "Qatar": [
+      "{prefix} {abstract} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "Bahrain": [
+      "{prefix} {geo} {suffix}",
+      "{geo} {abstract} {suffix}"
+    ]
+  },
+  "meta": {
+    "schema_version": 1,
+    "artifact": "company_lexicon",
+    "generator_mode": "llm",
+    "model": "gemini-3.1-pro-preview"
+  }
+}

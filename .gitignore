@@ -1,0 +1,131 @@
+# Mirage / DATA_SYS_LAB safety ignore
+#
+# This repository contains code plus very large generated benchmark datasets.
+# Keep Git for source, configs, scripts, docs, SQL, and lightweight manifests.
+# Never track generated tables, model weights, virtualenvs, checkpoints, or
+# long-run scratch directories.
+
+# Python environments and caches
+.venv/
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environment / credentials
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local package/model caches
+.cache/
+models/
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Generic database/export artifacts
+*.arrow
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.feather
+
+# Pipeline logs, checkpoints, and reports
+pipeline_timing.jsonl
+movie_generation_progress.jsonl
+llm_usage*.jsonl
+research_mode_audit*.json
+.pipeline_checkpoint.json
+critic_report.json
+recovery_report.json
+signoff_report.json
+signoff_report.md
+
+# Generated pipeline workspaces inside test/run folders
+test*/entities/
+test*/graph/
+test*/checkpoints/
+test*/critic/
+test*/imdb_schema/
+test*/decision_logs/
+test*/reports/
+test*/_step100_resume/
+test*/_dev/
+test*/.cache/
+test*/.venv*/
+test*/local_ollama_qwen35/models/
+test*/local_ollama_qwen35/logs/
+
+# Generated movie/JOB/IMDb tables inside test/run folders.
+# Source scripts, configs, docs, SQL queries, and profiles remain trackable.
+test*/movie.csv
+test*/movies_flat.csv
+test*/movies_analysis.csv
+test*/cast_info.csv
+test*/movie_directors.csv
+test*/movie_companies.csv
+test*/movie_keyword.csv
+test*/movie_crew.csv
+test*/release_dates.csv
+test*/box_office_*.csv
+test*/reviews.csv
+test*/awards.csv
+test*/locations.csv
+test*/alternate_titles.csv
+test*/ratings_breakdown.csv
+test*/movie_links.csv
+test*/person_demographics.csv
+test*/tv_series.csv
+test*/seasons.csv
+test*/episodes.csv
+test*/episode_cast.csv
+test*/company_links.csv
+test*/user_ratings.csv
+test*/production_timeline.csv
+test*/media_links.csv
+test*/person_contracts.csv
+test*/world_events.csv
+test*/persons_enriched.csv
+test*/companies_enriched.csv
+test*/edges_temporal.csv
+test*/edges_final.csv
+
+# Benchmark output workspaces
+benchmark/**/adapted_queries/*/
+benchmark/**/results/
+benchmark/cardinality_methods/runs/
+benchmark/cardinality_methods/sources/
+benchmark/**/*.duckdb
+benchmark/**/*.arrow
+benchmark/**/*.parquet
+benchmark/**/manifest.json
+benchmark/**/coverage_report.md
+
+# Legacy/generated top-level output directories
+data/
+out_struct/
+out_llm_v2/
+out_llm_joint/
+tmp/
+temp/
+
+# Explicit old scratch pattern kept from the previous ignore file
+test20/_dev/*

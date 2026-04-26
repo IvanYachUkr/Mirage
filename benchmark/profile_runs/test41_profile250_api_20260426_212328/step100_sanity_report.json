@@ -1,0 +1,411 @@
+{
+  "awards": {
+    "movies_with_awards": 30,
+    "movies_with_awards_rate_pct": 12.0,
+    "outcomes": {
+      "nominated": 37,
+      "won": 3
+    },
+    "rows": 40,
+    "top_ceremonies": [
+      {
+        "count": 16,
+        "value": "BAFTA"
+      },
+      {
+        "count": 11,
+        "value": "Golden Globes"
+      },
+      {
+        "count": 7,
+        "value": "Oscars"
+      },
+      {
+        "count": 6,
+        "value": "Cannes"
+      }
+    ],
+    "win_rate_pct": 7.5,
+    "wins": 3
+  },
+  "cast": {
+    "blank_character_description_rate_pct": 0.0,
+    "blank_character_description_rows": 0,
+    "movies_with_cast": 250,
+    "per_movie_max": 16,
+    "per_movie_mean": 5.784,
+    "per_movie_median": 5.0,
+    "reuse_ratio": 2.288,
+    "rows": 1446,
+    "top_actor_movies": [
+      {
+        "count": 27,
+        "value": "1374"
+      },
+      {
+        "count": 13,
+        "value": "256"
+      },
+      {
+        "count": 12,
+        "value": "458"
+      },
+      {
+        "count": 11,
+        "value": "1343"
+      },
+      {
+        "count": 9,
+        "value": "1691"
+      },
+      {
+        "count": 9,
+        "value": "148"
+      },
+      {
+        "count": 9,
+        "value": "1100"
+      },
+      {
+        "count": 9,
+        "value": "447"
+      },
+      {
+        "count": 9,
+        "value": "133"
+      },
+      {
+        "count": 8,
+        "value": "842"
+      }
+    ],
+    "unique_people": 632
+  },
+  "companies": {
+    "gini": 0.4254,
+    "movies_with_company": 250,
+    "per_movie_max": 3,
+    "per_movie_mean": 1.876,
+    "per_movie_median": 2.0,
+    "roles": {
+      "Co-Production": 219,
+      "Production": 250
+    },
+    "rows": 469,
+    "top_company_movies": [
+      {
+        "count": 19,
+        "value": "121"
+      },
+      {
+        "count": 15,
+        "value": "130"
+      },
+      {
+        "count": 14,
+        "value": "88"
+      },
+      {
+        "count": 14,
+        "value": "135"
+      },
+      {
+        "count": 12,
+        "value": "44"
+      },
+      {
+        "count": 11,
+        "value": "75"
+      },
+      {
+        "count": 11,
+        "value": "68"
+      },
+      {
+        "count": 10,
+        "value": "92"
+      },
+      {
+        "count": 10,
+        "value": "80"
+      },
+      {
+        "count": 9,
+        "value": "28"
+      }
+    ],
+    "unique_companies": 113
+  },
+  "dataset_dir": "/tmp/mirage_profile250_api",
+  "directors": {
+    "movies_with_director": 250,
+    "per_movie_max": 2,
+    "per_movie_median": 1.0,
+    "rows": 278,
+    "top_director_movies": [
+      {
+        "count": 21,
+        "value": "966"
+      },
+      {
+        "count": 10,
+        "value": "958"
+      },
+      {
+        "count": 8,
+        "value": "1417"
+      },
+      {
+        "count": 7,
+        "value": "263"
+      },
+      {
+        "count": 7,
+        "value": "1640"
+      },
+      {
+        "count": 5,
+        "value": "53"
+      },
+      {
+        "count": 5,
+        "value": "621"
+      },
+      {
+        "count": 5,
+        "value": "1140"
+      },
+      {
+        "count": 5,
+        "value": "293"
+      },
+      {
+        "count": 5,
+        "value": "1546"
+      }
+    ],
+    "unique_directors": 110
+  },
+  "failed_gates": [
+    "movie_count_20k",
+    "unique_cast_people_ge_14000",
+    "unique_directors_ge_1000",
+    "company_gini_ge_045"
+  ],
+  "gates": {
+    "award_wins_no_more_than_35_pct": true,
+    "awards_movie_rate_10_to_35_pct": true,
+    "blank_character_description_zero": true,
+    "cast_reuse_ratio_le_15": true,
+    "company_gini_ge_045": false,
+    "movie_count_20k": false,
+    "plot_placeholders_zero": true,
+    "tagline_placeholders_zero": true,
+    "top_actor_le_250": true,
+    "top_director_le_120": true,
+    "unique_cast_people_ge_14000": false,
+    "unique_directors_ge_1000": false,
+    "unique_title_ids": true,
+    "unique_titles": true,
+    "zero_exact_topic_keywords": true
+  },
+  "generated_at": "2026-04-26T21:25:08",
+  "keywords": {
+    "bucket_counts": {
+      "exact_anchor": 953,
+      "generic": 159,
+      "related_support": 421,
+      "story_specific": 510
+    },
+    "movies_with_keywords": 250,
+    "per_movie_max": 15,
+    "per_movie_mean": 8.172,
+    "per_movie_median": 8.0,
+    "rows": 2043,
+    "zero_exact_topic_movies": 0,
+    "zero_exact_topic_rate_pct": 0.0,
+    "zero_exact_topic_title_ids": []
+  },
+  "movie": {
+    "duplicate_titles": {},
+    "duplicated_tagline_rate_pct": 0.0,
+    "duplicated_tagline_rows": 0,
+    "generic_step100_summary_rows": 243,
+    "plot_placeholder_rows": 0,
+    "rating_mean": 6.8728,
+    "rating_median": 6.9,
+    "rows": 250,
+    "tagline_placeholder_rows": 0,
+    "tiers": {
+      "A": 34,
+      "Epic": 64,
+      "Indie": 45,
+      "Micro": 20,
+      "Mid": 87
+    },
+    "top_countries": [
+      {
+        "count": 30,
+        "value": "USA"
+      },
+      {
+        "count": 25,
+        "value": "Ghana"
+      },
+      {
+        "count": 20,
+        "value": "South Korea"
+      },
+      {
+        "count": 18,
+        "value": "Cuba"
+      },
+      {
+        "count": 16,
+        "value": "Belgium"
+      },
+      {
+        "count": 15,
+        "value": "Argentina"
+      },
+      {
+        "count": 12,
+        "value": "India"
+      },
+      {
+        "count": 9,
+        "value": "Germany"
+      },
+      {
+        "count": 6,
+        "value": "Nigeria"
+      },
+      {
+        "count": 5,
+        "value": "Thailand"
+      },
+      {
+        "count": 5,
+        "value": "China"
+      },
+      {
+        "count": 5,
+        "value": "Australia"
+      }
+    ],
+    "top_genres": [
+      {
+        "count": 21,
+        "value": "Action"
+      },
+      {
+        "count": 18,
+        "value": "Thriller"
+      },
+      {
+        "count": 18,
+        "value": "Comedy"
+      },
+      {
+        "count": 17,
+        "value": "Adventure"
+      },
+      {
+        "count": 17,
+        "value": "Horror"
+      },
+      {
+        "count": 15,
+        "value": "Crime"
+      },
+      {
+        "count": 15,
+        "value": "Fantasy"
+      },
+      {
+        "count": 14,
+        "value": "Drama"
+      },
+      {
+        "count": 13,
+        "value": "Sci-Fi"
+      },
+      {
+        "count": 13,
+        "value": "Romance"
+      },
+      {
+        "count": 10,
+        "value": "Animation"
+      },
+      {
+        "count": 10,
+        "value": "Superhero"
+      }
+    ],
+    "top_repeated_taglines": [
+      {
+        "count": 1,
+        "value": "Witness the steel that defied the ages."
+      },
+      {
+        "count": 1,
+        "value": "When cosmos forces collide, the world trembles."
+      },
+      {
+        "count": 1,
+        "value": "A last portrait of a dust defined by memory."
+      },
+      {
+        "count": 1,
+        "value": "Beyond the Kingdom lies a fable secret."
+      },
+      {
+        "count": 1,
+        "value": "Experience the broken intensity of a focused vision."
+      },
+      {
+        "count": 1,
+        "value": "The dust is hidden in plain sight."
+      },
+      {
+        "count": 1,
+        "value": "Survival is a broken calculation."
+      },
+      {
+        "count": 1,
+        "value": "Where desire is the ultimate prize."
+      }
+    ],
+    "top_years": [
+      {
+        "count": 69,
+        "value": "2024"
+      },
+      {
+        "count": 64,
+        "value": "2023"
+      },
+      {
+        "count": 50,
+        "value": "2022"
+      },
+      {
+        "count": 38,
+        "value": "2021"
+      },
+      {
+        "count": 29,
+        "value": "2020"
+      }
+    ],
+    "unique_nonblank_taglines": 250,
+    "unique_title_ids": 250,
+    "unique_titles": 250,
+    "votes_mean": 28655.66,
+    "votes_median": 5000.0,
+    "year_max": 2024,
+    "year_min": 2020
+  },
+  "summary_policy": "benchmark_first_deferred"
+}

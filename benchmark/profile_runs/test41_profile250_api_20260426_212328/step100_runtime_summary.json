@@ -1,0 +1,929 @@
+{
+  "base_dir": "/tmp/mirage_profile250_api",
+  "generated_at": "2026-04-26T19:25:08+00:00",
+  "progress": {
+    "completed_movie_events": 250,
+    "elapsed_seconds_from_log": 573.279,
+    "event_count": 9515,
+    "exists": true,
+    "last_event": {
+      "event": "step100_complete",
+      "movie_rows": 250,
+      "timestamp": 1777231498.8263695
+    },
+    "movies_per_second_from_log": 0.436088,
+    "path": "/tmp/mirage_profile250_api/decision_logs/movie_generation_progress.jsonl"
+  },
+  "quality": {
+    "exists": true,
+    "gates": {
+      "award_wins_no_more_than_35_pct": true,
+      "awards_movie_rate_10_to_35_pct": true,
+      "blank_character_description_zero": true,
+      "cast_reuse_ratio_le_15": true,
+      "company_gini_ge_045": false,
+      "movie_count_20k": false,
+      "plot_placeholders_zero": true,
+      "tagline_placeholders_zero": true,
+      "top_actor_le_250": true,
+      "top_director_le_120": true,
+      "unique_cast_people_ge_14000": false,
+      "unique_directors_ge_1000": false,
+      "unique_title_ids": true,
+      "unique_titles": true,
+      "zero_exact_topic_keywords": true
+    },
+    "path": "/tmp/mirage_profile250_api/reports/step100_sanity_report.json",
+    "selected_metrics": {
+      "awards_movie_share_pct": 12.0,
+      "awards_win_share_pct": 7.5,
+      "blank_character_description_rate_pct": 0.0,
+      "cast_reuse_ratio": 2.288,
+      "company_gini": 0.4254,
+      "duplicate_titles": {},
+      "duplicated_tagline_rate_pct": 0.0,
+      "keyword_zero_exact_topic_rate_pct": 0.0,
+      "movie_rows": 250,
+      "unique_cast_people": 632,
+      "unique_companies": 113,
+      "unique_directors": 110,
+      "unique_titles": 250
+    }
+  },
+  "resume": {
+    "end_year": 2024,
+    "exists": true,
+    "fingerprint": "9bd38358191a4e115bf14d2f4500c2053537e44910317aa9b4049b303db20a87",
+    "last_completed_sequence_index": 249,
+    "last_completed_year": 2024,
+    "movie_count": 250,
+    "path": "/tmp/mirage_profile250_api/_step100_resume/manifest.json",
+    "start_year": 2020,
+    "status": "complete"
+  },
+  "runtime_config": {
+    "disabled_global_tables": [],
+    "disabled_post_loop_tables": [
+      "user_ratings",
+      "production_timeline",
+      "streaming_windows",
+      "person_contracts",
+      "movie_sequence",
+      "person_collaborations",
+      "media_links",
+      "world_events"
+    ],
+    "disabled_secondary_tables": [
+      "reviews"
+    ],
+    "exists": true,
+    "path": "/tmp/mirage_profile250_api/benchmark_candidate_profile.json"
+  },
+  "speed_audit": {
+    "dir": "/tmp/mirage_profile250_api/reports/speed_audit/20260426_212328",
+    "exists": true,
+    "slow_samples": [
+      {
+        "component": "main.assemble_movies",
+        "elapsed_seconds": "84.305732",
+        "finished_at": "2026-04-26T19:24:54+00:00",
+        "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 250}",
+        "started_at": "2026-04-26T19:23:29+00:00"
+      },
+      {
+        "component": "setup.sample_movie_concepts",
+        "elapsed_seconds": "13.369353",
+        "finished_at": "2026-04-26T19:23:44+00:00",
+        "metadata_json": "{\"category\": \"setup\", \"metadata\": null, \"note\": \"\", \"units\": 250}",
+        "started_at": "2026-04-26T19:23:31+00:00"
+      },
+      {
+        "component": "year.plan_llm",
+        "elapsed_seconds": "4.917604",
+        "finished_at": "2026-04-26T19:24:50+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2024, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2025}, \"note\": \"\", \"units\": 1}",
+        "started_at": "2026-04-26T19:24:46+00:00"
+      },
+      {
+        "component": "year.plan_llm",
+        "elapsed_seconds": "4.862188",
+        "finished_at": "2026-04-26T19:24:34+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2023, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2024}, \"note\": \"\", \"units\": 1}",
+        "started_at": "2026-04-26T19:24:29+00:00"
+      },
+      {
+        "component": "year.plan_llm",
+        "elapsed_seconds": "4.851222",
+        "finished_at": "2026-04-26T19:23:53+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2020, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2021}, \"note\": \"\", \"units\": 1}",
+        "started_at": "2026-04-26T19:23:48+00:00"
+      },
+      {
+        "component": "year.plan_llm",
+        "elapsed_seconds": "4.826895",
+        "finished_at": "2026-04-26T19:24:05+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2021, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2022}, \"note\": \"\", \"units\": 1}",
+        "started_at": "2026-04-26T19:24:00+00:00"
+      },
+      {
+        "component": "year.plan_llm",
+        "elapsed_seconds": "4.56322",
+        "finished_at": "2026-04-26T19:24:18+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2022, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2023}, \"note\": \"\", \"units\": 1}",
+        "started_at": "2026-04-26T19:24:13+00:00"
+      },
+      {
+        "component": "main.post_generation_critic",
+        "elapsed_seconds": "4.42356",
+        "finished_at": "2026-04-26T19:24:58+00:00",
+        "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 0}",
+        "started_at": "2026-04-26T19:24:54+00:00"
+      },
+      {
+        "component": "main.world_load",
+        "elapsed_seconds": "1.117867",
+        "finished_at": "2026-04-26T19:23:29+00:00",
+        "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 0}",
+        "started_at": "2026-04-26T19:23:28+00:00"
+      },
+      {
+        "component": "post_loop.merge_preloop_outputs",
+        "elapsed_seconds": "0.82923",
+        "finished_at": "2026-04-26T19:24:54+00:00",
+        "metadata_json": "{\"category\": \"post_loop\", \"metadata\": null, \"note\": \"\", \"units\": 0}",
+        "started_at": "2026-04-26T19:24:53+00:00"
+      },
+      {
+        "component": "global.tv_series_bundle",
+        "elapsed_seconds": "0.622541",
+        "finished_at": "2026-04-26T19:23:30+00:00",
+        "metadata_json": "{\"category\": \"global_tables\", \"metadata\": null, \"note\": \"\", \"units\": 150}",
+        "started_at": "2026-04-26T19:23:30+00:00"
+      },
+      {
+        "component": "year.program_compile",
+        "elapsed_seconds": "0.521329",
+        "finished_at": "2026-04-26T19:24:34+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2023, \"planner_source\": \"llm\", \"to_year\": 2024}, \"note\": \"\", \"units\": 11}",
+        "started_at": "2026-04-26T19:24:34+00:00"
+      },
+      {
+        "component": "year.program_compile",
+        "elapsed_seconds": "0.469531",
+        "finished_at": "2026-04-26T19:24:51+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2024, \"planner_source\": \"llm\", \"to_year\": 2025}, \"note\": \"\", \"units\": 11}",
+        "started_at": "2026-04-26T19:24:50+00:00"
+      },
+      {
+        "component": "global.episode_cast",
+        "elapsed_seconds": "0.458724",
+        "finished_at": "2026-04-26T19:23:31+00:00",
+        "metadata_json": "{\"category\": \"global_tables\", \"metadata\": null, \"note\": \"\", \"units\": 17120}",
+        "started_at": "2026-04-26T19:23:30+00:00"
+      },
+      {
+        "component": "year.program_compile",
+        "elapsed_seconds": "0.450904",
+        "finished_at": "2026-04-26T19:23:54+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2020, \"planner_source\": \"llm\", \"to_year\": 2021}, \"note\": \"\", \"units\": 10}",
+        "started_at": "2026-04-26T19:23:53+00:00"
+      },
+      {
+        "component": "year.program_compile",
+        "elapsed_seconds": "0.434099",
+        "finished_at": "2026-04-26T19:24:05+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"planner_source\": \"llm\", \"to_year\": 2022}, \"note\": \"\", \"units\": 10}",
+        "started_at": "2026-04-26T19:24:05+00:00"
+      },
+      {
+        "component": "year.program_compile",
+        "elapsed_seconds": "0.411839",
+        "finished_at": "2026-04-26T19:24:18+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"planner_source\": \"deterministic\", \"to_year\": 2023}, \"note\": \"\", \"units\": 8}",
+        "started_at": "2026-04-26T19:24:18+00:00"
+      },
+      {
+        "component": "year.program_targeted",
+        "elapsed_seconds": "0.240931",
+        "finished_at": "2026-04-26T19:24:34+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2023, \"to_year\": 2024}, \"note\": \"\", \"units\": 6000}",
+        "started_at": "2026-04-26T19:24:34+00:00"
+      },
+      {
+        "component": "year.program_targeted",
+        "elapsed_seconds": "0.239974",
+        "finished_at": "2026-04-26T19:23:53+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2020, \"to_year\": 2021}, \"note\": \"\", \"units\": 6000}",
+        "started_at": "2026-04-26T19:23:53+00:00"
+      },
+      {
+        "component": "year.program_targeted",
+        "elapsed_seconds": "0.223677",
+        "finished_at": "2026-04-26T19:24:05+00:00",
+        "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"to_year\": 2022}, \"note\": \"\", \"units\": 6000}",
+        "started_at": "2026-04-26T19:24:05+00:00"
+      }
+    ],
+    "summary": {
+      "accounted_component_seconds": 167.39859,
+      "component_count": 57,
+      "created_at": "2026-04-26T19:23:28+00:00",
+      "experiment": "profile250_api_step100_resume",
+      "final_metadata": {
+        "base_dir": "/tmp/mirage_profile250_api",
+        "benchmark_mode": true,
+        "llm_concept_packs_enabled": true,
+        "llm_critic_enabled": true,
+        "llm_evolution_enabled": true,
+        "llm_keyword_motifs_enabled": true,
+        "llm_keyword_rerank_budget_movies": 80,
+        "llm_keyword_rerank_enabled": true,
+        "llm_rerank_budget_movies": 80,
+        "llm_rerank_enabled": true,
+        "llm_world_policy_enabled": true,
+        "llm_year_slates_enabled": true,
+        "n_movies": 250
+      },
+      "output_dir": "/tmp/mirage_profile250_api/reports/speed_audit/20260426_212328",
+      "sample_count": 500,
+      "slowest_samples": [
+        {
+          "component": "main.assemble_movies",
+          "elapsed_seconds": 84.305732,
+          "finished_at": "2026-04-26T19:24:54+00:00",
+          "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 250}",
+          "started_at": "2026-04-26T19:23:29+00:00"
+        },
+        {
+          "component": "setup.sample_movie_concepts",
+          "elapsed_seconds": 13.369353,
+          "finished_at": "2026-04-26T19:23:44+00:00",
+          "metadata_json": "{\"category\": \"setup\", \"metadata\": null, \"note\": \"\", \"units\": 250}",
+          "started_at": "2026-04-26T19:23:31+00:00"
+        },
+        {
+          "component": "year.plan_llm",
+          "elapsed_seconds": 4.917604,
+          "finished_at": "2026-04-26T19:24:50+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2024, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2025}, \"note\": \"\", \"units\": 1}",
+          "started_at": "2026-04-26T19:24:46+00:00"
+        },
+        {
+          "component": "year.plan_llm",
+          "elapsed_seconds": 4.862188,
+          "finished_at": "2026-04-26T19:24:34+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2023, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2024}, \"note\": \"\", \"units\": 1}",
+          "started_at": "2026-04-26T19:24:29+00:00"
+        },
+        {
+          "component": "year.plan_llm",
+          "elapsed_seconds": 4.851222,
+          "finished_at": "2026-04-26T19:23:53+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2020, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2021}, \"note\": \"\", \"units\": 1}",
+          "started_at": "2026-04-26T19:23:48+00:00"
+        },
+        {
+          "component": "year.plan_llm",
+          "elapsed_seconds": 4.826895,
+          "finished_at": "2026-04-26T19:24:05+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2021, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2022}, \"note\": \"\", \"units\": 1}",
+          "started_at": "2026-04-26T19:24:00+00:00"
+        },
+        {
+          "component": "year.plan_llm",
+          "elapsed_seconds": 4.56322,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"enable_llm\": true, \"from_year\": 2022, \"model\": \"gemini-3.1-flash-lite-preview\", \"to_year\": 2023}, \"note\": \"\", \"units\": 1}",
+          "started_at": "2026-04-26T19:24:13+00:00"
+        },
+        {
+          "component": "main.post_generation_critic",
+          "elapsed_seconds": 4.42356,
+          "finished_at": "2026-04-26T19:24:58+00:00",
+          "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:54+00:00"
+        },
+        {
+          "component": "main.world_load",
+          "elapsed_seconds": 1.117867,
+          "finished_at": "2026-04-26T19:23:29+00:00",
+          "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:23:28+00:00"
+        },
+        {
+          "component": "post_loop.merge_preloop_outputs",
+          "elapsed_seconds": 0.82923,
+          "finished_at": "2026-04-26T19:24:54+00:00",
+          "metadata_json": "{\"category\": \"post_loop\", \"metadata\": null, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:53+00:00"
+        },
+        {
+          "component": "global.tv_series_bundle",
+          "elapsed_seconds": 0.622541,
+          "finished_at": "2026-04-26T19:23:30+00:00",
+          "metadata_json": "{\"category\": \"global_tables\", \"metadata\": null, \"note\": \"\", \"units\": 150}",
+          "started_at": "2026-04-26T19:23:30+00:00"
+        },
+        {
+          "component": "year.program_compile",
+          "elapsed_seconds": 0.521329,
+          "finished_at": "2026-04-26T19:24:34+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2023, \"planner_source\": \"llm\", \"to_year\": 2024}, \"note\": \"\", \"units\": 11}",
+          "started_at": "2026-04-26T19:24:34+00:00"
+        },
+        {
+          "component": "year.program_compile",
+          "elapsed_seconds": 0.469531,
+          "finished_at": "2026-04-26T19:24:51+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2024, \"planner_source\": \"llm\", \"to_year\": 2025}, \"note\": \"\", \"units\": 11}",
+          "started_at": "2026-04-26T19:24:50+00:00"
+        },
+        {
+          "component": "global.episode_cast",
+          "elapsed_seconds": 0.458724,
+          "finished_at": "2026-04-26T19:23:31+00:00",
+          "metadata_json": "{\"category\": \"global_tables\", \"metadata\": null, \"note\": \"\", \"units\": 17120}",
+          "started_at": "2026-04-26T19:23:30+00:00"
+        },
+        {
+          "component": "year.program_compile",
+          "elapsed_seconds": 0.450904,
+          "finished_at": "2026-04-26T19:23:54+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2020, \"planner_source\": \"llm\", \"to_year\": 2021}, \"note\": \"\", \"units\": 10}",
+          "started_at": "2026-04-26T19:23:53+00:00"
+        },
+        {
+          "component": "year.program_compile",
+          "elapsed_seconds": 0.434099,
+          "finished_at": "2026-04-26T19:24:05+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"planner_source\": \"llm\", \"to_year\": 2022}, \"note\": \"\", \"units\": 10}",
+          "started_at": "2026-04-26T19:24:05+00:00"
+        },
+        {
+          "component": "year.program_compile",
+          "elapsed_seconds": 0.411839,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"planner_source\": \"deterministic\", \"to_year\": 2023}, \"note\": \"\", \"units\": 8}",
+          "started_at": "2026-04-26T19:24:18+00:00"
+        },
+        {
+          "component": "year.program_targeted",
+          "elapsed_seconds": 0.240931,
+          "finished_at": "2026-04-26T19:24:34+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2023, \"to_year\": 2024}, \"note\": \"\", \"units\": 6000}",
+          "started_at": "2026-04-26T19:24:34+00:00"
+        },
+        {
+          "component": "year.program_targeted",
+          "elapsed_seconds": 0.239974,
+          "finished_at": "2026-04-26T19:23:53+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2020, \"to_year\": 2021}, \"note\": \"\", \"units\": 6000}",
+          "started_at": "2026-04-26T19:23:53+00:00"
+        },
+        {
+          "component": "year.program_targeted",
+          "elapsed_seconds": 0.223677,
+          "finished_at": "2026-04-26T19:24:05+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"to_year\": 2022}, \"note\": \"\", \"units\": 6000}",
+          "started_at": "2026-04-26T19:24:05+00:00"
+        },
+        {
+          "component": "year.program_targeted",
+          "elapsed_seconds": 0.203149,
+          "finished_at": "2026-04-26T19:24:51+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2024, \"to_year\": 2025}, \"note\": \"\", \"units\": 6000}",
+          "started_at": "2026-04-26T19:24:50+00:00"
+        },
+        {
+          "component": "movie.compute_financials",
+          "elapsed_seconds": 0.179508,
+          "finished_at": "2026-04-26T19:24:42+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 147, \"year\": 2024}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:42+00:00"
+        },
+        {
+          "component": "movie.pick_cast",
+          "elapsed_seconds": 0.176868,
+          "finished_at": "2026-04-26T19:23:44+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 4, \"year\": 2020}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:23:44+00:00"
+        },
+        {
+          "component": "year.program_apply",
+          "elapsed_seconds": 0.175936,
+          "finished_at": "2026-04-26T19:24:51+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2024, \"planner_source\": \"llm\", \"to_year\": 2025}, \"note\": \"\", \"units\": 8174}",
+          "started_at": "2026-04-26T19:24:51+00:00"
+        },
+        {
+          "component": "year.program_targeted",
+          "elapsed_seconds": 0.172021,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"to_year\": 2023}, \"note\": \"\", \"units\": 6000}",
+          "started_at": "2026-04-26T19:24:18+00:00"
+        },
+        {
+          "component": "movie.compute_financials",
+          "elapsed_seconds": 0.171776,
+          "finished_at": "2026-04-26T19:23:55+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 7, \"year\": 2021}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:23:55+00:00"
+        },
+        {
+          "component": "year.program_apply",
+          "elapsed_seconds": 0.164559,
+          "finished_at": "2026-04-26T19:24:34+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2023, \"planner_source\": \"llm\", \"to_year\": 2024}, \"note\": \"\", \"units\": 8112}",
+          "started_at": "2026-04-26T19:24:34+00:00"
+        },
+        {
+          "component": "year.program_apply",
+          "elapsed_seconds": 0.136415,
+          "finished_at": "2026-04-26T19:23:54+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2020, \"planner_source\": \"llm\", \"to_year\": 2021}, \"note\": \"\", \"units\": 6240}",
+          "started_at": "2026-04-26T19:23:54+00:00"
+        },
+        {
+          "component": "year.background_drift",
+          "elapsed_seconds": 0.130764,
+          "finished_at": "2026-04-26T19:24:34+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2023, \"to_year\": 2024}, \"note\": \"\", \"units\": 3000}",
+          "started_at": "2026-04-26T19:24:34+00:00"
+        },
+        {
+          "component": "year.program_apply",
+          "elapsed_seconds": 0.129231,
+          "finished_at": "2026-04-26T19:24:06+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"planner_source\": \"llm\", \"to_year\": 2022}, \"note\": \"\", \"units\": 6754}",
+          "started_at": "2026-04-26T19:24:05+00:00"
+        },
+        {
+          "component": "year.program_apply",
+          "elapsed_seconds": 0.123184,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"planner_source\": \"deterministic\", \"to_year\": 2023}, \"note\": \"\", \"units\": 6690}",
+          "started_at": "2026-04-26T19:24:18+00:00"
+        },
+        {
+          "component": "year.background_drift",
+          "elapsed_seconds": 0.120261,
+          "finished_at": "2026-04-26T19:24:51+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2024, \"to_year\": 2025}, \"note\": \"\", \"units\": 3000}",
+          "started_at": "2026-04-26T19:24:51+00:00"
+        },
+        {
+          "component": "main.save_result_tables",
+          "elapsed_seconds": 0.097619,
+          "finished_at": "2026-04-26T19:24:58+00:00",
+          "metadata_json": "{\"category\": \"main\", \"metadata\": null, \"note\": \"\", \"units\": 27017}",
+          "started_at": "2026-04-26T19:24:58+00:00"
+        },
+        {
+          "component": "year.background_drift",
+          "elapsed_seconds": 0.09282,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"to_year\": 2023}, \"note\": \"\", \"units\": 3000}",
+          "started_at": "2026-04-26T19:24:18+00:00"
+        },
+        {
+          "component": "movie.pick_crew",
+          "elapsed_seconds": 0.08645,
+          "finished_at": "2026-04-26T19:24:07+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 1, \"year\": 2022}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:07+00:00"
+        },
+        {
+          "component": "year.background_drift",
+          "elapsed_seconds": 0.084916,
+          "finished_at": "2026-04-26T19:24:05+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"to_year\": 2022}, \"note\": \"\", \"units\": 3000}",
+          "started_at": "2026-04-26T19:24:05+00:00"
+        },
+        {
+          "component": "movie.pick_crew",
+          "elapsed_seconds": 0.082274,
+          "finished_at": "2026-04-26T19:24:20+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 3, \"year\": 2023}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:20+00:00"
+        },
+        {
+          "component": "movie.pick_crew",
+          "elapsed_seconds": 0.077351,
+          "finished_at": "2026-04-26T19:23:55+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 6, \"year\": 2021}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:23:55+00:00"
+        },
+        {
+          "component": "movie.pick_cast",
+          "elapsed_seconds": 0.076559,
+          "finished_at": "2026-04-26T19:24:43+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 175, \"year\": 2024}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:43+00:00"
+        },
+        {
+          "component": "movie.pick_cast",
+          "elapsed_seconds": 0.0714,
+          "finished_at": "2026-04-26T19:24:20+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 24, \"year\": 2023}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:20+00:00"
+        },
+        {
+          "component": "year.reservoir_build",
+          "elapsed_seconds": 0.070675,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"to_year\": 2023}, \"note\": \"\", \"units\": 15585}",
+          "started_at": "2026-04-26T19:24:18+00:00"
+        },
+        {
+          "component": "movie.pick_cast",
+          "elapsed_seconds": 0.070641,
+          "finished_at": "2026-04-26T19:24:25+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 145, \"year\": 2023}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:25+00:00"
+        },
+        {
+          "component": "year.graph_flush",
+          "elapsed_seconds": 0.069475,
+          "finished_at": "2026-04-26T19:24:18+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"year\": 2022}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:18+00:00"
+        },
+        {
+          "component": "year.context_build",
+          "elapsed_seconds": 0.068096,
+          "finished_at": "2026-04-26T19:24:13+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2022, \"to_year\": 2023}, \"note\": \"\", \"units\": 50}",
+          "started_at": "2026-04-26T19:24:13+00:00"
+        },
+        {
+          "component": "global.person_demographics",
+          "elapsed_seconds": 0.068038,
+          "finished_at": "2026-04-26T19:23:30+00:00",
+          "metadata_json": "{\"category\": \"global_tables\", \"metadata\": null, \"note\": \"\", \"units\": 1800}",
+          "started_at": "2026-04-26T19:23:29+00:00"
+        },
+        {
+          "component": "movie.pick_cast",
+          "elapsed_seconds": 0.067482,
+          "finished_at": "2026-04-26T19:23:59+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 230, \"year\": 2021}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:23:59+00:00"
+        },
+        {
+          "component": "movie.pick_director",
+          "elapsed_seconds": 0.067385,
+          "finished_at": "2026-04-26T19:23:44+00:00",
+          "metadata_json": "{\"category\": \"movie_selection\", \"metadata\": {\"movie_id\": 4, \"year\": 2020}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:23:44+00:00"
+        },
+        {
+          "component": "year.graph_flush",
+          "elapsed_seconds": 0.06735,
+          "finished_at": "2026-04-26T19:24:34+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"year\": 2023}, \"note\": \"\", \"units\": 0}",
+          "started_at": "2026-04-26T19:24:34+00:00"
+        },
+        {
+          "component": "year.context_build",
+          "elapsed_seconds": 0.066178,
+          "finished_at": "2026-04-26T19:24:00+00:00",
+          "metadata_json": "{\"category\": \"year_boundary\", \"metadata\": {\"from_year\": 2021, \"to_year\": 2022}, \"note\": \"\", \"units\": 38}",
+          "started_at": "2026-04-26T19:24:00+00:00"
+        },
+        {
+          "component": "setup.title_assignment",
+          "elapsed_seconds": 0.064418,
+          "finished_at": "2026-04-26T19:23:31+00:00",
+          "metadata_json": "{\"category\": \"setup\", \"metadata\": null, \"note\": \"\", \"units\": 250}",
+          "started_at": "2026-04-26T19:23:31+00:00"
+        }
+      ],
+      "top_components": [
+        {
+          "avg_seconds": 84.305732,
+          "calls": 1,
+          "component": "main.assemble_movies",
+          "max_seconds": 84.305732,
+          "min_seconds": 84.305732,
+          "total_seconds": 84.305732
+        },
+        {
+          "avg_seconds": 4.804226,
+          "calls": 5,
+          "component": "year.plan_llm",
+          "max_seconds": 4.917604,
+          "min_seconds": 4.56322,
+          "total_seconds": 24.021129
+        },
+        {
+          "avg_seconds": 13.369353,
+          "calls": 1,
+          "component": "setup.sample_movie_concepts",
+          "max_seconds": 13.369353,
+          "min_seconds": 13.369353,
+          "total_seconds": 13.369353
+        },
+        {
+          "avg_seconds": 0.03818,
+          "calls": 250,
+          "component": "movie.compute_financials",
+          "max_seconds": 0.179508,
+          "min_seconds": 0.028005,
+          "total_seconds": 9.545093
+        },
+        {
+          "avg_seconds": 0.027831,
+          "calls": 250,
+          "component": "movie.pick_cast",
+          "max_seconds": 0.176868,
+          "min_seconds": 0.005717,
+          "total_seconds": 6.957716
+        },
+        {
+          "avg_seconds": 4.42356,
+          "calls": 1,
+          "component": "main.post_generation_critic",
+          "max_seconds": 4.42356,
+          "min_seconds": 4.42356,
+          "total_seconds": 4.42356
+        },
+        {
+          "avg_seconds": 0.01389,
+          "calls": 250,
+          "component": "movie.pick_keywords",
+          "max_seconds": 0.053297,
+          "min_seconds": 0.010412,
+          "total_seconds": 3.472494
+        },
+        {
+          "avg_seconds": 0.011665,
+          "calls": 250,
+          "component": "movie.pick_crew",
+          "max_seconds": 0.08645,
+          "min_seconds": 0.001824,
+          "total_seconds": 2.916195
+        },
+        {
+          "avg_seconds": 0.010394,
+          "calls": 250,
+          "component": "movie.pick_director",
+          "max_seconds": 0.067385,
+          "min_seconds": 0.007424,
+          "total_seconds": 2.598603
+        },
+        {
+          "avg_seconds": 0.45754,
+          "calls": 5,
+          "component": "year.program_compile",
+          "max_seconds": 0.521329,
+          "min_seconds": 0.411839,
+          "total_seconds": 2.287702
+        },
+        {
+          "avg_seconds": 0.00778,
+          "calls": 250,
+          "component": "movie.pick_companies",
+          "max_seconds": 0.042922,
+          "min_seconds": 0.005214,
+          "total_seconds": 1.945031
+        },
+        {
+          "avg_seconds": 0.006166,
+          "calls": 250,
+          "component": "secondary.release_dates",
+          "max_seconds": 0.015012,
+          "min_seconds": 0.004677,
+          "total_seconds": 1.541389
+        },
+        {
+          "avg_seconds": 1.117867,
+          "calls": 1,
+          "component": "main.world_load",
+          "max_seconds": 1.117867,
+          "min_seconds": 1.117867,
+          "total_seconds": 1.117867
+        },
+        {
+          "avg_seconds": 0.215951,
+          "calls": 5,
+          "component": "year.program_targeted",
+          "max_seconds": 0.240931,
+          "min_seconds": 0.172021,
+          "total_seconds": 1.079753
+        },
+        {
+          "avg_seconds": 0.003436,
+          "calls": 250,
+          "component": "secondary.box_office_daily",
+          "max_seconds": 0.010162,
+          "min_seconds": 0.002641,
+          "total_seconds": 0.85902
+        },
+        {
+          "avg_seconds": 0.82923,
+          "calls": 1,
+          "component": "post_loop.merge_preloop_outputs",
+          "max_seconds": 0.82923,
+          "min_seconds": 0.82923,
+          "total_seconds": 0.82923
+        },
+        {
+          "avg_seconds": 0.003208,
+          "calls": 250,
+          "component": "secondary.box_office_by_territory",
+          "max_seconds": 0.011868,
+          "min_seconds": 0.002299,
+          "total_seconds": 0.802081
+        },
+        {
+          "avg_seconds": 0.145865,
+          "calls": 5,
+          "component": "year.program_apply",
+          "max_seconds": 0.175936,
+          "min_seconds": 0.123184,
+          "total_seconds": 0.729324
+        },
+        {
+          "avg_seconds": 0.00288,
+          "calls": 250,
+          "component": "secondary.awards",
+          "max_seconds": 0.012074,
+          "min_seconds": 0.002038,
+          "total_seconds": 0.719894
+        },
+        {
+          "avg_seconds": 0.622541,
+          "calls": 1,
+          "component": "global.tv_series_bundle",
+          "max_seconds": 0.622541,
+          "min_seconds": 0.622541,
+          "total_seconds": 0.622541
+        }
+      ],
+      "updated_at": "2026-04-26T19:24:58+00:00",
+      "wall_seconds": 90.288987
+    },
+    "top_components": [
+      {
+        "avg_seconds": "84.305732",
+        "calls": "1",
+        "component": "main.assemble_movies",
+        "max_seconds": "84.305732",
+        "min_seconds": "84.305732",
+        "total_seconds": "84.305732"
+      },
+      {
+        "avg_seconds": "4.804226",
+        "calls": "5",
+        "component": "year.plan_llm",
+        "max_seconds": "4.917604",
+        "min_seconds": "4.56322",
+        "total_seconds": "24.021129"
+      },
+      {
+        "avg_seconds": "13.369353",
+        "calls": "1",
+        "component": "setup.sample_movie_concepts",
+        "max_seconds": "13.369353",
+        "min_seconds": "13.369353",
+        "total_seconds": "13.369353"
+      },
+      {
+        "avg_seconds": "0.03818",
+        "calls": "250",
+        "component": "movie.compute_financials",
+        "max_seconds": "0.179508",
+        "min_seconds": "0.028005",
+        "total_seconds": "9.545093"
+      },
+      {
+        "avg_seconds": "0.027831",
+        "calls": "250",
+        "component": "movie.pick_cast",
+        "max_seconds": "0.176868",
+        "min_seconds": "0.005717",
+        "total_seconds": "6.957716"
+      },
+      {
+        "avg_seconds": "4.42356",
+        "calls": "1",
+        "component": "main.post_generation_critic",
+        "max_seconds": "4.42356",
+        "min_seconds": "4.42356",
+        "total_seconds": "4.42356"
+      },
+      {
+        "avg_seconds": "0.01389",
+        "calls": "250",
+        "component": "movie.pick_keywords",
+        "max_seconds": "0.053297",
+        "min_seconds": "0.010412",
+        "total_seconds": "3.472494"
+      },
+      {
+        "avg_seconds": "0.011665",
+        "calls": "250",
+        "component": "movie.pick_crew",
+        "max_seconds": "0.08645",
+        "min_seconds": "0.001824",
+        "total_seconds": "2.916195"
+      },
+      {
+        "avg_seconds": "0.010394",
+        "calls": "250",
+        "component": "movie.pick_director",
+        "max_seconds": "0.067385",
+        "min_seconds": "0.007424",
+        "total_seconds": "2.598603"
+      },
+      {
+        "avg_seconds": "0.45754",
+        "calls": "5",
+        "component": "year.program_compile",
+        "max_seconds": "0.521329",
+        "min_seconds": "0.411839",
+        "total_seconds": "2.287702"
+      },
+      {
+        "avg_seconds": "0.00778",
+        "calls": "250",
+        "component": "movie.pick_companies",
+        "max_seconds": "0.042922",
+        "min_seconds": "0.005214",
+        "total_seconds": "1.945031"
+      },
+      {
+        "avg_seconds": "0.006166",
+        "calls": "250",
+        "component": "secondary.release_dates",
+        "max_seconds": "0.015012",
+        "min_seconds": "0.004677",
+        "total_seconds": "1.541389"
+      },
+      {
+        "avg_seconds": "1.117867",
+        "calls": "1",
+        "component": "main.world_load",
+        "max_seconds": "1.117867",
+        "min_seconds": "1.117867",
+        "total_seconds": "1.117867"
+      },
+      {
+        "avg_seconds": "0.215951",
+        "calls": "5",
+        "component": "year.program_targeted",
+        "max_seconds": "0.240931",
+        "min_seconds": "0.172021",
+        "total_seconds": "1.079753"
+      },
+      {
+        "avg_seconds": "0.003436",
+        "calls": "250",
+        "component": "secondary.box_office_daily",
+        "max_seconds": "0.010162",
+        "min_seconds": "0.002641",
+        "total_seconds": "0.85902"
+      },
+      {
+        "avg_seconds": "0.82923",
+        "calls": "1",
+        "component": "post_loop.merge_preloop_outputs",
+        "max_seconds": "0.82923",
+        "min_seconds": "0.82923",
+        "total_seconds": "0.82923"
+      },
+      {
+        "avg_seconds": "0.003208",
+        "calls": "250",
+        "component": "secondary.box_office_by_territory",
+        "max_seconds": "0.011868",
+        "min_seconds": "0.002299",
+        "total_seconds": "0.802081"
+      },
+      {
+        "avg_seconds": "0.145865",
+        "calls": "5",
+        "component": "year.program_apply",
+        "max_seconds": "0.175936",
+        "min_seconds": "0.123184",
+        "total_seconds": "0.729324"
+      },
+      {
+        "avg_seconds": "0.00288",
+        "calls": "250",
+        "component": "secondary.awards",
+        "max_seconds": "0.012074",
+        "min_seconds": "0.002038",
+        "total_seconds": "0.719894"
+      },
+      {
+        "avg_seconds": "0.622541",
+        "calls": "1",
+        "component": "global.tv_series_bundle",
+        "max_seconds": "0.622541",
+        "min_seconds": "0.622541",
+        "total_seconds": "0.622541"
+      }
+    ]
+  }
+}

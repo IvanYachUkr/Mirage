@@ -1,0 +1,2490 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "count": 74,
+    "generator_mode": "llm"
+  },
+  "bibles": [
+    {
+      "franchise_id": 1,
+      "franchise_name": "Ancient Horizon",
+      "genre": "War",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Atlas Archive",
+        "The Frozen Accord"
+      ],
+      "recurring_motifs": [
+        "scarring",
+        "archival secrets",
+        "shifting loyalties"
+      ],
+      "keyword_families": [
+        "ancient",
+        "horizon",
+        "vendetta",
+        "archive"
+      ],
+      "title_style": "thematic_noun_phrase",
+      "subtitle_tokens": [
+        "Frozen",
+        "Burning",
+        "Accord"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.75",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.8
+    },
+    {
+      "franchise_id": 2,
+      "franchise_name": "Blood Protocol",
+      "genre": "Action",
+      "tier": "Mid",
+      "installments": 5,
+      "continuity_anchors": [
+        "The Protocol",
+        "The Evolution"
+      ],
+      "recurring_motifs": [
+        "code-breaking",
+        "total destruction",
+        "survivor's guilt"
+      ],
+      "keyword_families": [
+        "blood",
+        "protocol",
+        "evolution",
+        "awakening"
+      ],
+      "title_style": "colon_delimited",
+      "subtitle_tokens": [
+        "Evolution",
+        "Awakening",
+        "Shadow"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.65",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 3,
+      "franchise_name": "City of Broken Discoveries",
+      "genre": "Family",
+      "tier": "Epic",
+      "installments": 7,
+      "continuity_anchors": [
+        "The Broken City",
+        "The Lost Heart"
+      ],
+      "recurring_motifs": [
+        "urban exploration",
+        "hidden treasures",
+        "family reconciliation"
+      ],
+      "keyword_families": [
+        "city",
+        "broken",
+        "discovery",
+        "heart"
+      ],
+      "title_style": "conjunction_heavy",
+      "subtitle_tokens": [
+        "Discovery",
+        "Lost",
+        "Broken"
+      ],
+      "release_season_bias": "spring",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.9",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.7
+    },
+    {
+      "franchise_id": 4,
+      "franchise_name": "The Pale Cipher",
+      "genre": "Drama",
+      "tier": "Epic",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Cold River",
+        "The Glass Archive"
+      ],
+      "recurring_motifs": [
+        "buried truths",
+        "scarred choices",
+        "river symbolism"
+      ],
+      "keyword_families": [
+        "remedy",
+        "raven",
+        "cipher",
+        "river"
+      ],
+      "title_style": "minimalist_abstract",
+      "subtitle_tokens": [
+        "Pale",
+        "Cipher",
+        "Glass"
+      ],
+      "release_season_bias": "autumn",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.8",
+      "carryover_director_bias": 0.7,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 5,
+      "franchise_name": "Bitter Shadow",
+      "genre": "Martial Arts",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Covenant",
+        "The Glass Frontier"
+      ],
+      "recurring_motifs": [
+        "shadow combat",
+        "glass arenas",
+        "covenant oaths"
+      ],
+      "keyword_families": [
+        "bitter",
+        "shadow",
+        "covenant",
+        "frontier"
+      ],
+      "title_style": "alliterative_noun",
+      "subtitle_tokens": [
+        "Shadow",
+        "Covenant",
+        "Frontier"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.55",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 6,
+      "franchise_name": "Atlas & Raven",
+      "genre": "Western",
+      "tier": "Mid",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Lawless Land",
+        "The Brooklyn Accord"
+      ],
+      "recurring_motifs": [
+        "lawless expansion",
+        "glory seeking",
+        "frontier justice"
+      ],
+      "keyword_families": [
+        "atlas",
+        "raven",
+        "accord",
+        "horizon"
+      ],
+      "title_style": "character_pairing",
+      "subtitle_tokens": [
+        "Rising",
+        "Beyond",
+        "Accord"
+      ],
+      "release_season_bias": "autumn",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 7,
+      "franchise_name": "Broken Frontier",
+      "genre": "Sci-Fi",
+      "tier": "Epic",
+      "installments": 5,
+      "continuity_anchors": [
+        "The Midnight Directive",
+        "The Quarantine Haven"
+      ],
+      "recurring_motifs": [
+        "edge of space",
+        "quarantine protocols",
+        "frontier collapse"
+      ],
+      "keyword_families": [
+        "broken",
+        "blade",
+        "midnight",
+        "frontier"
+      ],
+      "title_style": "descriptive_noun",
+      "subtitle_tokens": [
+        "Blade",
+        "Directive",
+        "Haven"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.3
+    },
+    {
+      "franchise_id": 8,
+      "franchise_name": "Cipher of the Fallen",
+      "genre": "Sport",
+      "tier": "A",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Golden Remedy",
+        "The Copper Directive"
+      ],
+      "recurring_motifs": [
+        "reclamation",
+        "wicked mirrors",
+        "fallen champions"
+      ],
+      "keyword_families": [
+        "cipher",
+        "fallen",
+        "copper",
+        "remedy"
+      ],
+      "title_style": "colon_delimited",
+      "subtitle_tokens": [
+        "Golden",
+        "Wicked",
+        "Reclaimed"
+      ],
+      "release_season_bias": "spring",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.2,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 9,
+      "franchise_name": "Copper Wolf",
+      "genre": "Adventure",
+      "tier": "Epic",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Burning Zenith",
+        "The Blind Echo"
+      ],
+      "recurring_motifs": [
+        "wolf symbolism",
+        "ghostly echoes",
+        "zenith peaks"
+      ],
+      "keyword_families": [
+        "copper",
+        "wolf",
+        "blade",
+        "zenith"
+      ],
+      "title_style": "compound_noun",
+      "subtitle_tokens": [
+        "Blood",
+        "Zenith",
+        "Wolf"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 10,
+      "franchise_name": "Atlas & Signal",
+      "genre": "Animation",
+      "tier": "Epic",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Glass Fortune",
+        "The Savage Catalyst"
+      ],
+      "recurring_motifs": [
+        "forged covenants",
+        "signal transmission",
+        "catalytic events"
+      ],
+      "keyword_families": [
+        "atlas",
+        "signal",
+        "glass",
+        "catalyst"
+      ],
+      "title_style": "conjunction_heavy",
+      "subtitle_tokens": [
+        "Covenant",
+        "Fortune",
+        "Catalyst"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.8",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 11,
+      "franchise_name": "Accord of Blood",
+      "genre": "Drama",
+      "tier": "Mid",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Babylon Ghost",
+        "The Texas City"
+      ],
+      "recurring_motifs": [
+        "cold battles",
+        "shadows of the past",
+        "wild truths"
+      ],
+      "keyword_families": [
+        "accord",
+        "blood",
+        "ghost",
+        "city"
+      ],
+      "title_style": "prepositional_phrase",
+      "subtitle_tokens": [
+        "Texas",
+        "Babylon",
+        "Hollywood"
+      ],
+      "release_season_bias": "autumn",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.85",
+      "carryover_director_bias": 0.7,
+      "carryover_cast_bias": 0.7
+    },
+    {
+      "franchise_id": 12,
+      "franchise_name": "Copper Harbor",
+      "genre": "Thriller",
+      "tier": "Epic",
+      "installments": 3,
+      "continuity_anchors": [
+        "The Dark Bridge",
+        "The Exile Echo"
+      ],
+      "recurring_motifs": [
+        "fractured trust",
+        "zero-degree tension",
+        "harbor secrets"
+      ],
+      "keyword_families": [
+        "copper",
+        "harbor",
+        "bridge",
+        "echo"
+      ],
+      "title_style": "descriptive_noun",
+      "subtitle_tokens": [
+        "Rising",
+        "Divided",
+        "Exile"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 13,
+      "franchise_name": "Broken Descent",
+      "genre": "Sci-Fi",
+      "tier": "Epic",
+      "installments": 3,
+      "continuity_anchors": [
+        "The Atlas Descent",
+        "The Glass Edge"
+      ],
+      "recurring_motifs": [
+        "shadows in black",
+        "descent into chaos",
+        "price of the future"
+      ],
+      "keyword_families": [
+        "broken",
+        "descent",
+        "atlas",
+        "shadow"
+      ],
+      "title_style": "minimalist_abstract",
+      "subtitle_tokens": [
+        "Descent",
+        "Edge",
+        "Shadow"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.4",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 14,
+      "franchise_name": "Hidden Raven",
+      "genre": "Superhero",
+      "tier": "Mid",
+      "installments": 9,
+      "continuity_anchors": [
+        "The Cipher Nexus",
+        "The Pale Archive"
+      ],
+      "recurring_motifs": [
+        "gambit maneuvers",
+        "mirror reflections",
+        "nexus points"
+      ],
+      "keyword_families": [
+        "raven",
+        "cipher",
+        "mirror",
+        "nexus"
+      ],
+      "title_style": "colon_delimited",
+      "subtitle_tokens": [
+        "Nexus",
+        "Archive",
+        "Gambit"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.65",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.8
+    },
+    {
+      "franchise_id": 15,
+      "franchise_name": "Accord & Compass",
+      "genre": "Superhero",
+      "tier": "Mid",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Red Compass",
+        "The Archive"
+      ],
+      "recurring_motifs": [
+        "vendetta justice",
+        "fortune seeking",
+        "compass navigation"
+      ],
+      "keyword_families": [
+        "accord",
+        "compass",
+        "vendetta",
+        "archive"
+      ],
+      "title_style": "conjunction_heavy",
+      "subtitle_tokens": [
+        "Compass",
+        "Vendetta",
+        "Fortune"
+      ],
+      "release_season_bias": "spring",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 16,
+      "franchise_name": "Echoes of Miami",
+      "genre": "Music",
+      "tier": "Epic",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Last Melody",
+        "The Crimson Road"
+      ],
+      "recurring_motifs": [
+        "sound power",
+        "tribute performances",
+        "generational glory"
+      ],
+      "keyword_families": [
+        "echo",
+        "melody",
+        "rhythm",
+        "miami"
+      ],
+      "title_style": "prepositional_phrase",
+      "subtitle_tokens": [
+        "Melody",
+        "Road",
+        "Echoes"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.8",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.7
+    },
+    {
+      "franchise_id": 17,
+      "franchise_name": "Neon Melodies",
+      "genre": "Musical",
+      "tier": "Mid",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Wild Chorus",
+        "The Catalyst Fracture"
+      ],
+      "recurring_motifs": [
+        "neon stages",
+        "fractured songs",
+        "vocal waiting"
+      ],
+      "keyword_families": [
+        "neon",
+        "melody",
+        "chorus",
+        "fracture"
+      ],
+      "title_style": "adjective_noun",
+      "subtitle_tokens": [
+        "Chorus",
+        "Fracture",
+        "Catalyst"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.75",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 18,
+      "franchise_name": "Ancient Archive",
+      "genre": "Family",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Blade Archive",
+        "The Ember Grid"
+      ],
+      "recurring_motifs": [
+        "ancient impulses",
+        "grid systems",
+        "bloodline legacies"
+      ],
+      "keyword_families": [
+        "ancient",
+        "archive",
+        "ember",
+        "catalyst"
+      ],
+      "title_style": "prepositional_phrase",
+      "subtitle_tokens": [
+        "Blade",
+        "Overture",
+        "Ember"
+      ],
+      "release_season_bias": "autumn",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 19,
+      "franchise_name": "The Flame Covenant",
+      "genre": "Disaster",
+      "tier": "Epic",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Eternal Junction",
+        "The Flame of Legion"
+      ],
+      "recurring_motifs": [
+        "Fire",
+        "Covenant",
+        "Descent"
+      ],
+      "keyword_families": [
+        "Disaster",
+        "Covenant",
+        "Flame"
+      ],
+      "title_style": "dramatic_abstract",
+      "subtitle_tokens": [
+        "Reclaimed",
+        "Eternal",
+        "Twisted"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.65",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 20,
+      "franchise_name": "The Zenith Atlas",
+      "genre": "Superhero",
+      "tier": "A",
+      "installments": 9,
+      "continuity_anchors": [
+        "The Grid",
+        "The Ancient Throne"
+      ],
+      "recurring_motifs": [
+        "Serpent",
+        "Zenith",
+        "Grid"
+      ],
+      "keyword_families": [
+        "Superhero",
+        "Mythology",
+        "Technology"
+      ],
+      "title_style": "mythic_modern",
+      "subtitle_tokens": [
+        "Ancient",
+        "Bitter",
+        "Black"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.75",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.7
+    },
+    {
+      "franchise_id": 21,
+      "franchise_name": "The Chicago Eye",
+      "genre": "Film-Noir",
+      "tier": "A",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Chicago Eye",
+        "The Eternal City"
+      ],
+      "recurring_motifs": [
+        "Eyes",
+        "Night",
+        "Remedy"
+      ],
+      "keyword_families": [
+        "Noir",
+        "Crime",
+        "Mystery"
+      ],
+      "title_style": "noir_descriptive",
+      "subtitle_tokens": [
+        "Affair",
+        "Night",
+        "Witness"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 22,
+      "franchise_name": "The Night in Cities",
+      "genre": "Comedy",
+      "tier": "Epic",
+      "installments": 7,
+      "continuity_anchors": [
+        "The Night",
+        "Global Cities"
+      ],
+      "recurring_motifs": [
+        "Night",
+        "Travel",
+        "Irony"
+      ],
+      "keyword_families": [
+        "Comedy",
+        "Travel",
+        "Urban"
+      ],
+      "title_style": "location_centric",
+      "subtitle_tokens": [
+        "Babylon",
+        "Paris",
+        "Tokyo"
+      ],
+      "release_season_bias": "spring",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.9",
+      "carryover_director_bias": 0.2,
+      "carryover_cast_bias": 0.8
+    },
+    {
+      "franchise_id": 23,
+      "franchise_name": "The Atlas Threshold",
+      "genre": "Disaster",
+      "tier": "A",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Threshold",
+        "Atlas"
+      ],
+      "recurring_motifs": [
+        "Midnight",
+        "Glass",
+        "Passage"
+      ],
+      "keyword_families": [
+        "Disaster",
+        "Survival",
+        "Threshold"
+      ],
+      "title_style": "minimalist",
+      "subtitle_tokens": [
+        "Midnight",
+        "Glass",
+        "Passage"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.55",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 24,
+      "franchise_name": "The Eternal Life Memoirs",
+      "genre": "Biography",
+      "tier": "Epic",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Road",
+        "Eternal Life"
+      ],
+      "recurring_motifs": [
+        "Blood",
+        "City",
+        "Road"
+      ],
+      "keyword_families": [
+        "Biography",
+        "History",
+        "Legacy"
+      ],
+      "title_style": "biographical_dramatic",
+      "subtitle_tokens": [
+        "Wolf",
+        "Eternal",
+        "Last"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.8",
+      "carryover_director_bias": 0.7,
+      "carryover_cast_bias": 0.3
+    },
+    {
+      "franchise_id": 25,
+      "franchise_name": "The Black Dominion",
+      "genre": "Horror",
+      "tier": "Epic",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Dominion",
+        "Black Blade"
+      ],
+      "recurring_motifs": [
+        "Black",
+        "Descent",
+        "Exile"
+      ],
+      "keyword_families": [
+        "Horror",
+        "Darkness",
+        "Dominion"
+      ],
+      "title_style": "ominous_abstract",
+      "subtitle_tokens": [
+        "Exile",
+        "Ghost",
+        "Dominion"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.3",
+      "carryover_director_bias": 0.8,
+      "carryover_cast_bias": 0.2
+    },
+    {
+      "franchise_id": 26,
+      "franchise_name": "The Blood and Empire",
+      "genre": "History",
+      "tier": "A",
+      "installments": 5,
+      "continuity_anchors": [
+        "The Neon Empire",
+        "Blood and House"
+      ],
+      "recurring_motifs": [
+        "Blood",
+        "Empire",
+        "Relic"
+      ],
+      "keyword_families": [
+        "History",
+        "Empire",
+        "Blood"
+      ],
+      "title_style": "historical_epic",
+      "subtitle_tokens": [
+        "Eye",
+        "House",
+        "Queen"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 27,
+      "franchise_name": "The Golden Murder",
+      "genre": "Thriller",
+      "tier": "A",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Murder",
+        "Golden Threat"
+      ],
+      "recurring_motifs": [
+        "Murder",
+        "Silent",
+        "Threat"
+      ],
+      "keyword_families": [
+        "Thriller",
+        "Mystery",
+        "Crime"
+      ],
+      "title_style": "procedural",
+      "subtitle_tokens": [
+        "Dead",
+        "Lethal",
+        "Silent"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 28,
+      "franchise_name": "The Black Crossing",
+      "genre": "Experimental",
+      "tier": "Epic",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Crossing",
+        "Covenant"
+      ],
+      "recurring_motifs": [
+        "Broken",
+        "Crossing",
+        "Serpent"
+      ],
+      "keyword_families": [
+        "Experimental",
+        "Abstract",
+        "Crossing"
+      ],
+      "title_style": "minimalist",
+      "subtitle_tokens": [
+        "Summit",
+        "Unchained",
+        "Crossing"
+      ],
+      "release_season_bias": "spring",
+      "company_strategy_tag": "niche_indie",
+      "cast_chemistry_target": "0.2",
+      "carryover_director_bias": 0.9,
+      "carryover_cast_bias": 0.1
+    },
+    {
+      "franchise_id": 29,
+      "franchise_name": "The Iron Queen Legend",
+      "genre": "Martial Arts",
+      "tier": "A",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Iron Queen",
+        "Babylon"
+      ],
+      "recurring_motifs": [
+        "Blood",
+        "Iron",
+        "Fortune"
+      ],
+      "keyword_families": [
+        "Martial Arts",
+        "Legend",
+        "Combat"
+      ],
+      "title_style": "mythic_action",
+      "subtitle_tokens": [
+        "Blood",
+        "Queen",
+        "Babylon"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 30,
+      "franchise_name": "The Chronicles of Blood",
+      "genre": "Sci-Fi",
+      "tier": "Epic",
+      "installments": 9,
+      "continuity_anchors": [
+        "The Chronicles",
+        "The Frontier"
+      ],
+      "recurring_motifs": [
+        "Blood",
+        "House",
+        "Escape"
+      ],
+      "keyword_families": [
+        "Sci-Fi",
+        "Chronicles",
+        "Frontier"
+      ],
+      "title_style": "serialized_epic",
+      "subtitle_tokens": [
+        "Blood",
+        "House",
+        "Gun"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 31,
+      "franchise_name": "The Broken Verdict",
+      "genre": "Horror",
+      "tier": "Epic",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Verdict",
+        "The Accord"
+      ],
+      "recurring_motifs": [
+        "Broken",
+        "Serpent",
+        "Storm"
+      ],
+      "keyword_families": [
+        "Horror",
+        "Supernatural",
+        "Verdict"
+      ],
+      "title_style": "ominous_abstract",
+      "subtitle_tokens": [
+        "Paradox",
+        "Dream",
+        "Accord"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.4",
+      "carryover_director_bias": 0.7,
+      "carryover_cast_bias": 0.3
+    },
+    {
+      "franchise_id": 32,
+      "franchise_name": "The Blade Dominion",
+      "genre": "Sci-Fi",
+      "tier": "A",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Dominion",
+        "The Grid"
+      ],
+      "recurring_motifs": [
+        "Blade",
+        "Blind",
+        "Broken"
+      ],
+      "keyword_families": [
+        "Sci-Fi",
+        "Cyberpunk",
+        "Dominion"
+      ],
+      "title_style": "high_concept",
+      "subtitle_tokens": [
+        "Verdict",
+        "Fracture",
+        "Grid"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 33,
+      "franchise_name": "The Hidden Grid",
+      "genre": "Short",
+      "tier": "Mid",
+      "installments": 7,
+      "continuity_anchors": [
+        "The Grid",
+        "The Archive"
+      ],
+      "recurring_motifs": [
+        "Grid",
+        "Impulse",
+        "Iron"
+      ],
+      "keyword_families": [
+        "Experimental",
+        "Short",
+        "Archive"
+      ],
+      "title_style": "minimalist",
+      "subtitle_tokens": [
+        "Gold",
+        "Archive",
+        "Iron"
+      ],
+      "release_season_bias": "spring",
+      "company_strategy_tag": "niche_indie",
+      "cast_chemistry_target": "0.3",
+      "carryover_director_bias": 0.9,
+      "carryover_cast_bias": 0.1
+    },
+    {
+      "franchise_id": 34,
+      "franchise_name": "The Atlas Cipher",
+      "genre": "Thriller",
+      "tier": "A",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Atlas",
+        "The Cipher"
+      ],
+      "recurring_motifs": [
+        "Silence",
+        "Midnight",
+        "Cipher"
+      ],
+      "keyword_families": [
+        "Thriller",
+        "Espionage",
+        "Cipher"
+      ],
+      "title_style": "procedural",
+      "subtitle_tokens": [
+        "Reborn",
+        "Oracle",
+        "Cipher"
+      ],
+      "release_season_bias": "winter",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.65",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 35,
+      "franchise_name": "The Phoenix of Accord",
+      "genre": "Sport",
+      "tier": "Epic",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Accord",
+        "The Phoenix"
+      ],
+      "recurring_motifs": [
+        "Blade",
+        "Blood",
+        "Phoenix"
+      ],
+      "keyword_families": [
+        "Sport",
+        "Drama",
+        "Phoenix"
+      ],
+      "title_style": "dramatic_abstract",
+      "subtitle_tokens": [
+        "End",
+        "Blood",
+        "Accord"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.8",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 36,
+      "franchise_name": "The Midnight Zenith",
+      "genre": "Superhero",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Zenith",
+        "The Archive"
+      ],
+      "recurring_motifs": [
+        "Bridge",
+        "Midnight",
+        "Fortune"
+      ],
+      "keyword_families": [
+        "Superhero",
+        "Action",
+        "Zenith"
+      ],
+      "title_style": "high_concept",
+      "subtitle_tokens": [
+        "Forge",
+        "Grid",
+        "Zenith"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 37,
+      "franchise_name": "The Babylon Chronicles",
+      "genre": "Adventure",
+      "tier": "Mid",
+      "installments": 4,
+      "continuity_anchors": [
+        "Avalon expedition",
+        "Lost King legacy"
+      ],
+      "recurring_motifs": [
+        "Ancient maps",
+        "Hidden ruins",
+        "Cosmic discovery"
+      ],
+      "keyword_families": [
+        "exploration",
+        "mythology",
+        "lost-civilization"
+      ],
+      "title_style": "The [Noun] [Noun]: [Subtitle]",
+      "subtitle_tokens": [
+        "Revolution",
+        "Legacy",
+        "Awakening"
+      ],
+      "release_season_bias": "Summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "0.65",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 38,
+      "franchise_name": "Dead Signal",
+      "genre": "Drama",
+      "tier": "A",
+      "installments": 3,
+      "continuity_anchors": [
+        "family and status fracture",
+        "parent-child reckoning",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "family_saga",
+        "prestige_character_study",
+        "drama_legacy"
+      ],
+      "keyword_families": [
+        "drama",
+        "elegant",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "elegant",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "awards",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 39,
+      "franchise_name": "Blind Gets",
+      "genre": "Animation",
+      "tier": "Epic",
+      "installments": 9,
+      "continuity_anchors": [
+        "coming-of-age adventure",
+        "found family",
+        "bright"
+      ],
+      "recurring_motifs": [
+        "family_adventure",
+        "coming_of_age",
+        "animation_legacy"
+      ],
+      "keyword_families": [
+        "animation",
+        "playful",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "playful",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "holiday",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "star_vehicle",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 40,
+      "franchise_name": "Everything Changes",
+      "genre": "Reality-TV",
+      "tier": "Epic",
+      "installments": 6,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "reality-tv",
+        "reality-tv_legacy"
+      ],
+      "keyword_families": [
+        "reality-tv",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "star_vehicle",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 41,
+      "franchise_name": "Fear Always",
+      "genre": "Horror",
+      "tier": "A",
+      "installments": 4,
+      "continuity_anchors": [
+        "containment failure",
+        "fractured survivors",
+        "claustrophobic"
+      ],
+      "recurring_motifs": [
+        "supernatural",
+        "folk_horror",
+        "horror_legacy"
+      ],
+      "keyword_families": [
+        "horror",
+        "ominous",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "ominous",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 42,
+      "franchise_name": "Melodies Neon",
+      "genre": "Musical",
+      "tier": "Mid",
+      "installments": 5,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "musical",
+        "musical_legacy"
+      ],
+      "keyword_families": [
+        "musical",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Aftermath",
+        "Again",
+        "Night Shift"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "balanced_ensemble",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 43,
+      "franchise_name": "Everything Changes",
+      "genre": "Short",
+      "tier": "A",
+      "installments": 5,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "short",
+        "short_legacy"
+      ],
+      "keyword_families": [
+        "short",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 44,
+      "franchise_name": "Blade Everything",
+      "genre": "Crime",
+      "tier": "A",
+      "installments": 9,
+      "continuity_anchors": [
+        "ambition-versus-loyalty spiral",
+        "partners under suspicion",
+        "gritty"
+      ],
+      "recurring_motifs": [
+        "gangland",
+        "procedural",
+        "crime_legacy"
+      ],
+      "keyword_families": [
+        "crime",
+        "hardboiled",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "hardboiled",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 45,
+      "franchise_name": "Blood Empire",
+      "genre": "History",
+      "tier": "Epic",
+      "installments": 7,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "history",
+        "history_legacy"
+      ],
+      "keyword_families": [
+        "history",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "star_vehicle",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 46,
+      "franchise_name": "Burning Nexus",
+      "genre": "Western",
+      "tier": "A",
+      "installments": 9,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "western",
+        "western_legacy"
+      ],
+      "keyword_families": [
+        "western",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 47,
+      "franchise_name": "Gets Unchanged",
+      "genre": "Superhero",
+      "tier": "Mid",
+      "installments": 3,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "superhero",
+        "superhero_legacy"
+      ],
+      "keyword_families": [
+        "superhero",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Aftermath",
+        "Again",
+        "Night Shift"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "balanced_ensemble",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 48,
+      "franchise_name": "Tears Cold",
+      "genre": "War",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "duty-versus-survival dilemma",
+        "unit forged under attrition",
+        "grim"
+      ],
+      "recurring_motifs": [
+        "frontline_drama",
+        "resistance_story",
+        "war_legacy"
+      ],
+      "keyword_families": [
+        "war",
+        "somber",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "somber",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "awards",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "star_vehicle",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 49,
+      "franchise_name": "Trust Fractures",
+      "genre": "Thriller",
+      "tier": "Mid",
+      "installments": 9,
+      "continuity_anchors": [
+        "trust breakdown under pressure",
+        "allies who may betray each other",
+        "tense"
+      ],
+      "recurring_motifs": [
+        "political_thriller",
+        "psychological_thriller",
+        "thriller_legacy"
+      ],
+      "keyword_families": [
+        "thriller",
+        "urgent",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "urgent",
+      "subtitle_tokens": [
+        "Aftermath",
+        "Again",
+        "Night Shift"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "balanced_ensemble",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 50,
+      "franchise_name": "Gets Unchanged",
+      "genre": "Crime",
+      "tier": "Mid",
+      "installments": 2,
+      "continuity_anchors": [
+        "ambition-versus-loyalty spiral",
+        "partners under suspicion",
+        "gritty"
+      ],
+      "recurring_motifs": [
+        "gangland",
+        "procedural",
+        "crime_legacy"
+      ],
+      "keyword_families": [
+        "crime",
+        "hardboiled",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "hardboiled",
+      "subtitle_tokens": [
+        "Aftermath",
+        "Again",
+        "Night Shift"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "balanced_ensemble",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 51,
+      "franchise_name": "Dark Overture",
+      "genre": "Martial Arts",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "recurring institutional pressure",
+        "returning alliance",
+        "grounded"
+      ],
+      "recurring_motifs": [
+        "martial_arts",
+        "martial_arts_legacy"
+      ],
+      "keyword_families": [
+        "martial_arts",
+        "clean",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "clean",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "summer",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "star_vehicle",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 52,
+      "franchise_name": "Labyrinth Everything",
+      "genre": "Crime",
+      "tier": "A",
+      "installments": 3,
+      "continuity_anchors": [
+        "ambition-versus-loyalty spiral",
+        "partners under suspicion",
+        "gritty"
+      ],
+      "recurring_motifs": [
+        "gangland",
+        "procedural",
+        "crime_legacy"
+      ],
+      "keyword_families": [
+        "crime",
+        "hardboiled",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "hardboiled",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 53,
+      "franchise_name": "Fear Always",
+      "genre": "Horror",
+      "tier": "A",
+      "installments": 6,
+      "continuity_anchors": [
+        "containment failure",
+        "fractured survivors",
+        "claustrophobic"
+      ],
+      "recurring_motifs": [
+        "supernatural",
+        "folk_horror",
+        "horror_legacy"
+      ],
+      "keyword_families": [
+        "horror",
+        "ominous",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "ominous",
+      "subtitle_tokens": [
+        "Returns",
+        "Legacy",
+        "Part",
+        "Origins"
+      ],
+      "release_season_bias": "fall",
+      "company_strategy_tag": "event_franchise",
+      "cast_chemistry_target": "prestige_pairing",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 54,
+      "franchise_name": "Everything Changes",
+      "genre": "War",
+      "tier": "Mid",
+      "installments": 4,
+      "continuity_anchors": [
+        "duty-versus-survival dilemma",
+        "unit forged under attrition",
+        "grim"
+      ],
+      "recurring_motifs": [
+        "frontline_drama",
+        "resistance_story",
+        "war_legacy"
+      ],
+      "keyword_families": [
+        "war",
+        "somber",
+        "returning_character",
+        "installment"
+      ],
+      "title_style": "somber",
+      "subtitle_tokens": [
+        "Aftermath",
+        "Again",
+        "Night Shift"
+      ],
+      "release_season_bias": "awards",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "balanced_ensemble",
+      "carryover_director_bias": 0.82,
+      "carryover_cast_bias": 0.66
+    },
+    {
+      "franchise_id": 55,
+      "franchise_name": "The Atlas Protocol",
+      "genre": "Sci-Fi",
+      "tier": "Epic",
+      "installments": 9,
+      "continuity_anchors": [
+        "The Atlas",
+        "The Protocol",
+        "The Signal"
+      ],
+      "recurring_motifs": [
+        "Technological obsolescence",
+        "The cost of progress",
+        "Signal interference"
+      ],
+      "keyword_families": [
+        "future",
+        "protocol",
+        "silence",
+        "verdict",
+        "signal"
+      ],
+      "title_style": "Noun-heavy, colon-separated",
+      "subtitle_tokens": [
+        "Silence",
+        "Verdict",
+        "Signal"
+      ],
+      "release_season_bias": "Summer",
+      "company_strategy_tag": "blockbuster_factory",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.7
+    },
+    {
+      "franchise_id": 56,
+      "franchise_name": "The King's Frontier",
+      "genre": "Western",
+      "tier": "A",
+      "installments": 4,
+      "continuity_anchors": [
+        "The King",
+        "The Frontier",
+        "The Trigger"
+      ],
+      "recurring_motifs": [
+        "Dusty landscapes",
+        "Moral ambiguity",
+        "The lawless frontier"
+      ],
+      "keyword_families": [
+        "blood",
+        "king",
+        "gun",
+        "dust",
+        "legacy"
+      ],
+      "title_style": "Prepositional phrases",
+      "subtitle_tokens": [
+        "Legacy",
+        "Return"
+      ],
+      "release_season_bias": "Autumn",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 57,
+      "franchise_name": "The Catalyst Oracle",
+      "genre": "Short",
+      "tier": "Epic",
+      "installments": 3,
+      "continuity_anchors": [
+        "The Oracle",
+        "The Catalyst",
+        "The Resurrected Code"
+      ],
+      "recurring_motifs": [
+        "Transformation",
+        "Irreversible change",
+        "Technological rebirth"
+      ],
+      "keyword_families": [
+        "oracle",
+        "catalyst",
+        "flame",
+        "resurrected",
+        "storm"
+      ],
+      "title_style": "Abstract, high-concept",
+      "subtitle_tokens": [
+        "New Flame",
+        "Resurrected",
+        "Edge"
+      ],
+      "release_season_bias": "Winter",
+      "company_strategy_tag": "prestige_auteur",
+      "cast_chemistry_target": "0.85",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.2
+    },
+    {
+      "franchise_id": 58,
+      "franchise_name": "The Silent Descent",
+      "genre": "Drama",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Silent Eye",
+        "The Descent",
+        "The Witness"
+      ],
+      "recurring_motifs": [
+        "Buried truths",
+        "Breaking points",
+        "Shadows of the past"
+      ],
+      "keyword_families": [
+        "witness",
+        "silent",
+        "descent",
+        "unchained",
+        "echo"
+      ],
+      "title_style": "Descriptive, evocative",
+      "subtitle_tokens": [
+        "Echo",
+        "Unchained"
+      ],
+      "release_season_bias": "Autumn",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.75",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 59,
+      "franchise_name": "The Phantom Meridian",
+      "genre": "Experimental",
+      "tier": "A",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Meridian",
+        "The Cipher",
+        "The Phantom"
+      ],
+      "recurring_motifs": [
+        "Liminal spaces",
+        "Shadows",
+        "Cryptic messages"
+      ],
+      "keyword_families": [
+        "shadows",
+        "cipher",
+        "phantom",
+        "meridian",
+        "remedy"
+      ],
+      "title_style": "Poetic, abstract",
+      "subtitle_tokens": [
+        "Shadows",
+        "Blood",
+        "Haven"
+      ],
+      "release_season_bias": "Spring",
+      "company_strategy_tag": "niche_indie",
+      "cast_chemistry_target": "0.4",
+      "carryover_director_bias": 0.2,
+      "carryover_cast_bias": 0.1
+    },
+    {
+      "franchise_id": 60,
+      "franchise_name": "The Cursed Archive",
+      "genre": "Horror",
+      "tier": "A",
+      "installments": 9,
+      "continuity_anchors": [
+        "The Archive",
+        "The Serpent",
+        "The Curse"
+      ],
+      "recurring_motifs": [
+        "Hidden doors",
+        "Ancient secrets",
+        "Inevitability of fear"
+      ],
+      "keyword_families": [
+        "ancient",
+        "curse",
+        "serpent",
+        "hidden",
+        "archive"
+      ],
+      "title_style": "Possessive, ominous",
+      "subtitle_tokens": [
+        "Resurrected",
+        "Dream",
+        "Hidden"
+      ],
+      "release_season_bias": "Autumn",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 61,
+      "franchise_name": "The Scarlet Veil",
+      "genre": "Animation",
+      "tier": "Epic",
+      "installments": 9,
+      "continuity_anchors": [
+        "The Veil",
+        "The Blade",
+        "The Shadow"
+      ],
+      "recurring_motifs": [
+        "Quarantine",
+        "Gold",
+        "Shadows"
+      ],
+      "keyword_families": [
+        "bitter",
+        "iron",
+        "scarlet",
+        "shadow",
+        "verdict"
+      ],
+      "title_style": "Color-coded, noun-heavy",
+      "subtitle_tokens": [
+        "Meridian",
+        "Quarantine",
+        "Gold"
+      ],
+      "release_season_bias": "Summer",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.65",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 62,
+      "franchise_name": "The Dawn Fracture",
+      "genre": "Sport",
+      "tier": "Mid",
+      "installments": 8,
+      "continuity_anchors": [
+        "The Dawn",
+        "The Fracture",
+        "The Mirror"
+      ],
+      "recurring_motifs": [
+        "Dawn",
+        "Silence",
+        "Brokenness"
+      ],
+      "keyword_families": [
+        "black",
+        "blade",
+        "blind",
+        "broken",
+        "fracture"
+      ],
+      "title_style": "Alliterative, sharp",
+      "subtitle_tokens": [
+        "Dawn",
+        "Flame",
+        "Gold"
+      ],
+      "release_season_bias": "Spring",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.55",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 63,
+      "franchise_name": "The Golden Oracle",
+      "genre": "Film-Noir",
+      "tier": "Epic",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Oracle",
+        "The Passage",
+        "The Requiem"
+      ],
+      "recurring_motifs": [
+        "Grids",
+        "Sanctuary",
+        "Finality"
+      ],
+      "keyword_families": [
+        "passage",
+        "requiem",
+        "ghost",
+        "oracle",
+        "golden"
+      ],
+      "title_style": "Minimalist, mysterious",
+      "subtitle_tokens": [
+        "Grid",
+        "Passage"
+      ],
+      "release_season_bias": "Winter",
+      "company_strategy_tag": "prestige_auteur",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.6,
+      "carryover_cast_bias": 0.3
+    },
+    {
+      "franchise_id": 64,
+      "franchise_name": "The Copper Cipher",
+      "genre": "War",
+      "tier": "A",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Cipher",
+        "The Summit",
+        "The Covenant"
+      ],
+      "recurring_motifs": [
+        "Frontiers",
+        "Stone",
+        "Serpents"
+      ],
+      "keyword_families": [
+        "blind",
+        "copper",
+        "cipher",
+        "dream",
+        "serpent"
+      ],
+      "title_style": "Compound, industrial",
+      "subtitle_tokens": [
+        "Frontier",
+        "Covenant",
+        "Serpent"
+      ],
+      "release_season_bias": "Autumn",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 65,
+      "franchise_name": "The Crimson Curse",
+      "genre": "Horror",
+      "tier": "Mid",
+      "installments": 4,
+      "continuity_anchors": [
+        "The Curse",
+        "The King",
+        "The Woman"
+      ],
+      "recurring_motifs": [
+        "Texas",
+        "Survival",
+        "Hunting"
+      ],
+      "keyword_families": [
+        "curse",
+        "broken",
+        "crimson",
+        "fallen",
+        "texas"
+      ],
+      "title_style": "Ominous, direct",
+      "subtitle_tokens": [
+        "King",
+        "Woman",
+        "Texas"
+      ],
+      "release_season_bias": "Autumn",
+      "company_strategy_tag": "niche_indie",
+      "cast_chemistry_target": "0.4",
+      "carryover_director_bias": 0.2,
+      "carryover_cast_bias": 0.3
+    },
+    {
+      "franchise_id": 66,
+      "franchise_name": "The Neon Melodies",
+      "genre": "Musical",
+      "tier": "Epic",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Melody",
+        "The Chorus",
+        "The Ultimatum"
+      ],
+      "recurring_motifs": [
+        "Dance",
+        "Honor",
+        "Romance"
+      ],
+      "keyword_families": [
+        "cold",
+        "neon",
+        "wild",
+        "ultimatum",
+        "chorus"
+      ],
+      "title_style": "Rhythmic, melodic",
+      "subtitle_tokens": [
+        "Musical",
+        "Melodies"
+      ],
+      "release_season_bias": "Summer",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.8",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 67,
+      "franchise_name": "The Eternal Dominion",
+      "genre": "Family",
+      "tier": "Epic",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Dominion",
+        "The Forge",
+        "The Compass"
+      ],
+      "recurring_motifs": [
+        "Friendship",
+        "Paradox",
+        "Memory"
+      ],
+      "keyword_families": [
+        "ancient",
+        "blood",
+        "broken",
+        "dominion",
+        "forge"
+      ],
+      "title_style": "Grand, thematic",
+      "subtitle_tokens": [
+        "Gambit",
+        "Paradox",
+        "Dominion"
+      ],
+      "release_season_bias": "Winter",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.7",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 68,
+      "franchise_name": "The Ancient Raven",
+      "genre": "Drama",
+      "tier": "Mid",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Raven",
+        "The Accord",
+        "The Catalyst"
+      ],
+      "recurring_motifs": [
+        "Scars",
+        "Truths",
+        "Glass"
+      ],
+      "keyword_families": [
+        "accord",
+        "ancient",
+        "raven",
+        "glass",
+        "catalyst"
+      ],
+      "title_style": "Metaphorical, somber",
+      "subtitle_tokens": [
+        "Dream",
+        "Glass",
+        "Crossing"
+      ],
+      "release_season_bias": "Winter",
+      "company_strategy_tag": "prestige_drama",
+      "cast_chemistry_target": "0.75",
+      "carryover_director_bias": 0.5,
+      "carryover_cast_bias": 0.6
+    },
+    {
+      "franchise_id": 69,
+      "franchise_name": "The Iron Zenith",
+      "genre": "Sci-Fi",
+      "tier": "Mid",
+      "installments": 3,
+      "continuity_anchors": [
+        "The Zenith",
+        "The Edge",
+        "The Phoenix"
+      ],
+      "recurring_motifs": [
+        "The future",
+        "Known edges",
+        "Silence"
+      ],
+      "keyword_families": [
+        "compass",
+        "silent",
+        "frozen",
+        "golden",
+        "zenith"
+      ],
+      "title_style": "Industrial, celestial",
+      "subtitle_tokens": [
+        "Verdict",
+        "Edge",
+        "Dream"
+      ],
+      "release_season_bias": "Summer",
+      "company_strategy_tag": "blockbuster_factory",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 70,
+      "franchise_name": "The Dark Impulse",
+      "genre": "Family",
+      "tier": "Mid",
+      "installments": 3,
+      "continuity_anchors": [
+        "The Impulse",
+        "The Haven",
+        "The Vendetta"
+      ],
+      "recurring_motifs": [
+        "Fortune",
+        "Circuits",
+        "Covenants"
+      ],
+      "keyword_families": [
+        "broken",
+        "haven",
+        "circuit",
+        "impulse",
+        "vendetta"
+      ],
+      "title_style": "Punchy, dark",
+      "subtitle_tokens": [
+        "Fortune",
+        "Storm",
+        "Covenant"
+      ],
+      "release_season_bias": "Autumn",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.5",
+      "carryover_director_bias": 0.3,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 71,
+      "franchise_name": "The Bright Horizon",
+      "genre": "Sport",
+      "tier": "A",
+      "installments": 2,
+      "continuity_anchors": [
+        "The Horizon",
+        "The Covenant",
+        "The Mirror"
+      ],
+      "recurring_motifs": [
+        "Dawn",
+        "Silence",
+        "Gold"
+      ],
+      "keyword_families": [
+        "black",
+        "blade",
+        "blind",
+        "bright",
+        "covenant"
+      ],
+      "title_style": "Optimistic, expansive",
+      "subtitle_tokens": [
+        "Covenant",
+        "Gold"
+      ],
+      "release_season_bias": "Spring",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.6",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.5
+    },
+    {
+      "franchise_id": 72,
+      "franchise_name": "The Crimson Dominion",
+      "genre": "Sport",
+      "tier": "A",
+      "installments": 6,
+      "continuity_anchors": [
+        "The Dominion",
+        "The Accord",
+        "The Archive"
+      ],
+      "recurring_motifs": [
+        "Distant grids",
+        "Crimson",
+        "Requiem"
+      ],
+      "keyword_families": [
+        "blade",
+        "archive",
+        "crimson",
+        "requiem",
+        "dominion"
+      ],
+      "title_style": "Formal, structured",
+      "subtitle_tokens": [
+        "Accord",
+        "Ghost",
+        "Dominion"
+      ],
+      "release_season_bias": "Spring",
+      "company_strategy_tag": "genre_lab",
+      "cast_chemistry_target": "0.55",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.4
+    },
+    {
+      "franchise_id": 73,
+      "franchise_name": "Blood and Eye Saga",
+      "genre": "History",
+      "tier": "Epic",
+      "installments": 8,
+      "continuity_anchors": [
+        "The fall of the Blind Empire",
+        "The rise of the silent king",
+        "The neon chaos of the capital"
+      ],
+      "recurring_motifs": [
+        "Ashes of London",
+        "The Eye symbol",
+        "Silent kingship",
+        "Neon-lit historical settings"
+      ],
+      "keyword_families": [
+        "Empire",
+        "Blood",
+        "Shadow",
+        "Blind",
+        "Protocol"
+      ],
+      "title_style": "Compound noun phrases with colon separators",
+      "subtitle_tokens": [
+        "The Eye Story",
+        "The Shadow Story",
+        "Unbound"
+      ],
+      "release_season_bias": "Winter",
+      "company_strategy_tag": "prestige_auteur",
+      "cast_chemistry_target": "0.85",
+      "carryover_director_bias": 0.75,
+      "carryover_cast_bias": 0.65
+    },
+    {
+      "franchise_id": 74,
+      "franchise_name": "Covenant & Crown Chronicles",
+      "genre": "Comedy",
+      "tier": "Mid",
+      "installments": 8,
+      "continuity_anchors": [
+        "The recurring failure of plans",
+        "The Serpent of Covenant",
+        "The Crown's accidental legacy"
+      ],
+      "recurring_motifs": [
+        "Bad ideas",
+        "Perfect timing",
+        "Serpents",
+        "Ciphers"
+      ],
+      "keyword_families": [
+        "Blind",
+        "Covenant",
+        "Crown",
+        "Serpent",
+        "Echo"
+      ],
+      "title_style": "Abstract noun combinations",
+      "subtitle_tokens": [
+        "of the Fallen",
+        "of Covenant"
+      ],
+      "release_season_bias": "Summer",
+      "company_strategy_tag": "audience_broadcaster",
+      "cast_chemistry_target": "0.95",
+      "carryover_director_bias": 0.4,
+      "carryover_cast_bias": 0.8
+    }
+  ]
+}

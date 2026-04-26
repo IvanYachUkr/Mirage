@@ -1,0 +1,6407 @@
+{
+  "benchmark_id": "job_complex_adapted_v1",
+  "generated_at_utc": "2026-04-26T10:26:34Z",
+  "source_query_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries",
+  "db_name": "job_test40_structural_probe_v10_pcodes",
+  "adapted_query_dir": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes",
+  "summary": {
+    "query_count": 30,
+    "structure_guard_passed": 30,
+    "nonzero_queries": 24,
+    "zero_or_unknown_queries": 6,
+    "errors": 1,
+    "changed_slots_median": 4.0,
+    "changed_slots_mean": 3.8
+  },
+  "queries": [
+    {
+      "query_id": "01",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/01.sql",
+      "structure_checksum": "c60ff576b0a602e135a2fbb3d9250e0396d986b427387ada0be536faaf999fc1",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 6,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Film%"
+          ],
+          "sql_values": [
+            "'%Film%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Warner%"
+          ],
+          "sql_values": [
+            "'%Warner%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "sequel"
+          ],
+          "sql_values": [
+            "'sequel'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%follow%"
+          ],
+          "sql_values": [
+            "'%follow%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1950",
+            "2000"
+          ],
+          "sql_values": [
+            "1950",
+            "2000"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "job-loss"
+          ],
+          "sql_values": [
+            "'job-loss'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%features%"
+          ],
+          "sql_values": [
+            "'%features%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Drama",
+            "Norway",
+            "Germany",
+            "Denmark"
+          ],
+          "sql_values": [
+            "'Drama'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1914",
+            "1964"
+          ],
+          "sql_values": [
+            "1914",
+            "1964"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/01.sql"
+    },
+    {
+      "query_id": "02",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/02.sql",
+      "structure_checksum": "7b602db60be06252a0f6d7f819cc77ffb6803ab1e8a7cbcf335e2071278b7d96",
+      "structure_guard_passed": true,
+      "slot_count": 7,
+      "changed_slots": 5,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Film%"
+          ],
+          "sql_values": [
+            "'%Film%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Warner%"
+          ],
+          "sql_values": [
+            "'%Warner%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "sequel"
+          ],
+          "sql_values": [
+            "'sequel'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%follow%"
+          ],
+          "sql_values": [
+            "'%follow%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1950",
+            "2000"
+          ],
+          "sql_values": [
+            "1950",
+            "2000"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "job-loss"
+          ],
+          "sql_values": [
+            "'job-loss'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%features%"
+          ],
+          "sql_values": [
+            "'%features%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1914",
+            "1964"
+          ],
+          "sql_values": [
+            "1914",
+            "1964"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/02.sql"
+    },
+    {
+      "query_id": "03",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/03.sql",
+      "structure_checksum": "f6b68913de408f23fd90dd195f05c10f16677174c4f906fe3f75c81ae3846611",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 6,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Film%"
+          ],
+          "sql_values": [
+            "'%Film%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Warner%"
+          ],
+          "sql_values": [
+            "'%Warner%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "sequel"
+          ],
+          "sql_values": [
+            "'sequel'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%follow%"
+          ],
+          "sql_values": [
+            "'%follow%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Denish",
+            "Norwegian",
+            "German"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Denish'",
+            "'Norwegian'",
+            "'German'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1950",
+            "2000"
+          ],
+          "sql_values": [
+            "1950",
+            "2000"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "job-loss"
+          ],
+          "sql_values": [
+            "'job-loss'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%features%"
+          ],
+          "sql_values": [
+            "'%features%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Drama",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Denish",
+            "Norwegian",
+            "German"
+          ],
+          "sql_values": [
+            "'Drama'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Denish'",
+            "'Norwegian'",
+            "'German'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1914",
+            "1964"
+          ],
+          "sql_values": [
+            "1914",
+            "1964"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/03.sql"
+    },
+    {
+      "query_id": "04",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/04.sql",
+      "structure_checksum": "03eedde4802a0d6bffaae6abc4c66443e887f6a2f9d1f5d8c23633c0c52ec16f",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 6,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Film%"
+          ],
+          "sql_values": [
+            "'%Film%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Warner%"
+          ],
+          "sql_values": [
+            "'%Warner%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "sequel"
+          ],
+          "sql_values": [
+            "'sequel'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%follow%"
+          ],
+          "sql_values": [
+            "'%follow%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Denish",
+            "Norwegian",
+            "German"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Denish'",
+            "'Norwegian'",
+            "'German'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1950",
+            "2000"
+          ],
+          "sql_values": [
+            "1950",
+            "2000"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "job-loss"
+          ],
+          "sql_values": [
+            "'job-loss'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%features%"
+          ],
+          "sql_values": [
+            "'%features%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Drama",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Denish",
+            "Norwegian",
+            "German"
+          ],
+          "sql_values": [
+            "'Drama'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Denish'",
+            "'Norwegian'",
+            "'German'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1914",
+            "1964"
+          ],
+          "sql_values": [
+            "1914",
+            "1964"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/04.sql"
+    },
+    {
+      "query_id": "05",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/05.sql",
+      "structure_checksum": "98b23fa3cb4eb31d934fd2585fd8c53e4496c711e77386e5bd96b85c6063aea9",
+      "structure_guard_passed": true,
+      "slot_count": 12,
+      "changed_slots": 0,
+      "actual_count": 0,
+      "status": "OK",
+      "error": null,
+      "notes": [
+        "no coherent all-literals-relaxed witness row found",
+        "adapted query has zero rows or count timed out"
+      ],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "crew"
+          ],
+          "sql_values": [
+            "'crew'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Germany",
+            "Swedish"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Germany'",
+            "'Swedish'"
+          ],
+          "arity": 3
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": ">=",
+          "kind": "cmp",
+          "values": [
+            "6.5"
+          ],
+          "sql_values": [
+            "'6.5'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2005"
+          ],
+          "sql_values": [
+            "2005"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "crew"
+          ],
+          "sql_values": [
+            "'crew'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Germany",
+            "Swedish"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Germany'",
+            "'Swedish'"
+          ],
+          "arity": 3
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": ">=",
+          "kind": "cmp",
+          "values": [
+            "6.5"
+          ],
+          "sql_values": [
+            "'6.5'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2005"
+          ],
+          "sql_values": [
+            "2005"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/05.sql"
+    },
+    {
+      "query_id": "06",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/06.sql",
+      "structure_checksum": "50526f75785bc3bb514e99330f1bccc40bb5e6fdec99370ce5d38da21acae272",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 6,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Film%"
+          ],
+          "sql_values": [
+            "'%Film%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Warner%"
+          ],
+          "sql_values": [
+            "'%Warner%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "sequel"
+          ],
+          "sql_values": [
+            "'sequel'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%follow%"
+          ],
+          "sql_values": [
+            "'%follow%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Germany",
+            "German"
+          ],
+          "sql_values": [
+            "'Germany'",
+            "'German'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "2000",
+            "2010"
+          ],
+          "sql_values": [
+            "2000",
+            "2010"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "job-loss"
+          ],
+          "sql_values": [
+            "'job-loss'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%features%"
+          ],
+          "sql_values": [
+            "'%features%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Drama",
+            "German"
+          ],
+          "sql_values": [
+            "'Drama'",
+            "'German'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1954",
+            "1964"
+          ],
+          "sql_values": [
+            "1954",
+            "1964"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/06.sql"
+    },
+    {
+      "query_id": "07",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/07.sql",
+      "structure_checksum": "c413b3606d2e2292b51e5ccfeb4a49688043558dec3964e52021819b1cb63b48",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 6,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Film%"
+          ],
+          "sql_values": [
+            "'%Film%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Warner%"
+          ],
+          "sql_values": [
+            "'%Warner%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "sequel"
+          ],
+          "sql_values": [
+            "'sequel'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%follow%"
+          ],
+          "sql_values": [
+            "'%follow%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Germany",
+            "German"
+          ],
+          "sql_values": [
+            "'Germany'",
+            "'German'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "2000",
+            "2010"
+          ],
+          "sql_values": [
+            "2000",
+            "2010"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[pl]"
+          ],
+          "sql_values": [
+            "'[pl]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Lazio Luce%"
+          ],
+          "sql_values": [
+            "'%Lazio Luce%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "job-loss"
+          ],
+          "sql_values": [
+            "'job-loss'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "lt.link",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%features%"
+          ],
+          "sql_values": [
+            "'%features%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Drama",
+            "German"
+          ],
+          "sql_values": [
+            "'Drama'",
+            "'German'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "t.production_year",
+          "operator": "BETWEEN",
+          "kind": "between",
+          "values": [
+            "1954",
+            "1964"
+          ],
+          "sql_values": [
+            "1954",
+            "1964"
+          ],
+          "arity": 2
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/07.sql"
+    },
+    {
+      "query_id": "08",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/08.sql",
+      "structure_checksum": "f5d25bc816e47a84ce3e65850010401ef3cf9eb908cdad32db4e16af4c9cda0e",
+      "structure_guard_passed": true,
+      "slot_count": 12,
+      "changed_slots": 9,
+      "actual_count": 12,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "cast",
+            "crew"
+          ],
+          "sql_values": [
+            "'cast'",
+            "'crew'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(writer)",
+            "(head writer)",
+            "(written by)",
+            "(story)",
+            "(story editor)"
+          ],
+          "sql_values": [
+            "'(writer)'",
+            "'(head writer)'",
+            "'(written by)'",
+            "'(story)'",
+            "'(story editor)'"
+          ],
+          "arity": 5
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "violence",
+            "blood",
+            "gore",
+            "death",
+            "female-nudity",
+            "hospital"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'violence'",
+            "'blood'",
+            "'gore'",
+            "'death'",
+            "'female-nudity'",
+            "'hospital'"
+          ],
+          "arity": 7
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Horror",
+            "Thriller"
+          ],
+          "sql_values": [
+            "'Horror'",
+            "'Thriller'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.title",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Freddy%"
+          ],
+          "sql_values": [
+            "'%Freddy%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.title",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Jason%"
+          ],
+          "sql_values": [
+            "'%Jason%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.title",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Saw%"
+          ],
+          "sql_values": [
+            "'Saw%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "cast",
+            "crew"
+          ],
+          "sql_values": [
+            "'cast'",
+            "'crew'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(uncredited)",
+            "(head writer)",
+            "(written by)",
+            "(story)",
+            "(story editor)"
+          ],
+          "sql_values": [
+            "'(uncredited)'",
+            "'(head writer)'",
+            "'(written by)'",
+            "'(story)'",
+            "'(story editor)'"
+          ],
+          "arity": 5
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "martial-arts",
+            "violence",
+            "blood",
+            "gore",
+            "death",
+            "female-nudity",
+            "hospital"
+          ],
+          "sql_values": [
+            "'martial-arts'",
+            "'violence'",
+            "'blood'",
+            "'gore'",
+            "'death'",
+            "'female-nudity'",
+            "'hospital'"
+          ],
+          "arity": 7
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Action",
+            "Thriller"
+          ],
+          "sql_values": [
+            "'Action'",
+            "'Thriller'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "f"
+          ],
+          "sql_values": [
+            "'f'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1974"
+          ],
+          "sql_values": [
+            "1974"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.title",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Midnight Prayer Sessions%"
+          ],
+          "sql_values": [
+            "'%Midnight Prayer Sessions%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.title",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Midnight Prayer Sessions%"
+          ],
+          "sql_values": [
+            "'%Midnight Prayer Sessions%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.title",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Midnight Prayer Sessions%"
+          ],
+          "sql_values": [
+            "'Midnight Prayer Sessions%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/08.sql"
+    },
+    {
+      "query_id": "09",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/09.sql",
+      "structure_checksum": "525acdc375e6a5fbe397c22abc79a2050b02557b0ff653ad26a211e802a9d37e",
+      "structure_guard_passed": true,
+      "slot_count": 12,
+      "changed_slots": 7,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "crew"
+          ],
+          "sql_values": [
+            "'crew'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Danish",
+            "Norwegian",
+            "German",
+            "USA",
+            "American"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Danish'",
+            "'Norwegian'",
+            "'German'",
+            "'USA'",
+            "'American'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "8.5"
+          ],
+          "sql_values": [
+            "'8.5'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "loss-of-a-parent",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'loss-of-a-parent'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(co-production)%"
+          ],
+          "sql_values": [
+            "'%(co-production)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Drama",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Danish",
+            "Norwegian",
+            "German",
+            "USA",
+            "American"
+          ],
+          "sql_values": [
+            "'Drama'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Danish'",
+            "'Norwegian'",
+            "'German'",
+            "'USA'",
+            "'American'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "8.8"
+          ],
+          "sql_values": [
+            "'8.8'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1959"
+          ],
+          "sql_values": [
+            "1959"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/09.sql"
+    },
+    {
+      "query_id": "10",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/10.sql",
+      "structure_checksum": "71dc7cfb3f8cb0441b4777ee65bc460fcfe6718c6f0d4397cd89bd2ca0c25b46",
+      "structure_guard_passed": true,
+      "slot_count": 5,
+      "changed_slots": 4,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(producer)",
+            "(executive producer)"
+          ],
+          "sql_values": [
+            "'(producer)'",
+            "'(executive producer)'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "budget"
+          ],
+          "sql_values": [
+            "'budget'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Tim%"
+          ],
+          "sql_values": [
+            "'%Tim%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(as Levi I. Green)",
+            "(executive producer)"
+          ],
+          "sql_values": [
+            "'(as Levi I. Green)'",
+            "'(executive producer)'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Friedrich Haas%"
+          ],
+          "sql_values": [
+            "'%Friedrich Haas%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/10.sql"
+    },
+    {
+      "query_id": "11",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/11.sql",
+      "structure_checksum": "3996b1468c1f6b6b567503ead5fade8d8f9cde47506b05f4604ccbda5005f78a",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 0,
+      "actual_count": 0,
+      "status": "OK",
+      "error": null,
+      "notes": [
+        "no coherent all-literals-relaxed witness row found",
+        "adapted query has zero rows or count timed out"
+      ],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/11.sql"
+    },
+    {
+      "query_id": "12",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/12.sql",
+      "structure_checksum": "5a0c17742a47c9efb0c4abd3c5b379b87f46ae192cfc9b6d77ebb176efb50747",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 4,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">=",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Alejandra O. Garcia-Jimenez%"
+          ],
+          "sql_values": [
+            "'%Alejandra O. Garcia-Jimenez%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Alejandra O. Garcia-Jimenez%"
+          ],
+          "sql_values": [
+            "'%Alejandra O. Garcia-Jimenez%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "solar-crossfire-case",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'solar-crossfire-case'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">=",
+          "kind": "cmp",
+          "values": [
+            "2012"
+          ],
+          "sql_values": [
+            "2012"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/12.sql"
+    },
+    {
+      "query_id": "13",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/13.sql",
+      "structure_checksum": "100fdd99cd169883a1d5d03722966c059a4ecbb52ec75e3bd00dbb45246f0bde",
+      "structure_guard_passed": true,
+      "slot_count": 10,
+      "changed_slots": 0,
+      "actual_count": 0,
+      "status": "OK",
+      "error": null,
+      "notes": [
+        "no coherent all-literals-relaxed witness row found",
+        "adapted query has zero rows or count timed out"
+      ],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Danish",
+            "Norwegian",
+            "German",
+            "USA",
+            "American"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Danish'",
+            "'Norwegian'",
+            "'German'",
+            "'USA'",
+            "'American'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "8.5"
+          ],
+          "sql_values": [
+            "'8.5'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2005"
+          ],
+          "sql_values": [
+            "2005"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Danish",
+            "Norwegian",
+            "German",
+            "USA",
+            "American"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Danish'",
+            "'Norwegian'",
+            "'German'",
+            "'USA'",
+            "'American'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "8.5"
+          ],
+          "sql_values": [
+            "'8.5'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2005"
+          ],
+          "sql_values": [
+            "2005"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/13.sql"
+    },
+    {
+      "query_id": "14",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/14.sql",
+      "structure_checksum": "532ec2b1559a871916b7850536a4d22bab7abd1cbb9fd1846c1f1a9e19b3bcf2",
+      "structure_guard_passed": true,
+      "slot_count": 3,
+      "changed_slots": 3,
+      "actual_count": null,
+      "status": "ERROR",
+      "error": "ERROR:  canceling statement due to statement timeout",
+      "notes": [
+        "final count failed or timed out: ERROR:  canceling statement due to statement timeout",
+        "adapted query has zero rows or count timed out",
+        "best-state evaluation error: ERROR:  canceling statement due to statement timeout"
+      ],
+      "original_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "marvel-cinematic-universe"
+          ],
+          "sql_values": [
+            "'marvel-cinematic-universe'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Downey%"
+          ],
+          "sql_values": [
+            "'%Downey%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "shadow-redemption"
+          ],
+          "sql_values": [
+            "'shadow-redemption'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Choi Young-hee%"
+          ],
+          "sql_values": [
+            "'%Choi Young-hee%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1949"
+          ],
+          "sql_values": [
+            "1949"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/14.sql"
+    },
+    {
+      "query_id": "15",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/15.sql",
+      "structure_checksum": "0df19809291d1a6fea2073cd8cbea893bf2c6a10945925a8392c7f2a68655ae0",
+      "structure_guard_passed": true,
+      "slot_count": 4,
+      "changed_slots": 0,
+      "actual_count": 0,
+      "status": "OK",
+      "error": null,
+      "notes": [
+        "no coherent all-literals-relaxed witness row found",
+        "adapted query has zero rows or count timed out"
+      ],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%internet%"
+          ],
+          "sql_values": [
+            "'%internet%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1990"
+          ],
+          "sql_values": [
+            "1990"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%internet%"
+          ],
+          "sql_values": [
+            "'%internet%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1990"
+          ],
+          "sql_values": [
+            "1990"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/15.sql"
+    },
+    {
+      "query_id": "16",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/16.sql",
+      "structure_checksum": "358372db988ae487984bef826318cd331ccd3c1aef2e32e1912f8527cb15c281",
+      "structure_guard_passed": true,
+      "slot_count": 5,
+      "changed_slots": 4,
+      "actual_count": 557,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(producer)",
+            "(executive producer)"
+          ],
+          "sql_values": [
+            "'(producer)'",
+            "'(executive producer)'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "budget"
+          ],
+          "sql_values": [
+            "'budget'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Tim%"
+          ],
+          "sql_values": [
+            "'%Tim%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(story)",
+            "(executive producer)"
+          ],
+          "sql_values": [
+            "'(story)'",
+            "'(executive producer)'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Tarek Mansour%"
+          ],
+          "sql_values": [
+            "'%Tarek Mansour%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/16.sql"
+    },
+    {
+      "query_id": "17",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/17.sql",
+      "structure_checksum": "f1f4b3786f968f40248237220bf8349570d32dafc9460338d70912db81ba8594",
+      "structure_guard_passed": true,
+      "slot_count": 10,
+      "changed_slots": 0,
+      "actual_count": 0,
+      "status": "OK",
+      "error": null,
+      "notes": [
+        "no coherent all-literals-relaxed witness row found",
+        "adapted query has zero rows or count timed out"
+      ],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Germany",
+            "German",
+            "USA",
+            "American"
+          ],
+          "sql_values": [
+            "'Germany'",
+            "'German'",
+            "'USA'",
+            "'American'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "7.0"
+          ],
+          "sql_values": [
+            "'7.0'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2009"
+          ],
+          "sql_values": [
+            "2009"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Germany",
+            "German",
+            "USA",
+            "American"
+          ],
+          "sql_values": [
+            "'Germany'",
+            "'German'",
+            "'USA'",
+            "'American'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "7.0"
+          ],
+          "sql_values": [
+            "'7.0'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2009"
+          ],
+          "sql_values": [
+            "2009"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/17.sql"
+    },
+    {
+      "query_id": "18",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/18.sql",
+      "structure_checksum": "11bba61e3671511330bba7d19f544ac755c10af538cdf0a64c00438f77a7b18d",
+      "structure_guard_passed": true,
+      "slot_count": 6,
+      "changed_slots": 5,
+      "actual_count": 12,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%internet%"
+          ],
+          "sql_values": [
+            "'%internet%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "USA:% 199%"
+          ],
+          "sql_values": [
+            "'USA:% 199%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "USA:% 200%"
+          ],
+          "sql_values": [
+            "'USA:% 200%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1990"
+          ],
+          "sql_values": [
+            "1990"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[it]"
+          ],
+          "sql_values": [
+            "'[it]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(Theatrical)%"
+          ],
+          "sql_values": [
+            "'%(Theatrical)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Italy:29 January 1960%"
+          ],
+          "sql_values": [
+            "'Italy:29 January 1960%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Italy:29 January 1960%"
+          ],
+          "sql_values": [
+            "'Italy:29 January 1960%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1959"
+          ],
+          "sql_values": [
+            "1959"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/18.sql"
+    },
+    {
+      "query_id": "19",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/19.sql",
+      "structure_checksum": "3a101cbfa3675e938930b6d30f9d68ab976661e5d0634cfabb9ef4b339d01bf1",
+      "structure_guard_passed": true,
+      "slot_count": 7,
+      "changed_slots": 5,
+      "actual_count": 179,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(writer)",
+            "(head writer)",
+            "(written by)",
+            "(story)",
+            "(story editor)"
+          ],
+          "sql_values": [
+            "'(writer)'",
+            "'(head writer)'",
+            "'(written by)'",
+            "'(story)'",
+            "'(story editor)'"
+          ],
+          "arity": 5
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Lionsgate%"
+          ],
+          "sql_values": [
+            "'Lionsgate%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "violence",
+            "blood",
+            "gore",
+            "death",
+            "female-nudity",
+            "hospital"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'violence'",
+            "'blood'",
+            "'gore'",
+            "'death'",
+            "'female-nudity'",
+            "'hospital'"
+          ],
+          "arity": 7
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Horror",
+            "Thriller"
+          ],
+          "sql_values": [
+            "'Horror'",
+            "'Thriller'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(as Prof. Tatiana Orlov)",
+            "(head writer)",
+            "(written by)",
+            "(story)",
+            "(story editor)"
+          ],
+          "sql_values": [
+            "'(as Prof. Tatiana Orlov)'",
+            "'(head writer)'",
+            "'(written by)'",
+            "'(story)'",
+            "'(story editor)'"
+          ],
+          "arity": 5
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Chennai Super Studios%"
+          ],
+          "sql_values": [
+            "'Chennai Super Studios%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "whodunit-mystery",
+            "violence",
+            "blood",
+            "gore",
+            "death",
+            "female-nudity",
+            "hospital"
+          ],
+          "sql_values": [
+            "'whodunit-mystery'",
+            "'violence'",
+            "'blood'",
+            "'gore'",
+            "'death'",
+            "'female-nudity'",
+            "'hospital'"
+          ],
+          "arity": 7
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Mystery",
+            "Thriller"
+          ],
+          "sql_values": [
+            "'Mystery'",
+            "'Thriller'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/19.sql"
+    },
+    {
+      "query_id": "20",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/20.sql",
+      "structure_checksum": "52bfef2ec123f8ef8f9046acfa8d6a41ec9cabba0bad16ed79c6816a06ae4b25",
+      "structure_guard_passed": true,
+      "slot_count": 12,
+      "changed_slots": 9,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "complete"
+          ],
+          "sql_values": [
+            "'complete'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "countries"
+          ],
+          "sql_values": [
+            "'countries'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie",
+            "episode"
+          ],
+          "sql_values": [
+            "'movie'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(200%)%"
+          ],
+          "sql_values": [
+            "'%(200%)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Sweden",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Danish",
+            "Norwegian",
+            "German"
+          ],
+          "sql_values": [
+            "'Sweden'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Danish'",
+            "'Norwegian'",
+            "'German'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "8.5"
+          ],
+          "sql_values": [
+            "'8.5'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2005"
+          ],
+          "sql_values": [
+            "2005"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "complete"
+          ],
+          "sql_values": [
+            "'complete'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "!=",
+          "kind": "cmp",
+          "values": [
+            "[in]"
+          ],
+          "sql_values": [
+            "'[in]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "tv-episode",
+            "murder-in-title",
+            "blood",
+            "violence"
+          ],
+          "sql_values": [
+            "'tv-episode'",
+            "'murder-in-title'",
+            "'blood'",
+            "'violence'"
+          ],
+          "arity": 4
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "episode",
+            "episode"
+          ],
+          "sql_values": [
+            "'episode'",
+            "'episode'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "mc.note",
+          "operator": "NOT LIKE",
+          "kind": "like",
+          "values": [
+            "%(USA)%"
+          ],
+          "sql_values": [
+            "'%(USA)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mc.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(1996) (TV)%"
+          ],
+          "sql_values": [
+            "'%(1996) (TV)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "History",
+            "Norway",
+            "Germany",
+            "Denmark",
+            "Swedish",
+            "Danish",
+            "Norwegian",
+            "German"
+          ],
+          "sql_values": [
+            "'History'",
+            "'Norway'",
+            "'Germany'",
+            "'Denmark'",
+            "'Swedish'",
+            "'Danish'",
+            "'Norwegian'",
+            "'German'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": "<",
+          "kind": "cmp",
+          "values": [
+            "18830.1"
+          ],
+          "sql_values": [
+            "'18830.1'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1995"
+          ],
+          "sql_values": [
+            "1995"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/20.sql"
+    },
+    {
+      "query_id": "21",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/21.sql",
+      "structure_checksum": "1d0184a09232710af20acaefc4237aa61ec6390f18e3f155ad5342f9840efb40",
+      "structure_guard_passed": true,
+      "slot_count": 7,
+      "changed_slots": 5,
+      "actual_count": 14,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(writer)",
+            "(head writer)",
+            "(written by)",
+            "(story)",
+            "(story editor)"
+          ],
+          "sql_values": [
+            "'(writer)'",
+            "'(head writer)'",
+            "'(written by)'",
+            "'(story)'",
+            "'(story editor)'"
+          ],
+          "arity": 5
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Lionsgate%"
+          ],
+          "sql_values": [
+            "'Lionsgate%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "murder",
+            "violence",
+            "blood",
+            "gore",
+            "death",
+            "female-nudity",
+            "hospital"
+          ],
+          "sql_values": [
+            "'murder'",
+            "'violence'",
+            "'blood'",
+            "'gore'",
+            "'death'",
+            "'female-nudity'",
+            "'hospital'"
+          ],
+          "arity": 7
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Horror",
+            "Thriller"
+          ],
+          "sql_values": [
+            "'Horror'",
+            "'Thriller'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "ci.note",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "(guest star)",
+            "(head writer)",
+            "(written by)",
+            "(story)",
+            "(story editor)"
+          ],
+          "sql_values": [
+            "'(guest star)'",
+            "'(head writer)'",
+            "'(written by)'",
+            "'(story)'",
+            "'(story editor)'"
+          ],
+          "arity": 5
+        },
+        {
+          "expr": "cn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Confluence City Arts%"
+          ],
+          "sql_values": [
+            "'Confluence City Arts%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "tv-episode",
+            "violence",
+            "blood",
+            "gore",
+            "death",
+            "female-nudity",
+            "hospital"
+          ],
+          "sql_values": [
+            "'tv-episode'",
+            "'violence'",
+            "'blood'",
+            "'gore'",
+            "'death'",
+            "'female-nudity'",
+            "'hospital'"
+          ],
+          "arity": 7
+        },
+        {
+          "expr": "mi.info",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "Film-Noir",
+            "Thriller"
+          ],
+          "sql_values": [
+            "'Film-Noir'",
+            "'Thriller'"
+          ],
+          "arity": 2
+        },
+        {
+          "expr": "n.gender",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "m"
+          ],
+          "sql_values": [
+            "'m'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/21.sql"
+    },
+    {
+      "query_id": "22",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/22.sql",
+      "structure_checksum": "fc09ca8483d206700cf727d6f8b47cb2c9a7287458447b85f8a9609257395ddf",
+      "structure_guard_passed": true,
+      "slot_count": 3,
+      "changed_slots": 3,
+      "actual_count": 60,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "sequel",
+            "second-part",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'sequel'",
+            "'second-part'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Downey%Robert%"
+          ],
+          "sql_values": [
+            "'%Downey%Robert%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "digital-rebirth-protocol",
+            "sequel",
+            "second-part",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence"
+          ],
+          "sql_values": [
+            "'digital-rebirth-protocol'",
+            "'sequel'",
+            "'second-part'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'"
+          ],
+          "arity": 8
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Tae-hoon 'The Thump' Ha%"
+          ],
+          "sql_values": [
+            "'%Tae-hoon ''The Thump'' Ha%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1996"
+          ],
+          "sql_values": [
+            "1996"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/22.sql"
+    },
+    {
+      "query_id": "23",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/23.sql",
+      "structure_checksum": "a081e53255949bdbe0b1e60240a2e9bf65f6a914cf63c2dac1eee6f42f63f15b",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 0,
+      "actual_count": 4,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/23.sql"
+    },
+    {
+      "query_id": "24",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/24.sql",
+      "structure_checksum": "f7e02a0ca3740f2dce05e639c37cccc69d257e4987095d74bc146bf74a392a11",
+      "structure_guard_passed": true,
+      "slot_count": 2,
+      "changed_slots": 2,
+      "actual_count": 68,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "character-name-in-title"
+          ],
+          "sql_values": [
+            "'character-name-in-title'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Bert%"
+          ],
+          "sql_values": [
+            "'%Bert%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "winter-reckoning-protocol"
+          ],
+          "sql_values": [
+            "'winter-reckoning-protocol'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Wai-Man Ho%"
+          ],
+          "sql_values": [
+            "'%Wai-Man Ho%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/24.sql"
+    },
+    {
+      "query_id": "25",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/25.sql",
+      "structure_checksum": "005f9f913fdbc08d8c61b9bd7410cd00198f8d2cfe7ce080abcd9f52583541e2",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 0,
+      "actual_count": 21,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/25.sql"
+    },
+    {
+      "query_id": "26",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/26.sql",
+      "structure_checksum": "8de879a61cd27a360893da5c499ef53f08d3aa3220d35ab5d97eaf1371433800",
+      "structure_guard_passed": true,
+      "slot_count": 5,
+      "changed_slots": 2,
+      "actual_count": 134,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[de]"
+          ],
+          "sql_values": [
+            "'[de]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[it]"
+          ],
+          "sql_values": [
+            "'[it]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "ct.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "production companies"
+          ],
+          "sql_values": [
+            "'production companies'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "genres"
+          ],
+          "sql_values": [
+            "'genres'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/26.sql"
+    },
+    {
+      "query_id": "27",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/27.sql",
+      "structure_checksum": "05a4c9e471a83f86b7e048bb843ee1ef1c529d56e3229cd9be5cfb8867f8ecce",
+      "structure_guard_passed": true,
+      "slot_count": 3,
+      "changed_slots": 3,
+      "actual_count": 2,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "character-name-in-title"
+          ],
+          "sql_values": [
+            "'character-name-in-title'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "B%"
+          ],
+          "sql_values": [
+            "'B%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[it]"
+          ],
+          "sql_values": [
+            "'[it]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "snitching"
+          ],
+          "sql_values": [
+            "'snitching'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Luca Heath%"
+          ],
+          "sql_values": [
+            "'Luca Heath%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/27.sql"
+    },
+    {
+      "query_id": "28",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/28.sql",
+      "structure_checksum": "dbec1737f75a1e9fa29d47b1bc069a015a320edbff5e5c907c3bb571adf8c2a6",
+      "structure_guard_passed": true,
+      "slot_count": 8,
+      "changed_slots": 5,
+      "actual_count": 9,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%internet%"
+          ],
+          "sql_values": [
+            "'%internet%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "USA:% 199%"
+          ],
+          "sql_values": [
+            "'USA:% 199%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "USA:% 200%"
+          ],
+          "sql_values": [
+            "'USA:% 200%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1999"
+          ],
+          "sql_values": [
+            "1999"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "complete+verified"
+          ],
+          "sql_values": [
+            "'complete+verified'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[it]"
+          ],
+          "sql_values": [
+            "'[it]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it1.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "release dates"
+          ],
+          "sql_values": [
+            "'release dates'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.note",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%(Theatrical)%"
+          ],
+          "sql_values": [
+            "'%(Theatrical)%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Spain:13 January 1958%"
+          ],
+          "sql_values": [
+            "'Spain:13 January 1958%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi.info",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Spain:13 January 1958%"
+          ],
+          "sql_values": [
+            "'Spain:13 January 1958%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1957"
+          ],
+          "sql_values": [
+            "1957"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/28.sql"
+    },
+    {
+      "query_id": "29",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/29.sql",
+      "structure_checksum": "45675f87dc4c21c49e39ee2ca9cb4ac316fcb12f206386b3db9e54c845fc3e81",
+      "structure_guard_passed": true,
+      "slot_count": 9,
+      "changed_slots": 6,
+      "actual_count": 1,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%man%"
+          ],
+          "sql_values": [
+            "'%man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Man%"
+          ],
+          "sql_values": [
+            "'%Man%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "rating"
+          ],
+          "sql_values": [
+            "'rating'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "superhero",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'superhero'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "5.0"
+          ],
+          "sql_values": [
+            "'5.0'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "2000"
+          ],
+          "sql_values": [
+            "2000"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cct1.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "cast"
+          ],
+          "sql_values": [
+            "'cast'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "cct2.kind",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%complete%"
+          ],
+          "sql_values": [
+            "'%complete%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Ricardo E. Mendoza%"
+          ],
+          "sql_values": [
+            "'%Ricardo E. Mendoza%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "chn.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "%Ricardo E. Mendoza%"
+          ],
+          "sql_values": [
+            "'%Ricardo E. Mendoza%'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "it2.info",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "votes"
+          ],
+          "sql_values": [
+            "'votes'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "IN",
+          "kind": "in",
+          "values": [
+            "dangerous-mission-mystery",
+            "marvel-comics",
+            "based-on-comic",
+            "tv-special",
+            "fight",
+            "violence",
+            "magnet",
+            "web",
+            "claw",
+            "laser"
+          ],
+          "sql_values": [
+            "'dangerous-mission-mystery'",
+            "'marvel-comics'",
+            "'based-on-comic'",
+            "'tv-special'",
+            "'fight'",
+            "'violence'",
+            "'magnet'",
+            "'web'",
+            "'claw'",
+            "'laser'"
+          ],
+          "arity": 10
+        },
+        {
+          "expr": "kt.kind",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "movie"
+          ],
+          "sql_values": [
+            "'movie'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "mi_idx.info",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "34176.9"
+          ],
+          "sql_values": [
+            "'34176.9'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "t.production_year",
+          "operator": ">",
+          "kind": "cmp",
+          "values": [
+            "1969"
+          ],
+          "sql_values": [
+            "1969"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/29.sql"
+    },
+    {
+      "query_id": "30",
+      "source_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/original_queries/30.sql",
+      "structure_checksum": "1793127fe8420dc8f9ca21aedd4c804ea8bf854c8c5280c1468892cd4b843c3a",
+      "structure_guard_passed": true,
+      "slot_count": 3,
+      "changed_slots": 3,
+      "actual_count": 2,
+      "status": "OK",
+      "error": null,
+      "notes": [],
+      "original_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[us]"
+          ],
+          "sql_values": [
+            "'[us]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "character-name-in-title"
+          ],
+          "sql_values": [
+            "'character-name-in-title'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "B%"
+          ],
+          "sql_values": [
+            "'B%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_literals": [
+        {
+          "expr": "cn.country_code",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "[it]"
+          ],
+          "sql_values": [
+            "'[it]'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "k.keyword",
+          "operator": "=",
+          "kind": "cmp",
+          "values": [
+            "snitching"
+          ],
+          "sql_values": [
+            "'snitching'"
+          ],
+          "arity": 1
+        },
+        {
+          "expr": "n.name",
+          "operator": "LIKE",
+          "kind": "like",
+          "values": [
+            "Luca Heath%"
+          ],
+          "sql_values": [
+            "'Luca Heath%'"
+          ],
+          "arity": 1
+        }
+      ],
+      "adapted_path": "/mnt/c/Users/vanya/Documents/DATA_SYS_LAB/benchmark/job_complex_v1/adapted_v2_test40_v10_pcodes/adapted_queries/job_test40_structural_probe_v10_pcodes/30.sql"
+    }
+  ]
+}
