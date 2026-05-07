@@ -1,0 +1,93 @@
+{
+  "dataset": "imdb_test42_100k_exportpatch",
+  "status": "paper_current_index",
+  "artifact_and_workload_summary": {
+    "folder": "artifact_workload_summary",
+    "paper_current": true,
+    "notes": "Generated database statistics, integrity checks, JOB-family structure/nonzero compatibility audit, and actual query result-size summary."
+  },
+  "cardinality_estimation": {
+    "base_selection_table1": {
+      "folder": "base_selection_table1",
+      "models": ["PostgreSQL", "DuckDB"],
+      "workloads": ["JOB-Light", "JOB", "JOB-Complex"],
+      "paper_current": true,
+      "source_run": "../runs/table1_base_selection_test42_100k_exportpatch_v2",
+      "notes": "Corrected v2 run; all reported base selections have nonzero actual cardinality."
+    },
+    "mscn_cardinality": {
+      "folder": "mscn_cardinality",
+      "models": ["MSCN"],
+      "workloads": ["JOB-Light", "JOB", "JOB-Complex"],
+      "paper_current": true,
+      "reporting_policy": "median_of_seed_summaries",
+      "notes": "Three-seed aggregate, not single best seed."
+    }
+  },
+  "cost_estimation": {
+    "postgres_selected_plan": {
+      "folder": "cost_postgres_selected_plan",
+      "models": ["PostgreSQL"],
+      "workloads": ["JOB-Light", "JOB", "JOB-Complex"],
+      "paper_current": true,
+      "notes": "Selected-plan planner cost scaled to actual runtime per workload."
+    },
+    "zeroshot_pretrained": {
+      "folder": "cost_zeroshot_pretrained",
+      "models": ["Pretrained ZeroShot"],
+      "workloads": ["JOB-Light", "JOB", "JOB-Complex"],
+      "paper_current": true,
+      "notes": "Pretrained lcm-eval ZeroShot model, pooled over three seeds."
+    },
+    "mscn_selected_plan": {
+      "folder": "cost_mscn_selected_plan",
+      "models": ["MSCN"],
+      "workloads": ["JOB-Light", "JOB", "JOB-Complex"],
+      "paper_current": true,
+      "status": "completed",
+      "notes": "Selected-plan runtime model trained on 10K Mirage synthetic SQL labels, three seeds, 100 epochs."
+    }
+  },
+  "plots": {
+    "signed_qerror_plots": {
+      "folder": "signed_qerror_plots",
+      "paper_current": true,
+      "files": [
+        "paper_jobstyle_base_selection_cardinality_qerror.svg",
+        "paper_jobstyle_mscn_full_query_cardinality_qerror.svg",
+        "paper_jobstyle_selected_plan_cost_runtime_qerror.svg"
+      ],
+      "notes": "Preferred vertical JOB-style signed log10 Q-error boxplots; horizontal interval and diagnostic point-cloud versions are kept in the same folder."
+    }
+  },
+  "raw_plot_data": {
+    "paper_requested_raw_data": {
+      "folder": "paper_requested_raw_data",
+      "paper_current": true,
+      "files": [
+        "full_query_cardinality.csv",
+        "selected_plan_cost.csv",
+        "base_selection_cardinality.csv",
+        "query_result_sizes.csv",
+        "query_metadata.csv",
+        "runtime_breakdowns.csv",
+        "plan_metadata.csv"
+      ],
+      "notes": "Normalized per-query/per-selection raw CSVs for external paper plotting. DuckDB appears in base-selection cardinality only; full-query cardinality contains PostgreSQL and MSCN."
+    }
+  },
+  "excluded_from_paper_current": {
+    "custom_zeroshot_cardinality": {
+      "location": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\benchmark\\cardinality_methods\\runs\\test42_100k_zero_shot_*",
+      "reason": "Exploratory custom-trained ZeroShot cardinality runs; not the pretrained cost-model baseline."
+    },
+    "base_selection_v1": {
+      "location": "../_legacy_not_for_paper/cleanup_20260505/table1_base_selection_v1_zero_actual_excluded",
+      "reason": "Superseded by corrected v2 run."
+    },
+    "postgres_candidate_plan_cost": {
+      "location": "../_legacy_not_for_paper/cleanup_20260505/candidate_plan_postgres_abandoned_alternative_plan_cost",
+      "reason": "Abandoned alternative-plan experiment; not comparable to selected-plan cost table."
+    }
+  }
+}

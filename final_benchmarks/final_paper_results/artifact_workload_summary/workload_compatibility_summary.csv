@@ -1,0 +1,4 @@
+workload,original_query_templates,instantiated_queries,structure_preserved,valid_sql,nonzero_result,included_in_benchmark
+JOB-Light,70,70,70,70,70,70
+JOB,113,113,113,113,113,113
+JOB-Complex,30,30,30,30,30,30

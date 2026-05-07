@@ -1,0 +1,176 @@
+{
+  "dataset": "imdb_test42_100k_exportpatch",
+  "generated_database": {
+    "summary": [
+      {
+        "component": "Primary movies (title.kind = movie)",
+        "count": 100000
+      },
+      {
+        "component": "Title rows",
+        "count": 251455
+      },
+      {
+        "component": "People / names",
+        "count": 240000
+      },
+      {
+        "component": "Companies",
+        "count": 9000
+      },
+      {
+        "component": "Characters",
+        "count": 754057
+      },
+      {
+        "component": "Cast / role rows",
+        "count": 2801964
+      },
+      {
+        "component": "Keywords",
+        "count": 11418
+      },
+      {
+        "component": "Movie-keyword links",
+        "count": 1192392
+      },
+      {
+        "component": "Movie-company links",
+        "count": 447586
+      },
+      {
+        "component": "Movie info rows",
+        "count": 2482171
+      },
+      {
+        "component": "Movie info index rows",
+        "count": 503170
+      },
+      {
+        "component": "Person info rows",
+        "count": 1440050
+      },
+      {
+        "component": "AKA title rows",
+        "count": 99922
+      },
+      {
+        "component": "AKA name rows",
+        "count": 37123
+      },
+      {
+        "component": "Movie links",
+        "count": 16377
+      },
+      {
+        "component": "Complete-cast rows",
+        "count": 345455
+      },
+      {
+        "component": "Total exported rows",
+        "count": 10632211
+      },
+      {
+        "component": "Movie years covered",
+        "count": "2000-2050"
+      }
+    ],
+    "integrity": [
+      {
+        "property": "Duplicate primary keys",
+        "value": 0
+      },
+      {
+        "property": "Foreign-key violations (checked core links)",
+        "value": 0
+      },
+      {
+        "property": "Empty required fields (checked core columns)",
+        "value": 0
+      }
+    ],
+    "title_kind_counts": {
+      "1": 100000,
+      "2": 6000,
+      "7": 145455
+    },
+    "foreign_key_violations_by_table": {
+      "cast_info": 0,
+      "movie_companies": 0,
+      "movie_keyword": 0,
+      "movie_info": 0,
+      "movie_info_idx": 0,
+      "movie_link": 0,
+      "aka_title": 0,
+      "aka_name": 0,
+      "person_info": 0,
+      "complete_cast": 0
+    }
+  },
+  "workload_compatibility": [
+    {
+      "workload": "JOB-Light",
+      "original_query_templates": 70,
+      "instantiated_queries": 70,
+      "structure_preserved": 70,
+      "valid_sql": 70,
+      "nonzero_result": 70,
+      "included_in_benchmark": 70
+    },
+    {
+      "workload": "JOB",
+      "original_query_templates": 113,
+      "instantiated_queries": 113,
+      "structure_preserved": 113,
+      "valid_sql": 113,
+      "nonzero_result": 113,
+      "included_in_benchmark": 113
+    },
+    {
+      "workload": "JOB-Complex",
+      "original_query_templates": 30,
+      "instantiated_queries": 30,
+      "structure_preserved": 30,
+      "valid_sql": 30,
+      "nonzero_result": 30,
+      "included_in_benchmark": 30
+    }
+  ],
+  "query_result_size_summary": [
+    {
+      "workload": "JOB-Light",
+      "queries": 70,
+      "min_actual_cardinality": "17",
+      "median_actual_cardinality": "1097520.50",
+      "p90_actual_cardinality": "19966223",
+      "p95_actual_cardinality": "21561940",
+      "p99_actual_cardinality": "42740890.10",
+      "max_actual_cardinality": "48779363"
+    },
+    {
+      "workload": "JOB",
+      "queries": 113,
+      "min_actual_cardinality": "1",
+      "median_actual_cardinality": "678",
+      "p90_actual_cardinality": "126291",
+      "p95_actual_cardinality": "253517",
+      "p99_actual_cardinality": "475215.08",
+      "max_actual_cardinality": "911191"
+    },
+    {
+      "workload": "JOB-Complex",
+      "queries": 30,
+      "min_actual_cardinality": "1",
+      "median_actual_cardinality": "16.50",
+      "p90_actual_cardinality": "43343.30",
+      "p95_actual_cardinality": "68758.35",
+      "p99_actual_cardinality": "108739.92",
+      "max_actual_cardinality": "120906"
+    }
+  ],
+  "query_structure_policy": "SQL structures are compared after normalizing quoted string literals and numeric constants only.",
+  "structure_failure_count": 0,
+  "nonzero_failure_count": 0,
+  "structure_failures": [],
+  "nonzero_failures": []
+}

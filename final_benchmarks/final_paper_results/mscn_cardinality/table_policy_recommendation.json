@@ -1,0 +1,9 @@
+{
+  "recommended_table_policy": "median_of_seed_summaries",
+  "reason": "Use the three-seed aggregate rather than the best seed. The best seed is an optimistic model-selection result and materially improves at least one workload/tail metric.",
+  "notes": [
+    "JOB-Light: best seed materially changes results (median delta -29.4%, p95 delta -8.7%).",
+    "JOB: best seed materially changes results (median delta -14.8%, p95 delta -26.4%).",
+    "JOB-Complex: best seed materially changes results (median delta -35.5%, p95 delta -50.1%)."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "method": "selected_plan_mscn_cost_runtime_labels_v1",
+  "train_query_dir": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\benchmark\\cardinality_methods\\runs\\test42_100k_paper_mscn_cardinality_100k_100ep_3seed_20260504_exact3600s_quotefix\\generation\\synthetic_queries",
+  "train_queries_used": 10000,
+  "eval_workloads": {
+    "job_light": 70,
+    "job": 113,
+    "job_complex": 30
+  },
+  "label_unit": "microseconds",
+  "runtime_timeout_ms": 3600000,
+  "leakage_policy": "Exact eval SQL hashes are excluded from training."
+}

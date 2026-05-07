@@ -1,0 +1,19 @@
+component,count
+Primary movies (title.kind = movie),100000
+Title rows,251455
+People / names,240000
+Companies,9000
+Characters,754057
+Cast / role rows,2801964
+Keywords,11418
+Movie-keyword links,1192392
+Movie-company links,447586
+Movie info rows,2482171
+Movie info index rows,503170
+Person info rows,1440050
+AKA title rows,99922
+AKA name rows,37123
+Movie links,16377
+Complete-cast rows,345455
+Total exported rows,10632211
+Movie years covered,2000-2050

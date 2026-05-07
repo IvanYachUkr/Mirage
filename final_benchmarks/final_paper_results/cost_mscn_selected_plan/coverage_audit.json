@@ -1,0 +1,47 @@
+{
+  "job_light": {
+    "missing_tables": [],
+    "missing_columns": [],
+    "missing_operators": [],
+    "missing_joins": [],
+    "oov_counts": {
+      "tables": 0,
+      "columns": 0,
+      "operators": 0,
+      "joins": 0
+    }
+  },
+  "job": {
+    "missing_tables": [],
+    "missing_columns": [
+      "name.name_pcode_cf"
+    ],
+    "missing_operators": [],
+    "missing_joins": [
+      "join:linked_movie_id=movie_id",
+      "join:person_id=person_id"
+    ],
+    "oov_counts": {
+      "tables": 0,
+      "columns": 1,
+      "operators": 0,
+      "joins": 2
+    }
+  },
+  "job_complex": {
+    "missing_tables": [],
+    "missing_columns": [],
+    "missing_operators": [],
+    "missing_joins": [
+      "join:name=name",
+      "join:nr_order=status_id",
+      "join:nr_order=subject_id"
+    ],
+    "oov_counts": {
+      "tables": 0,
+      "columns": 0,
+      "operators": 0,
+      "joins": 3
+    }
+  }
+}

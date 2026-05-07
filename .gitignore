@@ -1,0 +1,68 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Local model/runtime scratch
+local_ollama_qwen35/logs/
+local_ollama_qwen35/runtime_env.sh
+decision_logs/
+_runner_logs/
+
+# Pipeline checkpoints and generated state
+.pipeline_checkpoint.json
+checkpoints/
+critic/
+reports/
+entities/
+graph/
+_dev/
+_step100_resume/
+_step100_resume*/
+
+# Generated exports and benchmark data products
+imdb_schema/
+imdb_schema_*/
+final_benchmarks/*
+!final_benchmarks/README.md
+!final_benchmarks/scripts/
+!final_benchmarks/scripts/**
+final_benchmarks/scripts/__pycache__/
+final_benchmarks/scripts/**/*.py[cod]
+!final_benchmarks/final_paper_results/
+!final_benchmarks/final_paper_results/**
+*.arrow
+*.feather
+*.parquet
+*.duckdb
+*.db
+*.sqlite
+*.csv
+*.tsv
+!final_benchmarks/final_paper_results/**/*.csv
+!final_benchmarks/final_paper_results/**/*.tsv
+!final_benchmarks/final_paper_results/**/*.json
+!final_benchmarks/final_paper_results/**/*.md
+!final_benchmarks/final_paper_results/**/*.png
+!final_benchmarks/final_paper_results/**/*.pdf
+
+# Logs and temporary diagnostics
+*.log
+*.err
+*.out
+tmp_*
+_tmp_*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

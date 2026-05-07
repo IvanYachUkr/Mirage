@@ -1,0 +1,4 @@
+﻿"workload","query_count","median_of_seed_medians","median_p95","best_seed_by_p95"
+"JOB-Light","70","1.646354","6.967269","1"
+"JOB","113","1.852447","36.927114","2"
+"JOB-Complex","30","1.529812","4.309624","2"

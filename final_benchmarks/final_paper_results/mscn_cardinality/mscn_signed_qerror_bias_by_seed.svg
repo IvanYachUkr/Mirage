@@ -1,0 +1,1404 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1172" viewBox="0 0 1080 1172">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827}.small{font-size:12px;fill:#4b5563}.grid{stroke:#e5e7eb}.zero{stroke:#111827;stroke-width:1.5}.axis{stroke:#111827}</style>
+<rect x="0" y="0" width="1080" height="1172" fill="#fff"/>
+<text x="92" y="32" font-size="22" font-weight="700">MSCN Signed Cardinality Q-Error Bias</text>
+<text x="92" y="55" class="small">Above zero = overestimate, below zero = underestimate. Axis is signed log10(q-error), clipped at 1e5.</text>
+<text x="92" y="108" font-size="18" font-weight="700">JOB-Light</text>
+<line x1="92" y1="358.00" x2="1038" y2="358.00" class="grid"/>
+<text x="80" y="362.00" text-anchor="end" class="small">-1e5</text>
+<line x1="92" y1="336.60" x2="1038" y2="336.60" class="grid"/>
+<text x="80" y="340.60" text-anchor="end" class="small">-1e4</text>
+<line x1="92" y1="315.20" x2="1038" y2="315.20" class="grid"/>
+<text x="80" y="319.20" text-anchor="end" class="small">-1e3</text>
+<line x1="92" y1="293.80" x2="1038" y2="293.80" class="grid"/>
+<text x="80" y="297.80" text-anchor="end" class="small">-1e2</text>
+<line x1="92" y1="272.40" x2="1038" y2="272.40" class="grid"/>
+<text x="80" y="276.40" text-anchor="end" class="small">-1e1</text>
+<line x1="92" y1="251.00" x2="1038" y2="251.00" class="zero"/>
+<text x="80" y="255.00" text-anchor="end" class="small">0</text>
+<line x1="92" y1="229.60" x2="1038" y2="229.60" class="grid"/>
+<text x="80" y="233.60" text-anchor="end" class="small">+1e1</text>
+<line x1="92" y1="208.20" x2="1038" y2="208.20" class="grid"/>
+<text x="80" y="212.20" text-anchor="end" class="small">+1e2</text>
+<line x1="92" y1="186.80" x2="1038" y2="186.80" class="grid"/>
+<text x="80" y="190.80" text-anchor="end" class="small">+1e3</text>
+<line x1="92" y1="165.40" x2="1038" y2="165.40" class="grid"/>
+<text x="80" y="169.40" text-anchor="end" class="small">+1e4</text>
+<line x1="92" y1="144.00" x2="1038" y2="144.00" class="grid"/>
+<text x="80" y="148.00" text-anchor="end" class="small">+1e5</text>
+<line x1="92" y1="144" x2="92" y2="358" class="axis"/>
+<line x1="92" y1="358" x2="1038" y2="358" class="axis"/>
+<rect x="217.67" y="251.96" width="64" height="10.62" fill="#2563eb" fill-opacity="0.12" stroke="#2563eb" stroke-width="1.5"/>
+<line x1="217.67" y1="254.70" x2="281.67" y2="254.70" stroke="#2563eb" stroke-width="3"/>
+<circle cx="268.62" cy="252.03" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 01 under q=1.117634 actual=438 pred=391.899323</title>
+<circle cx="269.29" cy="254.46" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 02 under q=1.450785 actual=17 pred=11.717794</title>
+<circle cx="269.97" cy="252.92" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 03 under q=1.229946 actual=292 pred=237.408859</title>
+<circle cx="270.64" cy="253.78" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 04 under q=1.349306 actual=17 pred=12.599071</title>
+<circle cx="271.31" cy="249.09" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 05 over q=1.227947 actual=203084 pred=249376</title>
+<circle cx="271.98" cy="274.06" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 06 under q=11.955875 actual=1.70139e+07 pred=1.42306e+06</title>
+<circle cx="272.66" cy="273.90" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 07 under q=11.746964 actual=1.54203e+07 pred=1.31271e+06</title>
+<circle cx="273.33" cy="273.73" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 08 under q=11.538366 actual=1.85524e+07 pred=1.60789e+06</title>
+<circle cx="225.95" cy="253.71" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 09 under q=1.337941 actual=1.09853e+06 pred=821059</title>
+<circle cx="268.57" cy="253.57" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 10 under q=1.3189 actual=1.01535e+06 pred=769844</title>
+<circle cx="269.25" cy="253.52" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 11 under q=1.311042 actual=1.17823e+06 pred=898695</title>
+<circle cx="269.92" cy="254.56" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 12 under q=1.466004 actual=3.48277e+06 pred=2.37569e+06</title>
+<circle cx="270.59" cy="254.58" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 13 under q=1.470085 actual=3.1736e+06 pred=2.15879e+06</title>
+<circle cx="271.26" cy="254.24" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 14 under q=1.417206 actual=3.77311e+06 pred=2.66236e+06</title>
+<circle cx="271.94" cy="255.88" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 15 under q=1.690427 actual=200497 pred=118607</title>
+<circle cx="272.61" cy="274.29" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 16 under q=12.258671 actual=1.66833e+07 pred=1.36094e+06</title>
+<circle cx="273.28" cy="255.75" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 17 under q=1.667212 actual=193667 pred=116162</title>
+<circle cx="225.91" cy="254.81" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 18 under q=1.507333 actual=219974 pred=145936</title>
+<circle cx="226.58" cy="274.26" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 19 under q=12.211819 actual=2.15619e+07 pred=1.76566e+06</title>
+<circle cx="269.20" cy="247.31" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 20 over q=1.48766 actual=460745 pred=685432</title>
+<circle cx="269.87" cy="253.26" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 21 under q=1.275394 actual=92578 pred=72587.8</title>
+<circle cx="270.54" cy="247.90" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 22 over q=1.396638 actual=287489 pred=401518</title>
+<circle cx="271.22" cy="251.60" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 23 under q=1.066806 actual=1.30969e+06 pred=1.22767e+06</title>
+<circle cx="271.89" cy="252.26" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 24 under q=1.145093 actual=467541 pred=408300</title>
+<circle cx="272.56" cy="253.32" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 25 under q=1.284063 actual=102678 pred=79963.4</title>
+<circle cx="273.23" cy="250.39" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 26 over q=1.068088 actual=117894 pred=125921</title>
+<circle cx="225.86" cy="252.18" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 27 under q=1.135306 actual=23655 pred=20835.8</title>
+<circle cx="226.53" cy="251.99" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 28 under q=1.112837 actual=1.67019e+06 pred=1.50084e+06</title>
+<circle cx="227.20" cy="252.30" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 29 under q=1.149719 actual=1.57213e+06 pred=1.3674e+06</title>
+<circle cx="269.82" cy="258.08" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 30 under q=2.142176 actual=5.9199e+06 pred=2.7635e+06</title>
+<circle cx="270.50" cy="245.46" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 31 over q=1.814636 actual=7377 pred=13386.6</title>
+<circle cx="271.17" cy="248.01" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 32 over q=1.379136 actual=8934 pred=12321.2</title>
+<circle cx="271.84" cy="257.79" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 33 under q=2.07626 actual=2.65503e+06 pred=1.27875e+06</title>
+<circle cx="272.51" cy="250.31" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 34 over q=1.077197 actual=5549 pred=5977.36</title>
+<circle cx="273.19" cy="251.95" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 35 under q=1.107862 actual=21 pred=18.955427</title>
+<circle cx="225.81" cy="247.70" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 36 over q=1.426125 actual=26285 pred=37485.7</title>
+<circle cx="226.48" cy="250.20" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 37 over q=1.089375 actual=967101 pred=1.05354e+06</title>
+<circle cx="227.16" cy="257.19" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 38 under q=1.945681 actual=747410 pred=384138</title>
+<circle cx="227.83" cy="258.13" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 39 under q=2.152556 actual=924454 pred=429468</title>
+<circle cx="270.45" cy="255.45" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 40 under q=1.614023 actual=1.09651e+06 pred=679366</title>
+<circle cx="271.12" cy="265.75" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 41 under q=4.887657 actual=1.30541e+07 pred=2.67084e+06</title>
+<circle cx="271.79" cy="262.84" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 42 under q=3.573814 actual=790343 pred=221148</title>
+<circle cx="272.47" cy="265.75" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 43 under q=4.887657 actual=1.30541e+07 pred=2.67084e+06</title>
+<circle cx="273.14" cy="261.84" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 44 under q=3.209604 actual=1.22242e+06 pred=380863</title>
+<circle cx="225.76" cy="257.70" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 45 under q=2.057323 actual=1.92853e+06 pred=937398</title>
+<circle cx="226.44" cy="252.03" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 46 under q=1.116877 actual=172763 pred=154684</title>
+<circle cx="227.11" cy="256.45" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 47 under q=1.797153 actual=2.80196e+06 pred=1.55911e+06</title>
+<circle cx="227.78" cy="247.63" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 48 over q=1.436406 actual=205972 pred=295860</title>
+<circle cx="228.45" cy="255.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 49 under q=1.538573 actual=4.96735e+06 pred=3.22854e+06</title>
+<circle cx="271.07" cy="255.72" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 50 under q=1.661045 actual=4.89172e+06 pred=2.94497e+06</title>
+<circle cx="271.74" cy="274.61" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 51 under q=12.679276 actual=1.99662e+07 pred=1.57471e+06</title>
+<circle cx="272.42" cy="274.61" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 52 under q=12.679276 actual=1.99662e+07 pred=1.57471e+06</title>
+<circle cx="273.09" cy="244.15" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 53 over q=2.088817 actual=29508 pred=61636.8</title>
+<circle cx="225.71" cy="244.15" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 54 over q=2.088817 actual=29508 pred=61636.8</title>
+<circle cx="226.39" cy="244.15" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 55 over q=2.088817 actual=29508 pred=61636.8</title>
+<circle cx="227.06" cy="260.63" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 56 under q=2.817449 actual=2.3487e+06 pred=833627</title>
+<circle cx="227.73" cy="260.53" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 57 under q=2.788042 actual=2.3133e+06 pred=829724</title>
+<circle cx="228.41" cy="274.06" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 58 under q=11.95396 actual=4.0028e+07 pred=3.34851e+06</title>
+<circle cx="229.08" cy="265.20" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 59 under q=4.609839 actual=366900 pred=79590.6</title>
+<circle cx="271.70" cy="274.81" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 60 under q=12.965082 actual=4.87794e+07 pred=3.76236e+06</title>
+<circle cx="272.37" cy="273.57" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 61 under q=11.342689 actual=2.18911e+07 pred=1.92997e+06</title>
+<circle cx="273.04" cy="272.75" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 62 under q=10.380736 actual=1.79306e+07 pred=1.7273e+06</title>
+<circle cx="225.67" cy="274.17" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 63 under q=12.099781 actual=1.99662e+07 pred=1.65013e+06</title>
+<circle cx="226.34" cy="274.12" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 64 under q=12.039121 actual=1.81446e+07 pred=1.50714e+06</title>
+<circle cx="227.01" cy="239.84" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 65 over q=3.322869 actual=2396 pred=7961.6</title>
+<circle cx="227.68" cy="261.53" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 66 under q=3.104981 actual=2.65301e+06 pred=854437</title>
+<circle cx="228.36" cy="260.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 67 under q=2.926945 actual=2.45457e+06 pred=838611</title>
+<circle cx="229.03" cy="249.66" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 68 over q=1.154774 actual=37678 pred=43509.6</title>
+<circle cx="229.70" cy="249.66" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 69 over q=1.154774 actual=37678 pred=43509.6</title>
+<circle cx="272.32" cy="273.60" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Light 70 under q=11.378466 actual=2.15619e+07 pred=1.89498e+06</title>
+<text x="249.67" y="389.00" text-anchor="middle" font-size="13" font-weight="700">seed 1</text>
+<text x="249.67" y="406.00" text-anchor="middle" class="small">n=70, med q=1.678819</text>
+<text x="249.67" y="423.00" text-anchor="middle" class="small">under=54, over=16</text>
+<rect x="533.00" y="251.73" width="64" height="14.65" fill="#059669" fill-opacity="0.12" stroke="#059669" stroke-width="1.5"/>
+<line x1="533.00" y1="258.19" x2="597.00" y2="258.19" stroke="#059669" stroke-width="3"/>
+<circle cx="584.48" cy="250.69" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 01 over q=1.033739 actual=438 pred=452.777679</title>
+<circle cx="585.16" cy="253.93" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 02 under q=1.369957 actual=17 pred=12.40915</title>
+<circle cx="585.83" cy="251.73" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 03 under q=1.081774 actual=292 pred=269.927032</title>
+<circle cx="586.50" cy="251.75" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 04 under q=1.08365 actual=17 pred=15.687716</title>
+<circle cx="587.17" cy="255.79" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 05 under q=1.674691 actual=203084 pred=121267</title>
+<circle cx="587.85" cy="266.40" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 06 under q=5.246324 actual=1.70139e+07 pred=3.24301e+06</title>
+<circle cx="588.52" cy="266.34" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 07 under q=5.20852 actual=1.54203e+07 pred=2.96059e+06</title>
+<circle cx="541.14" cy="265.70" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 08 under q=4.864548 actual=1.85524e+07 pred=3.8138e+06</title>
+<circle cx="541.82" cy="251.70" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 09 under q=1.078324 actual=1.09853e+06 pred=1.01874e+06</title>
+<circle cx="584.44" cy="251.87" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 10 under q=1.097641 actual=1.01535e+06 pred=925027</title>
+<circle cx="585.11" cy="250.68" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 11 over q=1.035338 actual=1.17823e+06 pred=1.21986e+06</title>
+<circle cx="585.78" cy="252.31" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 12 under q=1.151025 actual=3.48277e+06 pred=3.0258e+06</title>
+<circle cx="586.45" cy="252.23" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 13 under q=1.141037 actual=3.1736e+06 pred=2.78133e+06</title>
+<circle cx="587.13" cy="251.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 14 under q=1.019955 actual=3.77311e+06 pred=3.69929e+06</title>
+<circle cx="587.80" cy="259.41" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 15 under q=2.471508 actual=200497 pred=81123.4</title>
+<circle cx="588.47" cy="267.77" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 16 under q=6.074893 actual=1.66833e+07 pred=2.74627e+06</title>
+<circle cx="541.10" cy="258.24" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 17 under q=2.178697 actual=193667 pred=88891.2</title>
+<circle cx="541.77" cy="258.79" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 18 under q=2.313327 actual=219974 pred=95089.9</title>
+<circle cx="542.44" cy="267.12" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 19 under q=5.663511 actual=2.15619e+07 pred=3.80717e+06</title>
+<circle cx="585.06" cy="256.38" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 20 under q=1.784836 actual=460745 pred=258144</title>
+<circle cx="585.73" cy="265.08" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 21 under q=4.548154 actual=92578 pred=20355.1</title>
+<circle cx="586.41" cy="260.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 22 under q=2.68537 actual=287489 pred=107058</title>
+<circle cx="587.08" cy="252.00" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 23 under q=1.113722 actual=1.30969e+06 pred=1.17595e+06</title>
+<circle cx="587.75" cy="252.14" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 24 under q=1.130284 actual=467541 pred=413649</title>
+<circle cx="588.42" cy="252.33" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 25 under q=1.153792 actual=102678 pred=88991.8</title>
+<circle cx="541.05" cy="249.62" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 26 over q=1.15969 actual=117894 pred=136720</title>
+<circle cx="541.72" cy="244.88" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 27 over q=1.931373 actual=23655 pred=45686.6</title>
+<circle cx="542.39" cy="253.08" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 28 under q=1.250533 actual=1.67019e+06 pred=1.33558e+06</title>
+<circle cx="543.07" cy="252.68" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 29 under q=1.198516 actual=1.57213e+06 pred=1.31173e+06</title>
+<circle cx="585.68" cy="261.93" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 30 under q=3.239924 actual=5.9199e+06 pred=1.82717e+06</title>
+<circle cx="586.36" cy="248.14" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 31 over q=1.361057 actual=7377 pred=10040.5</title>
+<circle cx="587.03" cy="245.90" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 32 over q=1.730509 actual=8934 pred=15460.4</title>
+<circle cx="587.70" cy="259.87" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 33 under q=2.596871 actual=2.65503e+06 pred=1.02239e+06</title>
+<circle cx="588.38" cy="248.44" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 34 over q=1.317606 actual=5549 pred=7311.39</title>
+<circle cx="541.00" cy="253.04" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 35 under q=1.24489 actual=21 pred=16.868963</title>
+<circle cx="541.67" cy="250.43" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 36 over q=1.062992 actual=26285 pred=27940.8</title>
+<circle cx="542.35" cy="250.59" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 37 over q=1.045363 actual=967101 pred=1.01097e+06</title>
+<circle cx="543.02" cy="260.87" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 38 under q=2.891607 actual=747410 pred=258476</title>
+<circle cx="543.69" cy="258.87" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 39 under q=2.331171 actual=924454 pred=396562</title>
+<circle cx="586.31" cy="262.34" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 40 under q=3.387106 actual=1.09651e+06 pred=323732</title>
+<circle cx="586.98" cy="268.94" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 41 under q=6.888023 actual=1.30541e+07 pred=1.89519e+06</title>
+<circle cx="587.65" cy="263.11" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 42 under q=3.680706 actual=790343 pred=214726</title>
+<circle cx="588.33" cy="268.94" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 43 under q=6.888023 actual=1.30541e+07 pred=1.89519e+06</title>
+<circle cx="589.00" cy="265.99" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 44 under q=5.019963 actual=1.22242e+06 pred=243511</title>
+<circle cx="541.62" cy="260.70" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 45 under q=2.839452 actual=1.92853e+06 pred=679191</title>
+<circle cx="542.30" cy="259.24" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 46 under q=2.425951 actual=172763 pred=71214.5</title>
+<circle cx="542.97" cy="260.35" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 47 under q=2.734557 actual=2.80196e+06 pred=1.02465e+06</title>
+<circle cx="543.64" cy="252.50" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 48 under q=1.175505 actual=205972 pred=175220</title>
+<circle cx="544.32" cy="254.63" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 49 under q=1.477215 actual=4.96735e+06 pred=3.36264e+06</title>
+<circle cx="586.93" cy="254.55" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 50 under q=1.464672 actual=4.89172e+06 pred=3.33981e+06</title>
+<circle cx="587.61" cy="268.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 51 under q=6.644565 actual=1.99662e+07 pred=3.0049e+06</title>
+<circle cx="588.28" cy="268.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 52 under q=6.644565 actual=1.99662e+07 pred=3.0049e+06</title>
+<circle cx="588.95" cy="247.98" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 53 over q=1.384293 actual=29508 pred=40847.7</title>
+<circle cx="541.58" cy="247.98" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 54 over q=1.384293 actual=29508 pred=40847.7</title>
+<circle cx="542.25" cy="247.98" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 55 over q=1.384293 actual=29508 pred=40847.7</title>
+<circle cx="542.92" cy="270.12" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 56 under q=7.821778 actual=2.3487e+06 pred=300277</title>
+<circle cx="543.59" cy="270.02" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 57 under q=7.737557 actual=2.3133e+06 pred=298971</title>
+<circle cx="544.27" cy="276.37" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 58 under q=15.337102 actual=4.0028e+07 pred=2.60988e+06</title>
+<circle cx="544.94" cy="258.14" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 59 under q=2.156115 actual=366900 pred=170167</title>
+<circle cx="587.56" cy="277.14" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 60 under q=16.655942 actual=4.87794e+07 pred=2.92865e+06</title>
+<circle cx="588.23" cy="272.36" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 61 under q=9.956477 actual=2.18911e+07 pred=2.19868e+06</title>
+<circle cx="588.90" cy="274.22" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 62 under q=12.168725 actual=1.79306e+07 pred=1.4735e+06</title>
+<circle cx="541.53" cy="269.76" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 63 under q=7.526543 actual=1.99662e+07 pred=2.65277e+06</title>
+<circle cx="542.20" cy="269.26" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 64 under q=7.136142 actual=1.81446e+07 pred=2.54264e+06</title>
+<circle cx="542.87" cy="241.24" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 65 over q=2.859353 actual=2396 pred=6851.01</title>
+<circle cx="543.55" cy="269.91" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 66 under q=7.647271 actual=2.65301e+06 pred=346923</title>
+<circle cx="544.22" cy="270.20" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 67 under q=7.8894 actual=2.45457e+06 pred=311122</title>
+<circle cx="544.89" cy="238.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 68 over q=3.797917 actual=37678 pred=143098</title>
+<circle cx="545.56" cy="238.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 69 over q=3.797917 actual=37678 pred=143098</title>
+<circle cx="588.18" cy="274.40" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Light 70 under q=12.407284 actual=2.15619e+07 pred=1.73785e+06</title>
+<text x="565.00" y="389.00" text-anchor="middle" font-size="13" font-weight="700">seed 2</text>
+<text x="565.00" y="406.00" text-anchor="middle" class="small">n=70, med q=2.378561</text>
+<text x="565.00" y="423.00" text-anchor="middle" class="small">under=55, over=15</text>
+<rect x="848.33" y="252.42" width="64" height="11.86" fill="#7c3aed" fill-opacity="0.12" stroke="#7c3aed" stroke-width="1.5"/>
+<line x1="848.33" y1="257.55" x2="912.33" y2="257.55" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="900.35" cy="250.65" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 01 over q=1.037901 actual=438 pred=454.600739</title>
+<circle cx="901.02" cy="255.36" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 02 under q=1.598875 actual=17 pred=10.632476</title>
+<circle cx="901.69" cy="251.62" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 03 under q=1.069249 actual=292 pred=273.088806</title>
+<circle cx="902.36" cy="252.38" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 04 under q=1.160057 actual=17 pred=14.654449</title>
+<circle cx="903.04" cy="253.97" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 05 under q=1.377243 actual=203084 pred=147457</title>
+<circle cx="903.71" cy="274.97" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 06 under q=13.187182 actual=1.70139e+07 pred=1.29018e+06</title>
+<circle cx="856.33" cy="274.29" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 07 under q=12.249428 actual=1.54203e+07 pred=1.25886e+06</title>
+<circle cx="857.01" cy="275.16" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 08 under q=13.452589 actual=1.85524e+07 pred=1.3791e+06</title>
+<circle cx="857.68" cy="253.28" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 09 under q=1.278553 actual=1.09853e+06 pred=859196</title>
+<circle cx="900.30" cy="252.94" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 10 under q=1.231586 actual=1.01535e+06 pred=824423</title>
+<circle cx="900.97" cy="252.94" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 11 under q=1.231508 actual=1.17823e+06 pred=956736</title>
+<circle cx="901.64" cy="261.23" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 12 under q=3.005628 actual=3.48277e+06 pred=1.15875e+06</title>
+<circle cx="902.32" cy="260.86" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 13 under q=2.890007 actual=3.1736e+06 pred=1.09813e+06</title>
+<circle cx="902.99" cy="260.91" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 14 under q=2.905266 actual=3.77311e+06 pred=1.29871e+06</title>
+<circle cx="903.66" cy="263.45" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 15 under q=3.817538 actual=200497 pred=52520</title>
+<circle cx="904.33" cy="275.77" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 16 under q=14.377162 actual=1.66833e+07 pred=1.1604e+06</title>
+<circle cx="856.96" cy="263.22" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 17 under q=3.725906 actual=193667 pred=51978.5</title>
+<circle cx="857.63" cy="262.30" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 18 under q=3.373732 actual=219974 pred=65202</title>
+<circle cx="858.30" cy="277.24" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 19 under q=16.82708 actual=2.15619e+07 pred=1.28138e+06</title>
+<circle cx="900.92" cy="252.56" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 20 under q=1.182284 actual=460745 pred=389708</title>
+<circle cx="901.59" cy="257.04" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 21 under q=1.915147 actual=92578 pred=48339.9</title>
+<circle cx="902.27" cy="252.85" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 22 under q=1.220673 actual=287489 pred=235517</title>
+<circle cx="902.94" cy="252.97" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 23 under q=1.236337 actual=1.30969e+06 pred=1.05933e+06</title>
+<circle cx="903.61" cy="253.73" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 24 under q=1.340803 actual=467541 pred=348702</title>
+<circle cx="904.29" cy="250.85" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 25 over q=1.016666 actual=102678 pred=104389</title>
+<circle cx="856.91" cy="249.02" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 26 over q=1.236782 actual=117894 pred=145809</title>
+<circle cx="857.58" cy="248.27" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 27 over q=1.34182 actual=23655 pred=31740.7</title>
+<circle cx="858.26" cy="251.60" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 28 under q=1.066508 actual=1.67019e+06 pred=1.56604e+06</title>
+<circle cx="858.93" cy="251.79" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 29 under q=1.088961 actual=1.57213e+06 pred=1.44369e+06</title>
+<circle cx="901.55" cy="267.88" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 30 under q=6.149967 actual=5.9199e+06 pred=962590</title>
+<circle cx="902.22" cy="250.60" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 31 over q=1.043585 actual=7377 pred=7698.52</title>
+<circle cx="902.89" cy="250.00" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 32 over q=1.11342 actual=8934 pred=9947.3</title>
+<circle cx="903.56" cy="263.23" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 33 under q=3.726254 actual=2.65503e+06 pred=712519</title>
+<circle cx="904.24" cy="247.87" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 34 over q=1.400636 actual=5549 pred=7772.13</title>
+<circle cx="856.86" cy="253.83" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 35 under q=1.356029 actual=21 pred=15.486394</title>
+<circle cx="857.53" cy="250.38" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 36 over q=1.068499 actual=26285 pred=28085.5</title>
+<circle cx="858.21" cy="254.35" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 37 under q=1.433235 actual=967101 pred=674768</title>
+<circle cx="858.88" cy="257.82" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 38 under q=2.08198 actual=747410 pred=358990</title>
+<circle cx="859.55" cy="256.11" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 39 under q=1.733718 actual=924454 pred=533220</title>
+<circle cx="902.17" cy="257.29" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 40 under q=1.967636 actual=1.09651e+06 pred=557274</title>
+<circle cx="902.84" cy="265.49" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 41 under q=4.756919 actual=1.30541e+07 pred=2.74424e+06</title>
+<circle cx="903.52" cy="260.83" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 42 under q=2.879315 actual=790343 pred=274490</title>
+<circle cx="904.19" cy="265.49" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 43 under q=4.756919 actual=1.30541e+07 pred=2.74424e+06</title>
+<circle cx="856.81" cy="264.30" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 44 under q=4.184755 actual=1.22242e+06 pred=292112</title>
+<circle cx="857.49" cy="259.25" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 45 under q=2.430005 actual=1.92853e+06 pred=793632</title>
+<circle cx="858.16" cy="259.99" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 46 under q=2.631522 actual=172763 pred=65651.4</title>
+<circle cx="858.83" cy="259.78" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 47 under q=2.572143 actual=2.80196e+06 pred=1.08935e+06</title>
+<circle cx="859.50" cy="252.72" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 48 under q=1.202747 actual=205972 pred=171251</title>
+<circle cx="860.18" cy="254.22" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 49 under q=1.414392 actual=4.96735e+06 pred=3.512e+06</title>
+<circle cx="902.80" cy="255.21" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 50 under q=1.573408 actual=4.89172e+06 pred=3.109e+06</title>
+<circle cx="903.47" cy="271.49" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 51 under q=9.065792 actual=1.99662e+07 pred=2.20237e+06</title>
+<circle cx="904.14" cy="271.49" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 52 under q=9.065792 actual=1.99662e+07 pred=2.20237e+06</title>
+<circle cx="856.77" cy="250.94" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 53 over q=1.006959 actual=29508 pred=29713.3</title>
+<circle cx="857.44" cy="250.94" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 54 over q=1.006959 actual=29508 pred=29713.3</title>
+<circle cx="858.11" cy="250.94" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 55 over q=1.006959 actual=29508 pred=29713.3</title>
+<circle cx="858.78" cy="263.89" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 56 under q=4.004265 actual=2.3487e+06 pred=586550</title>
+<circle cx="859.46" cy="263.84" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 57 under q=3.98116 actual=2.3133e+06 pred=581063</title>
+<circle cx="860.13" cy="274.96" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 58 under q=13.167679 actual=4.0028e+07 pred=3.03986e+06</title>
+<circle cx="860.80" cy="260.14" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 59 under q=2.672775 actual=366900 pred=137273</title>
+<circle cx="903.42" cy="275.96" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 60 under q=14.660277 actual=4.87794e+07 pred=3.32732e+06</title>
+<circle cx="904.09" cy="271.31" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 61 under q=8.89602 actual=2.18911e+07 pred=2.46077e+06</title>
+<circle cx="856.72" cy="273.21" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 62 under q=10.910149 actual=1.79306e+07 pred=1.64348e+06</title>
+<circle cx="857.39" cy="271.17" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 63 under q=8.764613 actual=1.99662e+07 pred=2.27805e+06</title>
+<circle cx="858.06" cy="270.52" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 64 under q=8.169113 actual=1.81446e+07 pred=2.22112e+06</title>
+<circle cx="858.74" cy="251.04" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 65 under q=1.004132 actual=2396 pred=2386.14</title>
+<circle cx="859.41" cy="264.22" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 66 under q=4.148149 actual=2.65301e+06 pred=639565</title>
+<circle cx="860.08" cy="264.13" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 67 under q=4.107686 actual=2.45457e+06 pred=597555</title>
+<circle cx="860.75" cy="234.45" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 68 over q=5.932707 actual=37678 pred=223533</title>
+<circle cx="861.43" cy="234.45" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 69 over q=5.932707 actual=37678 pred=223533</title>
+<circle cx="904.05" cy="273.89" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Light 70 under q=11.74426 actual=2.15619e+07 pred=1.83596e+06</title>
+<text x="880.33" y="389.00" text-anchor="middle" font-size="13" font-weight="700">seed 3</text>
+<text x="880.33" y="406.00" text-anchor="middle" class="small">n=70, med q=2.501074</text>
+<text x="880.33" y="423.00" text-anchor="middle" class="small">under=57, over=13</text>
+<text x="92" y="468" font-size="18" font-weight="700">JOB</text>
+<line x1="92" y1="718.00" x2="1038" y2="718.00" class="grid"/>
+<text x="80" y="722.00" text-anchor="end" class="small">-1e5</text>
+<line x1="92" y1="696.60" x2="1038" y2="696.60" class="grid"/>
+<text x="80" y="700.60" text-anchor="end" class="small">-1e4</text>
+<line x1="92" y1="675.20" x2="1038" y2="675.20" class="grid"/>
+<text x="80" y="679.20" text-anchor="end" class="small">-1e3</text>
+<line x1="92" y1="653.80" x2="1038" y2="653.80" class="grid"/>
+<text x="80" y="657.80" text-anchor="end" class="small">-1e2</text>
+<line x1="92" y1="632.40" x2="1038" y2="632.40" class="grid"/>
+<text x="80" y="636.40" text-anchor="end" class="small">-1e1</text>
+<line x1="92" y1="611.00" x2="1038" y2="611.00" class="zero"/>
+<text x="80" y="615.00" text-anchor="end" class="small">0</text>
+<line x1="92" y1="589.60" x2="1038" y2="589.60" class="grid"/>
+<text x="80" y="593.60" text-anchor="end" class="small">+1e1</text>
+<line x1="92" y1="568.20" x2="1038" y2="568.20" class="grid"/>
+<text x="80" y="572.20" text-anchor="end" class="small">+1e2</text>
+<line x1="92" y1="546.80" x2="1038" y2="546.80" class="grid"/>
+<text x="80" y="550.80" text-anchor="end" class="small">+1e3</text>
+<line x1="92" y1="525.40" x2="1038" y2="525.40" class="grid"/>
+<text x="80" y="529.40" text-anchor="end" class="small">+1e4</text>
+<line x1="92" y1="504.00" x2="1038" y2="504.00" class="grid"/>
+<text x="80" y="508.00" text-anchor="end" class="small">+1e5</text>
+<line x1="92" y1="504" x2="92" y2="718" class="axis"/>
+<line x1="92" y1="718" x2="1038" y2="718" class="axis"/>
+<rect x="217.67" y="617.37" width="64" height="21.08" fill="#2563eb" fill-opacity="0.12" stroke="#2563eb" stroke-width="1.5"/>
+<line x1="217.67" y1="627.22" x2="281.67" y2="627.22" stroke="#2563eb" stroke-width="3"/>
+<circle cx="252.19" cy="629.67" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 1a under q=7.453315 actual=87934 pred=11798</title>
+<circle cx="252.86" cy="628.18" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 1b under q=6.350964 actual=1467 pred=230.988541</title>
+<circle cx="253.53" cy="628.80" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 1c under q=6.78836 actual=87934 pred=12953.6</title>
+<circle cx="254.21" cy="637.85" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 1d under q=17.983415 actual=161937 pred=9004.8</title>
+<circle cx="252.81" cy="636.28" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 2a under q=15.181229 actual=614 pred=40.444683</title>
+<circle cx="253.49" cy="633.19" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 2b under q=10.887734 actual=8907 pred=818.076599</title>
+<circle cx="254.16" cy="636.28" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 2c under q=15.181229 actual=614 pred=40.444683</title>
+<circle cx="254.83" cy="625.47" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 2d under q=4.745024 actual=8496 pred=1790.51</title>
+<circle cx="253.44" cy="651.90" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 3a under q=81.528854 actual=538 pred=6.598891</title>
+<circle cx="254.11" cy="646.74" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 3b under q=46.779589 actual=504 pred=10.77393</title>
+<circle cx="254.78" cy="649.56" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 3c under q=63.348421 actual=550 pred=8.682142</title>
+<circle cx="254.06" cy="635.79" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 4a under q=14.405 actual=4158 pred=288.64978</title>
+<circle cx="254.74" cy="636.09" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 4b under q=14.869356 actual=203 pred=13.652239</title>
+<circle cx="255.41" cy="632.15" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 4c under q=9.736449 actual=6373 pred=654.550781</title>
+<circle cx="254.69" cy="620.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 5a under q=2.925503 actual=92872 pred=31745.7</title>
+<circle cx="255.36" cy="644.60" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 5b under q=37.16458 actual=87934 pred=2366.07</title>
+<circle cx="256.03" cy="612.66" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 5c under q=1.195284 actual=101660 pred=85050.9</title>
+<circle cx="255.31" cy="618.37" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 6a under q=2.210047 actual=280 pred=126.694145</title>
+<circle cx="255.98" cy="611.94" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 6b under q=1.106918 actual=678 pred=612.511536</title>
+<circle cx="256.66" cy="652.56" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 6c under q=87.543468 actual=102939 pred=1175.86</title>
+<circle cx="257.33" cy="611.94" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 6d under q=1.106918 actual=678 pred=612.511536</title>
+<circle cx="258.00" cy="618.37" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 6e under q=2.210047 actual=280 pred=126.694145</title>
+<circle cx="258.68" cy="627.56" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 6f under q=5.94048 actual=249168 pred=41944.1</title>
+<circle cx="255.94" cy="621.14" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 7a under q=2.976984 actual=3 pred=1.007731</title>
+<circle cx="256.61" cy="649.80" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 7b under q=64.995312 actual=65 pred=1.000072</title>
+<circle cx="257.28" cy="646.69" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 7c under q=46.533806 actual=129 pred=2.772178</title>
+<circle cx="256.56" cy="638.61" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 8a under q=19.514 actual=20 pred=1.024905</title>
+<circle cx="257.23" cy="617.38" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 8b under q=1.987107 actual=2 pred=1.006489</title>
+<circle cx="257.91" cy="617.20" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 8c under q=1.94919 actual=126291 pred=64791.5</title>
+<circle cx="258.58" cy="617.20" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 8d under q=1.94919 actual=126291 pred=64791.5</title>
+<circle cx="257.19" cy="617.14" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 9a under q=1.936114 actual=4 pred=2.065995</title>
+<circle cx="257.86" cy="627.19" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 9b under q=5.709279 actual=6 pred=1.050921</title>
+<circle cx="258.53" cy="633.50" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 9c under q=11.260528 actual=131 pred=11.633557</title>
+<circle cx="259.20" cy="619.01" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 9d under q=2.367685 actual=5160 pred=2179.34</title>
+<circle cx="241.09" cy="639.25" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 10a under q=20.887296 actual=26283 pred=1258.32</title>
+<circle cx="241.81" cy="636.42" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 10b under q=15.409076 actual=26283 pred=1705.68</title>
+<circle cx="242.53" cy="634.14" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 10c under q=12.06318 actual=45239 pred=3750.17</title>
+<circle cx="241.76" cy="609.11" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 11a over q=1.225493 actual=1 pred=1.225493</title>
+<circle cx="242.48" cy="610.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 11b over q=1.002283 actual=1 pred=1.002283</title>
+<circle cx="243.20" cy="633.29" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 11c under q=11.001245 actual=18 pred=1.636178</title>
+<circle cx="243.92" cy="641.22" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 11d under q=25.823627 actual=3987 pred=154.393494</title>
+<circle cx="242.44" cy="654.19" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 12a under q=104.307709 actual=106 pred=1.016224</title>
+<circle cx="243.16" cy="619.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 12b under q=2.36485 actual=6 pred=2.537159</title>
+<circle cx="243.88" cy="677.60" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 12c under q=1294.39 actual=1295 pred=1.000469</title>
+<circle cx="243.11" cy="616.84" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 13a under q=1.874887 actual=8429 pred=4495.74</title>
+<circle cx="243.83" cy="619.01" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 13b under q=2.367978 actual=14070 pred=5941.78</title>
+<circle cx="244.55" cy="618.96" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 13c under q=2.355837 actual=1581 pred=671.099121</title>
+<circle cx="245.27" cy="622.97" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 13d under q=3.625364 actual=488699 pred=134800</title>
+<circle cx="243.78" cy="651.53" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 14a under q=78.363337 actual=11475 pred=146.433273</title>
+<circle cx="244.50" cy="623.40" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 14b under q=3.797534 actual=4 pred=1.053315</title>
+<circle cx="245.22" cy="648.25" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 14c under q=55.062301 actual=11475 pred=208.400299</title>
+<circle cx="244.45" cy="606.15" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 15a over q=1.684541 actual=9 pred=15.160872</title>
+<circle cx="245.17" cy="625.92" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 15b under q=4.982092 actual=9 pred=1.80647</title>
+<circle cx="245.89" cy="616.18" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 15c under q=1.746252 actual=446429 pred=255650</title>
+<circle cx="246.62" cy="627.97" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 15d under q=6.205485 actual=1.07803e+06 pred=173722</title>
+<circle cx="245.13" cy="636.66" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 16a under q=15.812705 actual=3690 pred=233.356659</title>
+<circle cx="245.85" cy="638.82" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 16b under q=19.942846 actual=18658 pred=935.573608</title>
+<circle cx="246.57" cy="634.97" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 16c under q=13.189952 actual=28040 pred=2125.86</title>
+<circle cx="247.29" cy="641.42" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 16d under q=26.381606 actual=5082 pred=192.634216</title>
+<circle cx="245.80" cy="619.35" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 17a under q=2.456594 actual=1796 pred=731.093628</title>
+<circle cx="246.52" cy="607.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 17b over q=1.384226 actual=4355 pred=6028.3</title>
+<circle cx="247.24" cy="604.24" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 17c over q=2.069544 actual=3 pred=6.208633</title>
+<circle cx="247.96" cy="633.79" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 17d under q=11.616087 actual=253517 pred=21824.6</title>
+<circle cx="248.68" cy="646.25" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 17e under q=44.384341 actual=126679 pred=2854.14</title>
+<circle cx="249.40" cy="633.79" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 17f under q=11.616087 actual=253517 pred=21824.6</title>
+<circle cx="246.47" cy="625.60" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 18a under q=4.813557 actual=6 pred=1.24648</title>
+<circle cx="247.19" cy="646.04" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 18b under q=43.405509 actual=1215 pred=27.991838</title>
+<circle cx="247.91" cy="626.40" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 18c under q=5.242228 actual=129522 pred=24707.4</title>
+<circle cx="247.14" cy="610.81" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 19a over q=1.020432 actual=1 pred=1.020432</title>
+<circle cx="247.86" cy="610.88" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 19b over q=1.012608 actual=1 pred=1.012608</title>
+<circle cx="248.59" cy="627.37" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 19c under q=5.822771 actual=572 pred=98.235008</title>
+<circle cx="249.31" cy="639.17" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 19d under q=20.72913 actual=24614 pred=1187.41</title>
+<circle cx="241.71" cy="594.29" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 20a over q=6.035805 actual=14 pred=84.501274</title>
+<circle cx="242.44" cy="630.86" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 20b under q=8.476411 actual=1886 pred=222.499832</title>
+<circle cx="243.16" cy="606.42" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 20c over q=1.637391 actual=1969 pred=3224.02</title>
+<circle cx="242.39" cy="610.97" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 21a over q=1.003386 actual=1 pred=1.003386</title>
+<circle cx="243.11" cy="610.99" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 21b over q=1.000926 actual=1 pred=1.000926</title>
+<circle cx="243.83" cy="620.94" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 21c under q=2.914453 actual=3 pred=1.029353</title>
+<circle cx="243.06" cy="677.48" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 22a under q=1277.53 actual=5203 pred=4.072718</title>
+<circle cx="243.78" cy="677.48" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 22b under q=1277.53 actual=5203 pred=4.072718</title>
+<circle cx="244.50" cy="656.11" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 22c under q=128.183173 actual=5203 pred=40.590351</title>
+<circle cx="245.22" cy="646.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 22d under q=47.989053 actual=14082 pred=293.441925</title>
+<circle cx="243.73" cy="620.78" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 23a under q=2.865098 actual=347130 pred=121158</title>
+<circle cx="244.45" cy="622.42" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 23b under q=3.415175 actual=1547 pred=452.978302</title>
+<circle cx="245.17" cy="620.44" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 23c under q=2.761554 actual=347130 pred=125701</title>
+<circle cx="244.41" cy="603.41" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 24a over q=2.263809 actual=1 pred=2.263809</title>
+<circle cx="245.13" cy="610.35" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 24b over q=1.07194 actual=1 pred=1.07194</title>
+<circle cx="245.08" cy="628.69" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 25a under q=6.708766 actual=22661 pred=3377.82</title>
+<circle cx="245.80" cy="609.48" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 25b over q=1.177343 actual=1 pred=1.177343</title>
+<circle cx="246.52" cy="705.92" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 25c under q=27262.4 actual=53100 pred=1.947738</title>
+<circle cx="245.75" cy="601.92" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 26a over q=2.656097 actual=461 pred=1224.46</title>
+<circle cx="246.47" cy="586.51" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 26b over q=13.940941 actual=35 pred=487.932922</title>
+<circle cx="247.19" cy="610.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 26c over q=1.11386 actual=1969 pred=2193.19</title>
+<circle cx="246.42" cy="617.28" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 27a under q=1.966016 actual=2 pred=1.017286</title>
+<circle cx="247.14" cy="617.37" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 27b under q=1.984199 actual=2 pred=1.007963</title>
+<circle cx="247.86" cy="620.26" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 27c under q=2.707239 actual=3 pred=1.10814</title>
+<circle cx="247.10" cy="645.20" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 28a under q=39.623054 actual=1959 pred=49.440914</title>
+<circle cx="247.82" cy="631.36" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 28b under q=8.945269 actual=46 pred=5.142383</title>
+<circle cx="248.54" cy="649.06" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 28c under q=60.066808 actual=1959 pred=32.613686</title>
+<circle cx="247.77" cy="617.43" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 29a under q=1.998173 actual=2 pred=1.000914</title>
+<circle cx="248.49" cy="610.99" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 29b over q=1.000807 actual=1 pred=1.000807</title>
+<circle cx="249.21" cy="616.22" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 29c under q=1.754112 actual=2 pred=1.140178</title>
+<circle cx="242.34" cy="627.03" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 30a under q=5.610616 actual=7 pred=1.247635</title>
+<circle cx="243.06" cy="627.22" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 30b under q=5.727253 actual=7 pred=1.222227</title>
+<circle cx="243.78" cy="623.82" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 30c under q=3.970782 actual=7 pred=1.762877</title>
+<circle cx="243.01" cy="635.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 31a under q=13.233578 actual=14 pred=1.057915</title>
+<circle cx="243.73" cy="629.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 31b under q=6.934321 actual=7 pred=1.009472</title>
+<circle cx="244.45" cy="630.04" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 31c under q=7.760747 actual=14 pred=1.80395</title>
+<circle cx="243.68" cy="624.41" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 32a under q=4.233574 actual=27 pred=6.377591</title>
+<circle cx="244.41" cy="624.41" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 32b under q=4.233574 actual=27 pred=6.377591</title>
+<circle cx="244.36" cy="642.02" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 33a under q=28.164302 actual=321 pred=11.397407</title>
+<circle cx="245.08" cy="638.45" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 33b under q=19.168259 actual=115 pred=5.999502</title>
+<circle cx="245.80" cy="656.14" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB 33c under q=128.674377 actual=2754 pred=21.402863</title>
+<text x="249.67" y="749.00" text-anchor="middle" font-size="13" font-weight="700">seed 1</text>
+<text x="249.67" y="766.00" text-anchor="middle" class="small">n=113, med q=5.94048</text>
+<text x="249.67" y="783.00" text-anchor="middle" class="small">under=95, over=18</text>
+<rect x="533.00" y="617.36" width="64" height="17.42" fill="#059669" fill-opacity="0.12" stroke="#059669" stroke-width="1.5"/>
+<line x1="533.00" y1="625.76" x2="597.00" y2="625.76" stroke="#059669" stroke-width="3"/>
+<circle cx="568.05" cy="627.09" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 1a under q=5.648681 actual=87934 pred=15567.2</title>
+<circle cx="568.72" cy="621.96" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 1b under q=3.253041 actual=1467 pred=450.962585</title>
+<circle cx="569.40" cy="626.33" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 1c under q=5.201755 actual=87934 pred=16904.7</title>
+<circle cx="570.07" cy="637.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 1d under q=17.505856 actual=161937 pred=9250.45</title>
+<circle cx="568.68" cy="663.86" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 2a under q=295.041351 actual=614 pred=2.081064</title>
+<circle cx="569.35" cy="622.45" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 2b under q=3.428501 actual=8907 pred=2597.93</title>
+<circle cx="570.02" cy="663.86" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 2c under q=295.041351 actual=614 pred=2.081064</title>
+<circle cx="570.69" cy="615.85" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 2d under q=1.684685 actual=8496 pred=5043.08</title>
+<circle cx="569.30" cy="636.59" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 3a under q=15.689291 actual=538 pred=34.290905</title>
+<circle cx="569.97" cy="626.64" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 3b under q=5.378146 actual=504 pred=93.712593</title>
+<circle cx="570.65" cy="634.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 3c under q=12.110223 actual=550 pred=45.416176</title>
+<circle cx="569.92" cy="653.85" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 4a under q=100.485509 actual=4158 pred=41.379101</title>
+<circle cx="570.60" cy="632.83" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 4b under q=10.477677 actual=203 pred=19.374523</title>
+<circle cx="571.27" cy="640.28" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 4c under q=23.337122 actual=6373 pred=273.084229</title>
+<circle cx="570.55" cy="625.61" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 5a under q=4.817019 actual=92872 pred=19280</title>
+<circle cx="571.22" cy="632.51" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 5b under q=10.114386 actual=87934 pred=8693.95</title>
+<circle cx="571.89" cy="626.74" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 5c under q=5.439153 actual=101660 pred=18690.4</title>
+<circle cx="571.17" cy="632.26" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 6a under q=9.854803 actual=280 pred=28.412542</title>
+<circle cx="571.85" cy="617.56" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 6b under q=2.025078 actual=678 pred=334.801941</title>
+<circle cx="572.52" cy="631.41" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 6c under q=8.987561 actual=102939 pred=11453.5</title>
+<circle cx="573.19" cy="617.56" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 6d under q=2.025078 actual=678 pred=334.801941</title>
+<circle cx="573.86" cy="632.26" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 6e under q=9.854803 actual=280 pred=28.412542</title>
+<circle cx="574.54" cy="628.15" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 6f under q=6.332891 actual=249168 pred=39345.1</title>
+<circle cx="571.80" cy="621.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 7a under q=2.991782 actual=3 pred=1.002747</title>
+<circle cx="572.47" cy="649.80" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 7b under q=64.998869 actual=65 pred=1.000017</title>
+<circle cx="573.14" cy="643.03" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 7c under q=31.370966 actual=129 pred=4.112082</title>
+<circle cx="572.42" cy="638.74" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 8a under q=19.791669 actual=20 pred=1.010526</title>
+<circle cx="573.10" cy="617.42" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 8b under q=1.995311 actual=2 pred=1.00235</title>
+<circle cx="573.77" cy="627.77" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 8c under q=6.073225 actual=126291 pred=20794.7</title>
+<circle cx="574.44" cy="627.77" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 8d under q=6.073225 actual=126291 pred=20794.7</title>
+<circle cx="573.05" cy="611.74" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 9a under q=1.082387 actual=4 pred=3.695535</title>
+<circle cx="573.72" cy="626.06" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 9b under q=5.057524 actual=6 pred=1.186351</title>
+<circle cx="574.39" cy="637.57" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 9c under q=17.442395 actual=131 pred=7.510437</title>
+<circle cx="575.07" cy="623.49" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 9d under q=3.834904 actual=5160 pred=1345.54</title>
+<circle cx="556.95" cy="633.47" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 10a under q=11.220651 actual=26283 pred=2342.38</title>
+<circle cx="557.67" cy="630.99" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 10b under q=8.594046 actual=26283 pred=3058.28</title>
+<circle cx="558.39" cy="635.78" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 10c under q=14.383505 actual=45239 pred=3145.2</title>
+<circle cx="557.62" cy="608.19" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 11a over q=1.352876 actual=1 pred=1.352876</title>
+<circle cx="558.35" cy="610.97" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 11b over q=1.003157 actual=1 pred=1.003157</title>
+<circle cx="559.07" cy="635.08" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 11c under q=13.345143 actual=18 pred=1.348805</title>
+<circle cx="559.79" cy="644.43" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 11d under q=36.498668 actual=3987 pred=109.236862</title>
+<circle cx="558.30" cy="652.46" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 12a under q=86.594165 actual=106 pred=1.224101</title>
+<circle cx="559.02" cy="602.64" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 12b over q=2.459502 actual=6 pred=14.757011</title>
+<circle cx="559.74" cy="672.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 12c under q=722.526693 actual=1295 pred=1.792321</title>
+<circle cx="558.97" cy="618.74" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 13a under q=2.3009 actual=8429 pred=3663.35</title>
+<circle cx="559.69" cy="618.85" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 13b under q=2.32673 actual=14070 pred=6047.11</title>
+<circle cx="560.41" cy="608.21" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 13c over q=1.350536 actual=1581 pred=2135.2</title>
+<circle cx="561.13" cy="624.25" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 13d under q=4.161217 actual=488699 pred=117441</title>
+<circle cx="559.64" cy="649.41" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 14a under q=62.34757 actual=11475 pred=184.048874</title>
+<circle cx="560.36" cy="616.63" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 14b under q=1.832377 actual=4 pred=2.182957</title>
+<circle cx="561.08" cy="648.54" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 14c under q=56.777389 actual=11475 pred=202.105103</title>
+<circle cx="560.32" cy="596.98" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 15a over q=4.521258 actual=9 pred=40.691326</title>
+<circle cx="561.04" cy="623.23" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 15b under q=3.727703 actual=9 pred=2.414355</title>
+<circle cx="561.76" cy="602.02" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 15c over q=2.627123 actual=446429 pred=1.17282e+06</title>
+<circle cx="562.48" cy="625.76" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 15d under q=4.896282 actual=1.07803e+06 pred=220173</title>
+<circle cx="560.99" cy="633.85" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 16a under q=11.682876 actual=3690 pred=315.846893</title>
+<circle cx="561.71" cy="626.17" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 16b under q=5.113513 actual=18658 pred=3648.76</title>
+<circle cx="562.43" cy="626.91" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 16c under q=5.537965 actual=28040 pred=5063.23</title>
+<circle cx="563.15" cy="631.86" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 16d under q=9.433089 actual=5082 pred=538.741882</title>
+<circle cx="561.66" cy="606.21" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 17a over q=1.673708 actual=1796 pred=3005.98</title>
+<circle cx="562.38" cy="613.85" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 17b under q=1.358566 actual=4355 pred=3205.59</title>
+<circle cx="563.10" cy="561.21" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 17c over q=212.251587 actual=3 pred=636.754761</title>
+<circle cx="563.82" cy="618.81" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 17d under q=2.316655 actual=253517 pred=109432</title>
+<circle cx="564.54" cy="641.16" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 17e under q=25.671917 actual=126679 pred=4934.54</title>
+<circle cx="565.26" cy="618.81" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 17f under q=2.316655 actual=253517 pred=109432</title>
+<circle cx="562.33" cy="619.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 18a under q=2.411793 actual=6 pred=2.487775</title>
+<circle cx="563.05" cy="624.52" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 18b under q=4.283788 actual=1215 pred=283.627502</title>
+<circle cx="563.77" cy="625.95" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 18c under q=4.994923 actual=129522 pred=25930.7</title>
+<circle cx="563.01" cy="609.68" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 19a over q=1.152943 actual=1 pred=1.152943</title>
+<circle cx="563.73" cy="610.16" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 19b over q=1.094589 actual=1 pred=1.094589</title>
+<circle cx="564.45" cy="595.93" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 19c over q=5.061449 actual=572 pred=2895.15</title>
+<circle cx="565.17" cy="638.28" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 19d under q=18.836373 actual=24614 pred=1306.73</title>
+<circle cx="557.58" cy="586.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 20a over q=13.80714 actual=14 pred=193.299957</title>
+<circle cx="558.30" cy="621.07" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 20b under q=2.953857 actual=1886 pred=638.487244</title>
+<circle cx="559.02" cy="620.05" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 20c under q=2.648807 actual=1969 pred=743.353455</title>
+<circle cx="558.25" cy="610.82" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 21a over q=1.01992 actual=1 pred=1.01992</title>
+<circle cx="558.97" cy="610.98" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 21b over q=1.002564 actual=1 pred=1.002564</title>
+<circle cx="559.69" cy="619.87" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 21c under q=2.596079 actual=3 pred=1.155589</title>
+<circle cx="558.92" cy="658.02" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 22a under q=157.484819 actual=5203 pred=33.038105</title>
+<circle cx="559.64" cy="658.02" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 22b under q=157.484819 actual=5203 pred=33.038105</title>
+<circle cx="560.36" cy="643.19" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 22c under q=31.923724 actual=5203 pred=162.982239</title>
+<circle cx="561.08" cy="641.59" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 22d under q=26.875736 actual=14082 pred=523.967041</title>
+<circle cx="559.59" cy="606.49" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 23a over q=1.625179 actual=347130 pred=564148</title>
+<circle cx="560.32" cy="625.24" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 23b under q=4.626022 actual=1547 pred=334.412598</title>
+<circle cx="561.04" cy="607.59" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 23c over q=1.444034 actual=347130 pred=501267</title>
+<circle cx="560.27" cy="609.91" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 24a over q=1.124519 actual=1 pred=1.124519</title>
+<circle cx="560.99" cy="610.91" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 24b over q=1.009192 actual=1 pred=1.009192</title>
+<circle cx="560.94" cy="630.31" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 25a under q=7.985821 actual=22661 pred=2837.65</title>
+<circle cx="561.66" cy="608.41" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 25b over q=1.321308 actual=1 pred=1.321308</title>
+<circle cx="562.38" cy="701.34" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 25c under q=16644.2 actual=53100 pred=3.190294</title>
+<circle cx="561.61" cy="616.65" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 26a under q=1.835677 actual=461 pred=251.13353</title>
+<circle cx="562.33" cy="617.36" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 26b under q=1.982657 actual=35 pred=17.653074</title>
+<circle cx="563.05" cy="622.94" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 26c under q=3.613293 actual=1969 pred=544.932312</title>
+<circle cx="562.29" cy="617.27" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 27a under q=1.964137 actual=2 pred=1.018259</title>
+<circle cx="563.01" cy="617.33" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 27b under q=1.977082 actual=2 pred=1.011592</title>
+<circle cx="563.73" cy="618.24" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 27c under q=2.179087 actual=3 pred=1.376724</title>
+<circle cx="562.96" cy="632.07" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 28a under q=9.648446 actual=1959 pred=203.037888</title>
+<circle cx="563.68" cy="619.13" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 28b under q=2.397734 actual=46 pred=19.184776</title>
+<circle cx="564.40" cy="637.69" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 28c under q=17.673127 actual=1959 pred=110.84626</title>
+<circle cx="563.63" cy="617.44" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 29a under q=1.999376 actual=2 pred=1.000312</title>
+<circle cx="564.35" cy="611.00" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 29b over q=1.000329 actual=1 pred=1.000329</title>
+<circle cx="565.07" cy="616.82" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 29c under q=1.870375 actual=2 pred=1.069304</title>
+<circle cx="558.20" cy="628.76" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 30a under q=6.759795 actual=7 pred=1.035534</title>
+<circle cx="558.92" cy="628.20" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 30b under q=6.367062 actual=7 pred=1.099408</title>
+<circle cx="559.64" cy="628.44" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 30c under q=6.531737 actual=7 pred=1.07169</title>
+<circle cx="558.87" cy="634.78" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 31a under q=12.924907 actual=14 pred=1.08318</title>
+<circle cx="559.59" cy="628.99" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 31b under q=6.932195 actual=7 pred=1.009781</title>
+<circle cx="560.32" cy="625.48" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 31c under q=4.749287 actual=14 pred=2.947811</title>
+<circle cx="559.55" cy="620.32" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 32a under q=2.727135 actual=27 pred=9.900501</title>
+<circle cx="560.27" cy="620.32" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 32b under q=2.727135 actual=27 pred=9.900501</title>
+<circle cx="560.22" cy="647.70" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 33a under q=51.894461 actual=321 pred=6.185631</title>
+<circle cx="560.94" cy="644.21" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 33b under q=35.627962 actual=115 pred=3.227802</title>
+<circle cx="561.66" cy="640.35" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB 33c under q=23.514485 actual=2754 pred=117.119301</title>
+<text x="565.00" y="749.00" text-anchor="middle" font-size="13" font-weight="700">seed 2</text>
+<text x="565.00" y="766.00" text-anchor="middle" class="small">n=113, med q=5.061449</text>
+<text x="565.00" y="783.00" text-anchor="middle" class="small">under=93, over=20</text>
+<rect x="848.33" y="617.05" width="64" height="19.28" fill="#7c3aed" fill-opacity="0.12" stroke="#7c3aed" stroke-width="1.5"/>
+<line x1="848.33" y1="626.84" x2="912.33" y2="626.84" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="883.91" cy="638.53" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 1a under q=19.336577 actual=87934 pred=4547.55</title>
+<circle cx="884.59" cy="614.37" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 1b under q=1.437147 actual=1467 pred=1020.77</title>
+<circle cx="885.26" cy="631.67" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 1c under q=9.248895 actual=87934 pred=9507.51</title>
+<circle cx="885.93" cy="631.06" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 1d under q=8.658997 actual=161937 pred=18701.6</title>
+<circle cx="884.54" cy="628.11" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 2a under q=6.303197 actual=614 pred=97.410889</title>
+<circle cx="885.21" cy="633.10" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 2b under q=10.782594 actual=8907 pred=826.053528</title>
+<circle cx="885.88" cy="628.11" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 2c under q=6.303197 actual=614 pred=97.410889</title>
+<circle cx="886.56" cy="618.95" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 2d under q=2.353082 actual=8496 pred=3610.58</title>
+<circle cx="885.16" cy="631.98" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 3a under q=9.554365 actual=538 pred=56.309341</title>
+<circle cx="885.83" cy="633.37" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 3b under q=11.094548 actual=504 pred=45.427719</title>
+<circle cx="886.51" cy="633.29" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 3c under q=11.010556 actual=550 pred=49.952065</title>
+<circle cx="885.79" cy="659.72" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 4a under q=189.086245 actual=4158 pred=21.989965</title>
+<circle cx="886.46" cy="636.34" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 4b under q=15.271632 actual=203 pred=13.29262</title>
+<circle cx="887.13" cy="642.30" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 4c under q=29.002717 actual=6373 pred=219.738037</title>
+<circle cx="886.41" cy="635.84" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 5a under q=14.481235 actual=92872 pred=6413.27</title>
+<circle cx="887.08" cy="644.46" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 5b under q=36.609471 actual=87934 pred=2401.95</title>
+<circle cx="887.76" cy="628.50" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 5c under q=6.571924 actual=101660 pred=15468.8</title>
+<circle cx="887.04" cy="622.29" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 6a under q=3.367895 actual=280 pred=83.137985</title>
+<circle cx="887.71" cy="616.37" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 6b under q=1.781955 actual=678 pred=380.481049</title>
+<circle cx="888.38" cy="639.96" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 6c under q=22.556297 actual=102939 pred=4563.65</title>
+<circle cx="889.05" cy="616.37" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 6d under q=1.781955 actual=678 pred=380.481049</title>
+<circle cx="889.73" cy="622.29" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 6e under q=3.367895 actual=280 pred=83.137985</title>
+<circle cx="890.40" cy="628.65" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 6f under q=6.676795 actual=249168 pred=37318.5</title>
+<circle cx="887.66" cy="620.91" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 7a under q=2.903226 actual=3 pred=1.033333</title>
+<circle cx="888.33" cy="649.76" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 7b under q=64.769001 actual=65 pred=1.003567</title>
+<circle cx="889.01" cy="647.33" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 7c under q=49.8299 actual=129 pred=2.588807</title>
+<circle cx="888.29" cy="638.64" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 8a under q=19.567249 actual=20 pred=1.022116</title>
+<circle cx="888.96" cy="617.44" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 8b under q=1.999447 actual=2 pred=1.000276</title>
+<circle cx="889.63" cy="626.15" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 8c under q=5.102442 actual=126291 pred=24751.1</title>
+<circle cx="890.30" cy="626.15" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 8d under q=5.102442 actual=126291 pred=24751.1</title>
+<circle cx="888.91" cy="618.13" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 9a under q=2.154378 actual=4 pred=1.856684</title>
+<circle cx="889.58" cy="623.88" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 9b under q=4.00001 actual=6 pred=1.499996</title>
+<circle cx="890.26" cy="611.38" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 9c under q=1.041804 actual=131 pred=125.743462</title>
+<circle cx="890.93" cy="628.28" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 9d under q=6.420282 actual=5160 pred=803.703064</title>
+<circle cx="872.81" cy="635.60" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 10a under q=14.106389 actual=26283 pred=1863.2</title>
+<circle cx="873.53" cy="632.27" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 10b under q=9.865015 actual=26283 pred=2664.26</title>
+<circle cx="874.26" cy="633.14" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 10c under q=10.828751 actual=45239 pred=4177.67</title>
+<circle cx="873.49" cy="607.74" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 11a over q=1.42065 actual=1 pred=1.42065</title>
+<circle cx="874.21" cy="610.83" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 11b over q=1.018656 actual=1 pred=1.018656</title>
+<circle cx="874.93" cy="632.80" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 11c under q=10.440108 actual=18 pred=1.72412</title>
+<circle cx="875.65" cy="643.54" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 11d under q=33.148375 actual=3987 pred=120.27739</title>
+<circle cx="874.16" cy="640.66" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 12a under q=24.326612 actual=106 pred=4.357368</title>
+<circle cx="874.88" cy="610.81" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 12b over q=1.021202 actual=6 pred=6.127209</title>
+<circle cx="875.60" cy="655.61" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 12c under q=121.473625 actual=1295 pred=10.66075</title>
+<circle cx="874.83" cy="614.69" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 13a under q=1.487319 actual=8429 pred=5667.24</title>
+<circle cx="875.55" cy="613.04" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 13b under q=1.24523 actual=14070 pred=11299.1</title>
+<circle cx="876.27" cy="611.05" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 13c under q=1.005358 actual=1581 pred=1572.57</title>
+<circle cx="876.99" cy="624.61" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 13d under q=4.324517 actual=488699 pred=113007</title>
+<circle cx="875.50" cy="656.70" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 14a under q=136.656096 actual=11475 pred=83.96991</title>
+<circle cx="876.23" cy="622.38" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 14b under q=3.401247 actual=4 pred=1.176039</title>
+<circle cx="876.95" cy="649.07" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 14c under q=60.120796 actual=11475 pred=190.865738</title>
+<circle cx="876.18" cy="585.10" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 15a over q=16.224864 actual=9 pred=146.023773</title>
+<circle cx="876.90" cy="623.82" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 15b under q=3.97252 actual=9 pred=2.265564</title>
+<circle cx="877.62" cy="617.83" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 15c under q=2.086368 actual=446429 pred=213974</title>
+<circle cx="878.34" cy="627.84" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 15d under q=6.123452 actual=1.07803e+06 pred=176049</title>
+<circle cx="876.85" cy="633.67" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 16a under q=11.461887 actual=3690 pred=321.936523</title>
+<circle cx="877.57" cy="643.73" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 16b under q=33.835908 actual=18658 pred=551.426025</title>
+<circle cx="878.29" cy="629.84" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 16c under q=7.589384 actual=28040 pred=3694.63</title>
+<circle cx="879.01" cy="633.28" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 16d under q=10.995429 actual=5082 pred=462.192047</title>
+<circle cx="877.52" cy="616.97" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 17a under q=1.901371 actual=1796 pred=944.58136</title>
+<circle cx="878.24" cy="623.10" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 17b under q=3.675537 actual=4355 pred=1184.86</title>
+<circle cx="878.96" cy="594.72" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 17c over q=5.767027 actual=3 pred=17.301081</title>
+<circle cx="879.68" cy="636.42" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 17d under q=15.408774 actual=253517 pred=16452.8</title>
+<circle cx="880.41" cy="649.74" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 17e under q=64.611085 actual=126679 pred=1960.64</title>
+<circle cx="881.13" cy="636.42" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 17f under q=15.408774 actual=253517 pred=16452.8</title>
+<circle cx="878.20" cy="625.56" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 18a under q=4.788957 actual=6 pred=1.252882</title>
+<circle cx="878.92" cy="622.67" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 18b under q=3.509175 actual=1215 pred=346.235229</title>
+<circle cx="879.64" cy="637.27" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 18c under q=16.879291 actual=129522 pred=7673.43</title>
+<circle cx="878.87" cy="609.93" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 19a over q=1.122017 actual=1 pred=1.122017</title>
+<circle cx="879.59" cy="610.70" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 19b over q=1.032537 actual=1 pred=1.032537</title>
+<circle cx="880.31" cy="593.11" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 19c over q=6.855838 actual=572 pred=3921.54</title>
+<circle cx="881.03" cy="617.39" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 19d under q=1.987892 actual=24614 pred=12382</title>
+<circle cx="873.44" cy="602.79" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 20a over q=2.418191 actual=14 pred=33.854668</title>
+<circle cx="874.16" cy="624.25" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 20b under q=4.161576 actual=1886 pred=453.193726</title>
+<circle cx="874.88" cy="618.59" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 20c under q=2.263837 actual=1969 pred=869.762268</title>
+<circle cx="874.11" cy="610.70" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 21a over q=1.033272 actual=1 pred=1.033272</title>
+<circle cx="874.83" cy="610.92" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 21b over q=1.00828 actual=1 pred=1.00828</title>
+<circle cx="875.55" cy="618.35" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 21c under q=2.204469 actual=3 pred=1.360872</title>
+<circle cx="874.78" cy="654.87" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 22a under q=112.237924 actual=5203 pred=46.35688</title>
+<circle cx="875.50" cy="654.87" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 22b under q=112.237924 actual=5203 pred=46.35688</title>
+<circle cx="876.23" cy="645.08" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 22c under q=39.152071 actual=5203 pred=132.892075</title>
+<circle cx="876.95" cy="644.75" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 22d under q=37.761492 actual=14082 pred=372.919586</title>
+<circle cx="875.46" cy="626.84" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 23a under q=5.498017 actual=347130 pred=63137.3</title>
+<circle cx="876.18" cy="626.87" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 23b under q=5.51354 actual=1547 pred=280.582001</title>
+<circle cx="876.90" cy="624.62" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 23c under q=4.330301 actual=347130 pred=80163</title>
+<circle cx="876.13" cy="608.66" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 24a over q=1.285742 actual=1 pred=1.285742</title>
+<circle cx="876.85" cy="610.79" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 24b over q=1.023041 actual=1 pred=1.023041</title>
+<circle cx="876.80" cy="636.71" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 25a under q=15.899908 actual=22661 pred=1425.23</title>
+<circle cx="877.52" cy="607.62" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 25b over q=1.438784 actual=1 pred=1.438784</title>
+<circle cx="878.24" cy="696.25" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 25c under q=9626.69 actual=53100 pred=5.515916</title>
+<circle cx="877.47" cy="619.84" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 26a under q=2.588545 actual=461 pred=178.0923</title>
+<circle cx="878.20" cy="603.34" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 26b over q=2.280297 actual=35 pred=79.81041</title>
+<circle cx="878.92" cy="623.38" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 26c under q=3.789854 actual=1969 pred=519.545044</title>
+<circle cx="878.15" cy="616.97" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 27a under q=1.900753 actual=2 pred=1.052215</title>
+<circle cx="878.87" cy="617.05" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 27b under q=1.917539 actual=2 pred=1.043003</title>
+<circle cx="879.59" cy="615.56" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 27c under q=1.632992 actual=3 pred=1.837118</title>
+<circle cx="878.82" cy="636.10" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 28a under q=14.88942 actual=1959 pred=131.569931</title>
+<circle cx="879.54" cy="608.81" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 28b over q=1.26559 actual=46 pred=58.217148</title>
+<circle cx="880.26" cy="639.24" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 28c under q=20.878409 actual=1959 pred=93.828987</title>
+<circle cx="879.49" cy="617.44" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 29a under q=1.999846 actual=2 pred=1.000077</title>
+<circle cx="880.21" cy="611.00" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 29b over q=1.000061 actual=1 pred=1.000061</title>
+<circle cx="880.93" cy="616.85" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 29c under q=1.876486 actual=2 pred=1.065822</title>
+<circle cx="874.06" cy="625.26" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 30a under q=4.636517 actual=7 pred=1.509754</title>
+<circle cx="874.78" cy="626.49" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 30b under q=5.292563 actual=7 pred=1.322611</title>
+<circle cx="875.50" cy="626.42" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 30c under q=5.255693 actual=7 pred=1.331889</title>
+<circle cx="874.74" cy="634.22" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 31a under q=12.167072 actual=14 pred=1.150647</title>
+<circle cx="875.46" cy="628.93" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 31b under q=6.886838 actual=7 pred=1.016432</title>
+<circle cx="876.18" cy="632.45" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 31c under q=10.051334 actual=14 pred=1.39285</title>
+<circle cx="875.41" cy="632.62" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 32a under q=10.239558 actual=27 pred=2.636832</title>
+<circle cx="876.13" cy="632.62" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 32b under q=10.239558 actual=27 pred=2.636832</title>
+<circle cx="876.08" cy="647.23" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 33a under q=49.296968 actual=321 pred=6.511557</title>
+<circle cx="876.80" cy="644.26" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 33b under q=35.815138 actual=115 pred=3.210933</title>
+<circle cx="877.52" cy="646.93" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB 33c under q=47.751621 actual=2754 pred=57.673435</title>
+<text x="880.33" y="749.00" text-anchor="middle" font-size="13" font-weight="700">seed 3</text>
+<text x="880.33" y="766.00" text-anchor="middle" class="small">n=113, med q=6.123452</text>
+<text x="880.33" y="783.00" text-anchor="middle" class="small">under=96, over=17</text>
+<text x="92" y="828" font-size="18" font-weight="700">JOB-Complex</text>
+<line x1="92" y1="1078.00" x2="1038" y2="1078.00" class="grid"/>
+<text x="80" y="1082.00" text-anchor="end" class="small">-1e5</text>
+<line x1="92" y1="1056.60" x2="1038" y2="1056.60" class="grid"/>
+<text x="80" y="1060.60" text-anchor="end" class="small">-1e4</text>
+<line x1="92" y1="1035.20" x2="1038" y2="1035.20" class="grid"/>
+<text x="80" y="1039.20" text-anchor="end" class="small">-1e3</text>
+<line x1="92" y1="1013.80" x2="1038" y2="1013.80" class="grid"/>
+<text x="80" y="1017.80" text-anchor="end" class="small">-1e2</text>
+<line x1="92" y1="992.40" x2="1038" y2="992.40" class="grid"/>
+<text x="80" y="996.40" text-anchor="end" class="small">-1e1</text>
+<line x1="92" y1="971.00" x2="1038" y2="971.00" class="zero"/>
+<text x="80" y="975.00" text-anchor="end" class="small">0</text>
+<line x1="92" y1="949.60" x2="1038" y2="949.60" class="grid"/>
+<text x="80" y="953.60" text-anchor="end" class="small">+1e1</text>
+<line x1="92" y1="928.20" x2="1038" y2="928.20" class="grid"/>
+<text x="80" y="932.20" text-anchor="end" class="small">+1e2</text>
+<line x1="92" y1="906.80" x2="1038" y2="906.80" class="grid"/>
+<text x="80" y="910.80" text-anchor="end" class="small">+1e3</text>
+<line x1="92" y1="885.40" x2="1038" y2="885.40" class="grid"/>
+<text x="80" y="889.40" text-anchor="end" class="small">+1e4</text>
+<line x1="92" y1="864.00" x2="1038" y2="864.00" class="grid"/>
+<text x="80" y="868.00" text-anchor="end" class="small">+1e5</text>
+<line x1="92" y1="864" x2="92" y2="1078" class="axis"/>
+<line x1="92" y1="1078" x2="1038" y2="1078" class="axis"/>
+<rect x="217.67" y="952.03" width="64" height="46.78" fill="#2563eb" fill-opacity="0.12" stroke="#2563eb" stroke-width="1.5"/>
+<line x1="217.67" y1="970.99" x2="281.67" y2="970.99" stroke="#2563eb" stroke-width="3"/>
+<circle cx="262.81" cy="970.97" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 01 over q=1.002949 actual=1 pred=1.002949</title>
+<circle cx="263.58" cy="970.77" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 02 over q=1.024769 actual=1 pred=1.024769</title>
+<circle cx="264.35" cy="970.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 03 over q=1.002322 actual=1 pred=1.002322</title>
+<circle cx="265.11" cy="970.98" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 04 over q=1.002322 actual=1 pred=1.002322</title>
+<circle cx="265.88" cy="968.35" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 05 over q=1.329724 actual=896 pred=1191.43</title>
+<circle cx="266.65" cy="971.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 06 over q=1.000242 actual=1 pred=1.000242</title>
+<circle cx="267.42" cy="971.00" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 07 over q=1.000242 actual=1 pred=1.000242</title>
+<circle cx="268.19" cy="1010.82" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 08 under q=72.602707 actual=74 pred=1.019246</title>
+<circle cx="268.96" cy="1005.11" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 09 under q=39.241365 actual=57 pred=1.452549</title>
+<circle cx="262.76" cy="951.51" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 10 over q=8.14242 actual=22 pred=179.13324</title>
+<circle cx="263.53" cy="1002.12" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 11 under q=28.463183 actual=41904 pred=1472.22</title>
+<circle cx="264.30" cy="974.88" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 12 under q=1.518368 actual=11 pred=7.244621</title>
+<circle cx="265.07" cy="978.38" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 13 under q=2.212531 actual=723 pred=326.775146</title>
+<circle cx="265.83" cy="1008.05" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 14 under q=53.89242 actual=440 pred=8.164413</title>
+<circle cx="266.60" cy="968.19" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 15 over q=1.353705 actual=120906 pred=163671</title>
+<circle cx="267.37" cy="953.61" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 16 over q=6.495364 actual=5 pred=32.476822</title>
+<circle cx="268.14" cy="1071.46" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 17 under q=49485.3 actual=78954 pred=1.595503</title>
+<circle cx="268.91" cy="936.10" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 18 over q=42.723409 actual=3 pred=128.170227</title>
+<circle cx="269.68" cy="1053.06" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 19 under q=6832.02 actual=7023 pred=1.027953</title>
+<circle cx="263.48" cy="983.23" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 20 under q=3.729996 actual=5 pred=1.340484</title>
+<circle cx="264.25" cy="1030.88" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 21 under q=627.978753 actual=713 pred=1.135389</title>
+<circle cx="265.02" cy="1011.61" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 22 under q=79.046567 actual=56297 pred=712.200439</title>
+<circle cx="265.79" cy="936.49" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 23 over q=40.971701 actual=69 pred=2827.05</title>
+<circle cx="266.56" cy="988.90" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 24 under q=6.864015 actual=50 pred=7.284367</title>
+<circle cx="267.32" cy="932.80" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 25 over q=60.930133 actual=5 pred=304.650665</title>
+<circle cx="268.09" cy="979.52" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 26 under q=2.502362 actual=1793 pred=716.52301</title>
+<circle cx="268.86" cy="940.32" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 27 over q=27.151186 actual=2 pred=54.302372</title>
+<circle cx="269.63" cy="939.57" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 28 over q=29.43718 actual=3 pred=88.311539</title>
+<circle cx="270.40" cy="928.59" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 29 over q=95.874832 actual=1 pred=95.874832</title>
+<circle cx="264.20" cy="940.32" r="3.4" fill="#2563eb" fill-opacity="0.62"/>
+<title>seed 1 JOB-Complex 30 over q=27.151186 actual=2 pred=54.302372</title>
+<text x="249.67" y="1109.00" text-anchor="middle" font-size="13" font-weight="700">seed 1</text>
+<text x="249.67" y="1126.00" text-anchor="middle" class="small">n=30, med q=17.646803</text>
+<text x="249.67" y="1143.00" text-anchor="middle" class="small">under=13, over=17</text>
+<rect x="533.00" y="966.00" width="64" height="17.55" fill="#059669" fill-opacity="0.12" stroke="#059669" stroke-width="1.5"/>
+<line x1="533.00" y1="970.99" x2="597.00" y2="970.99" stroke="#059669" stroke-width="3"/>
+<circle cx="578.77" cy="970.98" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 01 over q=1.001968 actual=1 pred=1.001968</title>
+<circle cx="579.53" cy="970.91" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 02 over q=1.009194 actual=1 pred=1.009194</title>
+<circle cx="580.30" cy="970.95" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 03 over q=1.005374 actual=1 pred=1.005374</title>
+<circle cx="581.07" cy="970.95" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 04 over q=1.005374 actual=1 pred=1.005374</title>
+<circle cx="581.84" cy="968.67" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 05 over q=1.284363 actual=896 pred=1150.79</title>
+<circle cx="582.61" cy="971.00" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 06 over q=1.000094 actual=1 pred=1.000094</title>
+<circle cx="583.38" cy="971.00" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 07 over q=1.000094 actual=1 pred=1.000094</title>
+<circle cx="584.15" cy="1010.44" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 08 under q=69.671612 actual=74 pred=1.062126</title>
+<circle cx="584.92" cy="987.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 09 under q=5.699588 actual=57 pred=10.000723</title>
+<circle cx="578.72" cy="950.46" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 10 over q=9.111893 actual=22 pred=200.461639</title>
+<circle cx="579.49" cy="1039.42" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 11 under q=1575.39 actual=41904 pred=26.59915</title>
+<circle cx="580.26" cy="971.02" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 12 under q=1.002284 actual=11 pred=10.974929</title>
+<circle cx="581.02" cy="952.99" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 13 over q=6.943569 actual=723 pred=5020.2</title>
+<circle cx="581.79" cy="985.61" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 14 under q=4.817222 actual=440 pred=91.338951</title>
+<circle cx="582.56" cy="965.65" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 15 over q=1.778474 actual=120906 pred=215028</title>
+<circle cx="583.33" cy="972.54" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 16 under q=1.179731 actual=5 pred=4.238255</title>
+<circle cx="584.10" cy="1039.60" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 17 under q=1605.85 actual=78954 pred=49.166481</title>
+<circle cx="584.87" cy="969.02" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 18 over q=1.236982 actual=3 pred=3.710947</title>
+<circle cx="585.64" cy="1053.04" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 19 under q=6820.06 actual=7023 pred=1.029757</title>
+<circle cx="579.44" cy="976.18" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 20 under q=1.746696 actual=5 pred=2.862547</title>
+<circle cx="580.21" cy="1029.37" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 21 under q=534.15388 actual=713 pred=1.334821</title>
+<circle cx="580.98" cy="1014.94" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 22 under q=113.036452 actual=56297 pred=498.042877</title>
+<circle cx="581.74" cy="943.72" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 23 over q=18.824932 actual=69 pred=1298.92</title>
+<circle cx="582.51" cy="973.88" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 24 under q=1.362783 actual=50 pred=36.689625</title>
+<circle cx="583.28" cy="922.04" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 25 over q=194.071313 actual=5 pred=970.356567</title>
+<circle cx="584.05" cy="977.34" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 26 under q=1.977282 actual=1793 pred=906.800232</title>
+<circle cx="584.82" cy="930.44" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 27 over q=78.591461 actual=2 pred=157.182922</title>
+<circle cx="585.59" cy="967.03" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 28 over q=1.5321 actual=3 pred=4.5963</title>
+<circle cx="586.36" cy="951.15" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 29 over q=8.460235 actual=1 pred=8.460235</title>
+<circle cx="580.16" cy="930.44" r="3.4" fill="#059669" fill-opacity="0.62"/>
+<title>seed 2 JOB-Complex 30 over q=78.591461 actual=2 pred=157.182922</title>
+<text x="565.00" y="1109.00" text-anchor="middle" font-size="13" font-weight="700">seed 2</text>
+<text x="565.00" y="1126.00" text-anchor="middle" class="small">n=30, med q=3.397252</text>
+<text x="565.00" y="1143.00" text-anchor="middle" class="small">under=13, over=17</text>
+<rect x="848.33" y="959.61" width="64" height="27.85" fill="#7c3aed" fill-opacity="0.12" stroke="#7c3aed" stroke-width="1.5"/>
+<line x1="848.33" y1="970.88" x2="912.33" y2="970.88" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="894.72" cy="970.44" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 01 over q=1.06221 actual=1 pred=1.06221</title>
+<circle cx="895.49" cy="970.35" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 02 over q=1.072044 actual=1 pred=1.072044</title>
+<circle cx="896.26" cy="970.41" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 03 over q=1.065033 actual=1 pred=1.065033</title>
+<circle cx="897.03" cy="970.41" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 04 over q=1.065033 actual=1 pred=1.065033</title>
+<circle cx="897.80" cy="977.09" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 05 under q=1.925759 actual=896 pred=465.270996</title>
+<circle cx="898.57" cy="970.88" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 06 over q=1.013502 actual=1 pred=1.013502</title>
+<circle cx="899.34" cy="970.88" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 07 over q=1.013502 actual=1 pred=1.013502</title>
+<circle cx="900.11" cy="1010.86" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 08 under q=72.856083 actual=74 pred=1.015701</title>
+<circle cx="900.87" cy="997.70" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 09 under q=17.683808 actual=57 pred=3.223288</title>
+<circle cx="894.68" cy="961.10" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 10 over q=2.902887 actual=22 pred=63.863518</title>
+<circle cx="895.44" cy="1010.49" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 11 under q=70.049949 actual=41904 pred=598.201721</title>
+<circle cx="896.21" cy="959.11" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 12 over q=3.594679 actual=11 pred=39.541473</title>
+<circle cx="896.98" cy="979.39" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 13 under q=2.465627 actual=723 pred=293.231689</title>
+<circle cx="897.75" cy="989.40" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 14 under q=7.241492 actual=440 pred=60.76096</title>
+<circle cx="898.52" cy="970.59" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 15 over q=1.045173 actual=120906 pred=126368</title>
+<circle cx="899.29" cy="971.76" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 16 under q=1.085039 actual=5 pred=4.60813</title>
+<circle cx="900.06" cy="1060.94" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 17 under q=15953.2 actual=78954 pred=4.949115</title>
+<circle cx="900.83" cy="941.54" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 18 over q=23.807294 actual=3 pred=71.421883</title>
+<circle cx="901.59" cy="1050.86" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 19 under q=5392.73 actual=7023 pred=1.302308</title>
+<circle cx="895.40" cy="981.60" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 20 under q=3.129083 actual=5 pred=1.597912</title>
+<circle cx="896.17" cy="1028.85" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 21 under q=505.016963 actual=713 pred=1.411834</title>
+<circle cx="896.93" cy="1012.73" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 22 under q=89.102219 actual=56297 pred=631.82489</title>
+<circle cx="897.70" cy="946.10" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 23 over q=14.571578 actual=69 pred=1005.44</title>
+<circle cx="898.47" cy="977.39" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 24 under q=1.989828 actual=50 pred=25.127796</title>
+<circle cx="899.24" cy="933.93" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 25 over q=53.977405 actual=5 pred=269.887024</title>
+<circle cx="900.01" cy="979.23" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 26 under q=2.423888 actual=1793 pred=739.720703</title>
+<circle cx="900.78" cy="931.63" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 27 over q=69.13131 actual=2 pred=138.262619</title>
+<circle cx="901.55" cy="948.08" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 28 over q=11.781751 actual=3 pred=35.345253</title>
+<circle cx="902.32" cy="952.99" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 29 over q=6.947066 actual=1 pred=6.947066</title>
+<circle cx="896.12" cy="931.63" r="3.4" fill="#7c3aed" fill-opacity="0.62"/>
+<title>seed 3 JOB-Complex 30 over q=69.13131 actual=2 pred=138.262619</title>
+<text x="880.33" y="1109.00" text-anchor="middle" font-size="13" font-weight="700">seed 3</text>
+<text x="880.33" y="1126.00" text-anchor="middle" class="small">n=30, med q=5.270873</text>
+<text x="880.33" y="1143.00" text-anchor="middle" class="small">under=14, over=16</text>
+</svg>

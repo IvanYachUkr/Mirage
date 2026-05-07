@@ -1,0 +1,81 @@
+{
+  "run_dir": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\test44\\final_benchmarks\\runs\\table1_base_selection_test42_100k_exportpatch_v2",
+  "pg_db": "imdb_test42_100k_exportpatch",
+  "duckdb": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\test44\\final_benchmarks\\test42_100k_exportpatch\\duckdb\\test42_100k_exportpatch.duckdb",
+  "workload_dirs": {
+    "job_exact": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\test44\\final_benchmarks\\test42_100k_exportpatch\\queries\\job_exact",
+    "job_complex": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\test44\\final_benchmarks\\test42_100k_exportpatch\\queries\\job_complex",
+    "job_light": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\test44\\final_benchmarks\\test42_100k_exportpatch\\queries\\job_light"
+  },
+  "elapsed_s": 38.08990040002391,
+  "selection_count": 949,
+  "row_count": 1898,
+  "error_count": 0,
+  "errors": [],
+  "summary": {
+    "duckdb": {
+      "job_complex": {
+        "rows": 186,
+        "zero_actual_excluded": 0,
+        "canonicalized_duplicate_in_rows": 7,
+        "median": 2.1193292894087157,
+        "p90": 1470.75,
+        "p95": 48000.0,
+        "p99": 202654.450000002,
+        "max": 496434.0
+      },
+      "job_exact": {
+        "rows": 606,
+        "zero_actual_excluded": 0,
+        "canonicalized_duplicate_in_rows": 17,
+        "median": 2.2890474392352487,
+        "p90": 845.0,
+        "p95": 14713.142857142855,
+        "p99": 120000.0,
+        "max": 248217.0
+      },
+      "job_light": {
+        "rows": 157,
+        "zero_actual_excluded": 0,
+        "canonicalized_duplicate_in_rows": 0,
+        "median": 4.127170214951746,
+        "p90": 94.90852713178299,
+        "p95": 167.45736434108528,
+        "p99": 25158.5,
+        "max": 25158.5
+      }
+    },
+    "postgres": {
+      "job_complex": {
+        "rows": 186,
+        "zero_actual_excluded": 0,
+        "canonicalized_duplicate_in_rows": 7,
+        "median": 1.0,
+        "p90": 9.773333333333333,
+        "p95": 36.17307692307693,
+        "p99": 88.71490066225198,
+        "max": 196.875
+      },
+      "job_exact": {
+        "rows": 606,
+        "zero_actual_excluded": 0,
+        "canonicalized_duplicate_in_rows": 17,
+        "median": 1.0,
+        "p90": 5.0,
+        "p95": 19.468509615384615,
+        "p99": 91.0,
+        "max": 138.09933774834437
+      },
+      "job_light": {
+        "rows": 157,
+        "zero_actual_excluded": 0,
+        "canonicalized_duplicate_in_rows": 0,
+        "median": 1.0053846612714004,
+        "p90": 1.0484463082956195,
+        "p95": 1.0713555992141455,
+        "p99": 10.0,
+        "max": 10.0
+      }
+    }
+  }
+}

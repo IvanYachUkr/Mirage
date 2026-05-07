@@ -1,0 +1,96 @@
+{
+  "run_dir": "C:\\Users\\vanya\\Documents\\DATA_SYS_LAB\\benchmark\\cardinality_methods\\runs\\test42_100k_paper_mscn_cardinality_100k_100ep_3seed_20260504_exact3600s_quotefix",
+  "checked_at": "2026-05-05T19:03:23",
+  "top_level_files": {
+    "paper_mscn_report.json": {
+      "exists": true,
+      "bytes": 15931
+    },
+    "training_rows_manifest.json": {
+      "exists": true,
+      "bytes": 378
+    },
+    "sample_tables_manifest.json": {
+      "exists": true,
+      "bytes": 4354
+    },
+    "coverage_audit.json": {
+      "exists": true,
+      "bytes": 1693
+    },
+    "encoder_manifest.json": {
+      "exists": true,
+      "bytes": 3152
+    },
+    "generation/synthetic_labels.csv": {
+      "exists": true,
+      "bytes": 21776161
+    }
+  },
+  "seeds": {
+    "1": {
+      "model_exists": true,
+      "summary_exists": true,
+      "predictions": {
+        "job_light": {
+          "exists": true,
+          "bytes": 11487,
+          "rows": 70
+        },
+        "job_exact": {
+          "exists": true,
+          "bytes": 18907,
+          "rows": 113
+        },
+        "job_complex": {
+          "exists": true,
+          "bytes": 5122,
+          "rows": 30
+        }
+      }
+    },
+    "2": {
+      "model_exists": true,
+      "summary_exists": true,
+      "predictions": {
+        "job_light": {
+          "exists": true,
+          "bytes": 11478,
+          "rows": 70
+        },
+        "job_exact": {
+          "exists": true,
+          "bytes": 18867,
+          "rows": 113
+        },
+        "job_complex": {
+          "exists": true,
+          "bytes": 5121,
+          "rows": 30
+        }
+      }
+    },
+    "3": {
+      "model_exists": true,
+      "summary_exists": true,
+      "predictions": {
+        "job_light": {
+          "exists": true,
+          "bytes": 11486,
+          "rows": 70
+        },
+        "job_exact": {
+          "exists": true,
+          "bytes": 18905,
+          "rows": 113
+        },
+        "job_complex": {
+          "exists": true,
+          "bytes": 5116,
+          "rows": 30
+        }
+      }
+    }
+  },
+  "complete": true
+}

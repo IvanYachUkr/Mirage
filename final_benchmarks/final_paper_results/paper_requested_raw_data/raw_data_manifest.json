@@ -1,0 +1,101 @@
+{
+  "dataset": "imdb_test42_100k_exportpatch",
+  "created_by": "test44/final_benchmarks/scripts/build_paper_requested_raw_data.py",
+  "purpose": "Raw per-query/per-selection CSVs requested for paper plots.",
+  "row_counts": {
+    "full_query_cardinality.csv": 852,
+    "selected_plan_cost.csv": 1491,
+    "base_selection_cardinality.csv": 1898,
+    "query_result_sizes.csv": 213,
+    "query_metadata.csv": 213,
+    "runtime_breakdowns.csv": 213,
+    "plan_metadata.csv": 213
+  },
+  "files": {
+    "full_query_cardinality.csv": {
+      "schema": [
+        "workload",
+        "query_id",
+        "method",
+        "seed",
+        "actual_cardinality",
+        "estimated_cardinality"
+      ],
+      "methods": [
+        "PostgreSQL",
+        "MSCN"
+      ],
+      "source_note": "PostgreSQL uses selected target-node row estimate/actual from EXPLAIN ANALYZE; MSCN uses three seed prediction files."
+    },
+    "selected_plan_cost.csv": {
+      "schema": [
+        "workload",
+        "query_id",
+        "method",
+        "seed",
+        "actual_runtime",
+        "predicted_value"
+      ],
+      "methods": [
+        "PostgreSQL scaled planner cost",
+        "Pretrained ZeroShot",
+        "MSCN selected-plan runtime"
+      ]
+    },
+    "base_selection_cardinality.csv": {
+      "schema": [
+        "workload",
+        "selection_id",
+        "estimator",
+        "actual_cardinality",
+        "estimated_cardinality"
+      ],
+      "estimators": [
+        "PostgreSQL",
+        "DuckDB"
+      ]
+    },
+    "query_result_sizes.csv": {
+      "schema": [
+        "workload",
+        "query_id",
+        "actual_result_size"
+      ]
+    },
+    "query_metadata.csv": {
+      "schema": [
+        "workload",
+        "query_id",
+        "num_joins",
+        "num_predicates",
+        "template_family",
+        "sql_text"
+      ]
+    },
+    "runtime_breakdowns.csv": {
+      "schema": [
+        "workload",
+        "query_id",
+        "dbms",
+        "planning_time",
+        "execution_time"
+      ]
+    },
+    "plan_metadata.csv": {
+      "schema": [
+        "workload",
+        "query_id",
+        "dbms",
+        "estimated_rows_root",
+        "actual_rows_root",
+        "chosen_plan_hash"
+      ]
+    }
+  },
+  "explicitly_not_included": [
+    "Full generated database table CSVs",
+    ".env or API keys",
+    "Python virtual environments",
+    "Historical run directories"
+  ]
+}

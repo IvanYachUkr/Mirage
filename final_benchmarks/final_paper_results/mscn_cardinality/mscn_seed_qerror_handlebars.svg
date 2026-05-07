@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1104" viewBox="0 0 1080 1104">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827}.small{font-size:12px;fill:#4b5563}.grid{stroke:#e5e7eb}.axis{stroke:#111827}</style>
+<rect x="0" y="0" width="1080" height="1104" fill="#fff"/>
+<text x="92" y="32" font-size="22" font-weight="700">MSCN Cardinality Q-Error by Seed</text>
+<text x="92" y="55" class="small">Whisker=min/max, box=IQR, line=median, diamond=mean. Y axis is log10(q-error), capped at 1e5.</text>
+<text x="92" y="100" font-size="18" font-weight="700">JOB-Light</text>
+<line x1="92" y1="338.00" x2="1038" y2="338.00" class="grid"/>
+<text x="80" y="342.00" text-anchor="end" class="small">1e0</text>
+<line x1="92" y1="296.40" x2="1038" y2="296.40" class="grid"/>
+<text x="80" y="300.40" text-anchor="end" class="small">1e1</text>
+<line x1="92" y1="254.80" x2="1038" y2="254.80" class="grid"/>
+<text x="80" y="258.80" text-anchor="end" class="small">1e2</text>
+<line x1="92" y1="213.20" x2="1038" y2="213.20" class="grid"/>
+<text x="80" y="217.20" text-anchor="end" class="small">1e3</text>
+<line x1="92" y1="171.60" x2="1038" y2="171.60" class="grid"/>
+<text x="80" y="175.60" text-anchor="end" class="small">1e4</text>
+<line x1="92" y1="130.00" x2="1038" y2="130.00" class="grid"/>
+<text x="80" y="134.00" text-anchor="end" class="small">1e5</text>
+<line x1="92" y1="130" x2="92" y2="338" class="axis"/>
+<line x1="92" y1="338" x2="1038" y2="338" class="axis"/>
+<line x1="249.67" y1="291.71" x2="249.67" y2="336.83" stroke="#2563eb" stroke-width="3"/>
+<line x1="227.67" y1="291.71" x2="271.67" y2="291.71" stroke="#2563eb" stroke-width="3"/>
+<line x1="227.67" y1="336.83" x2="271.67" y2="336.83" stroke="#2563eb" stroke-width="3"/>
+<rect x="217.67" y="315.31" width="64" height="17.77" fill="#2563eb" fill-opacity="0.15" stroke="#2563eb" stroke-width="2"/>
+<line x1="217.67" y1="328.64" x2="281.67" y2="328.64" stroke="#2563eb" stroke-width="3"/>
+<polygon points="249.67,306.54 256.67,313.54 249.67,320.54 242.67,313.54" fill="#fff" stroke="#2563eb" stroke-width="2"/>
+<text x="249.67" y="368.00" text-anchor="middle" font-size="13" font-weight="700">seed 1</text>
+<text x="249.67" y="385.00" text-anchor="middle" class="small">n=70, med=1.678819</text>
+<text x="249.67" y="401.00" text-anchor="middle" class="small">p95=12.237587</text>
+<line x1="565.00" y1="287.18" x2="565.00" y2="337.64" stroke="#059669" stroke-width="3"/>
+<line x1="543.00" y1="287.18" x2="587.00" y2="287.18" stroke="#059669" stroke-width="3"/>
+<line x1="543.00" y1="337.64" x2="587.00" y2="337.64" stroke="#059669" stroke-width="3"/>
+<rect x="533.00" y="308.09" width="64" height="25.94" fill="#059669" fill-opacity="0.15" stroke="#059669" stroke-width="2"/>
+<line x1="533.00" y1="322.35" x2="597.00" y2="322.35" stroke="#059669" stroke-width="3"/>
+<polygon points="565.00,307.03 572.00,314.03 565.00,321.03 558.00,314.03" fill="#fff" stroke="#059669" stroke-width="2"/>
+<text x="565.00" y="368.00" text-anchor="middle" font-size="13" font-weight="700">seed 2</text>
+<text x="565.00" y="385.00" text-anchor="middle" class="small">n=70, med=2.378561</text>
+<text x="565.00" y="401.00" text-anchor="middle" class="small">p95=11.173213</text>
+<line x1="880.33" y1="287.00" x2="880.33" y2="337.93" stroke="#7c3aed" stroke-width="3"/>
+<line x1="858.33" y1="287.00" x2="902.33" y2="287.00" stroke="#7c3aed" stroke-width="3"/>
+<line x1="858.33" y1="337.93" x2="902.33" y2="337.93" stroke="#7c3aed" stroke-width="3"/>
+<rect x="848.33" y="309.82" width="64" height="24.40" fill="#7c3aed" fill-opacity="0.15" stroke="#7c3aed" stroke-width="2"/>
+<line x1="848.33" y1="321.44" x2="912.33" y2="321.44" stroke="#7c3aed" stroke-width="3"/>
+<polygon points="880.33,305.12 887.33,312.12 880.33,319.12 873.33,312.12" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+<text x="880.33" y="368.00" text-anchor="middle" font-size="13" font-weight="700">seed 3</text>
+<text x="880.33" y="385.00" text-anchor="middle" class="small">n=70, med=2.501074</text>
+<text x="880.33" y="401.00" text-anchor="middle" class="small">p95=13.333156</text>
+<text x="92" y="440" font-size="18" font-weight="700">JOB</text>
+<line x1="92" y1="678.00" x2="1038" y2="678.00" class="grid"/>
+<text x="80" y="682.00" text-anchor="end" class="small">1e0</text>
+<line x1="92" y1="636.40" x2="1038" y2="636.40" class="grid"/>
+<text x="80" y="640.40" text-anchor="end" class="small">1e1</text>
+<line x1="92" y1="594.80" x2="1038" y2="594.80" class="grid"/>
+<text x="80" y="598.80" text-anchor="end" class="small">1e2</text>
+<line x1="92" y1="553.20" x2="1038" y2="553.20" class="grid"/>
+<text x="80" y="557.20" text-anchor="end" class="small">1e3</text>
+<line x1="92" y1="511.60" x2="1038" y2="511.60" class="grid"/>
+<text x="80" y="515.60" text-anchor="end" class="small">1e4</text>
+<line x1="92" y1="470.00" x2="1038" y2="470.00" class="grid"/>
+<text x="80" y="474.00" text-anchor="end" class="small">1e5</text>
+<line x1="92" y1="470" x2="92" y2="678" class="axis"/>
+<line x1="92" y1="678" x2="1038" y2="678" class="axis"/>
+<line x1="249.67" y1="493.48" x2="249.67" y2="677.99" stroke="#2563eb" stroke-width="3"/>
+<line x1="227.67" y1="493.48" x2="271.67" y2="493.48" stroke="#2563eb" stroke-width="3"/>
+<line x1="227.67" y1="677.99" x2="271.67" y2="677.99" stroke="#2563eb" stroke-width="3"/>
+<rect x="217.67" y="624.64" width="64" height="39.03" fill="#2563eb" fill-opacity="0.15" stroke="#2563eb" stroke-width="2"/>
+<line x1="217.67" y1="645.81" x2="281.67" y2="645.81" stroke="#2563eb" stroke-width="3"/>
+<polygon points="249.67,568.49 256.67,575.49 249.67,582.49 242.67,575.49" fill="#fff" stroke="#2563eb" stroke-width="2"/>
+<text x="249.67" y="708.00" text-anchor="middle" font-size="13" font-weight="700">seed 1</text>
+<text x="249.67" y="725.00" text-anchor="middle" class="small">n=113, med=5.94048</text>
+<text x="249.67" y="741.00" text-anchor="middle" class="small">p95=113.857895</text>
+<line x1="565.00" y1="502.40" x2="565.00" y2="677.99" stroke="#059669" stroke-width="3"/>
+<line x1="543.00" y1="502.40" x2="587.00" y2="502.40" stroke="#059669" stroke-width="3"/>
+<line x1="543.00" y1="677.99" x2="587.00" y2="677.99" stroke="#059669" stroke-width="3"/>
+<rect x="533.00" y="630.57" width="64" height="32.37" fill="#059669" fill-opacity="0.15" stroke="#059669" stroke-width="2"/>
+<line x1="533.00" y1="648.70" x2="597.00" y2="648.70" stroke="#059669" stroke-width="3"/>
+<polygon points="565.00,577.81 572.00,584.81 565.00,591.81 558.00,584.81" fill="#fff" stroke="#059669" stroke-width="2"/>
+<text x="565.00" y="708.00" text-anchor="middle" font-size="13" font-weight="700">seed 2</text>
+<text x="565.00" y="725.00" text-anchor="middle" class="small">n=113, med=5.061449</text>
+<text x="565.00" y="741.00" text-anchor="middle" class="small">p95=157.484819</text>
+<line x1="880.33" y1="512.29" x2="880.33" y2="678.00" stroke="#7c3aed" stroke-width="3"/>
+<line x1="858.33" y1="512.29" x2="902.33" y2="512.29" stroke="#7c3aed" stroke-width="3"/>
+<line x1="858.33" y1="678.00" x2="902.33" y2="678.00" stroke="#7c3aed" stroke-width="3"/>
+<rect x="848.33" y="628.59" width="64" height="35.54" fill="#7c3aed" fill-opacity="0.15" stroke="#7c3aed" stroke-width="2"/>
+<line x1="848.33" y1="645.26" x2="912.33" y2="645.26" stroke="#7c3aed" stroke-width="3"/>
+<polygon points="880.33,587.50 887.33,594.50 880.33,601.50 873.33,594.50" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+<text x="880.33" y="708.00" text-anchor="middle" font-size="13" font-weight="700">seed 3</text>
+<text x="880.33" y="725.00" text-anchor="middle" class="small">n=113, med=6.123452</text>
+<text x="880.33" y="741.00" text-anchor="middle" class="small">p95=83.75657</text>
+<text x="92" y="780" font-size="18" font-weight="700">JOB-Complex</text>
+<line x1="92" y1="1018.00" x2="1038" y2="1018.00" class="grid"/>
+<text x="80" y="1022.00" text-anchor="end" class="small">1e0</text>
+<line x1="92" y1="976.40" x2="1038" y2="976.40" class="grid"/>
+<text x="80" y="980.40" text-anchor="end" class="small">1e1</text>
+<line x1="92" y1="934.80" x2="1038" y2="934.80" class="grid"/>
+<text x="80" y="938.80" text-anchor="end" class="small">1e2</text>
+<line x1="92" y1="893.20" x2="1038" y2="893.20" class="grid"/>
+<text x="80" y="897.20" text-anchor="end" class="small">1e3</text>
+<line x1="92" y1="851.60" x2="1038" y2="851.60" class="grid"/>
+<text x="80" y="855.60" text-anchor="end" class="small">1e4</text>
+<line x1="92" y1="810.00" x2="1038" y2="810.00" class="grid"/>
+<text x="80" y="814.00" text-anchor="end" class="small">1e5</text>
+<line x1="92" y1="810" x2="92" y2="1018" class="axis"/>
+<line x1="92" y1="1018" x2="1038" y2="1018" class="axis"/>
+<line x1="249.67" y1="822.71" x2="249.67" y2="1018.00" stroke="#2563eb" stroke-width="3"/>
+<line x1="227.67" y1="822.71" x2="271.67" y2="822.71" stroke="#2563eb" stroke-width="3"/>
+<line x1="227.67" y1="1018.00" x2="271.67" y2="1018.00" stroke="#2563eb" stroke-width="3"/>
+<rect x="217.67" y="946.93" width="64" height="65.06" fill="#2563eb" fill-opacity="0.15" stroke="#2563eb" stroke-width="2"/>
+<line x1="217.67" y1="966.14" x2="281.67" y2="966.14" stroke="#2563eb" stroke-width="3"/>
+<polygon points="249.67,874.42 256.67,881.42 249.67,888.42 242.67,881.42" fill="#fff" stroke="#2563eb" stroke-width="2"/>
+<text x="249.67" y="1048.00" text-anchor="middle" font-size="13" font-weight="700">seed 1</text>
+<text x="249.67" y="1065.00" text-anchor="middle" class="small">n=30, med=17.646803</text>
+<text x="249.67" y="1081.00" text-anchor="middle" class="small">p95=4040.2</text>
+<line x1="565.00" y1="858.51" x2="565.00" y2="1018.00" stroke="#059669" stroke-width="3"/>
+<line x1="543.00" y1="858.51" x2="587.00" y2="858.51" stroke="#059669" stroke-width="3"/>
+<line x1="543.00" y1="1018.00" x2="587.00" y2="1018.00" stroke="#059669" stroke-width="3"/>
+<rect x="533.00" y="939.67" width="64" height="75.12" fill="#059669" fill-opacity="0.15" stroke="#059669" stroke-width="2"/>
+<line x1="533.00" y1="995.91" x2="597.00" y2="995.91" stroke="#059669" stroke-width="3"/>
+<polygon points="565.00,904.09 572.00,911.09 565.00,918.09 558.00,911.09" fill="#fff" stroke="#059669" stroke-width="2"/>
+<text x="565.00" y="1048.00" text-anchor="middle" font-size="13" font-weight="700">seed 2</text>
+<text x="565.00" y="1065.00" text-anchor="middle" class="small">n=30, med=3.397252</text>
+<text x="565.00" y="1081.00" text-anchor="middle" class="small">p95=1592.14</text>
+<line x1="880.33" y1="843.16" x2="880.33" y2="1017.76" stroke="#7c3aed" stroke-width="3"/>
+<line x1="858.33" y1="843.16" x2="902.33" y2="843.16" stroke="#7c3aed" stroke-width="3"/>
+<line x1="858.33" y1="1017.76" x2="902.33" y2="1017.76" stroke="#7c3aed" stroke-width="3"/>
+<rect x="848.33" y="942.49" width="64" height="70.84" fill="#7c3aed" fill-opacity="0.15" stroke="#7c3aed" stroke-width="2"/>
+<line x1="848.33" y1="987.97" x2="912.33" y2="987.97" stroke="#7c3aed" stroke-width="3"/>
+<polygon points="880.33,891.49 887.33,898.49 880.33,905.49 873.33,898.49" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+<text x="880.33" y="1048.00" text-anchor="middle" font-size="13" font-weight="700">seed 3</text>
+<text x="880.33" y="1065.00" text-anchor="middle" class="small">n=30, med=5.270873</text>
+<text x="880.33" y="1081.00" text-anchor="middle" class="small">p95=3193.26</text>
+</svg>

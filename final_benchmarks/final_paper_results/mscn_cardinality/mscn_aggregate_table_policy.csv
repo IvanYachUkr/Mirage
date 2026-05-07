@@ -1,0 +1,4 @@
+workload,query_count,median_of_seed_medians,median_of_seed_p95,best_seed_by_median,best_seed_median,best_seed_median_delta_pct,best_seed_by_p95,best_seed_p95,best_seed_p95_delta_pct,recommended_policy
+JOB-Light,70,2.378561,12.237587,1,1.678819,-29.418702,2,11.173213,-8.69758,median_of_seed_summaries
+JOB,113,5.94048,113.857895,2,5.061449,-14.79731,3,83.75657,-26.437626,median_of_seed_summaries
+JOB-Complex,30,5.270873,3193.26,2,3.397252,-35.546689,2,1592.14,-50.140536,median_of_seed_summaries

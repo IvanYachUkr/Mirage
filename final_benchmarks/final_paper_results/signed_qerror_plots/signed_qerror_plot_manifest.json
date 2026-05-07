@@ -1,0 +1,10 @@
+{
+  "points": 4028,
+  "summary_rows": 18,
+  "plots": [
+    "signed_base_selection_cardinality_qerror.svg",
+    "signed_mscn_full_query_cardinality_qerror.svg",
+    "signed_selected_plan_cost_runtime_qerror.svg"
+  ],
+  "signed_qerror_definition": "sign * log10(Q-error), with positive values for overestimates and negative values for underestimates"
+}
